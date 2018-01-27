@@ -196,7 +196,9 @@ int main(void) {
        memcpy(&z_data, &u_z_data, sizeof(u_z_data));
 
 
-       //printf
+       //printf //plug wire into gold square hole on board to solo male pin
+       //displays over minicom - first sudo dmesg | tail , (sudo minicom -s) in serial port setup - /dev/ttyACM0 , /var/lock , 38400 8N1 , No , No
+       //printing integer values - (2/32766) * value or (2/32767) *value(negative) = value in g's when set to 2 g max
       chprintf((BaseSequentialStream *)&SD3, "%d, %d, %d \r\n",x_data, y_data, z_data);
 
 
