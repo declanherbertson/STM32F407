@@ -197,11 +197,11 @@ int main(void) {
 
 
        //printf
-      //chprintf((BaseSequentialStream *)&SD3, "%d, %d, %d \r\n",x_data, y_data, z_data);
+      chprintf((BaseSequentialStream *)&SD3, "%d, %d, %d \r\n",x_data, y_data, z_data);
 
-       int x_in_gs;
 
-      // chprintf((BaseSequentialStream *)&SD3, "%d, %d, %d \r\n",x_data, y_data, z_data);
+//test
+
 
        //stop compiler complaining
        (void) err;

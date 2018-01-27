@@ -244,7 +244,7 @@ endfiniloop:
                 /* Data initialization. Note, it assumes that the DATA size
                   is a multiple of 4 so the linker file must ensure this.*/
                 ldr     r1, =_textdata_start
- 8000290:	0800fb30 	.word	0x0800fb30
+ 8000290:	0800fb60 	.word	0x0800fb60
                 ldr     r2, =_data_start
  8000294:	20000800 	.word	0x20000800
                 ldr     r3, =_data_end
@@ -494,8 +494,8 @@ void __init_ram_areas(void) {
 }
  8000378:	b004      	add	sp, #16
  800037a:	4770      	bx	lr
- 800037c:	0800dde0 	.word	0x0800dde0
- 8000380:	0800de60 	.word	0x0800de60
+ 800037c:	0800de00 	.word	0x0800de00
+ 8000380:	0800de80 	.word	0x0800de80
 	...
 
 08000390 <BusFault_Handler>:
@@ -1383,9 +1383,9 @@ void chSysInit(void) {
 }
  8000726:	bd08      	pop	{r3, pc}
  8000728:	20000b28 	.word	0x20000b28
- 800072c:	0800de88 	.word	0x0800de88
+ 800072c:	0800dea8 	.word	0x0800dea8
  8000730:	20000af8 	.word	0x20000af8
- 8000734:	0800de68 	.word	0x0800de68
+ 8000734:	0800de88 	.word	0x0800de88
  8000738:	f3af 8000 	nop.w
  800073c:	f3af 8000 	nop.w
 
@@ -4205,7 +4205,7 @@ thread_t *chThdCreateStatic(void *wsp, size_t size,
  80014ae:	b007      	add	sp, #28
  80014b0:	f85d fb04 	ldr.w	pc, [sp], #4
  80014b4:	080002c5 	.word	0x080002c5
- 80014b8:	0800de80 	.word	0x0800de80
+ 80014b8:	0800dea0 	.word	0x0800dea0
  80014bc:	f3af 8000 	nop.w
 
 080014c0 <chThdStart>:
@@ -5571,7 +5571,7 @@ thread_t *chRegFindThreadByName(const char *name) {
  8001bb2:	4603      	mov	r3, r0
  8001bb4:	4618      	mov	r0, r3
  8001bb6:	9901      	ldr	r1, [sp, #4]
- 8001bb8:	f00b ffa6 	bl	800db08 <strcmp>
+ 8001bb8:	f00b ffb6 	bl	800db28 <strcmp>
  8001bbc:	4603      	mov	r3, r0
  8001bbe:	2b00      	cmp	r3, #0
  8001bc0:	d101      	bne.n	8001bc6 <chRegFindThreadByName+0x26>
@@ -12655,7 +12655,7 @@ void halInit(void) {
 }
  8003e30:	bd08      	pop	{r3, pc}
  8003e32:	bf00      	nop
- 8003e34:	0800df98 	.word	0x0800df98
+ 8003e34:	0800dfb8 	.word	0x0800dfb8
 	...
 
 08003e40 <st_lld_start_alarm>:
@@ -13808,7 +13808,7 @@ size_t ibqReadTimeout(input_buffers_queue_t *ibqp, uint8_t *bp,
  80043b2:	9802      	ldr	r0, [sp, #8]
  80043b4:	4619      	mov	r1, r3
  80043b6:	2240      	movs	r2, #64	; 0x40
- 80043b8:	f009 fafc 	bl	800d9b4 <memcpy>
+ 80043b8:	f009 fb0e 	bl	800d9d8 <memcpy>
       bp        += 64U;
  80043bc:	9b02      	ldr	r3, [sp, #8]
  80043be:	3340      	adds	r3, #64	; 0x40
@@ -13832,7 +13832,7 @@ size_t ibqReadTimeout(input_buffers_queue_t *ibqp, uint8_t *bp,
  80043da:	9802      	ldr	r0, [sp, #8]
  80043dc:	4619      	mov	r1, r3
  80043de:	9a08      	ldr	r2, [sp, #32]
- 80043e0:	f009 fae8 	bl	800d9b4 <memcpy>
+ 80043e0:	f009 fafa 	bl	800d9d8 <memcpy>
       bp        += size;
  80043e4:	9a02      	ldr	r2, [sp, #8]
  80043e6:	9b08      	ldr	r3, [sp, #32]
@@ -14555,7 +14555,7 @@ size_t obqWriteTimeout(output_buffers_queue_t *obqp, const uint8_t *bp,
  80047b2:	4618      	mov	r0, r3
  80047b4:	9902      	ldr	r1, [sp, #8]
  80047b6:	2240      	movs	r2, #64	; 0x40
- 80047b8:	f009 f8fc 	bl	800d9b4 <memcpy>
+ 80047b8:	f009 f90e 	bl	800d9d8 <memcpy>
       bp        += 64U;
  80047bc:	9b02      	ldr	r3, [sp, #8]
  80047be:	3340      	adds	r3, #64	; 0x40
@@ -14579,7 +14579,7 @@ size_t obqWriteTimeout(output_buffers_queue_t *obqp, const uint8_t *bp,
  80047da:	4618      	mov	r0, r3
  80047dc:	9902      	ldr	r1, [sp, #8]
  80047de:	9a08      	ldr	r2, [sp, #32]
- 80047e0:	f009 f8e8 	bl	800d9b4 <memcpy>
+ 80047e0:	f009 f8fa 	bl	800d9d8 <memcpy>
       bp        += size;
  80047e4:	9a02      	ldr	r2, [sp, #8]
  80047e6:	9b08      	ldr	r3, [sp, #32]
@@ -17151,7 +17151,7 @@ void sdObjectInit(SerialDriver *sdp, qnotify_t inotify, qnotify_t onotify) {
  8005508:	b007      	add	sp, #28
  800550a:	f85d fb04 	ldr.w	pc, [sp], #4
  800550e:	bf00      	nop
- 8005510:	0800dea0 	.word	0x0800dea0
+ 8005510:	0800dec0 	.word	0x0800dec0
  8005514:	f3af 8000 	nop.w
  8005518:	f3af 8000 	nop.w
  800551c:	f3af 8000 	nop.w
@@ -18706,7 +18706,7 @@ void dmaInit(void) {
  8005dc8:	b002      	add	sp, #8
  8005dca:	4770      	bx	lr
  8005dcc:	200008d8 	.word	0x200008d8
- 8005dd0:	0800dec0 	.word	0x0800dec0
+ 8005dd0:	0800dee0 	.word	0x0800dee0
  8005dd4:	200008dc 	.word	0x200008dc
  8005dd8:	40026000 	.word	0x40026000
  8005ddc:	40026400 	.word	0x40026400
@@ -20429,7 +20429,7 @@ static void i2c_lld_serve_rx_end_irq(I2CDriver *i2cp, uint32_t flags) {
  80067b0:	b005      	add	sp, #20
  80067b2:	f85d fb04 	ldr.w	pc, [sp], #4
  80067b6:	bf00      	nop
- 80067b8:	0800df80 	.word	0x0800df80
+ 80067b8:	0800dfa0 	.word	0x0800dfa0
  80067bc:	f3af 8000 	nop.w
 
 080067c0 <i2c_lld_serve_tx_end_irq>:
@@ -20504,7 +20504,7 @@ static void i2c_lld_serve_tx_end_irq(I2CDriver *i2cp, uint32_t flags) {
  8006824:	b005      	add	sp, #20
  8006826:	f85d fb04 	ldr.w	pc, [sp], #4
  800682a:	bf00      	nop
- 800682c:	0800df80 	.word	0x0800df80
+ 800682c:	0800dfa0 	.word	0x0800dfa0
 
 08006830 <i2c_lld_serve_error_interrupt>:
  * @param[in] i2cp      pointer to the @p I2CDriver object
@@ -20803,8 +20803,8 @@ void i2c_lld_init(void) {
  8006a22:	bf00      	nop
  8006a24:	20000b78 	.word	0x20000b78
  8006a28:	40005400 	.word	0x40005400
- 8006a2c:	0800dec0 	.word	0x0800dec0
- 8006a30:	0800df08 	.word	0x0800df08
+ 8006a2c:	0800dee0 	.word	0x0800dee0
+ 8006a30:	0800df28 	.word	0x0800df28
  8006a34:	f3af 8000 	nop.w
  8006a38:	f3af 8000 	nop.w
  8006a3c:	f3af 8000 	nop.w
@@ -22450,7 +22450,7 @@ void sd_lld_start(SerialDriver *sdp, const SerialConfig *config) {
 }
  800732a:	b003      	add	sp, #12
  800732c:	f85d fb04 	ldr.w	pc, [sp], #4
- 8007330:	0800df8c 	.word	0x0800df8c
+ 8007330:	0800dfac 	.word	0x0800dfac
  8007334:	20000bb0 	.word	0x20000bb0
  8007338:	40023800 	.word	0x40023800
  800733c:	20000c2c 	.word	0x20000c2c
@@ -22970,7 +22970,7 @@ static void print_line(void) {
  80075ae:	f85d fb04 	ldr.w	pc, [sp], #4
  80075b2:	bf00      	nop
  80075b4:	20000978 	.word	0x20000978
- 80075b8:	0800e094 	.word	0x0800e094
+ 80075b8:	0800e0b4 	.word	0x0800e0b4
  80075bc:	f3af 8000 	nop.w
 
 080075c0 <_test_fail>:
@@ -23310,7 +23310,7 @@ void test_println(const char *msgp) {
  80077a2:	f85d fb04 	ldr.w	pc, [sp], #4
  80077a6:	bf00      	nop
  80077a8:	20000978 	.word	0x20000978
- 80077ac:	0800e094 	.word	0x0800e094
+ 80077ac:	0800e0b4 	.word	0x0800e0b4
 
 080077b0 <test_emit_token>:
  *
@@ -23619,32 +23619,32 @@ msg_t test_execute(BaseSequentialStream *stream) {
  800797e:	f85d fb04 	ldr.w	pc, [sp], #4
  8007982:	bf00      	nop
  8007984:	20000978 	.word	0x20000978
- 8007988:	0800e098 	.word	0x0800e098
- 800798c:	0800e09c 	.word	0x0800e09c
- 8007990:	0800e0b8 	.word	0x0800e0b8
- 8007994:	0800e0bc 	.word	0x0800e0bc
- 8007998:	0800e0d0 	.word	0x0800e0d0
- 800799c:	0800e0e8 	.word	0x0800e0e8
- 80079a0:	0800e0fc 	.word	0x0800e0fc
- 80079a4:	0800e128 	.word	0x0800e128
- 80079a8:	0800e13c 	.word	0x0800e13c
+ 8007988:	0800e0b8 	.word	0x0800e0b8
+ 800798c:	0800e0bc 	.word	0x0800e0bc
+ 8007990:	0800e0d8 	.word	0x0800e0d8
+ 8007994:	0800e0dc 	.word	0x0800e0dc
+ 8007998:	0800e0f0 	.word	0x0800e0f0
+ 800799c:	0800e108 	.word	0x0800e108
+ 80079a0:	0800e11c 	.word	0x0800e11c
+ 80079a4:	0800e148 	.word	0x0800e148
+ 80079a8:	0800e15c 	.word	0x0800e15c
  80079ac:	20000ca8 	.word	0x20000ca8
- 80079b0:	0800e164 	.word	0x0800e164
- 80079b4:	0800e174 	.word	0x0800e174
- 80079b8:	0800e178 	.word	0x0800e178
+ 80079b0:	0800e184 	.word	0x0800e184
+ 80079b4:	0800e194 	.word	0x0800e194
+ 80079b8:	0800e198 	.word	0x0800e198
  80079bc:	20000804 	.word	0x20000804
- 80079c0:	0800e17c 	.word	0x0800e17c
+ 80079c0:	0800e19c 	.word	0x0800e19c
  80079c4:	2000095c 	.word	0x2000095c
- 80079c8:	0800e180 	.word	0x0800e180
+ 80079c8:	0800e1a0 	.word	0x0800e1a0
  80079cc:	20000cac 	.word	0x20000cac
- 80079d0:	0800e198 	.word	0x0800e198
- 80079d4:	0800e19c 	.word	0x0800e19c
+ 80079d0:	0800e1b8 	.word	0x0800e1b8
+ 80079d4:	0800e1bc 	.word	0x0800e1bc
  80079d8:	20000960 	.word	0x20000960
- 80079dc:	0800e1a0 	.word	0x0800e1a0
- 80079e0:	0800e1a4 	.word	0x0800e1a4
- 80079e4:	0800e1b8 	.word	0x0800e1b8
- 80079e8:	0800e1c8 	.word	0x0800e1c8
- 80079ec:	0800e1d0 	.word	0x0800e1d0
+ 80079dc:	0800e1c0 	.word	0x0800e1c0
+ 80079e0:	0800e1c4 	.word	0x0800e1c4
+ 80079e4:	0800e1d8 	.word	0x0800e1d8
+ 80079e8:	0800e1e8 	.word	0x0800e1e8
+ 80079ec:	0800e1f0 	.word	0x0800e1f0
 
 080079f0 <port_lock>:
 /**
@@ -23847,14 +23847,14 @@ void test_print_port_info(void) {
 #endif
 }
  8007ab2:	bd08      	pop	{r3, pc}
- 8007ab4:	0800e1d8 	.word	0x0800e1d8
- 8007ab8:	0800e1ec 	.word	0x0800e1ec
- 8007abc:	0800e20c 	.word	0x0800e20c
- 8007ac0:	0800e220 	.word	0x0800e220
- 8007ac4:	0800e22c 	.word	0x0800e22c
- 8007ac8:	0800e240 	.word	0x0800e240
- 8007acc:	0800e24c 	.word	0x0800e24c
- 8007ad0:	0800e260 	.word	0x0800e260
+ 8007ab4:	0800e1f8 	.word	0x0800e1f8
+ 8007ab8:	0800e20c 	.word	0x0800e20c
+ 8007abc:	0800e22c 	.word	0x0800e22c
+ 8007ac0:	0800e240 	.word	0x0800e240
+ 8007ac4:	0800e24c 	.word	0x0800e24c
+ 8007ac8:	0800e260 	.word	0x0800e260
+ 8007acc:	0800e26c 	.word	0x0800e26c
+ 8007ad0:	0800e280 	.word	0x0800e280
  8007ad4:	f3af 8000 	nop.w
  8007ad8:	f3af 8000 	nop.w
  8007adc:	f3af 8000 	nop.w
@@ -24046,14 +24046,14 @@ static void test_001_001_execute(void) {
 }
  8007bf2:	bd08      	pop	{r3, pc}
  8007bf4:	20000cac 	.word	0x20000cac
- 8007bf8:	0800e28c 	.word	0x0800e28c
- 8007bfc:	0800e2b8 	.word	0x0800e2b8
- 8007c00:	0800e2d8 	.word	0x0800e2d8
- 8007c04:	0800e2dc 	.word	0x0800e2dc
- 8007c08:	0800e2fc 	.word	0x0800e2fc
- 8007c0c:	0800e304 	.word	0x0800e304
- 8007c10:	0800e324 	.word	0x0800e324
- 8007c14:	0800e344 	.word	0x0800e344
+ 8007bf8:	0800e2ac 	.word	0x0800e2ac
+ 8007bfc:	0800e2d8 	.word	0x0800e2d8
+ 8007c00:	0800e2f8 	.word	0x0800e2f8
+ 8007c04:	0800e2fc 	.word	0x0800e2fc
+ 8007c08:	0800e31c 	.word	0x0800e31c
+ 8007c0c:	0800e324 	.word	0x0800e324
+ 8007c10:	0800e344 	.word	0x0800e344
+ 8007c14:	0800e364 	.word	0x0800e364
  8007c18:	f3af 8000 	nop.w
  8007c1c:	f3af 8000 	nop.w
 
@@ -24382,41 +24382,41 @@ static void test_001_002_execute(void) {
 }
  8007e8e:	bd08      	pop	{r3, pc}
  8007e90:	20000cac 	.word	0x20000cac
- 8007e94:	0800e380 	.word	0x0800e380
- 8007e98:	0800e2d8 	.word	0x0800e2d8
- 8007e9c:	0800e3a0 	.word	0x0800e3a0
- 8007ea0:	0800e3c0 	.word	0x0800e3c0
- 8007ea4:	0800e3e0 	.word	0x0800e3e0
- 8007ea8:	0800e400 	.word	0x0800e400
- 8007eac:	0800e420 	.word	0x0800e420
- 8007eb0:	0800e440 	.word	0x0800e440
- 8007eb4:	0800e460 	.word	0x0800e460
- 8007eb8:	0800e480 	.word	0x0800e480
- 8007ebc:	0800e4a0 	.word	0x0800e4a0
- 8007ec0:	0800e4c0 	.word	0x0800e4c0
- 8007ec4:	0800e4e0 	.word	0x0800e4e0
- 8007ec8:	0800e500 	.word	0x0800e500
- 8007ecc:	0800e520 	.word	0x0800e520
- 8007ed0:	0800e540 	.word	0x0800e540
- 8007ed4:	0800e560 	.word	0x0800e560
- 8007ed8:	0800e580 	.word	0x0800e580
- 8007edc:	0800e5a0 	.word	0x0800e5a0
- 8007ee0:	0800e5c0 	.word	0x0800e5c0
- 8007ee4:	0800e5e0 	.word	0x0800e5e0
- 8007ee8:	0800e600 	.word	0x0800e600
- 8007eec:	0800e620 	.word	0x0800e620
- 8007ef0:	0800e640 	.word	0x0800e640
- 8007ef4:	0800e660 	.word	0x0800e660
- 8007ef8:	0800e680 	.word	0x0800e680
- 8007efc:	0800e6a0 	.word	0x0800e6a0
- 8007f00:	0800e6c0 	.word	0x0800e6c0
- 8007f04:	0800e6e0 	.word	0x0800e6e0
- 8007f08:	0800e700 	.word	0x0800e700
- 8007f0c:	0800e720 	.word	0x0800e720
- 8007f10:	0800e740 	.word	0x0800e740
- 8007f14:	0800e760 	.word	0x0800e760
- 8007f18:	0800e780 	.word	0x0800e780
- 8007f1c:	0800e7a0 	.word	0x0800e7a0
+ 8007e94:	0800e3a0 	.word	0x0800e3a0
+ 8007e98:	0800e2f8 	.word	0x0800e2f8
+ 8007e9c:	0800e3c0 	.word	0x0800e3c0
+ 8007ea0:	0800e3e0 	.word	0x0800e3e0
+ 8007ea4:	0800e400 	.word	0x0800e400
+ 8007ea8:	0800e420 	.word	0x0800e420
+ 8007eac:	0800e440 	.word	0x0800e440
+ 8007eb0:	0800e460 	.word	0x0800e460
+ 8007eb4:	0800e480 	.word	0x0800e480
+ 8007eb8:	0800e4a0 	.word	0x0800e4a0
+ 8007ebc:	0800e4c0 	.word	0x0800e4c0
+ 8007ec0:	0800e4e0 	.word	0x0800e4e0
+ 8007ec4:	0800e500 	.word	0x0800e500
+ 8007ec8:	0800e520 	.word	0x0800e520
+ 8007ecc:	0800e540 	.word	0x0800e540
+ 8007ed0:	0800e560 	.word	0x0800e560
+ 8007ed4:	0800e580 	.word	0x0800e580
+ 8007ed8:	0800e5a0 	.word	0x0800e5a0
+ 8007edc:	0800e5c0 	.word	0x0800e5c0
+ 8007ee0:	0800e5e0 	.word	0x0800e5e0
+ 8007ee4:	0800e600 	.word	0x0800e600
+ 8007ee8:	0800e620 	.word	0x0800e620
+ 8007eec:	0800e640 	.word	0x0800e640
+ 8007ef0:	0800e660 	.word	0x0800e660
+ 8007ef4:	0800e680 	.word	0x0800e680
+ 8007ef8:	0800e6a0 	.word	0x0800e6a0
+ 8007efc:	0800e6c0 	.word	0x0800e6c0
+ 8007f00:	0800e6e0 	.word	0x0800e6e0
+ 8007f04:	0800e700 	.word	0x0800e700
+ 8007f08:	0800e720 	.word	0x0800e720
+ 8007f0c:	0800e740 	.word	0x0800e740
+ 8007f10:	0800e760 	.word	0x0800e760
+ 8007f14:	0800e780 	.word	0x0800e780
+ 8007f18:	0800e7a0 	.word	0x0800e7a0
+ 8007f1c:	0800e7c0 	.word	0x0800e7c0
 
 08007f20 <port_get_irq_status>:
 /**
@@ -25243,10 +25243,10 @@ static void test_002_001_execute(void) {
  80082f6:	f85d fb04 	ldr.w	pc, [sp], #4
  80082fa:	bf00      	nop
  80082fc:	20000cac 	.word	0x20000cac
- 8008300:	0800e7ec 	.word	0x0800e7ec
- 8008304:	0800e804 	.word	0x0800e804
- 8008308:	0800e828 	.word	0x0800e828
- 800830c:	0800e844 	.word	0x0800e844
+ 8008300:	0800e80c 	.word	0x0800e80c
+ 8008304:	0800e824 	.word	0x0800e824
+ 8008308:	0800e848 	.word	0x0800e848
+ 800830c:	0800e864 	.word	0x0800e864
 
 08008310 <test_002_002_execute>:
  * - [2.2.4] Testing chSysUnconditionalUnlock().
@@ -25368,7 +25368,7 @@ static void test_002_002_execute(void) {
  80083b4:	f85d fb04 	ldr.w	pc, [sp], #4
  80083b8:	20000cac 	.word	0x20000cac
  80083bc:	080081b1 	.word	0x080081b1
- 80083c0:	0800e88c 	.word	0x0800e88c
+ 80083c0:	0800e8ac 	.word	0x0800e8ac
  80083c4:	f3af 8000 	nop.w
  80083c8:	f3af 8000 	nop.w
  80083cc:	f3af 8000 	nop.w
@@ -25801,7 +25801,7 @@ static void test_003_001_execute(void) {
  80085ce:	b003      	add	sp, #12
  80085d0:	f85d fb04 	ldr.w	pc, [sp], #4
  80085d4:	20000cac 	.word	0x20000cac
- 80085d8:	0800e94c 	.word	0x0800e94c
+ 80085d8:	0800e96c 	.word	0x0800e96c
  80085dc:	f3af 8000 	nop.w
 
 080085e0 <test_003_002_execute>:
@@ -26099,16 +26099,16 @@ static void test_003_002_execute(void) {
  8008830:	b002      	add	sp, #8
  8008832:	bd10      	pop	{r4, pc}
  8008834:	20000cac 	.word	0x20000cac
- 8008838:	0800e278 	.word	0x0800e278
- 800883c:	0800e98c 	.word	0x0800e98c
+ 8008838:	0800e298 	.word	0x0800e298
+ 800883c:	0800e9ac 	.word	0x0800e9ac
  8008840:	080084b1 	.word	0x080084b1
  8008844:	20000cb0 	.word	0x20000cb0
- 8008848:	0800e990 	.word	0x0800e990
- 800884c:	0800e994 	.word	0x0800e994
- 8008850:	0800e998 	.word	0x0800e998
- 8008854:	0800e99c 	.word	0x0800e99c
- 8008858:	0800e9a0 	.word	0x0800e9a0
- 800885c:	0800e9a8 	.word	0x0800e9a8
+ 8008848:	0800e9b0 	.word	0x0800e9b0
+ 800884c:	0800e9b4 	.word	0x0800e9b4
+ 8008850:	0800e9b8 	.word	0x0800e9b8
+ 8008854:	0800e9bc 	.word	0x0800e9bc
+ 8008858:	0800e9c0 	.word	0x0800e9c0
+ 800885c:	0800e9c8 	.word	0x0800e9c8
 
 08008860 <test_003_003_execute>:
  * - [3.3.2] Thread priority is returned to the previous value then a
@@ -26219,8 +26219,8 @@ static void test_003_003_execute(void) {
  800890e:	b003      	add	sp, #12
  8008910:	f85d fb04 	ldr.w	pc, [sp], #4
  8008914:	20000cac 	.word	0x20000cac
- 8008918:	0800ea00 	.word	0x0800ea00
- 800891c:	0800ea24 	.word	0x0800ea24
+ 8008918:	0800ea20 	.word	0x0800ea20
+ 800891c:	0800ea44 	.word	0x0800ea44
 
 08008920 <test_003_004_execute>:
  * - [3.4.3] Raising thread priority above the boosted level.
@@ -26425,10 +26425,10 @@ static void test_003_004_execute(void) {
  8008a7e:	f85d fb04 	ldr.w	pc, [sp], #4
  8008a82:	bf00      	nop
  8008a84:	20000cac 	.word	0x20000cac
- 8008a88:	0800ea24 	.word	0x0800ea24
- 8008a8c:	0800ea00 	.word	0x0800ea00
- 8008a90:	0800ea68 	.word	0x0800ea68
- 8008a94:	0800ea90 	.word	0x0800ea90
+ 8008a88:	0800ea44 	.word	0x0800ea44
+ 8008a8c:	0800ea20 	.word	0x0800ea20
+ 8008a90:	0800ea88 	.word	0x0800ea88
+ 8008a94:	0800eab0 	.word	0x0800eab0
 	...
 
 08008aa0 <port_lock>:
@@ -26787,14 +26787,14 @@ static void test_004_001_execute(void) {
  8008c6c:	b004      	add	sp, #16
  8008c6e:	bd10      	pop	{r4, pc}
  8008c70:	20000cac 	.word	0x20000cac
- 8008c74:	0800e278 	.word	0x0800e278
- 8008c78:	0800eb04 	.word	0x0800eb04
+ 8008c74:	0800e298 	.word	0x0800e298
+ 8008c78:	0800eb24 	.word	0x0800eb24
  8008c7c:	08008b31 	.word	0x08008b31
  8008c80:	20000cb0 	.word	0x20000cb0
  8008c84:	2000097c 	.word	0x2000097c
- 8008c88:	0800eb08 	.word	0x0800eb08
- 8008c8c:	0800eb14 	.word	0x0800eb14
- 8008c90:	0800eb2c 	.word	0x0800eb2c
+ 8008c88:	0800eb28 	.word	0x0800eb28
+ 8008c8c:	0800eb34 	.word	0x0800eb34
+ 8008c90:	0800eb4c 	.word	0x0800eb4c
 	...
 
 08008ca0 <port_lock>:
@@ -27390,8 +27390,8 @@ static void test_005_001_execute(void) {
  8008fb4:	f85d fb04 	ldr.w	pc, [sp], #4
  8008fb8:	20000cac 	.word	0x20000cac
  8008fbc:	20000980 	.word	0x20000980
- 8008fc0:	0800eb7c 	.word	0x0800eb7c
- 8008fc4:	0800eb90 	.word	0x0800eb90
+ 8008fc0:	0800eb9c 	.word	0x0800eb9c
+ 8008fc4:	0800ebb0 	.word	0x0800ebb0
  8008fc8:	f3af 8000 	nop.w
  8008fcc:	f3af 8000 	nop.w
 
@@ -27543,17 +27543,17 @@ static void test_005_002_execute(void) {
  80090cc:	b002      	add	sp, #8
  80090ce:	bd10      	pop	{r4, pc}
  80090d0:	20000cac 	.word	0x20000cac
- 80090d4:	0800e278 	.word	0x0800e278
- 80090d8:	0800ebe0 	.word	0x0800ebe0
+ 80090d4:	0800e298 	.word	0x0800e298
+ 80090d8:	0800ec00 	.word	0x0800ec00
  80090dc:	08008e31 	.word	0x08008e31
  80090e0:	20000cb0 	.word	0x20000cb0
- 80090e4:	0800ebe4 	.word	0x0800ebe4
- 80090e8:	0800ebe8 	.word	0x0800ebe8
- 80090ec:	0800ebec 	.word	0x0800ebec
- 80090f0:	0800ebf0 	.word	0x0800ebf0
+ 80090e4:	0800ec04 	.word	0x0800ec04
+ 80090e8:	0800ec08 	.word	0x0800ec08
+ 80090ec:	0800ec0c 	.word	0x0800ec0c
+ 80090f0:	0800ec10 	.word	0x0800ec10
  80090f4:	20000980 	.word	0x20000980
- 80090f8:	0800ebf4 	.word	0x0800ebf4
- 80090fc:	0800ebfc 	.word	0x0800ebfc
+ 80090f8:	0800ec14 	.word	0x0800ec14
+ 80090fc:	0800ec1c 	.word	0x0800ec1c
 
 08009100 <test_005_003_setup>:
  * - [5.3.2] Testing non-timeout condition.
@@ -27815,15 +27815,15 @@ static void test_005_003_execute(void) {
  80092be:	bf00      	nop
  80092c0:	20000cac 	.word	0x20000cac
  80092c4:	20000980 	.word	0x20000980
- 80092c8:	0800ec3c 	.word	0x0800ec3c
- 80092cc:	0800ec54 	.word	0x0800ec54
- 80092d0:	0800ec64 	.word	0x0800ec64
- 80092d4:	0800e278 	.word	0x0800e278
+ 80092c8:	0800ec5c 	.word	0x0800ec5c
+ 80092cc:	0800ec74 	.word	0x0800ec74
+ 80092d0:	0800ec84 	.word	0x0800ec84
+ 80092d4:	0800e298 	.word	0x0800e298
  80092d8:	08008e51 	.word	0x08008e51
  80092dc:	20000cb0 	.word	0x20000cb0
- 80092e0:	0800ebf4 	.word	0x0800ebf4
- 80092e4:	0800ebfc 	.word	0x0800ebfc
- 80092e8:	0800ec78 	.word	0x0800ec78
+ 80092e0:	0800ec14 	.word	0x0800ec14
+ 80092e4:	0800ec1c 	.word	0x0800ec1c
+ 80092e8:	0800ec98 	.word	0x0800ec98
  80092ec:	f3af 8000 	nop.w
 
 080092f0 <test_005_004_setup>:
@@ -27922,13 +27922,13 @@ static void test_005_004_execute(void) {
  8009388:	b002      	add	sp, #8
  800938a:	bd10      	pop	{r4, pc}
  800938c:	20000cac 	.word	0x20000cac
- 8009390:	0800e278 	.word	0x0800e278
- 8009394:	0800ebe0 	.word	0x0800ebe0
+ 8009390:	0800e298 	.word	0x0800e298
+ 8009394:	0800ec00 	.word	0x0800ec00
  8009398:	08008e31 	.word	0x08008e31
  800939c:	20000cb0 	.word	0x20000cb0
  80093a0:	20000980 	.word	0x20000980
- 80093a4:	0800ecb4 	.word	0x0800ecb4
- 80093a8:	0800ebfc 	.word	0x0800ebfc
+ 80093a4:	0800ecd4 	.word	0x0800ecd4
+ 80093a8:	0800ec1c 	.word	0x0800ec1c
  80093ac:	f3af 8000 	nop.w
 
 080093b0 <test_005_005_setup>:
@@ -28071,12 +28071,12 @@ static void test_005_005_execute(void) {
  8009484:	b002      	add	sp, #8
  8009486:	bd10      	pop	{r4, pc}
  8009488:	20000cac 	.word	0x20000cac
- 800948c:	0800e278 	.word	0x0800e278
+ 800948c:	0800e298 	.word	0x0800e298
  8009490:	08008e81 	.word	0x08008e81
  8009494:	20000cb0 	.word	0x20000cb0
  8009498:	20000980 	.word	0x20000980
- 800949c:	0800ec54 	.word	0x0800ec54
- 80094a0:	0800ec64 	.word	0x0800ec64
+ 800949c:	0800ec74 	.word	0x0800ec74
+ 80094a0:	0800ec84 	.word	0x0800ec84
  80094a4:	f3af 8000 	nop.w
  80094a8:	f3af 8000 	nop.w
  80094ac:	f3af 8000 	nop.w
@@ -28369,14 +28369,14 @@ static void test_005_006_execute(void) {
  80096bc:	b006      	add	sp, #24
  80096be:	bd10      	pop	{r4, pc}
  80096c0:	20000cac 	.word	0x20000cac
- 80096c4:	0800ed38 	.word	0x0800ed38
- 80096c8:	0800e278 	.word	0x0800e278
+ 80096c4:	0800ed58 	.word	0x0800ed58
+ 80096c8:	0800e298 	.word	0x0800e298
  80096cc:	08008ea1 	.word	0x08008ea1
  80096d0:	20000cb0 	.word	0x20000cb0
- 80096d4:	0800ed44 	.word	0x0800ed44
- 80096d8:	0800ed58 	.word	0x0800ed58
- 80096dc:	0800ed64 	.word	0x0800ed64
- 80096e0:	0800ed78 	.word	0x0800ed78
+ 80096d4:	0800ed64 	.word	0x0800ed64
+ 80096d8:	0800ed78 	.word	0x0800ed78
+ 80096dc:	0800ed84 	.word	0x0800ed84
+ 80096e0:	0800ed98 	.word	0x0800ed98
 	...
 
 080096f0 <port_lock>:
@@ -28868,17 +28868,17 @@ static void test_006_001_execute(void) {
  80099bc:	f85d fb04 	ldr.w	pc, [sp], #4
  80099c0:	20000cac 	.word	0x20000cac
  80099c4:	2000083c 	.word	0x2000083c
- 80099c8:	0800e278 	.word	0x0800e278
- 80099cc:	0800edd4 	.word	0x0800edd4
+ 80099c8:	0800e298 	.word	0x0800e298
+ 80099cc:	0800edf4 	.word	0x0800edf4
  80099d0:	08009771 	.word	0x08009771
  80099d4:	20000cb0 	.word	0x20000cb0
- 80099d8:	0800edd8 	.word	0x0800edd8
- 80099dc:	0800eddc 	.word	0x0800eddc
- 80099e0:	0800ede0 	.word	0x0800ede0
- 80099e4:	0800ede4 	.word	0x0800ede4
- 80099e8:	0800ede8 	.word	0x0800ede8
- 80099ec:	0800ee00 	.word	0x0800ee00
- 80099f0:	0800ee08 	.word	0x0800ee08
+ 80099d8:	0800edf8 	.word	0x0800edf8
+ 80099dc:	0800edfc 	.word	0x0800edfc
+ 80099e0:	0800ee00 	.word	0x0800ee00
+ 80099e4:	0800ee04 	.word	0x0800ee04
+ 80099e8:	0800ee08 	.word	0x0800ee08
+ 80099ec:	0800ee20 	.word	0x0800ee20
+ 80099f0:	0800ee28 	.word	0x0800ee28
  80099f4:	f3af 8000 	nop.w
  80099f8:	f3af 8000 	nop.w
  80099fc:	f3af 8000 	nop.w
@@ -29149,14 +29149,14 @@ static void test_006_004_execute(void) {
  8009ba2:	b007      	add	sp, #28
  8009ba4:	f85d fb04 	ldr.w	pc, [sp], #4
  8009ba8:	20000cac 	.word	0x20000cac
- 8009bac:	0800e278 	.word	0x0800e278
- 8009bb0:	0800ede4 	.word	0x0800ede4
+ 8009bac:	0800e298 	.word	0x0800e298
+ 8009bb0:	0800ee04 	.word	0x0800ee04
  8009bb4:	080097a1 	.word	0x080097a1
  8009bb8:	20000cb0 	.word	0x20000cb0
- 8009bbc:	0800ede0 	.word	0x0800ede0
+ 8009bbc:	0800ee00 	.word	0x0800ee00
  8009bc0:	080097d1 	.word	0x080097d1
  8009bc4:	2000083c 	.word	0x2000083c
- 8009bc8:	0800ede8 	.word	0x0800ede8
+ 8009bc8:	0800ee08 	.word	0x0800ee08
  8009bcc:	2000084c 	.word	0x2000084c
 
 08009bd0 <test_006_005_setup>:
@@ -29413,11 +29413,11 @@ static void test_006_005_execute(void) {
  8009d7c:	f85d fb04 	ldr.w	pc, [sp], #4
  8009d80:	20000cac 	.word	0x20000cac
  8009d84:	2000083c 	.word	0x2000083c
- 8009d88:	0800ee74 	.word	0x0800ee74
- 8009d8c:	0800ee84 	.word	0x0800ee84
- 8009d90:	0800ee90 	.word	0x0800ee90
- 8009d94:	0800ee9c 	.word	0x0800ee9c
- 8009d98:	0800ede8 	.word	0x0800ede8
+ 8009d88:	0800ee94 	.word	0x0800ee94
+ 8009d8c:	0800eea4 	.word	0x0800eea4
+ 8009d90:	0800eeb0 	.word	0x0800eeb0
+ 8009d94:	0800eebc 	.word	0x0800eebc
+ 8009d98:	0800ee08 	.word	0x0800ee08
  8009d9c:	f3af 8000 	nop.w
 
 08009da0 <test_006_007_setup>:
@@ -29573,17 +29573,17 @@ static void test_006_007_execute(void) {
  8009eaa:	b005      	add	sp, #20
  8009eac:	f85d fb04 	ldr.w	pc, [sp], #4
  8009eb0:	20000cac 	.word	0x20000cac
- 8009eb4:	0800e278 	.word	0x0800e278
- 8009eb8:	0800edd4 	.word	0x0800edd4
+ 8009eb4:	0800e298 	.word	0x0800e298
+ 8009eb8:	0800edf4 	.word	0x0800edf4
  8009ebc:	08009801 	.word	0x08009801
  8009ec0:	20000cb0 	.word	0x20000cb0
- 8009ec4:	0800edd8 	.word	0x0800edd8
- 8009ec8:	0800eddc 	.word	0x0800eddc
- 8009ecc:	0800ede0 	.word	0x0800ede0
- 8009ed0:	0800ede4 	.word	0x0800ede4
+ 8009ec4:	0800edf8 	.word	0x0800edf8
+ 8009ec8:	0800edfc 	.word	0x0800edfc
+ 8009ecc:	0800ee00 	.word	0x0800ee00
+ 8009ed0:	0800ee04 	.word	0x0800ee04
  8009ed4:	2000085c 	.word	0x2000085c
- 8009ed8:	0800ee00 	.word	0x0800ee00
- 8009edc:	0800ee08 	.word	0x0800ee08
+ 8009ed8:	0800ee20 	.word	0x0800ee20
+ 8009edc:	0800ee28 	.word	0x0800ee28
 
 08009ee0 <test_006_008_setup>:
  * - [6.8.2] Broarcasting on the condition variable then waiting for
@@ -29719,17 +29719,17 @@ static void test_006_008_execute(void) {
  8009fc6:	b005      	add	sp, #20
  8009fc8:	f85d fb04 	ldr.w	pc, [sp], #4
  8009fcc:	20000cac 	.word	0x20000cac
- 8009fd0:	0800e278 	.word	0x0800e278
- 8009fd4:	0800edd4 	.word	0x0800edd4
+ 8009fd0:	0800e298 	.word	0x0800e298
+ 8009fd4:	0800edf4 	.word	0x0800edf4
  8009fd8:	08009801 	.word	0x08009801
  8009fdc:	20000cb0 	.word	0x20000cb0
- 8009fe0:	0800edd8 	.word	0x0800edd8
- 8009fe4:	0800eddc 	.word	0x0800eddc
- 8009fe8:	0800ede0 	.word	0x0800ede0
- 8009fec:	0800ede4 	.word	0x0800ede4
+ 8009fe0:	0800edf8 	.word	0x0800edf8
+ 8009fe4:	0800edfc 	.word	0x0800edfc
+ 8009fe8:	0800ee00 	.word	0x0800ee00
+ 8009fec:	0800ee04 	.word	0x0800ee04
  8009ff0:	2000085c 	.word	0x2000085c
- 8009ff4:	0800ee00 	.word	0x0800ee00
- 8009ff8:	0800ee08 	.word	0x0800ee08
+ 8009ff4:	0800ee20 	.word	0x0800ee20
+ 8009ff8:	0800ee28 	.word	0x0800ee28
  8009ffc:	f3af 8000 	nop.w
 
 0800a000 <test_006_009_setup>:
@@ -29891,17 +29891,17 @@ static void test_006_009_execute(void) {
  800a0de:	b005      	add	sp, #20
  800a0e0:	f85d fb04 	ldr.w	pc, [sp], #4
  800a0e4:	20000cac 	.word	0x20000cac
- 800a0e8:	0800e278 	.word	0x0800e278
- 800a0ec:	0800ede4 	.word	0x0800ede4
+ 800a0e8:	0800e298 	.word	0x0800e298
+ 800a0ec:	0800ee04 	.word	0x0800ee04
  800a0f0:	08009831 	.word	0x08009831
  800a0f4:	20000cb0 	.word	0x20000cb0
- 800a0f8:	0800eddc 	.word	0x0800eddc
+ 800a0f8:	0800edfc 	.word	0x0800edfc
  800a0fc:	08009801 	.word	0x08009801
- 800a100:	0800ede0 	.word	0x0800ede0
+ 800a100:	0800ee00 	.word	0x0800ee00
  800a104:	08009881 	.word	0x08009881
  800a108:	2000085c 	.word	0x2000085c
- 800a10c:	0800ef48 	.word	0x0800ef48
- 800a110:	0800ee08 	.word	0x0800ee08
+ 800a10c:	0800ef68 	.word	0x0800ef68
+ 800a110:	0800ee28 	.word	0x0800ee28
 	...
 
 0800a120 <chThdGetSelfX>:
@@ -30097,11 +30097,11 @@ static void test_007_001_execute(void) {
  800a200:	bd30      	pop	{r4, r5, pc}
  800a202:	bf00      	nop
  800a204:	20000cac 	.word	0x20000cac
- 800a208:	0800e278 	.word	0x0800e278
+ 800a208:	0800e298 	.word	0x0800e298
  800a20c:	0800a151 	.word	0x0800a151
  800a210:	20000cb0 	.word	0x20000cb0
- 800a214:	0800efa0 	.word	0x0800efa0
- 800a218:	0800efa8 	.word	0x0800efa8
+ 800a214:	0800efc0 	.word	0x0800efc0
+ 800a218:	0800efc8 	.word	0x0800efc8
  800a21c:	00000000 	.word	0x00000000
 
 0800a220 <port_lock>:
@@ -30559,8 +30559,8 @@ static void test_008_001_execute(void) {
  800a496:	bf00      	nop
  800a498:	20000cac 	.word	0x20000cac
  800a49c:	20000864 	.word	0x20000864
- 800a4a0:	0800eff8 	.word	0x0800eff8
- 800a4a4:	0800f004 	.word	0x0800f004
+ 800a4a0:	0800f018 	.word	0x0800f018
+ 800a4a4:	0800f024 	.word	0x0800f024
  800a4a8:	f3af 8000 	nop.w
  800a4ac:	f3af 8000 	nop.w
 
@@ -30608,9 +30608,9 @@ static void test_008_002_execute(void) {
  800a4e0:	bd08      	pop	{r3, pc}
  800a4e2:	bf00      	nop
  800a4e4:	20000cac 	.word	0x20000cac
- 800a4e8:	0800efec 	.word	0x0800efec
- 800a4ec:	0800f038 	.word	0x0800f038
- 800a4f0:	0800f03c 	.word	0x0800f03c
+ 800a4e8:	0800f00c 	.word	0x0800f00c
+ 800a4ec:	0800f058 	.word	0x0800f058
+ 800a4f0:	0800f05c 	.word	0x0800f05c
  800a4f4:	f3af 8000 	nop.w
  800a4f8:	f3af 8000 	nop.w
  800a4fc:	f3af 8000 	nop.w
@@ -30831,13 +30831,13 @@ static void test_008_003_execute(void) {
  800a664:	b005      	add	sp, #20
  800a666:	bd30      	pop	{r4, r5, pc}
  800a668:	20000cac 	.word	0x20000cac
- 800a66c:	0800f078 	.word	0x0800f078
- 800a670:	0800f08c 	.word	0x0800f08c
- 800a674:	0800e278 	.word	0x0800e278
+ 800a66c:	0800f098 	.word	0x0800f098
+ 800a670:	0800f0ac 	.word	0x0800f0ac
+ 800a674:	0800e298 	.word	0x0800e298
  800a678:	0800a371 	.word	0x0800a371
  800a67c:	20000cb0 	.word	0x20000cb0
- 800a680:	0800f098 	.word	0x0800f098
- 800a684:	0800f0ac 	.word	0x0800f0ac
+ 800a680:	0800f0b8 	.word	0x0800f0b8
+ 800a684:	0800f0cc 	.word	0x0800f0cc
  800a688:	f3af 8000 	nop.w
  800a68c:	f3af 8000 	nop.w
 
@@ -31021,13 +31021,13 @@ static void test_008_004_execute(void) {
  800a7a8:	b005      	add	sp, #20
  800a7aa:	bd30      	pop	{r4, r5, pc}
  800a7ac:	20000cac 	.word	0x20000cac
- 800a7b0:	0800f0f8 	.word	0x0800f0f8
- 800a7b4:	0800f08c 	.word	0x0800f08c
- 800a7b8:	0800e278 	.word	0x0800e278
+ 800a7b0:	0800f118 	.word	0x0800f118
+ 800a7b4:	0800f0ac 	.word	0x0800f0ac
+ 800a7b8:	0800e298 	.word	0x0800e298
  800a7bc:	0800a371 	.word	0x0800a371
  800a7c0:	20000cb0 	.word	0x20000cb0
- 800a7c4:	0800f098 	.word	0x0800f098
- 800a7c8:	0800f0ac 	.word	0x0800f0ac
+ 800a7c4:	0800f0b8 	.word	0x0800f0b8
+ 800a7c8:	0800f0cc 	.word	0x0800f0cc
  800a7cc:	f3af 8000 	nop.w
 
 0800a7d0 <test_008_005_setup>:
@@ -31221,13 +31221,13 @@ static void test_008_005_execute(void) {
  800a8f0:	b005      	add	sp, #20
  800a8f2:	bd30      	pop	{r4, r5, pc}
  800a8f4:	20000cac 	.word	0x20000cac
- 800a8f8:	0800f0f8 	.word	0x0800f0f8
- 800a8fc:	0800f08c 	.word	0x0800f08c
- 800a900:	0800e278 	.word	0x0800e278
+ 800a8f8:	0800f118 	.word	0x0800f118
+ 800a8fc:	0800f0ac 	.word	0x0800f0ac
+ 800a900:	0800e298 	.word	0x0800e298
  800a904:	0800a371 	.word	0x0800a371
  800a908:	20000cb0 	.word	0x20000cb0
- 800a90c:	0800f098 	.word	0x0800f098
- 800a910:	0800f148 	.word	0x0800f148
+ 800a90c:	0800f0b8 	.word	0x0800f0b8
+ 800a910:	0800f168 	.word	0x0800f168
  800a914:	f3af 8000 	nop.w
  800a918:	f3af 8000 	nop.w
  800a91c:	f3af 8000 	nop.w
@@ -31389,7 +31389,7 @@ static void test_008_006_execute(void) {
  800aa36:	b003      	add	sp, #12
  800aa38:	f85d fb04 	ldr.w	pc, [sp], #4
  800aa3c:	20000cac 	.word	0x20000cac
- 800aa40:	0800f194 	.word	0x0800f194
+ 800aa40:	0800f1b4 	.word	0x0800f1b4
  800aa44:	f3af 8000 	nop.w
  800aa48:	f3af 8000 	nop.w
  800aa4c:	f3af 8000 	nop.w
@@ -31585,13 +31585,13 @@ static void test_008_007_execute(void) {
  800ab90:	20000cac 	.word	0x20000cac
  800ab94:	20000864 	.word	0x20000864
  800ab98:	20000868 	.word	0x20000868
- 800ab9c:	0800e278 	.word	0x0800e278
- 800aba0:	0800f1d0 	.word	0x0800f1d0
+ 800ab9c:	0800e298 	.word	0x0800e298
+ 800aba0:	0800f1f0 	.word	0x0800f1f0
  800aba4:	0800a391 	.word	0x0800a391
  800aba8:	20000cb0 	.word	0x20000cb0
- 800abac:	0800f098 	.word	0x0800f098
- 800abb0:	0800f08c 	.word	0x0800f08c
- 800abb4:	0800f004 	.word	0x0800f004
+ 800abac:	0800f0b8 	.word	0x0800f0b8
+ 800abb0:	0800f0ac 	.word	0x0800f0ac
+ 800abb4:	0800f024 	.word	0x0800f024
 	...
 
 0800abc0 <port_lock>:
@@ -32183,16 +32183,16 @@ static void test_009_001_execute(void) {
  800af4a:	bf00      	nop
  800af4c:	20000cac 	.word	0x20000cac
  800af50:	2000086c 	.word	0x2000086c
- 800af54:	0800f228 	.word	0x0800f228
- 800af58:	0800f234 	.word	0x0800f234
- 800af5c:	0800f240 	.word	0x0800f240
- 800af60:	0800f24c 	.word	0x0800f24c
- 800af64:	0800f270 	.word	0x0800f270
- 800af68:	0800f294 	.word	0x0800f294
- 800af6c:	0800f2a8 	.word	0x0800f2a8
- 800af70:	0800f2c0 	.word	0x0800f2c0
- 800af74:	0800f2cc 	.word	0x0800f2cc
- 800af78:	0800f2d8 	.word	0x0800f2d8
+ 800af54:	0800f248 	.word	0x0800f248
+ 800af58:	0800f254 	.word	0x0800f254
+ 800af5c:	0800f260 	.word	0x0800f260
+ 800af60:	0800f26c 	.word	0x0800f26c
+ 800af64:	0800f290 	.word	0x0800f290
+ 800af68:	0800f2b4 	.word	0x0800f2b4
+ 800af6c:	0800f2c8 	.word	0x0800f2c8
+ 800af70:	0800f2e0 	.word	0x0800f2e0
+ 800af74:	0800f2ec 	.word	0x0800f2ec
+ 800af78:	0800f2f8 	.word	0x0800f2f8
       msg1 = chMBFetch(&mb1, &msg2, TIME_INFINITE);
  800af7c:	ab01      	add	r3, sp, #4
  800af7e:	4857      	ldr	r0, [pc, #348]	; (800b0dc <test_009_001_execute+0x42c>)
@@ -32382,14 +32382,14 @@ static void test_009_001_execute(void) {
  800b0d6:	f85d fb04 	ldr.w	pc, [sp], #4
  800b0da:	bf00      	nop
  800b0dc:	2000086c 	.word	0x2000086c
- 800b0e0:	0800f2a8 	.word	0x0800f2a8
- 800b0e4:	0800f2f0 	.word	0x0800f2f0
- 800b0e8:	0800f2f8 	.word	0x0800f2f8
+ 800b0e0:	0800f2c8 	.word	0x0800f2c8
+ 800b0e4:	0800f310 	.word	0x0800f310
+ 800b0e8:	0800f318 	.word	0x0800f318
  800b0ec:	20000cac 	.word	0x20000cac
- 800b0f0:	0800f234 	.word	0x0800f234
- 800b0f4:	0800f240 	.word	0x0800f240
- 800b0f8:	0800f24c 	.word	0x0800f24c
- 800b0fc:	0800f270 	.word	0x0800f270
+ 800b0f0:	0800f254 	.word	0x0800f254
+ 800b0f4:	0800f260 	.word	0x0800f260
+ 800b0f8:	0800f26c 	.word	0x0800f26c
+ 800b0fc:	0800f290 	.word	0x0800f290
 
 0800b100 <test_009_002_setup>:
  * - [9.2.7] Testing final conditions. Data pointers must be aligned to
@@ -32799,17 +32799,17 @@ static void test_009_002_execute(void) {
  800b3d6:	e082      	b.n	800b4de <test_009_002_execute+0x3ae>
  800b3d8:	20000cac 	.word	0x20000cac
  800b3dc:	2000086c 	.word	0x2000086c
- 800b3e0:	0800f228 	.word	0x0800f228
- 800b3e4:	0800f234 	.word	0x0800f234
- 800b3e8:	0800f240 	.word	0x0800f240
- 800b3ec:	0800f24c 	.word	0x0800f24c
- 800b3f0:	0800f270 	.word	0x0800f270
- 800b3f4:	0800f2a8 	.word	0x0800f2a8
- 800b3f8:	0800f2c0 	.word	0x0800f2c0
- 800b3fc:	0800f2cc 	.word	0x0800f2cc
- 800b400:	0800f2d8 	.word	0x0800f2d8
- 800b404:	0800f2f0 	.word	0x0800f2f0
- 800b408:	0800f2f8 	.word	0x0800f2f8
+ 800b3e0:	0800f248 	.word	0x0800f248
+ 800b3e4:	0800f254 	.word	0x0800f254
+ 800b3e8:	0800f260 	.word	0x0800f260
+ 800b3ec:	0800f26c 	.word	0x0800f26c
+ 800b3f0:	0800f290 	.word	0x0800f290
+ 800b3f4:	0800f2c8 	.word	0x0800f2c8
+ 800b3f8:	0800f2e0 	.word	0x0800f2e0
+ 800b3fc:	0800f2ec 	.word	0x0800f2ec
+ 800b400:	0800f2f8 	.word	0x0800f2f8
+ 800b404:	0800f310 	.word	0x0800f310
+ 800b408:	0800f318 	.word	0x0800f318
     msg1 = chMBFetch(&mb1, &msg2, TIME_INFINITE);
  800b40c:	ab01      	add	r3, sp, #4
  800b40e:	4835      	ldr	r0, [pc, #212]	; (800b4e4 <test_009_002_execute+0x3b4>)
@@ -32917,12 +32917,12 @@ static void test_009_002_execute(void) {
  800b4de:	b005      	add	sp, #20
  800b4e0:	f85d fb04 	ldr.w	pc, [sp], #4
  800b4e4:	2000086c 	.word	0x2000086c
- 800b4e8:	0800f2a8 	.word	0x0800f2a8
+ 800b4e8:	0800f2c8 	.word	0x0800f2c8
  800b4ec:	20000cac 	.word	0x20000cac
- 800b4f0:	0800f234 	.word	0x0800f234
- 800b4f4:	0800f240 	.word	0x0800f240
- 800b4f8:	0800f24c 	.word	0x0800f24c
- 800b4fc:	0800f270 	.word	0x0800f270
+ 800b4f0:	0800f254 	.word	0x0800f254
+ 800b4f4:	0800f260 	.word	0x0800f260
+ 800b4f8:	0800f26c 	.word	0x0800f26c
+ 800b4fc:	0800f290 	.word	0x0800f290
 
 0800b500 <test_009_003_setup>:
  *   active state.
@@ -33179,7 +33179,7 @@ static void test_009_003_execute(void) {
  800b6ac:	f85d fb04 	ldr.w	pc, [sp], #4
  800b6b0:	20000cac 	.word	0x20000cac
  800b6b4:	2000086c 	.word	0x2000086c
- 800b6b8:	0800f2a8 	.word	0x0800f2a8
+ 800b6b8:	0800f2c8 	.word	0x0800f2c8
  800b6bc:	00000000 	.word	0x00000000
 
 0800b6c0 <null_provider>:
@@ -33443,10 +33443,10 @@ static void test_010_001_execute(void) {
  800b828:	20000cac 	.word	0x20000cac
  800b82c:	20000894 	.word	0x20000894
  800b830:	2000099c 	.word	0x2000099c
- 800b834:	0800f3b0 	.word	0x0800f3b0
- 800b838:	0800f3bc 	.word	0x0800f3bc
+ 800b834:	0800f3d0 	.word	0x0800f3d0
+ 800b838:	0800f3dc 	.word	0x0800f3dc
  800b83c:	0800b6c1 	.word	0x0800b6c1
- 800b840:	0800f3cc 	.word	0x0800f3cc
+ 800b840:	0800f3ec 	.word	0x0800f3ec
  800b844:	f3af 8000 	nop.w
  800b848:	f3af 8000 	nop.w
  800b84c:	f3af 8000 	nop.w
@@ -33663,8 +33663,8 @@ static void test_010_002_execute(void) {
  800b970:	20000cac 	.word	0x20000cac
  800b974:	200008a0 	.word	0x200008a0
  800b978:	2000099c 	.word	0x2000099c
- 800b97c:	0800f3b0 	.word	0x0800f3b0
- 800b980:	0800f3bc 	.word	0x0800f3bc
+ 800b97c:	0800f3d0 	.word	0x0800f3d0
+ 800b980:	0800f3dc 	.word	0x0800f3dc
  800b984:	f3af 8000 	nop.w
  800b988:	f3af 8000 	nop.w
  800b98c:	f3af 8000 	nop.w
@@ -33719,7 +33719,7 @@ static void test_010_003_execute(void) {
  800b9ce:	bd08      	pop	{r3, pc}
  800b9d0:	20000cac 	.word	0x20000cac
  800b9d4:	200008a0 	.word	0x200008a0
- 800b9d8:	0800f3bc 	.word	0x0800f3bc
+ 800b9d8:	0800f3dc 	.word	0x0800f3dc
  800b9dc:	00000000 	.word	0x00000000
 
 0800b9e0 <chHeapAlloc>:
@@ -34130,12 +34130,12 @@ static void test_011_001_execute(void) {
  800bca2:	e0ab      	b.n	800bdfc <test_011_001_execute+0x3dc>
  800bca4:	20000cac 	.word	0x20000cac
  800bca8:	20001330 	.word	0x20001330
- 800bcac:	0800f4a8 	.word	0x0800f4a8
- 800bcb0:	0800f4b8 	.word	0x0800f4b8
- 800bcb4:	0800f4d0 	.word	0x0800f4d0
- 800bcb8:	0800f4e4 	.word	0x0800f4e4
- 800bcbc:	0800f4f8 	.word	0x0800f4f8
- 800bcc0:	0800f510 	.word	0x0800f510
+ 800bcac:	0800f4c8 	.word	0x0800f4c8
+ 800bcb0:	0800f4d8 	.word	0x0800f4d8
+ 800bcb4:	0800f4f0 	.word	0x0800f4f0
+ 800bcb8:	0800f504 	.word	0x0800f504
+ 800bcbc:	0800f518 	.word	0x0800f518
+ 800bcc0:	0800f530 	.word	0x0800f530
   }
 
   /* [11.1.8] Skipping a fragment, the first fragment in the list is
@@ -34312,11 +34312,11 @@ static void test_011_001_execute(void) {
  800be02:	bf00      	nop
  800be04:	20000cac 	.word	0x20000cac
  800be08:	20001330 	.word	0x20001330
- 800be0c:	0800f510 	.word	0x0800f510
- 800be10:	0800f4a8 	.word	0x0800f4a8
- 800be14:	0800f4d0 	.word	0x0800f4d0
- 800be18:	0800f520 	.word	0x0800f520
- 800be1c:	0800f52c 	.word	0x0800f52c
+ 800be0c:	0800f530 	.word	0x0800f530
+ 800be10:	0800f4c8 	.word	0x0800f4c8
+ 800be14:	0800f4f0 	.word	0x0800f4f0
+ 800be18:	0800f540 	.word	0x0800f540
+ 800be1c:	0800f54c 	.word	0x0800f54c
 
 0800be20 <test_011_002_execute>:
  *   block is freed using chHeapFree(), must not fail.
@@ -34399,8 +34399,8 @@ static void test_011_002_execute(void) {
  800be94:	f85d fb04 	ldr.w	pc, [sp], #4
  800be98:	20000cac 	.word	0x20000cac
  800be9c:	20001330 	.word	0x20001330
- 800bea0:	0800f4d0 	.word	0x0800f4d0
- 800bea4:	0800f4b8 	.word	0x0800f4b8
+ 800bea0:	0800f4f0 	.word	0x0800f4f0
+ 800bea4:	0800f4d8 	.word	0x0800f4d8
 	...
 
 0800beb0 <chThdGetSelfX>:
@@ -34737,23 +34737,23 @@ static void test_012_001_execute(void) {
  800c0aa:	bf00      	nop
  800c0ac:	20000cac 	.word	0x20000cac
  800c0b0:	200009b0 	.word	0x200009b0
- 800c0b4:	0800f598 	.word	0x0800f598
+ 800c0b4:	0800f5b8 	.word	0x0800f5b8
  800c0b8:	0800bed1 	.word	0x0800bed1
- 800c0bc:	0800f5b0 	.word	0x0800f5b0
- 800c0c0:	0800f5a8 	.word	0x0800f5a8
+ 800c0bc:	0800f5d0 	.word	0x0800f5d0
+ 800c0c0:	0800f5c8 	.word	0x0800f5c8
  800c0c4:	20000cb0 	.word	0x20000cb0
- 800c0c8:	0800f5b4 	.word	0x0800f5b4
- 800c0cc:	0800f5d4 	.word	0x0800f5d4
- 800c0d0:	0800f5cc 	.word	0x0800f5cc
- 800c0d4:	0800f5e0 	.word	0x0800f5e0
+ 800c0c8:	0800f5d4 	.word	0x0800f5d4
+ 800c0cc:	0800f5f4 	.word	0x0800f5f4
+ 800c0d0:	0800f5ec 	.word	0x0800f5ec
+ 800c0d4:	0800f600 	.word	0x0800f600
  800c0d8:	000200c8 	.word	0x000200c8
- 800c0dc:	0800f5d8 	.word	0x0800f5d8
- 800c0e0:	0800f5e4 	.word	0x0800f5e4
- 800c0e4:	0800f600 	.word	0x0800f600
- 800c0e8:	0800f604 	.word	0x0800f604
- 800c0ec:	0800f618 	.word	0x0800f618
- 800c0f0:	0800f630 	.word	0x0800f630
- 800c0f4:	0800f64c 	.word	0x0800f64c
+ 800c0dc:	0800f5f8 	.word	0x0800f5f8
+ 800c0e0:	0800f604 	.word	0x0800f604
+ 800c0e4:	0800f620 	.word	0x0800f620
+ 800c0e8:	0800f624 	.word	0x0800f624
+ 800c0ec:	0800f638 	.word	0x0800f638
+ 800c0f0:	0800f650 	.word	0x0800f650
+ 800c0f4:	0800f66c 	.word	0x0800f66c
  800c0f8:	f3af 8000 	nop.w
  800c0fc:	f3af 8000 	nop.w
 
@@ -35033,26 +35033,26 @@ static void test_012_002_execute(void) {
  800c2ae:	f85d fb04 	ldr.w	pc, [sp], #4
  800c2b2:	bf00      	nop
  800c2b4:	20000cac 	.word	0x20000cac
- 800c2b8:	0800e278 	.word	0x0800e278
+ 800c2b8:	0800e298 	.word	0x0800e298
  800c2bc:	200009d0 	.word	0x200009d0
- 800c2c0:	0800f5b0 	.word	0x0800f5b0
- 800c2c4:	0800f5a8 	.word	0x0800f5a8
+ 800c2c0:	0800f5d0 	.word	0x0800f5d0
+ 800c2c4:	0800f5c8 	.word	0x0800f5c8
  800c2c8:	0800bed1 	.word	0x0800bed1
  800c2cc:	20000cb0 	.word	0x20000cb0
- 800c2d0:	0800f5d4 	.word	0x0800f5d4
- 800c2d4:	0800f5cc 	.word	0x0800f5cc
- 800c2d8:	0800f5e0 	.word	0x0800f5e0
- 800c2dc:	0800f5d8 	.word	0x0800f5d8
- 800c2e0:	0800f6a8 	.word	0x0800f6a8
- 800c2e4:	0800f6a0 	.word	0x0800f6a0
- 800c2e8:	0800f6b4 	.word	0x0800f6b4
- 800c2ec:	0800f6ac 	.word	0x0800f6ac
- 800c2f0:	0800f5b4 	.word	0x0800f5b4
- 800c2f4:	0800f5e4 	.word	0x0800f5e4
- 800c2f8:	0800f6b8 	.word	0x0800f6b8
- 800c2fc:	0800f604 	.word	0x0800f604
- 800c300:	0800f6c0 	.word	0x0800f6c0
- 800c304:	0800f6d0 	.word	0x0800f6d0
+ 800c2d0:	0800f5f4 	.word	0x0800f5f4
+ 800c2d4:	0800f5ec 	.word	0x0800f5ec
+ 800c2d8:	0800f600 	.word	0x0800f600
+ 800c2dc:	0800f5f8 	.word	0x0800f5f8
+ 800c2e0:	0800f6c8 	.word	0x0800f6c8
+ 800c2e4:	0800f6c0 	.word	0x0800f6c0
+ 800c2e8:	0800f6d4 	.word	0x0800f6d4
+ 800c2ec:	0800f6cc 	.word	0x0800f6cc
+ 800c2f0:	0800f5d4 	.word	0x0800f5d4
+ 800c2f4:	0800f604 	.word	0x0800f604
+ 800c2f8:	0800f6d8 	.word	0x0800f6d8
+ 800c2fc:	0800f624 	.word	0x0800f624
+ 800c300:	0800f6e0 	.word	0x0800f6e0
+ 800c304:	0800f6f0 	.word	0x0800f6f0
 	...
 
 0800c310 <port_lock>:
@@ -35632,12 +35632,12 @@ static void test_013_001_execute(void) {
  800c5ec:	bd10      	pop	{r4, pc}
  800c5ee:	bf00      	nop
  800c5f0:	20000cac 	.word	0x20000cac
- 800c5f4:	0800e278 	.word	0x0800e278
+ 800c5f4:	0800e298 	.word	0x0800e298
  800c5f8:	0800c441 	.word	0x0800c441
  800c5fc:	20000cb0 	.word	0x20000cb0
- 800c600:	0800f724 	.word	0x0800f724
- 800c604:	0800f734 	.word	0x0800f734
- 800c608:	0800f740 	.word	0x0800f740
+ 800c600:	0800f744 	.word	0x0800f744
+ 800c604:	0800f754 	.word	0x0800f754
+ 800c608:	0800f760 	.word	0x0800f760
  800c60c:	f3af 8000 	nop.w
 
 0800c610 <test_013_002_execute>:
@@ -35721,12 +35721,12 @@ static void test_013_002_execute(void) {
  800c67c:	bd10      	pop	{r4, pc}
  800c67e:	bf00      	nop
  800c680:	20000cac 	.word	0x20000cac
- 800c684:	0800e278 	.word	0x0800e278
+ 800c684:	0800e298 	.word	0x0800e298
  800c688:	0800c441 	.word	0x0800c441
  800c68c:	20000cb0 	.word	0x20000cb0
- 800c690:	0800f724 	.word	0x0800f724
- 800c694:	0800f734 	.word	0x0800f734
- 800c698:	0800f740 	.word	0x0800f740
+ 800c690:	0800f744 	.word	0x0800f744
+ 800c694:	0800f754 	.word	0x0800f754
+ 800c698:	0800f760 	.word	0x0800f760
  800c69c:	f3af 8000 	nop.w
 
 0800c6a0 <test_013_003_execute>:
@@ -35878,13 +35878,13 @@ static void test_013_003_execute(void) {
  800c798:	b004      	add	sp, #16
  800c79a:	bd10      	pop	{r4, pc}
  800c79c:	20000cac 	.word	0x20000cac
- 800c7a0:	0800e278 	.word	0x0800e278
+ 800c7a0:	0800e298 	.word	0x0800e298
  800c7a4:	0800c441 	.word	0x0800c441
  800c7a8:	20000cb0 	.word	0x20000cb0
  800c7ac:	0800c4c1 	.word	0x0800c4c1
- 800c7b0:	0800f724 	.word	0x0800f724
- 800c7b4:	0800f734 	.word	0x0800f734
- 800c7b8:	0800f740 	.word	0x0800f740
+ 800c7b0:	0800f744 	.word	0x0800f744
+ 800c7b4:	0800f754 	.word	0x0800f754
+ 800c7b8:	0800f760 	.word	0x0800f760
  800c7bc:	f3af 8000 	nop.w
 
 0800c7c0 <test_013_004_execute>:
@@ -36023,11 +36023,11 @@ static void test_013_004_execute(void) {
  800c880:	b006      	add	sp, #24
  800c882:	bd10      	pop	{r4, pc}
  800c884:	20000cac 	.word	0x20000cac
- 800c888:	0800e278 	.word	0x0800e278
+ 800c888:	0800e298 	.word	0x0800e298
  800c88c:	0800c4e1 	.word	0x0800c4e1
  800c890:	20000cb0 	.word	0x20000cb0
- 800c894:	0800f724 	.word	0x0800f724
- 800c898:	0800f740 	.word	0x0800f740
+ 800c894:	0800f744 	.word	0x0800f744
+ 800c898:	0800f760 	.word	0x0800f760
  800c89c:	f3af 8000 	nop.w
 
 0800c8a0 <test_013_005_execute>:
@@ -36116,10 +36116,10 @@ static void test_013_005_execute(void) {
  800c912:	b007      	add	sp, #28
  800c914:	f85d fb04 	ldr.w	pc, [sp], #4
  800c918:	20000cac 	.word	0x20000cac
- 800c91c:	0800e278 	.word	0x0800e278
+ 800c91c:	0800e298 	.word	0x0800e298
  800c920:	0800c4c1 	.word	0x0800c4c1
- 800c924:	0800f724 	.word	0x0800f724
- 800c928:	0800f7f0 	.word	0x0800f7f0
+ 800c924:	0800f744 	.word	0x0800f744
+ 800c928:	0800f810 	.word	0x0800f810
  800c92c:	f3af 8000 	nop.w
 
 0800c930 <test_013_006_execute>:
@@ -36212,10 +36212,10 @@ static void test_013_006_execute(void) {
  800c9a2:	b007      	add	sp, #28
  800c9a4:	f85d fb04 	ldr.w	pc, [sp], #4
  800c9a8:	20000cac 	.word	0x20000cac
- 800c9ac:	0800e278 	.word	0x0800e278
+ 800c9ac:	0800e298 	.word	0x0800e298
  800c9b0:	0800c4c1 	.word	0x0800c4c1
- 800c9b4:	0800f724 	.word	0x0800f724
- 800c9b8:	0800f7f0 	.word	0x0800f7f0
+ 800c9b4:	0800f744 	.word	0x0800f744
+ 800c9b8:	0800f810 	.word	0x0800f810
  800c9bc:	f3af 8000 	nop.w
 
 0800c9c0 <test_013_007_setup>:
@@ -36414,13 +36414,13 @@ static void test_013_007_execute(void) {
  800cb00:	bd10      	pop	{r4, pc}
  800cb02:	bf00      	nop
  800cb04:	20000cac 	.word	0x20000cac
- 800cb08:	0800e278 	.word	0x0800e278
+ 800cb08:	0800e298 	.word	0x0800e298
  800cb0c:	0800c511 	.word	0x0800c511
  800cb10:	20000cb0 	.word	0x20000cb0
  800cb14:	200009dc 	.word	0x200009dc
- 800cb18:	0800f724 	.word	0x0800f724
- 800cb1c:	0800f864 	.word	0x0800f864
- 800cb20:	0800f740 	.word	0x0800f740
+ 800cb18:	0800f744 	.word	0x0800f744
+ 800cb1c:	0800f884 	.word	0x0800f884
+ 800cb20:	0800f760 	.word	0x0800f760
  800cb24:	f3af 8000 	nop.w
  800cb28:	f3af 8000 	nop.w
  800cb2c:	f3af 8000 	nop.w
@@ -36562,11 +36562,11 @@ static void test_013_008_execute(void) {
  800cc1c:	b004      	add	sp, #16
  800cc1e:	bd10      	pop	{r4, pc}
  800cc20:	20000cac 	.word	0x20000cac
- 800cc24:	0800e278 	.word	0x0800e278
+ 800cc24:	0800e298 	.word	0x0800e298
  800cc28:	0800c541 	.word	0x0800c541
  800cc2c:	20000cb0 	.word	0x20000cb0
- 800cc30:	0800f724 	.word	0x0800f724
- 800cc34:	0800f740 	.word	0x0800f740
+ 800cc30:	0800f744 	.word	0x0800f744
+ 800cc34:	0800f760 	.word	0x0800f760
  800cc38:	f3af 8000 	nop.w
  800cc3c:	f3af 8000 	nop.w
 
@@ -36667,8 +36667,8 @@ static void test_013_009_execute(void) {
  800ccc8:	200009f8 	.word	0x200009f8
  800cccc:	0800c431 	.word	0x0800c431
  800ccd0:	20000a0c 	.word	0x20000a0c
- 800ccd4:	0800f724 	.word	0x0800f724
- 800ccd8:	0800f8d8 	.word	0x0800f8d8
+ 800ccd4:	0800f744 	.word	0x0800f744
+ 800ccd8:	0800f8f8 	.word	0x0800f8f8
  800ccdc:	f3af 8000 	nop.w
 
 0800cce0 <test_013_010_setup>:
@@ -36778,8 +36778,8 @@ static void test_013_010_execute(void) {
  800cd70:	f85d fb04 	ldr.w	pc, [sp], #4
  800cd74:	20000cac 	.word	0x20000cac
  800cd78:	200009dc 	.word	0x200009dc
- 800cd7c:	0800f724 	.word	0x0800f724
- 800cd80:	0800f91c 	.word	0x0800f91c
+ 800cd7c:	0800f744 	.word	0x0800f744
+ 800cd80:	0800f93c 	.word	0x0800f93c
  800cd84:	f3af 8000 	nop.w
  800cd88:	f3af 8000 	nop.w
  800cd8c:	f3af 8000 	nop.w
@@ -36891,8 +36891,8 @@ static void test_013_011_execute(void) {
  800ce20:	f85d fb04 	ldr.w	pc, [sp], #4
  800ce24:	20000cac 	.word	0x20000cac
  800ce28:	200009e8 	.word	0x200009e8
- 800ce2c:	0800f724 	.word	0x0800f724
- 800ce30:	0800f960 	.word	0x0800f960
+ 800ce2c:	0800f744 	.word	0x0800f744
+ 800ce30:	0800f980 	.word	0x0800f980
  800ce34:	f3af 8000 	nop.w
  800ce38:	f3af 8000 	nop.w
  800ce3c:	f3af 8000 	nop.w
@@ -37073,16 +37073,16 @@ static void test_013_012_execute(void) {
 }
  800cf1a:	bd08      	pop	{r3, pc}
  800cf1c:	20000cac 	.word	0x20000cac
- 800cf20:	0800f9a0 	.word	0x0800f9a0
- 800cf24:	0800f9b0 	.word	0x0800f9b0
- 800cf28:	0800f9b8 	.word	0x0800f9b8
- 800cf2c:	0800f9c8 	.word	0x0800f9c8
- 800cf30:	0800f9d8 	.word	0x0800f9d8
- 800cf34:	0800f9e8 	.word	0x0800f9e8
- 800cf38:	0800f9f8 	.word	0x0800f9f8
- 800cf3c:	0800fa08 	.word	0x0800fa08
- 800cf40:	0800fa18 	.word	0x0800fa18
- 800cf44:	0800fa28 	.word	0x0800fa28
+ 800cf20:	0800f9c0 	.word	0x0800f9c0
+ 800cf24:	0800f9d0 	.word	0x0800f9d0
+ 800cf28:	0800f9d8 	.word	0x0800f9d8
+ 800cf2c:	0800f9e8 	.word	0x0800f9e8
+ 800cf30:	0800f9f8 	.word	0x0800f9f8
+ 800cf34:	0800fa08 	.word	0x0800fa08
+ 800cf38:	0800fa18 	.word	0x0800fa18
+ 800cf3c:	0800fa28 	.word	0x0800fa28
+ 800cf40:	0800fa38 	.word	0x0800fa38
+ 800cf44:	0800fa48 	.word	0x0800fa48
 	...
 
 0800cf50 <long_to_string_with_divisor>:
@@ -37845,7 +37845,7 @@ unsigned_common:
  800d458:	4618      	mov	r0, r3
  800d45a:	b011      	add	sp, #68	; 0x44
  800d45c:	f85d fb04 	ldr.w	pc, [sp], #4
- 800d460:	0800fa8c 	.word	0x0800fa8c
+ 800d460:	0800faac 	.word	0x0800faac
  800d464:	f3af 8000 	nop.w
  800d468:	f3af 8000 	nop.w
  800d46c:	f3af 8000 	nop.w
@@ -38008,7 +38008,7 @@ static size_t _writes(void *ip, const uint8_t *bp, size_t n) {
  800d534:	4618      	mov	r0, r3
  800d536:	9902      	ldr	r1, [sp, #8]
  800d538:	9a01      	ldr	r2, [sp, #4]
- 800d53a:	f000 fa3b 	bl	800d9b4 <memcpy>
+ 800d53a:	f000 fa4d 	bl	800d9d8 <memcpy>
   msp->eos += n;
  800d53e:	9b05      	ldr	r3, [sp, #20]
  800d540:	68da      	ldr	r2, [r3, #12]
@@ -38063,7 +38063,7 @@ static size_t _reads(void *ip, uint8_t *bp, size_t n) {
  800d594:	9802      	ldr	r0, [sp, #8]
  800d596:	4619      	mov	r1, r3
  800d598:	9a01      	ldr	r2, [sp, #4]
- 800d59a:	f000 fa0b 	bl	800d9b4 <memcpy>
+ 800d59a:	f000 fa1d 	bl	800d9d8 <memcpy>
   msp->offset += n;
  800d59e:	9b05      	ldr	r3, [sp, #20]
  800d5a0:	691a      	ldr	r2, [r3, #16]
@@ -38205,7 +38205,7 @@ void msObjectInit(MemoryStream *msp, uint8_t *buffer,
 }
  800d678:	b004      	add	sp, #16
  800d67a:	4770      	bx	lr
- 800d67c:	0800fa94 	.word	0x0800fa94
+ 800d67c:	0800fab4 	.word	0x0800fab4
 
 0800d680 <writes>:
 
@@ -38304,7 +38304,7 @@ void nullObjectInit(NullStream *nsp) {
  800d6da:	b002      	add	sp, #8
  800d6dc:	4770      	bx	lr
  800d6de:	bf00      	nop
- 800d6e0:	0800faa4 	.word	0x0800faa4
+ 800d6e0:	0800fac4 	.word	0x0800fac4
 	...
 
 0800d6f0 <main>:
@@ -38314,8 +38314,8 @@ void nullObjectInit(NullStream *nsp) {
  * Application entry point.
  */
 int main(void) {
- 800d6f0:	b500      	push	{lr}
- 800d6f2:	b097      	sub	sp, #92	; 0x5c
+ 800d6f0:	b510      	push	{r4, lr}
+ 800d6f2:	b096      	sub	sp, #88	; 0x58
    * - HAL initialization, this also initializes the configured device drivers
    *   and performs the board-specific initializations.
    * - Kernel initialization, the main() function becomes a thread and the
@@ -38328,33 +38328,33 @@ int main(void) {
 
   //I2C (accelerometer)
    palSetPadMode(GPIOB, 8, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
- 800d6fc:	48a9      	ldr	r0, [pc, #676]	; (800d9a4 <main+0x2b4>)
+ 800d6fc:	48b1      	ldr	r0, [pc, #708]	; (800d9c4 <main+0x2d4>)
  800d6fe:	f44f 7180 	mov.w	r1, #256	; 0x100
  800d702:	f240 2206 	movw	r2, #518	; 0x206
  800d706:	f7f8 fca3 	bl	8006050 <_pal_lld_setgroupmode>
    palSetPadMode(GPIOB, 9, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
- 800d70a:	48a6      	ldr	r0, [pc, #664]	; (800d9a4 <main+0x2b4>)
+ 800d70a:	48ae      	ldr	r0, [pc, #696]	; (800d9c4 <main+0x2d4>)
  800d70c:	f44f 7100 	mov.w	r1, #512	; 0x200
  800d710:	f240 2206 	movw	r2, #518	; 0x206
  800d714:	f7f8 fc9c 	bl	8006050 <_pal_lld_setgroupmode>
 
    palSetPadMode(GPIOB, 10, PAL_MODE_ALTERNATE(7) );
- 800d718:	48a2      	ldr	r0, [pc, #648]	; (800d9a4 <main+0x2b4>)
+ 800d718:	48aa      	ldr	r0, [pc, #680]	; (800d9c4 <main+0x2d4>)
  800d71a:	f44f 6180 	mov.w	r1, #1024	; 0x400
  800d71e:	f240 3282 	movw	r2, #898	; 0x382
  800d722:	f7f8 fc95 	bl	8006050 <_pal_lld_setgroupmode>
     palSetPadMode(GPIOB, 11, PAL_MODE_ALTERNATE(7) );
- 800d726:	489f      	ldr	r0, [pc, #636]	; (800d9a4 <main+0x2b4>)
+ 800d726:	48a7      	ldr	r0, [pc, #668]	; (800d9c4 <main+0x2d4>)
  800d728:	f44f 6100 	mov.w	r1, #2048	; 0x800
  800d72c:	f240 3282 	movw	r2, #898	; 0x382
  800d730:	f7f8 fc8e 	bl	8006050 <_pal_lld_setgroupmode>
 
    i2cStart(&I2CD1, &i2ccfg);
- 800d734:	489c      	ldr	r0, [pc, #624]	; (800d9a8 <main+0x2b8>)
- 800d736:	499d      	ldr	r1, [pc, #628]	; (800d9ac <main+0x2bc>)
+ 800d734:	48a4      	ldr	r0, [pc, #656]	; (800d9c8 <main+0x2d8>)
+ 800d736:	49a5      	ldr	r1, [pc, #660]	; (800d9cc <main+0x2dc>)
  800d738:	f7f7 fc9a 	bl	8005070 <i2cStart>
    sdStart(&SD3, NULL);
- 800d73c:	489c      	ldr	r0, [pc, #624]	; (800d9b0 <main+0x2c0>)
+ 800d73c:	48a4      	ldr	r0, [pc, #656]	; (800d9d0 <main+0x2e0>)
  800d73e:	2100      	movs	r1, #0
  800d740:	f7f7 feee 	bl	8005520 <sdStart>
 
@@ -38441,7 +38441,7 @@ int main(void) {
  800d7a6:	9301      	str	r3, [sp, #4]
  800d7a8:	f242 7310 	movw	r3, #10000	; 0x2710
  800d7ac:	9302      	str	r3, [sp, #8]
- 800d7ae:	487e      	ldr	r0, [pc, #504]	; (800d9a8 <main+0x2b8>)
+ 800d7ae:	4886      	ldr	r0, [pc, #536]	; (800d9c8 <main+0x2d8>)
  800d7b0:	216a      	movs	r1, #106	; 0x6a
  800d7b2:	9a12      	ldr	r2, [sp, #72]	; 0x48
  800d7b4:	2301      	movs	r3, #1
@@ -38466,7 +38466,7 @@ int main(void) {
  800d7da:	9301      	str	r3, [sp, #4]
  800d7dc:	f242 7310 	movw	r3, #10000	; 0x2710
  800d7e0:	9302      	str	r3, [sp, #8]
- 800d7e2:	4871      	ldr	r0, [pc, #452]	; (800d9a8 <main+0x2b8>)
+ 800d7e2:	4879      	ldr	r0, [pc, #484]	; (800d9c8 <main+0x2d8>)
  800d7e4:	216a      	movs	r1, #106	; 0x6a
  800d7e6:	9a12      	ldr	r2, [sp, #72]	; 0x48
  800d7e8:	2302      	movs	r3, #2
@@ -38488,7 +38488,7 @@ int main(void) {
  800d806:	9301      	str	r3, [sp, #4]
  800d808:	f242 7310 	movw	r3, #10000	; 0x2710
  800d80c:	9302      	str	r3, [sp, #8]
- 800d80e:	4866      	ldr	r0, [pc, #408]	; (800d9a8 <main+0x2b8>)
+ 800d80e:	486e      	ldr	r0, [pc, #440]	; (800d9c8 <main+0x2d8>)
  800d810:	216a      	movs	r1, #106	; 0x6a
  800d812:	9a12      	ldr	r2, [sp, #72]	; 0x48
  800d814:	2301      	movs	r3, #1
@@ -38514,7 +38514,7 @@ int main(void) {
  800d83a:	9301      	str	r3, [sp, #4]
  800d83c:	f242 7310 	movw	r3, #10000	; 0x2710
  800d840:	9302      	str	r3, [sp, #8]
- 800d842:	4859      	ldr	r0, [pc, #356]	; (800d9a8 <main+0x2b8>)
+ 800d842:	4861      	ldr	r0, [pc, #388]	; (800d9c8 <main+0x2d8>)
  800d844:	216a      	movs	r1, #106	; 0x6a
  800d846:	9a12      	ldr	r2, [sp, #72]	; 0x48
  800d848:	2301      	movs	r3, #1
@@ -38554,7 +38554,7 @@ int main(void) {
  800d88e:	9301      	str	r3, [sp, #4]
  800d890:	f242 7310 	movw	r3, #10000	; 0x2710
  800d894:	9302      	str	r3, [sp, #8]
- 800d896:	4844      	ldr	r0, [pc, #272]	; (800d9a8 <main+0x2b8>)
+ 800d896:	484c      	ldr	r0, [pc, #304]	; (800d9c8 <main+0x2d8>)
  800d898:	216a      	movs	r1, #106	; 0x6a
  800d89a:	9a12      	ldr	r2, [sp, #72]	; 0x48
  800d89c:	2301      	movs	r3, #1
@@ -38578,7 +38578,7 @@ int main(void) {
  800d8c2:	9301      	str	r3, [sp, #4]
  800d8c4:	f242 7310 	movw	r3, #10000	; 0x2710
  800d8c8:	9302      	str	r3, [sp, #8]
- 800d8ca:	4837      	ldr	r0, [pc, #220]	; (800d9a8 <main+0x2b8>)
+ 800d8ca:	483f      	ldr	r0, [pc, #252]	; (800d9c8 <main+0x2d8>)
  800d8cc:	216a      	movs	r1, #106	; 0x6a
  800d8ce:	9a12      	ldr	r2, [sp, #72]	; 0x48
  800d8d0:	2301      	movs	r3, #1
@@ -38619,7 +38619,7 @@ int main(void) {
  800d916:	9301      	str	r3, [sp, #4]
  800d918:	f242 7310 	movw	r3, #10000	; 0x2710
  800d91c:	9302      	str	r3, [sp, #8]
- 800d91e:	4822      	ldr	r0, [pc, #136]	; (800d9a8 <main+0x2b8>)
+ 800d91e:	482a      	ldr	r0, [pc, #168]	; (800d9c8 <main+0x2d8>)
  800d920:	216a      	movs	r1, #106	; 0x6a
  800d922:	9a12      	ldr	r2, [sp, #72]	; 0x48
  800d924:	2301      	movs	r3, #1
@@ -38644,7 +38644,7 @@ int main(void) {
  800d94a:	9301      	str	r3, [sp, #4]
  800d94c:	f242 7310 	movw	r3, #10000	; 0x2710
  800d950:	9302      	str	r3, [sp, #8]
- 800d952:	4815      	ldr	r0, [pc, #84]	; (800d9a8 <main+0x2b8>)
+ 800d952:	481d      	ldr	r0, [pc, #116]	; (800d9c8 <main+0x2d8>)
  800d954:	216a      	movs	r1, #106	; 0x6a
  800d956:	9a12      	ldr	r2, [sp, #72]	; 0x48
  800d958:	2301      	movs	r3, #1
@@ -38670,363 +38670,380 @@ int main(void) {
        memcpy(&z_data, &u_z_data, sizeof(u_z_data));
  800d982:	f8bd 3012 	ldrh.w	r3, [sp, #18]
  800d986:	f8ad 3010 	strh.w	r3, [sp, #16]
-       int x_in_gs;
 
-      // chprintf((BaseSequentialStream *)&SD3, "%d, %d, %d \r\n",x_data, y_data, z_data);
+
+       //printf
+      chprintf((BaseSequentialStream *)&SD3, "%d, %d, %d \r\n",x_data, y_data, z_data);
+ 800d98a:	f8bd 3028 	ldrh.w	r3, [sp, #40]	; 0x28
+ 800d98e:	b21a      	sxth	r2, r3
+ 800d990:	f8bd 301c 	ldrh.w	r3, [sp, #28]
+ 800d994:	b21c      	sxth	r4, r3
+ 800d996:	f8bd 3010 	ldrh.w	r3, [sp, #16]
+ 800d99a:	b21b      	sxth	r3, r3
+ 800d99c:	9300      	str	r3, [sp, #0]
+ 800d99e:	480c      	ldr	r0, [pc, #48]	; (800d9d0 <main+0x2e0>)
+ 800d9a0:	490c      	ldr	r1, [pc, #48]	; (800d9d4 <main+0x2e4>)
+ 800d9a2:	4623      	mov	r3, r4
+ 800d9a4:	f7ff fd64 	bl	800d470 <chprintf>
+
+
+
 
        //stop compiler complaining
        (void) err;
- 800d98a:	9b0e      	ldr	r3, [sp, #56]	; 0x38
+ 800d9a8:	9b0e      	ldr	r3, [sp, #56]	; 0x38
        (void) err1;
- 800d98c:	9b0d      	ldr	r3, [sp, #52]	; 0x34
+ 800d9aa:	9b0d      	ldr	r3, [sp, #52]	; 0x34
        (void) err2;
- 800d98e:	9b0c      	ldr	r3, [sp, #48]	; 0x30
+ 800d9ac:	9b0c      	ldr	r3, [sp, #48]	; 0x30
        (void) err3;
- 800d990:	9b0b      	ldr	r3, [sp, #44]	; 0x2c
+ 800d9ae:	9b0b      	ldr	r3, [sp, #44]	; 0x2c
        (void) err4;
- 800d992:	9b09      	ldr	r3, [sp, #36]	; 0x24
+ 800d9b0:	9b09      	ldr	r3, [sp, #36]	; 0x24
        (void) err5;
- 800d994:	9b08      	ldr	r3, [sp, #32]
+ 800d9b2:	9b08      	ldr	r3, [sp, #32]
        (void) err6;
- 800d996:	9b06      	ldr	r3, [sp, #24]
+ 800d9b4:	9b06      	ldr	r3, [sp, #24]
        (void) err7;
- 800d998:	9b05      	ldr	r3, [sp, #20]
+ 800d9b6:	9b05      	ldr	r3, [sp, #20]
 
        chThdSleepMilliseconds(100);
- 800d99a:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
- 800d99e:	f7f3 febf 	bl	8001720 <chThdSleep>
+ 800d9b8:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+ 800d9bc:	f7f3 feb0 	bl	8001720 <chThdSleep>
 
      }
- 800d9a2:	e6f3      	b.n	800d78c <main+0x9c>
- 800d9a4:	40020400 	.word	0x40020400
- 800d9a8:	20000b78 	.word	0x20000b78
- 800d9ac:	0800fab4 	.word	0x0800fab4
- 800d9b0:	20000c2c 	.word	0x20000c2c
+ 800d9c0:	e6e4      	b.n	800d78c <main+0x9c>
+ 800d9c2:	bf00      	nop
+ 800d9c4:	40020400 	.word	0x40020400
+ 800d9c8:	20000b78 	.word	0x20000b78
+ 800d9cc:	0800fad4 	.word	0x0800fad4
+ 800d9d0:	20000c2c 	.word	0x20000c2c
+ 800d9d4:	0800fae0 	.word	0x0800fae0
 
-0800d9b4 <memcpy>:
- 800d9b4:	4684      	mov	ip, r0
- 800d9b6:	ea41 0300 	orr.w	r3, r1, r0
- 800d9ba:	f013 0303 	ands.w	r3, r3, #3
- 800d9be:	d16d      	bne.n	800da9c <memcpy+0xe8>
- 800d9c0:	3a40      	subs	r2, #64	; 0x40
- 800d9c2:	d341      	bcc.n	800da48 <memcpy+0x94>
- 800d9c4:	f851 3b04 	ldr.w	r3, [r1], #4
- 800d9c8:	f840 3b04 	str.w	r3, [r0], #4
- 800d9cc:	f851 3b04 	ldr.w	r3, [r1], #4
- 800d9d0:	f840 3b04 	str.w	r3, [r0], #4
- 800d9d4:	f851 3b04 	ldr.w	r3, [r1], #4
- 800d9d8:	f840 3b04 	str.w	r3, [r0], #4
- 800d9dc:	f851 3b04 	ldr.w	r3, [r1], #4
- 800d9e0:	f840 3b04 	str.w	r3, [r0], #4
- 800d9e4:	f851 3b04 	ldr.w	r3, [r1], #4
- 800d9e8:	f840 3b04 	str.w	r3, [r0], #4
- 800d9ec:	f851 3b04 	ldr.w	r3, [r1], #4
- 800d9f0:	f840 3b04 	str.w	r3, [r0], #4
- 800d9f4:	f851 3b04 	ldr.w	r3, [r1], #4
- 800d9f8:	f840 3b04 	str.w	r3, [r0], #4
- 800d9fc:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da00:	f840 3b04 	str.w	r3, [r0], #4
- 800da04:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da08:	f840 3b04 	str.w	r3, [r0], #4
- 800da0c:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da10:	f840 3b04 	str.w	r3, [r0], #4
- 800da14:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da18:	f840 3b04 	str.w	r3, [r0], #4
- 800da1c:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da20:	f840 3b04 	str.w	r3, [r0], #4
- 800da24:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da28:	f840 3b04 	str.w	r3, [r0], #4
- 800da2c:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da30:	f840 3b04 	str.w	r3, [r0], #4
- 800da34:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da38:	f840 3b04 	str.w	r3, [r0], #4
- 800da3c:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da40:	f840 3b04 	str.w	r3, [r0], #4
- 800da44:	3a40      	subs	r2, #64	; 0x40
- 800da46:	d2bd      	bcs.n	800d9c4 <memcpy+0x10>
- 800da48:	3230      	adds	r2, #48	; 0x30
- 800da4a:	d311      	bcc.n	800da70 <memcpy+0xbc>
- 800da4c:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da50:	f840 3b04 	str.w	r3, [r0], #4
- 800da54:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da58:	f840 3b04 	str.w	r3, [r0], #4
- 800da5c:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da60:	f840 3b04 	str.w	r3, [r0], #4
- 800da64:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da68:	f840 3b04 	str.w	r3, [r0], #4
- 800da6c:	3a10      	subs	r2, #16
- 800da6e:	d2ed      	bcs.n	800da4c <memcpy+0x98>
- 800da70:	320c      	adds	r2, #12
- 800da72:	d305      	bcc.n	800da80 <memcpy+0xcc>
- 800da74:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da78:	f840 3b04 	str.w	r3, [r0], #4
- 800da7c:	3a04      	subs	r2, #4
- 800da7e:	d2f9      	bcs.n	800da74 <memcpy+0xc0>
- 800da80:	3204      	adds	r2, #4
- 800da82:	d008      	beq.n	800da96 <memcpy+0xe2>
- 800da84:	07d2      	lsls	r2, r2, #31
- 800da86:	bf1c      	itt	ne
- 800da88:	f811 3b01 	ldrbne.w	r3, [r1], #1
- 800da8c:	f800 3b01 	strbne.w	r3, [r0], #1
- 800da90:	d301      	bcc.n	800da96 <memcpy+0xe2>
- 800da92:	880b      	ldrh	r3, [r1, #0]
- 800da94:	8003      	strh	r3, [r0, #0]
- 800da96:	4660      	mov	r0, ip
- 800da98:	4770      	bx	lr
- 800da9a:	bf00      	nop
- 800da9c:	2a08      	cmp	r2, #8
- 800da9e:	d313      	bcc.n	800dac8 <memcpy+0x114>
- 800daa0:	078b      	lsls	r3, r1, #30
- 800daa2:	d08d      	beq.n	800d9c0 <memcpy+0xc>
- 800daa4:	f010 0303 	ands.w	r3, r0, #3
- 800daa8:	d08a      	beq.n	800d9c0 <memcpy+0xc>
- 800daaa:	f1c3 0304 	rsb	r3, r3, #4
- 800daae:	1ad2      	subs	r2, r2, r3
- 800dab0:	07db      	lsls	r3, r3, #31
- 800dab2:	bf1c      	itt	ne
- 800dab4:	f811 3b01 	ldrbne.w	r3, [r1], #1
- 800dab8:	f800 3b01 	strbne.w	r3, [r0], #1
- 800dabc:	d380      	bcc.n	800d9c0 <memcpy+0xc>
- 800dabe:	f831 3b02 	ldrh.w	r3, [r1], #2
- 800dac2:	f820 3b02 	strh.w	r3, [r0], #2
- 800dac6:	e77b      	b.n	800d9c0 <memcpy+0xc>
- 800dac8:	3a04      	subs	r2, #4
- 800daca:	d3d9      	bcc.n	800da80 <memcpy+0xcc>
- 800dacc:	3a01      	subs	r2, #1
- 800dace:	f811 3b01 	ldrb.w	r3, [r1], #1
- 800dad2:	f800 3b01 	strb.w	r3, [r0], #1
- 800dad6:	d2f9      	bcs.n	800dacc <memcpy+0x118>
- 800dad8:	780b      	ldrb	r3, [r1, #0]
- 800dada:	7003      	strb	r3, [r0, #0]
- 800dadc:	784b      	ldrb	r3, [r1, #1]
- 800dade:	7043      	strb	r3, [r0, #1]
- 800dae0:	788b      	ldrb	r3, [r1, #2]
- 800dae2:	7083      	strb	r3, [r0, #2]
- 800dae4:	4660      	mov	r0, ip
- 800dae6:	4770      	bx	lr
+0800d9d8 <memcpy>:
+ 800d9d8:	4684      	mov	ip, r0
+ 800d9da:	ea41 0300 	orr.w	r3, r1, r0
+ 800d9de:	f013 0303 	ands.w	r3, r3, #3
+ 800d9e2:	d16d      	bne.n	800dac0 <memcpy+0xe8>
+ 800d9e4:	3a40      	subs	r2, #64	; 0x40
+ 800d9e6:	d341      	bcc.n	800da6c <memcpy+0x94>
+ 800d9e8:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800d9ec:	f840 3b04 	str.w	r3, [r0], #4
+ 800d9f0:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800d9f4:	f840 3b04 	str.w	r3, [r0], #4
+ 800d9f8:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800d9fc:	f840 3b04 	str.w	r3, [r0], #4
+ 800da00:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da04:	f840 3b04 	str.w	r3, [r0], #4
+ 800da08:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da0c:	f840 3b04 	str.w	r3, [r0], #4
+ 800da10:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da14:	f840 3b04 	str.w	r3, [r0], #4
+ 800da18:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da1c:	f840 3b04 	str.w	r3, [r0], #4
+ 800da20:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da24:	f840 3b04 	str.w	r3, [r0], #4
+ 800da28:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da2c:	f840 3b04 	str.w	r3, [r0], #4
+ 800da30:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da34:	f840 3b04 	str.w	r3, [r0], #4
+ 800da38:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da3c:	f840 3b04 	str.w	r3, [r0], #4
+ 800da40:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da44:	f840 3b04 	str.w	r3, [r0], #4
+ 800da48:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da4c:	f840 3b04 	str.w	r3, [r0], #4
+ 800da50:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da54:	f840 3b04 	str.w	r3, [r0], #4
+ 800da58:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da5c:	f840 3b04 	str.w	r3, [r0], #4
+ 800da60:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da64:	f840 3b04 	str.w	r3, [r0], #4
+ 800da68:	3a40      	subs	r2, #64	; 0x40
+ 800da6a:	d2bd      	bcs.n	800d9e8 <memcpy+0x10>
+ 800da6c:	3230      	adds	r2, #48	; 0x30
+ 800da6e:	d311      	bcc.n	800da94 <memcpy+0xbc>
+ 800da70:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da74:	f840 3b04 	str.w	r3, [r0], #4
+ 800da78:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da7c:	f840 3b04 	str.w	r3, [r0], #4
+ 800da80:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da84:	f840 3b04 	str.w	r3, [r0], #4
+ 800da88:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da8c:	f840 3b04 	str.w	r3, [r0], #4
+ 800da90:	3a10      	subs	r2, #16
+ 800da92:	d2ed      	bcs.n	800da70 <memcpy+0x98>
+ 800da94:	320c      	adds	r2, #12
+ 800da96:	d305      	bcc.n	800daa4 <memcpy+0xcc>
+ 800da98:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da9c:	f840 3b04 	str.w	r3, [r0], #4
+ 800daa0:	3a04      	subs	r2, #4
+ 800daa2:	d2f9      	bcs.n	800da98 <memcpy+0xc0>
+ 800daa4:	3204      	adds	r2, #4
+ 800daa6:	d008      	beq.n	800daba <memcpy+0xe2>
+ 800daa8:	07d2      	lsls	r2, r2, #31
+ 800daaa:	bf1c      	itt	ne
+ 800daac:	f811 3b01 	ldrbne.w	r3, [r1], #1
+ 800dab0:	f800 3b01 	strbne.w	r3, [r0], #1
+ 800dab4:	d301      	bcc.n	800daba <memcpy+0xe2>
+ 800dab6:	880b      	ldrh	r3, [r1, #0]
+ 800dab8:	8003      	strh	r3, [r0, #0]
+ 800daba:	4660      	mov	r0, ip
+ 800dabc:	4770      	bx	lr
+ 800dabe:	bf00      	nop
+ 800dac0:	2a08      	cmp	r2, #8
+ 800dac2:	d313      	bcc.n	800daec <memcpy+0x114>
+ 800dac4:	078b      	lsls	r3, r1, #30
+ 800dac6:	d08d      	beq.n	800d9e4 <memcpy+0xc>
+ 800dac8:	f010 0303 	ands.w	r3, r0, #3
+ 800dacc:	d08a      	beq.n	800d9e4 <memcpy+0xc>
+ 800dace:	f1c3 0304 	rsb	r3, r3, #4
+ 800dad2:	1ad2      	subs	r2, r2, r3
+ 800dad4:	07db      	lsls	r3, r3, #31
+ 800dad6:	bf1c      	itt	ne
+ 800dad8:	f811 3b01 	ldrbne.w	r3, [r1], #1
+ 800dadc:	f800 3b01 	strbne.w	r3, [r0], #1
+ 800dae0:	d380      	bcc.n	800d9e4 <memcpy+0xc>
+ 800dae2:	f831 3b02 	ldrh.w	r3, [r1], #2
+ 800dae6:	f820 3b02 	strh.w	r3, [r0], #2
+ 800daea:	e77b      	b.n	800d9e4 <memcpy+0xc>
+ 800daec:	3a04      	subs	r2, #4
+ 800daee:	d3d9      	bcc.n	800daa4 <memcpy+0xcc>
+ 800daf0:	3a01      	subs	r2, #1
+ 800daf2:	f811 3b01 	ldrb.w	r3, [r1], #1
+ 800daf6:	f800 3b01 	strb.w	r3, [r0], #1
+ 800dafa:	d2f9      	bcs.n	800daf0 <memcpy+0x118>
+ 800dafc:	780b      	ldrb	r3, [r1, #0]
+ 800dafe:	7003      	strb	r3, [r0, #0]
+ 800db00:	784b      	ldrb	r3, [r1, #1]
+ 800db02:	7043      	strb	r3, [r0, #1]
+ 800db04:	788b      	ldrb	r3, [r1, #2]
+ 800db06:	7083      	strb	r3, [r0, #2]
+ 800db08:	4660      	mov	r0, ip
+ 800db0a:	4770      	bx	lr
 	...
- 800db00:	eba2 0003 	sub.w	r0, r2, r3
- 800db04:	4770      	bx	lr
- 800db06:	bf00      	nop
+ 800db20:	eba2 0003 	sub.w	r0, r2, r3
+ 800db24:	4770      	bx	lr
+ 800db26:	bf00      	nop
 
-0800db08 <strcmp>:
- 800db08:	7802      	ldrb	r2, [r0, #0]
- 800db0a:	780b      	ldrb	r3, [r1, #0]
- 800db0c:	2a01      	cmp	r2, #1
- 800db0e:	bf28      	it	cs
- 800db10:	429a      	cmpcs	r2, r3
- 800db12:	d1f5      	bne.n	800db00 <memcpy+0x14c>
- 800db14:	e96d 4504 	strd	r4, r5, [sp, #-16]!
- 800db18:	ea40 0401 	orr.w	r4, r0, r1
- 800db1c:	e9cd 6702 	strd	r6, r7, [sp, #8]
- 800db20:	f06f 0c00 	mvn.w	ip, #0
- 800db24:	ea4f 7244 	mov.w	r2, r4, lsl #29
- 800db28:	b312      	cbz	r2, 800db70 <strcmp+0x68>
- 800db2a:	ea80 0401 	eor.w	r4, r0, r1
- 800db2e:	f014 0f07 	tst.w	r4, #7
- 800db32:	d16a      	bne.n	800dc0a <strcmp+0x102>
- 800db34:	f000 0407 	and.w	r4, r0, #7
- 800db38:	f020 0007 	bic.w	r0, r0, #7
- 800db3c:	f004 0503 	and.w	r5, r4, #3
- 800db40:	f021 0107 	bic.w	r1, r1, #7
- 800db44:	ea4f 05c5 	mov.w	r5, r5, lsl #3
- 800db48:	e8f0 2304 	ldrd	r2, r3, [r0], #16
- 800db4c:	f014 0f04 	tst.w	r4, #4
- 800db50:	e8f1 6704 	ldrd	r6, r7, [r1], #16
- 800db54:	fa0c f405 	lsl.w	r4, ip, r5
- 800db58:	ea62 0204 	orn	r2, r2, r4
- 800db5c:	ea66 0604 	orn	r6, r6, r4
- 800db60:	d00a      	beq.n	800db78 <strcmp+0x70>
- 800db62:	ea63 0304 	orn	r3, r3, r4
- 800db66:	4662      	mov	r2, ip
- 800db68:	ea67 0704 	orn	r7, r7, r4
- 800db6c:	4666      	mov	r6, ip
- 800db6e:	e003      	b.n	800db78 <strcmp+0x70>
- 800db70:	e8f0 2304 	ldrd	r2, r3, [r0], #16
- 800db74:	e8f1 6704 	ldrd	r6, r7, [r1], #16
- 800db78:	fa82 f54c 	uadd8	r5, r2, ip
- 800db7c:	ea82 0406 	eor.w	r4, r2, r6
- 800db80:	faa4 f48c 	sel	r4, r4, ip
- 800db84:	bb6c      	cbnz	r4, 800dbe2 <strcmp+0xda>
- 800db86:	fa83 f54c 	uadd8	r5, r3, ip
- 800db8a:	ea83 0507 	eor.w	r5, r3, r7
- 800db8e:	faa5 f58c 	sel	r5, r5, ip
- 800db92:	b995      	cbnz	r5, 800dbba <strcmp+0xb2>
- 800db94:	e950 2302 	ldrd	r2, r3, [r0, #-8]
- 800db98:	e951 6702 	ldrd	r6, r7, [r1, #-8]
- 800db9c:	fa82 f54c 	uadd8	r5, r2, ip
- 800dba0:	ea82 0406 	eor.w	r4, r2, r6
- 800dba4:	faa4 f48c 	sel	r4, r4, ip
- 800dba8:	fa83 f54c 	uadd8	r5, r3, ip
- 800dbac:	ea83 0507 	eor.w	r5, r3, r7
- 800dbb0:	faa5 f58c 	sel	r5, r5, ip
- 800dbb4:	4325      	orrs	r5, r4
- 800dbb6:	d0db      	beq.n	800db70 <strcmp+0x68>
- 800dbb8:	b99c      	cbnz	r4, 800dbe2 <strcmp+0xda>
- 800dbba:	ba2d      	rev	r5, r5
- 800dbbc:	fab5 f485 	clz	r4, r5
- 800dbc0:	f024 0407 	bic.w	r4, r4, #7
- 800dbc4:	fa27 f104 	lsr.w	r1, r7, r4
- 800dbc8:	e9dd 6702 	ldrd	r6, r7, [sp, #8]
- 800dbcc:	fa23 f304 	lsr.w	r3, r3, r4
- 800dbd0:	f003 00ff 	and.w	r0, r3, #255	; 0xff
- 800dbd4:	f001 01ff 	and.w	r1, r1, #255	; 0xff
- 800dbd8:	e8fd 4504 	ldrd	r4, r5, [sp], #16
- 800dbdc:	eba0 0001 	sub.w	r0, r0, r1
- 800dbe0:	4770      	bx	lr
- 800dbe2:	ba24      	rev	r4, r4
- 800dbe4:	fab4 f484 	clz	r4, r4
- 800dbe8:	f024 0407 	bic.w	r4, r4, #7
- 800dbec:	fa26 f104 	lsr.w	r1, r6, r4
- 800dbf0:	e9dd 6702 	ldrd	r6, r7, [sp, #8]
- 800dbf4:	fa22 f204 	lsr.w	r2, r2, r4
- 800dbf8:	f002 00ff 	and.w	r0, r2, #255	; 0xff
- 800dbfc:	f001 01ff 	and.w	r1, r1, #255	; 0xff
- 800dc00:	e8fd 4504 	ldrd	r4, r5, [sp], #16
- 800dc04:	eba0 0001 	sub.w	r0, r0, r1
- 800dc08:	4770      	bx	lr
- 800dc0a:	f014 0f03 	tst.w	r4, #3
- 800dc0e:	d13c      	bne.n	800dc8a <strcmp+0x182>
- 800dc10:	f010 0403 	ands.w	r4, r0, #3
- 800dc14:	d128      	bne.n	800dc68 <strcmp+0x160>
- 800dc16:	f850 2b08 	ldr.w	r2, [r0], #8
- 800dc1a:	f851 3b08 	ldr.w	r3, [r1], #8
- 800dc1e:	fa82 f54c 	uadd8	r5, r2, ip
- 800dc22:	ea82 0503 	eor.w	r5, r2, r3
- 800dc26:	faa5 f58c 	sel	r5, r5, ip
- 800dc2a:	b95d      	cbnz	r5, 800dc44 <strcmp+0x13c>
- 800dc2c:	f850 2c04 	ldr.w	r2, [r0, #-4]
- 800dc30:	f851 3c04 	ldr.w	r3, [r1, #-4]
- 800dc34:	fa82 f54c 	uadd8	r5, r2, ip
- 800dc38:	ea82 0503 	eor.w	r5, r2, r3
- 800dc3c:	faa5 f58c 	sel	r5, r5, ip
- 800dc40:	2d00      	cmp	r5, #0
- 800dc42:	d0e8      	beq.n	800dc16 <strcmp+0x10e>
- 800dc44:	ba2d      	rev	r5, r5
- 800dc46:	fab5 f485 	clz	r4, r5
- 800dc4a:	f024 0407 	bic.w	r4, r4, #7
- 800dc4e:	fa23 f104 	lsr.w	r1, r3, r4
- 800dc52:	fa22 f204 	lsr.w	r2, r2, r4
- 800dc56:	f002 00ff 	and.w	r0, r2, #255	; 0xff
- 800dc5a:	f001 01ff 	and.w	r1, r1, #255	; 0xff
- 800dc5e:	e8fd 4504 	ldrd	r4, r5, [sp], #16
- 800dc62:	eba0 0001 	sub.w	r0, r0, r1
- 800dc66:	4770      	bx	lr
- 800dc68:	ea4f 04c4 	mov.w	r4, r4, lsl #3
- 800dc6c:	f020 0003 	bic.w	r0, r0, #3
- 800dc70:	f850 2b08 	ldr.w	r2, [r0], #8
- 800dc74:	f021 0103 	bic.w	r1, r1, #3
- 800dc78:	f851 3b08 	ldr.w	r3, [r1], #8
- 800dc7c:	fa0c f404 	lsl.w	r4, ip, r4
- 800dc80:	ea62 0204 	orn	r2, r2, r4
- 800dc84:	ea63 0304 	orn	r3, r3, r4
- 800dc88:	e7c9      	b.n	800dc1e <strcmp+0x116>
- 800dc8a:	f010 0403 	ands.w	r4, r0, #3
- 800dc8e:	d01a      	beq.n	800dcc6 <strcmp+0x1be>
- 800dc90:	eba1 0104 	sub.w	r1, r1, r4
- 800dc94:	f020 0003 	bic.w	r0, r0, #3
- 800dc98:	07e4      	lsls	r4, r4, #31
- 800dc9a:	f850 2b04 	ldr.w	r2, [r0], #4
- 800dc9e:	d006      	beq.n	800dcae <strcmp+0x1a6>
- 800dca0:	d20f      	bcs.n	800dcc2 <strcmp+0x1ba>
- 800dca2:	788b      	ldrb	r3, [r1, #2]
- 800dca4:	fa5f f4a2 	uxtb.w	r4, r2, ror #16
- 800dca8:	1ae4      	subs	r4, r4, r3
- 800dcaa:	d106      	bne.n	800dcba <strcmp+0x1b2>
- 800dcac:	b12b      	cbz	r3, 800dcba <strcmp+0x1b2>
- 800dcae:	78cb      	ldrb	r3, [r1, #3]
- 800dcb0:	fa5f f4b2 	uxtb.w	r4, r2, ror #24
- 800dcb4:	1ae4      	subs	r4, r4, r3
- 800dcb6:	d100      	bne.n	800dcba <strcmp+0x1b2>
- 800dcb8:	b91b      	cbnz	r3, 800dcc2 <strcmp+0x1ba>
- 800dcba:	4620      	mov	r0, r4
- 800dcbc:	f85d 4b10 	ldr.w	r4, [sp], #16
- 800dcc0:	4770      	bx	lr
- 800dcc2:	f101 0104 	add.w	r1, r1, #4
- 800dcc6:	f850 2b04 	ldr.w	r2, [r0], #4
- 800dcca:	07cc      	lsls	r4, r1, #31
- 800dccc:	f021 0103 	bic.w	r1, r1, #3
- 800dcd0:	f851 3b04 	ldr.w	r3, [r1], #4
- 800dcd4:	d848      	bhi.n	800dd68 <strcmp+0x260>
- 800dcd6:	d224      	bcs.n	800dd22 <strcmp+0x21a>
- 800dcd8:	f022 447f 	bic.w	r4, r2, #4278190080	; 0xff000000
- 800dcdc:	fa82 f54c 	uadd8	r5, r2, ip
- 800dce0:	ea94 2513 	eors.w	r5, r4, r3, lsr #8
- 800dce4:	faa5 f58c 	sel	r5, r5, ip
- 800dce8:	d10a      	bne.n	800dd00 <strcmp+0x1f8>
- 800dcea:	b965      	cbnz	r5, 800dd06 <strcmp+0x1fe>
- 800dcec:	f851 3b04 	ldr.w	r3, [r1], #4
- 800dcf0:	ea84 0402 	eor.w	r4, r4, r2
- 800dcf4:	ebb4 6f03 	cmp.w	r4, r3, lsl #24
- 800dcf8:	d10e      	bne.n	800dd18 <strcmp+0x210>
- 800dcfa:	f850 2b04 	ldr.w	r2, [r0], #4
- 800dcfe:	e7eb      	b.n	800dcd8 <strcmp+0x1d0>
- 800dd00:	ea4f 2313 	mov.w	r3, r3, lsr #8
- 800dd04:	e055      	b.n	800ddb2 <strcmp+0x2aa>
- 800dd06:	f035 457f 	bics.w	r5, r5, #4278190080	; 0xff000000
- 800dd0a:	d14d      	bne.n	800dda8 <strcmp+0x2a0>
- 800dd0c:	7808      	ldrb	r0, [r1, #0]
- 800dd0e:	e8fd 4504 	ldrd	r4, r5, [sp], #16
- 800dd12:	f1c0 0000 	rsb	r0, r0, #0
- 800dd16:	4770      	bx	lr
- 800dd18:	ea4f 6212 	mov.w	r2, r2, lsr #24
- 800dd1c:	f003 03ff 	and.w	r3, r3, #255	; 0xff
- 800dd20:	e047      	b.n	800ddb2 <strcmp+0x2aa>
- 800dd22:	ea02 441c 	and.w	r4, r2, ip, lsr #16
- 800dd26:	fa82 f54c 	uadd8	r5, r2, ip
- 800dd2a:	ea94 4513 	eors.w	r5, r4, r3, lsr #16
- 800dd2e:	faa5 f58c 	sel	r5, r5, ip
- 800dd32:	d10a      	bne.n	800dd4a <strcmp+0x242>
- 800dd34:	b965      	cbnz	r5, 800dd50 <strcmp+0x248>
- 800dd36:	f851 3b04 	ldr.w	r3, [r1], #4
- 800dd3a:	ea84 0402 	eor.w	r4, r4, r2
- 800dd3e:	ebb4 4f03 	cmp.w	r4, r3, lsl #16
- 800dd42:	d10c      	bne.n	800dd5e <strcmp+0x256>
- 800dd44:	f850 2b04 	ldr.w	r2, [r0], #4
- 800dd48:	e7eb      	b.n	800dd22 <strcmp+0x21a>
- 800dd4a:	ea4f 4313 	mov.w	r3, r3, lsr #16
- 800dd4e:	e030      	b.n	800ddb2 <strcmp+0x2aa>
- 800dd50:	ea15 451c 	ands.w	r5, r5, ip, lsr #16
- 800dd54:	d128      	bne.n	800dda8 <strcmp+0x2a0>
- 800dd56:	880b      	ldrh	r3, [r1, #0]
- 800dd58:	ea4f 4212 	mov.w	r2, r2, lsr #16
- 800dd5c:	e029      	b.n	800ddb2 <strcmp+0x2aa>
- 800dd5e:	ea4f 4212 	mov.w	r2, r2, lsr #16
- 800dd62:	ea03 431c 	and.w	r3, r3, ip, lsr #16
- 800dd66:	e024      	b.n	800ddb2 <strcmp+0x2aa>
- 800dd68:	f002 04ff 	and.w	r4, r2, #255	; 0xff
- 800dd6c:	fa82 f54c 	uadd8	r5, r2, ip
- 800dd70:	ea94 6513 	eors.w	r5, r4, r3, lsr #24
- 800dd74:	faa5 f58c 	sel	r5, r5, ip
- 800dd78:	d10a      	bne.n	800dd90 <strcmp+0x288>
- 800dd7a:	b965      	cbnz	r5, 800dd96 <strcmp+0x28e>
- 800dd7c:	f851 3b04 	ldr.w	r3, [r1], #4
- 800dd80:	ea84 0402 	eor.w	r4, r4, r2
- 800dd84:	ebb4 2f03 	cmp.w	r4, r3, lsl #8
- 800dd88:	d109      	bne.n	800dd9e <strcmp+0x296>
- 800dd8a:	f850 2b04 	ldr.w	r2, [r0], #4
- 800dd8e:	e7eb      	b.n	800dd68 <strcmp+0x260>
- 800dd90:	ea4f 6313 	mov.w	r3, r3, lsr #24
- 800dd94:	e00d      	b.n	800ddb2 <strcmp+0x2aa>
- 800dd96:	f015 0fff 	tst.w	r5, #255	; 0xff
- 800dd9a:	d105      	bne.n	800dda8 <strcmp+0x2a0>
- 800dd9c:	680b      	ldr	r3, [r1, #0]
- 800dd9e:	ea4f 2212 	mov.w	r2, r2, lsr #8
- 800dda2:	f023 437f 	bic.w	r3, r3, #4278190080	; 0xff000000
- 800dda6:	e004      	b.n	800ddb2 <strcmp+0x2aa>
- 800dda8:	f04f 0000 	mov.w	r0, #0
- 800ddac:	e8fd 4504 	ldrd	r4, r5, [sp], #16
- 800ddb0:	4770      	bx	lr
- 800ddb2:	ba12      	rev	r2, r2
- 800ddb4:	ba1b      	rev	r3, r3
- 800ddb6:	fa82 f44c 	uadd8	r4, r2, ip
- 800ddba:	ea82 0403 	eor.w	r4, r2, r3
- 800ddbe:	faa4 f58c 	sel	r5, r4, ip
- 800ddc2:	fab5 f485 	clz	r4, r5
- 800ddc6:	fa02 f204 	lsl.w	r2, r2, r4
- 800ddca:	fa03 f304 	lsl.w	r3, r3, r4
- 800ddce:	ea4f 6012 	mov.w	r0, r2, lsr #24
- 800ddd2:	e8fd 4504 	ldrd	r4, r5, [sp], #16
- 800ddd6:	eba0 6013 	sub.w	r0, r0, r3, lsr #24
- 800ddda:	4770      	bx	lr
- 800dddc:	f3af 8000 	nop.w
+0800db28 <strcmp>:
+ 800db28:	7802      	ldrb	r2, [r0, #0]
+ 800db2a:	780b      	ldrb	r3, [r1, #0]
+ 800db2c:	2a01      	cmp	r2, #1
+ 800db2e:	bf28      	it	cs
+ 800db30:	429a      	cmpcs	r2, r3
+ 800db32:	d1f5      	bne.n	800db20 <memcpy+0x148>
+ 800db34:	e96d 4504 	strd	r4, r5, [sp, #-16]!
+ 800db38:	ea40 0401 	orr.w	r4, r0, r1
+ 800db3c:	e9cd 6702 	strd	r6, r7, [sp, #8]
+ 800db40:	f06f 0c00 	mvn.w	ip, #0
+ 800db44:	ea4f 7244 	mov.w	r2, r4, lsl #29
+ 800db48:	b312      	cbz	r2, 800db90 <strcmp+0x68>
+ 800db4a:	ea80 0401 	eor.w	r4, r0, r1
+ 800db4e:	f014 0f07 	tst.w	r4, #7
+ 800db52:	d16a      	bne.n	800dc2a <strcmp+0x102>
+ 800db54:	f000 0407 	and.w	r4, r0, #7
+ 800db58:	f020 0007 	bic.w	r0, r0, #7
+ 800db5c:	f004 0503 	and.w	r5, r4, #3
+ 800db60:	f021 0107 	bic.w	r1, r1, #7
+ 800db64:	ea4f 05c5 	mov.w	r5, r5, lsl #3
+ 800db68:	e8f0 2304 	ldrd	r2, r3, [r0], #16
+ 800db6c:	f014 0f04 	tst.w	r4, #4
+ 800db70:	e8f1 6704 	ldrd	r6, r7, [r1], #16
+ 800db74:	fa0c f405 	lsl.w	r4, ip, r5
+ 800db78:	ea62 0204 	orn	r2, r2, r4
+ 800db7c:	ea66 0604 	orn	r6, r6, r4
+ 800db80:	d00a      	beq.n	800db98 <strcmp+0x70>
+ 800db82:	ea63 0304 	orn	r3, r3, r4
+ 800db86:	4662      	mov	r2, ip
+ 800db88:	ea67 0704 	orn	r7, r7, r4
+ 800db8c:	4666      	mov	r6, ip
+ 800db8e:	e003      	b.n	800db98 <strcmp+0x70>
+ 800db90:	e8f0 2304 	ldrd	r2, r3, [r0], #16
+ 800db94:	e8f1 6704 	ldrd	r6, r7, [r1], #16
+ 800db98:	fa82 f54c 	uadd8	r5, r2, ip
+ 800db9c:	ea82 0406 	eor.w	r4, r2, r6
+ 800dba0:	faa4 f48c 	sel	r4, r4, ip
+ 800dba4:	bb6c      	cbnz	r4, 800dc02 <strcmp+0xda>
+ 800dba6:	fa83 f54c 	uadd8	r5, r3, ip
+ 800dbaa:	ea83 0507 	eor.w	r5, r3, r7
+ 800dbae:	faa5 f58c 	sel	r5, r5, ip
+ 800dbb2:	b995      	cbnz	r5, 800dbda <strcmp+0xb2>
+ 800dbb4:	e950 2302 	ldrd	r2, r3, [r0, #-8]
+ 800dbb8:	e951 6702 	ldrd	r6, r7, [r1, #-8]
+ 800dbbc:	fa82 f54c 	uadd8	r5, r2, ip
+ 800dbc0:	ea82 0406 	eor.w	r4, r2, r6
+ 800dbc4:	faa4 f48c 	sel	r4, r4, ip
+ 800dbc8:	fa83 f54c 	uadd8	r5, r3, ip
+ 800dbcc:	ea83 0507 	eor.w	r5, r3, r7
+ 800dbd0:	faa5 f58c 	sel	r5, r5, ip
+ 800dbd4:	4325      	orrs	r5, r4
+ 800dbd6:	d0db      	beq.n	800db90 <strcmp+0x68>
+ 800dbd8:	b99c      	cbnz	r4, 800dc02 <strcmp+0xda>
+ 800dbda:	ba2d      	rev	r5, r5
+ 800dbdc:	fab5 f485 	clz	r4, r5
+ 800dbe0:	f024 0407 	bic.w	r4, r4, #7
+ 800dbe4:	fa27 f104 	lsr.w	r1, r7, r4
+ 800dbe8:	e9dd 6702 	ldrd	r6, r7, [sp, #8]
+ 800dbec:	fa23 f304 	lsr.w	r3, r3, r4
+ 800dbf0:	f003 00ff 	and.w	r0, r3, #255	; 0xff
+ 800dbf4:	f001 01ff 	and.w	r1, r1, #255	; 0xff
+ 800dbf8:	e8fd 4504 	ldrd	r4, r5, [sp], #16
+ 800dbfc:	eba0 0001 	sub.w	r0, r0, r1
+ 800dc00:	4770      	bx	lr
+ 800dc02:	ba24      	rev	r4, r4
+ 800dc04:	fab4 f484 	clz	r4, r4
+ 800dc08:	f024 0407 	bic.w	r4, r4, #7
+ 800dc0c:	fa26 f104 	lsr.w	r1, r6, r4
+ 800dc10:	e9dd 6702 	ldrd	r6, r7, [sp, #8]
+ 800dc14:	fa22 f204 	lsr.w	r2, r2, r4
+ 800dc18:	f002 00ff 	and.w	r0, r2, #255	; 0xff
+ 800dc1c:	f001 01ff 	and.w	r1, r1, #255	; 0xff
+ 800dc20:	e8fd 4504 	ldrd	r4, r5, [sp], #16
+ 800dc24:	eba0 0001 	sub.w	r0, r0, r1
+ 800dc28:	4770      	bx	lr
+ 800dc2a:	f014 0f03 	tst.w	r4, #3
+ 800dc2e:	d13c      	bne.n	800dcaa <strcmp+0x182>
+ 800dc30:	f010 0403 	ands.w	r4, r0, #3
+ 800dc34:	d128      	bne.n	800dc88 <strcmp+0x160>
+ 800dc36:	f850 2b08 	ldr.w	r2, [r0], #8
+ 800dc3a:	f851 3b08 	ldr.w	r3, [r1], #8
+ 800dc3e:	fa82 f54c 	uadd8	r5, r2, ip
+ 800dc42:	ea82 0503 	eor.w	r5, r2, r3
+ 800dc46:	faa5 f58c 	sel	r5, r5, ip
+ 800dc4a:	b95d      	cbnz	r5, 800dc64 <strcmp+0x13c>
+ 800dc4c:	f850 2c04 	ldr.w	r2, [r0, #-4]
+ 800dc50:	f851 3c04 	ldr.w	r3, [r1, #-4]
+ 800dc54:	fa82 f54c 	uadd8	r5, r2, ip
+ 800dc58:	ea82 0503 	eor.w	r5, r2, r3
+ 800dc5c:	faa5 f58c 	sel	r5, r5, ip
+ 800dc60:	2d00      	cmp	r5, #0
+ 800dc62:	d0e8      	beq.n	800dc36 <strcmp+0x10e>
+ 800dc64:	ba2d      	rev	r5, r5
+ 800dc66:	fab5 f485 	clz	r4, r5
+ 800dc6a:	f024 0407 	bic.w	r4, r4, #7
+ 800dc6e:	fa23 f104 	lsr.w	r1, r3, r4
+ 800dc72:	fa22 f204 	lsr.w	r2, r2, r4
+ 800dc76:	f002 00ff 	and.w	r0, r2, #255	; 0xff
+ 800dc7a:	f001 01ff 	and.w	r1, r1, #255	; 0xff
+ 800dc7e:	e8fd 4504 	ldrd	r4, r5, [sp], #16
+ 800dc82:	eba0 0001 	sub.w	r0, r0, r1
+ 800dc86:	4770      	bx	lr
+ 800dc88:	ea4f 04c4 	mov.w	r4, r4, lsl #3
+ 800dc8c:	f020 0003 	bic.w	r0, r0, #3
+ 800dc90:	f850 2b08 	ldr.w	r2, [r0], #8
+ 800dc94:	f021 0103 	bic.w	r1, r1, #3
+ 800dc98:	f851 3b08 	ldr.w	r3, [r1], #8
+ 800dc9c:	fa0c f404 	lsl.w	r4, ip, r4
+ 800dca0:	ea62 0204 	orn	r2, r2, r4
+ 800dca4:	ea63 0304 	orn	r3, r3, r4
+ 800dca8:	e7c9      	b.n	800dc3e <strcmp+0x116>
+ 800dcaa:	f010 0403 	ands.w	r4, r0, #3
+ 800dcae:	d01a      	beq.n	800dce6 <strcmp+0x1be>
+ 800dcb0:	eba1 0104 	sub.w	r1, r1, r4
+ 800dcb4:	f020 0003 	bic.w	r0, r0, #3
+ 800dcb8:	07e4      	lsls	r4, r4, #31
+ 800dcba:	f850 2b04 	ldr.w	r2, [r0], #4
+ 800dcbe:	d006      	beq.n	800dcce <strcmp+0x1a6>
+ 800dcc0:	d20f      	bcs.n	800dce2 <strcmp+0x1ba>
+ 800dcc2:	788b      	ldrb	r3, [r1, #2]
+ 800dcc4:	fa5f f4a2 	uxtb.w	r4, r2, ror #16
+ 800dcc8:	1ae4      	subs	r4, r4, r3
+ 800dcca:	d106      	bne.n	800dcda <strcmp+0x1b2>
+ 800dccc:	b12b      	cbz	r3, 800dcda <strcmp+0x1b2>
+ 800dcce:	78cb      	ldrb	r3, [r1, #3]
+ 800dcd0:	fa5f f4b2 	uxtb.w	r4, r2, ror #24
+ 800dcd4:	1ae4      	subs	r4, r4, r3
+ 800dcd6:	d100      	bne.n	800dcda <strcmp+0x1b2>
+ 800dcd8:	b91b      	cbnz	r3, 800dce2 <strcmp+0x1ba>
+ 800dcda:	4620      	mov	r0, r4
+ 800dcdc:	f85d 4b10 	ldr.w	r4, [sp], #16
+ 800dce0:	4770      	bx	lr
+ 800dce2:	f101 0104 	add.w	r1, r1, #4
+ 800dce6:	f850 2b04 	ldr.w	r2, [r0], #4
+ 800dcea:	07cc      	lsls	r4, r1, #31
+ 800dcec:	f021 0103 	bic.w	r1, r1, #3
+ 800dcf0:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800dcf4:	d848      	bhi.n	800dd88 <strcmp+0x260>
+ 800dcf6:	d224      	bcs.n	800dd42 <strcmp+0x21a>
+ 800dcf8:	f022 447f 	bic.w	r4, r2, #4278190080	; 0xff000000
+ 800dcfc:	fa82 f54c 	uadd8	r5, r2, ip
+ 800dd00:	ea94 2513 	eors.w	r5, r4, r3, lsr #8
+ 800dd04:	faa5 f58c 	sel	r5, r5, ip
+ 800dd08:	d10a      	bne.n	800dd20 <strcmp+0x1f8>
+ 800dd0a:	b965      	cbnz	r5, 800dd26 <strcmp+0x1fe>
+ 800dd0c:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800dd10:	ea84 0402 	eor.w	r4, r4, r2
+ 800dd14:	ebb4 6f03 	cmp.w	r4, r3, lsl #24
+ 800dd18:	d10e      	bne.n	800dd38 <strcmp+0x210>
+ 800dd1a:	f850 2b04 	ldr.w	r2, [r0], #4
+ 800dd1e:	e7eb      	b.n	800dcf8 <strcmp+0x1d0>
+ 800dd20:	ea4f 2313 	mov.w	r3, r3, lsr #8
+ 800dd24:	e055      	b.n	800ddd2 <strcmp+0x2aa>
+ 800dd26:	f035 457f 	bics.w	r5, r5, #4278190080	; 0xff000000
+ 800dd2a:	d14d      	bne.n	800ddc8 <strcmp+0x2a0>
+ 800dd2c:	7808      	ldrb	r0, [r1, #0]
+ 800dd2e:	e8fd 4504 	ldrd	r4, r5, [sp], #16
+ 800dd32:	f1c0 0000 	rsb	r0, r0, #0
+ 800dd36:	4770      	bx	lr
+ 800dd38:	ea4f 6212 	mov.w	r2, r2, lsr #24
+ 800dd3c:	f003 03ff 	and.w	r3, r3, #255	; 0xff
+ 800dd40:	e047      	b.n	800ddd2 <strcmp+0x2aa>
+ 800dd42:	ea02 441c 	and.w	r4, r2, ip, lsr #16
+ 800dd46:	fa82 f54c 	uadd8	r5, r2, ip
+ 800dd4a:	ea94 4513 	eors.w	r5, r4, r3, lsr #16
+ 800dd4e:	faa5 f58c 	sel	r5, r5, ip
+ 800dd52:	d10a      	bne.n	800dd6a <strcmp+0x242>
+ 800dd54:	b965      	cbnz	r5, 800dd70 <strcmp+0x248>
+ 800dd56:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800dd5a:	ea84 0402 	eor.w	r4, r4, r2
+ 800dd5e:	ebb4 4f03 	cmp.w	r4, r3, lsl #16
+ 800dd62:	d10c      	bne.n	800dd7e <strcmp+0x256>
+ 800dd64:	f850 2b04 	ldr.w	r2, [r0], #4
+ 800dd68:	e7eb      	b.n	800dd42 <strcmp+0x21a>
+ 800dd6a:	ea4f 4313 	mov.w	r3, r3, lsr #16
+ 800dd6e:	e030      	b.n	800ddd2 <strcmp+0x2aa>
+ 800dd70:	ea15 451c 	ands.w	r5, r5, ip, lsr #16
+ 800dd74:	d128      	bne.n	800ddc8 <strcmp+0x2a0>
+ 800dd76:	880b      	ldrh	r3, [r1, #0]
+ 800dd78:	ea4f 4212 	mov.w	r2, r2, lsr #16
+ 800dd7c:	e029      	b.n	800ddd2 <strcmp+0x2aa>
+ 800dd7e:	ea4f 4212 	mov.w	r2, r2, lsr #16
+ 800dd82:	ea03 431c 	and.w	r3, r3, ip, lsr #16
+ 800dd86:	e024      	b.n	800ddd2 <strcmp+0x2aa>
+ 800dd88:	f002 04ff 	and.w	r4, r2, #255	; 0xff
+ 800dd8c:	fa82 f54c 	uadd8	r5, r2, ip
+ 800dd90:	ea94 6513 	eors.w	r5, r4, r3, lsr #24
+ 800dd94:	faa5 f58c 	sel	r5, r5, ip
+ 800dd98:	d10a      	bne.n	800ddb0 <strcmp+0x288>
+ 800dd9a:	b965      	cbnz	r5, 800ddb6 <strcmp+0x28e>
+ 800dd9c:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800dda0:	ea84 0402 	eor.w	r4, r4, r2
+ 800dda4:	ebb4 2f03 	cmp.w	r4, r3, lsl #8
+ 800dda8:	d109      	bne.n	800ddbe <strcmp+0x296>
+ 800ddaa:	f850 2b04 	ldr.w	r2, [r0], #4
+ 800ddae:	e7eb      	b.n	800dd88 <strcmp+0x260>
+ 800ddb0:	ea4f 6313 	mov.w	r3, r3, lsr #24
+ 800ddb4:	e00d      	b.n	800ddd2 <strcmp+0x2aa>
+ 800ddb6:	f015 0fff 	tst.w	r5, #255	; 0xff
+ 800ddba:	d105      	bne.n	800ddc8 <strcmp+0x2a0>
+ 800ddbc:	680b      	ldr	r3, [r1, #0]
+ 800ddbe:	ea4f 2212 	mov.w	r2, r2, lsr #8
+ 800ddc2:	f023 437f 	bic.w	r3, r3, #4278190080	; 0xff000000
+ 800ddc6:	e004      	b.n	800ddd2 <strcmp+0x2aa>
+ 800ddc8:	f04f 0000 	mov.w	r0, #0
+ 800ddcc:	e8fd 4504 	ldrd	r4, r5, [sp], #16
+ 800ddd0:	4770      	bx	lr
+ 800ddd2:	ba12      	rev	r2, r2
+ 800ddd4:	ba1b      	rev	r3, r3
+ 800ddd6:	fa82 f44c 	uadd8	r4, r2, ip
+ 800ddda:	ea82 0403 	eor.w	r4, r2, r3
+ 800ddde:	faa4 f58c 	sel	r5, r4, ip
+ 800dde2:	fab5 f485 	clz	r4, r5
+ 800dde6:	fa02 f204 	lsl.w	r2, r2, r4
+ 800ddea:	fa03 f304 	lsl.w	r3, r3, r4
+ 800ddee:	ea4f 6012 	mov.w	r0, r2, lsr #24
+ 800ddf2:	e8fd 4504 	ldrd	r4, r5, [sp], #16
+ 800ddf6:	eba0 6013 	sub.w	r0, r0, r3, lsr #24
+ 800ddfa:	4770      	bx	lr
+ 800ddfc:	f3af 8000 	nop.w
