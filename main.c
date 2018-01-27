@@ -72,7 +72,7 @@ int main(void) {
 
    //to transmit multiple bytes, make regaddr a byte array
     
-    //to push to git - git add .;git commit -m "";git push origin master
+    //to push to git - git add .;git commit -a -m "";git push -u origin master -f
 
    //to pull from git - git pull origin master
 
