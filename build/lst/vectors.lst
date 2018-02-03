@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccQHN9mX.s 			page 1
+ARM GAS  /tmp/ccdtUw8z.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
   55              		.thumb_set Vector28,_unhandled_exception
   56              		.weak	SVC_Handler
   57              		.thumb_set SVC_Handler,_unhandled_exception
-ARM GAS  /tmp/ccQHN9mX.s 			page 2
+ARM GAS  /tmp/ccdtUw8z.s 			page 2
 
 
   58              		.weak	DebugMon_Handler
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  112              		.weak	Vector9C
  113              		.thumb_set Vector9C,_unhandled_exception
  114              		.weak	VectorA0
-ARM GAS  /tmp/ccQHN9mX.s 			page 3
+ARM GAS  /tmp/ccdtUw8z.s 			page 3
 
 
  115              		.thumb_set VectorA0,_unhandled_exception
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  169              		.thumb_set Vector10C,_unhandled_exception
  170              		.weak	Vector110
  171              		.thumb_set Vector110,_unhandled_exception
-ARM GAS  /tmp/ccQHN9mX.s 			page 4
+ARM GAS  /tmp/ccdtUw8z.s 			page 4
 
 
  172              		.weak	Vector114
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  226              		.weak	Vector180
  227              		.thumb_set Vector180,_unhandled_exception
  228              		.weak	Vector184
-ARM GAS  /tmp/ccQHN9mX.s 			page 5
+ARM GAS  /tmp/ccdtUw8z.s 			page 5
 
 
  229              		.thumb_set Vector184,_unhandled_exception
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  283 000c 00000000 		.word	HardFault_Handler
  284 0010 00000000 		.word	MemManage_Handler
  285 0014 00000000 		.word	BusFault_Handler
-ARM GAS  /tmp/ccQHN9mX.s 			page 6
+ARM GAS  /tmp/ccdtUw8z.s 			page 6
 
 
  286 0018 00000000 		.word	UsageFault_Handler
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  340 00f0 00000000 		.word	VectorF0
  341 00f4 00000000 		.word	VectorF4
  342 00f8 00000000 		.word	VectorF8
-ARM GAS  /tmp/ccQHN9mX.s 			page 7
+ARM GAS  /tmp/ccdtUw8z.s 			page 7
 
 
  343 00fc 00000000 		.word	VectorFC
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  397 01d4 00000000 		.word	Vector1D4
  398 01d8 00000000 		.word	Vector1D8
  399 01dc 00000000 		.word	Vector1DC
-ARM GAS  /tmp/ccQHN9mX.s 			page 8
+ARM GAS  /tmp/ccdtUw8z.s 			page 8
 
 
  400              		.text
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  454 0065 02       		.uleb128 0x2
  455 0066 08       		.byte	0x8
  456 0067 05       		.byte	0x5
-ARM GAS  /tmp/ccQHN9mX.s 			page 9
+ARM GAS  /tmp/ccdtUw8z.s 			page 9
 
 
  457 0068 55020000 		.4byte	.LASF8
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  511 00d2 CE010000 		.4byte	.LASF17
  512 00d6 04       		.byte	0x4
  513 00d7 44       		.byte	0x44
-ARM GAS  /tmp/ccQHN9mX.s 			page 10
+ARM GAS  /tmp/ccdtUw8z.s 			page 10
 
 
  514 00d8 9E000000 		.4byte	0x9e
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  568 0144 9E000000 		.4byte	0x9e
  569 0148 2C       		.byte	0x2c
  570 0149 08       		.uleb128 0x8
-ARM GAS  /tmp/ccQHN9mX.s 			page 11
+ARM GAS  /tmp/ccdtUw8z.s 			page 11
 
 
  571 014a 21010000 		.4byte	.LASF27
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  625 01b9 6A010000 		.4byte	.LASF33
  626 01bd 05       		.byte	0x5
  627 01be 4407     		.2byte	0x744
-ARM GAS  /tmp/ccQHN9mX.s 			page 12
+ARM GAS  /tmp/ccdtUw8z.s 			page 12
 
 
  628 01c0 C4010000 		.4byte	0x1c4
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  682 0023 3A       		.uleb128 0x3a
  683 0024 0B       		.uleb128 0xb
  684 0025 3B       		.uleb128 0x3b
-ARM GAS  /tmp/ccQHN9mX.s 			page 13
+ARM GAS  /tmp/ccdtUw8z.s 			page 13
 
 
  685 0026 0B       		.uleb128 0xb
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  739 005c 49       		.uleb128 0x49
  740 005d 13       		.uleb128 0x13
  741 005e 38       		.uleb128 0x38
-ARM GAS  /tmp/ccQHN9mX.s 			page 14
+ARM GAS  /tmp/ccdtUw8z.s 			page 14
 
 
  742 005f 0B       		.uleb128 0xb
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  796 0096 13       		.uleb128 0x13
  797 0097 3F       		.uleb128 0x3f
  798 0098 19       		.uleb128 0x19
-ARM GAS  /tmp/ccQHN9mX.s 			page 15
+ARM GAS  /tmp/ccdtUw8z.s 			page 15
 
 
  799 0099 3C       		.uleb128 0x3c
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  853 0010 00000000 		.4byte	.Ltext0
  854 0014 02000000 		.4byte	.Letext0-.Ltext0
  855 0018 00000000 		.4byte	0
-ARM GAS  /tmp/ccQHN9mX.s 			page 16
+ARM GAS  /tmp/ccdtUw8z.s 			page 16
 
 
  856 001c 00000000 		.4byte	0
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  878      392E3320 
  878      32303135 
  878      30353239 
-ARM GAS  /tmp/ccQHN9mX.s 			page 17
+ARM GAS  /tmp/ccdtUw8z.s 			page 17
 
 
  879 00d1 6D6E6F2D 		.ascii	"mno-thumb-interwork -mthumb -ggdb -O0 -fomit-frame-"
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  899 01c3 5F5F7569 		.ascii	"__uint32_t\000"
  899      6E743332 
  899      5F7400
-ARM GAS  /tmp/ccQHN9mX.s 			page 18
+ARM GAS  /tmp/ccdtUw8z.s 			page 18
 
 
  900              	.LASF17:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  923      7400
  924              	.LASF20:
  925 0263 62757366 		.ascii	"busfault_handler\000"
-ARM GAS  /tmp/ccQHN9mX.s 			page 19
+ARM GAS  /tmp/ccdtUw8z.s 			page 19
 
 
  925      61756C74 
@@ -1127,139 +1127,139 @@ ARM GAS  /tmp/ccQHN9mX.s 			page 1
  943      5F656E64 
  943      5F5F00
  944              		.ident	"GCC: (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)"
-ARM GAS  /tmp/ccQHN9mX.s 			page 20
+ARM GAS  /tmp/ccdtUw8z.s 			page 20
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 vectors.c
-     /tmp/ccQHN9mX.s:18     .text:0000000000000000 $t
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 _unhandled_exception
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 NMI_Handler
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 HardFault_Handler
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 MemManage_Handler
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 BusFault_Handler
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 UsageFault_Handler
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector20
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector24
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector28
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 SVC_Handler
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 DebugMon_Handler
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector34
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 PendSV_Handler
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 SysTick_Handler
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector40
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector44
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector48
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector4C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector50
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector54
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector58
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector5C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector60
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector64
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector68
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector6C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector70
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector74
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector78
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector7C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector80
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector84
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector88
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector8C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector90
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector94
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector98
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector9C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorA0
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorA4
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorA8
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorAC
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorB0
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorB4
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorB8
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorBC
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorC0
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorC4
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorC8
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorCC
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorD0
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorD4
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorD8
-ARM GAS  /tmp/ccQHN9mX.s 			page 21
+     /tmp/ccdtUw8z.s:18     .text:0000000000000000 $t
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 _unhandled_exception
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 NMI_Handler
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 HardFault_Handler
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 MemManage_Handler
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 BusFault_Handler
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 UsageFault_Handler
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector20
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector24
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector28
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 SVC_Handler
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 DebugMon_Handler
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector34
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 PendSV_Handler
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 SysTick_Handler
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector40
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector44
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector48
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector4C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector50
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector54
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector58
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector5C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector60
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector64
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector68
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector6C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector70
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector74
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector78
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector7C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector80
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector84
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector88
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector8C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector90
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector94
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector98
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector9C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorA0
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorA4
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorA8
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorAC
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorB0
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorB4
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorB8
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorBC
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorC0
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorC4
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorC8
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorCC
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorD0
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorD4
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorD8
+ARM GAS  /tmp/ccdtUw8z.s 			page 21
 
 
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorDC
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorE0
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorE4
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorE8
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorEC
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorF0
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorF4
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorF8
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 VectorFC
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector100
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector104
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector108
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector10C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector110
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector114
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector118
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector11C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector120
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector124
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector128
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector12C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector130
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector134
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector138
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector13C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector140
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector144
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector148
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector14C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector150
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector154
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector158
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector15C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector160
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector164
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector168
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector16C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector170
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector174
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector178
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector17C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector180
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector184
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector188
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector18C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector190
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector194
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector198
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector19C
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1A0
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1A4
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1A8
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1AC
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1B0
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1B4
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1B8
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1BC
-ARM GAS  /tmp/ccQHN9mX.s 			page 22
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorDC
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorE0
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorE4
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorE8
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorEC
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorF0
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorF4
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorF8
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 VectorFC
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector100
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector104
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector108
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector10C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector110
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector114
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector118
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector11C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector120
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector124
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector128
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector12C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector130
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector134
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector138
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector13C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector140
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector144
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector148
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector14C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector150
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector154
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector158
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector15C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector160
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector164
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector168
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector16C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector170
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector174
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector178
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector17C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector180
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector184
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector188
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector18C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector190
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector194
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector198
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector19C
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1A0
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1A4
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1A8
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1AC
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1B0
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1B4
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1B8
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1BC
+ARM GAS  /tmp/ccdtUw8z.s 			page 22
 
 
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1C0
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1C4
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1C8
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1CC
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1D0
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1D4
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1D8
-     /tmp/ccQHN9mX.s:24     .text:0000000000000000 Vector1DC
-     /tmp/ccQHN9mX.s:279    .vectors:0000000000000000 _vectors
-     /tmp/ccQHN9mX.s:276    .vectors:0000000000000000 $d
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1C0
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1C4
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1C8
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1CC
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1D0
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1D4
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1D8
+     /tmp/ccdtUw8z.s:24     .text:0000000000000000 Vector1DC
+     /tmp/ccdtUw8z.s:279    .vectors:0000000000000000 _vectors
+     /tmp/ccdtUw8z.s:276    .vectors:0000000000000000 $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

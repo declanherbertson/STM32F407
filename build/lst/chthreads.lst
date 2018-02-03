@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc49pbTF.s 			page 1
+ARM GAS  /tmp/ccK7OY43.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
   55              		.p2align 4,,15
   56              		.thumb
   57              		.thumb_func
-ARM GAS  /tmp/cc49pbTF.s 			page 2
+ARM GAS  /tmp/ccK7OY43.s 			page 2
 
 
   58              		.type	port_unlock, %function
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  112              		.thumb
  113              		.thumb_func
  114              		.type	port_timer_get_time, %function
-ARM GAS  /tmp/cc49pbTF.s 			page 3
+ARM GAS  /tmp/ccK7OY43.s 			page 3
 
 
  115              	port_timer_get_time:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  169              	.LFB149:
  170              		.loc 5 536 0
  171              		.cfi_startproc
-ARM GAS  /tmp/cc49pbTF.s 			page 4
+ARM GAS  /tmp/ccK7OY43.s 			page 4
 
 
  172              		@ args = 0, pretend = 0, frame = 8
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  226              		.size	queue_init, .-queue_init
  227              		.align	2
  228 0084 AFF30080 		.p2align 4,,15
-ARM GAS  /tmp/cc49pbTF.s 			page 5
+ARM GAS  /tmp/ccK7OY43.s 			page 5
 
 
  228      AFF30080 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  281              		.loc 5 586 0
  282 00be 009B     		ldr	r3, [sp]
  283 00c0 019A     		ldr	r2, [sp, #4]
-ARM GAS  /tmp/cc49pbTF.s 			page 6
+ARM GAS  /tmp/ccK7OY43.s 			page 6
 
 
  284 00c2 1A60     		str	r2, [r3]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  337              		@ args = 0, pretend = 0, frame = 8
  338              		@ frame_needed = 0, uses_anonymous_args = 0
  339              		@ link register save eliminated.
-ARM GAS  /tmp/cc49pbTF.s 			page 7
+ARM GAS  /tmp/ccK7OY43.s 			page 7
 
 
  340 00f0 82B0     		sub	sp, sp, #8
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  393 0130 1A60     		str	r2, [r3]
  394              		.loc 5 621 0
  395 0132 019B     		ldr	r3, [sp, #4]
-ARM GAS  /tmp/cc49pbTF.s 			page 8
+ARM GAS  /tmp/ccK7OY43.s 			page 8
 
 
  396 0134 1B68     		ldr	r3, [r3]
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  448              		.type	chSchDoYieldS, %function
  449              	chSchDoYieldS:
  450              	.LFB162:
-ARM GAS  /tmp/cc49pbTF.s 			page 9
+ARM GAS  /tmp/ccK7OY43.s 			page 9
 
 
  451              		.loc 5 687 0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  502              		.loc 6 386 0
  503              		.cfi_startproc
  504              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/cc49pbTF.s 			page 10
+ARM GAS  /tmp/ccK7OY43.s 			page 10
 
 
  505              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  558 01c6 0192     		str	r2, [sp, #4]
  559              		.loc 7 452 0
  560 01c8 039A     		ldr	r2, [sp, #12]
-ARM GAS  /tmp/cc49pbTF.s 			page 11
+ARM GAS  /tmp/ccK7OY43.s 			page 11
 
 
  561 01ca 029B     		ldr	r3, [sp, #8]
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  613              		.loc 8 329 0
  614              		.cfi_startproc
  615              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  /tmp/cc49pbTF.s 			page 12
+ARM GAS  /tmp/ccK7OY43.s 			page 12
 
 
  616              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  668              	.LFB204:
  669              		.loc 8 437 0
  670              		.cfi_startproc
-ARM GAS  /tmp/cc49pbTF.s 			page 13
+ARM GAS  /tmp/ccK7OY43.s 			page 13
 
 
  671              		@ args = 0, pretend = 0, frame = 16
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  723 026e 9A60     		str	r2, [r3, #8]
  724              		.loc 9 91 0
  725 0270 039B     		ldr	r3, [sp, #12]
-ARM GAS  /tmp/cc49pbTF.s 			page 14
+ARM GAS  /tmp/ccK7OY43.s 			page 14
 
 
  726 0272 0222     		movs	r2, #2
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  780 02d2 1846     		mov	r0, r3
  781 02d4 05B0     		add	sp, sp, #20
  782              		.cfi_def_cfa_offset 4
-ARM GAS  /tmp/cc49pbTF.s 			page 15
+ARM GAS  /tmp/ccK7OY43.s 			page 15
 
 
  783              		@ sp needed
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  837 0318 074A     		ldr	r2, .L45
  838 031a 1A62     		str	r2, [r3, #32]
  839              		.loc 9 193 0
-ARM GAS  /tmp/cc49pbTF.s 			page 16
+ARM GAS  /tmp/ccK7OY43.s 			page 16
 
 
  840 031c 019B     		ldr	r3, [sp, #4]
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  894              		@ sp needed
  895 035c 5DF804FB 		ldr	pc, [sp], #4
  896              		.cfi_endproc
-ARM GAS  /tmp/cc49pbTF.s 			page 17
+ARM GAS  /tmp/ccK7OY43.s 			page 17
 
 
  897              	.LFE250:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  951              		.loc 9 294 0
  952 0386 FFF703FF 		bl	chSysLock
  953              		.loc 9 295 0
-ARM GAS  /tmp/cc49pbTF.s 			page 18
+ARM GAS  /tmp/ccK7OY43.s 			page 18
 
 
  954 038a 0198     		ldr	r0, [sp, #4]
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1006 03c6 1344     		add	r3, r3, r2
  1007 03c8 0593     		str	r3, [sp, #20]
  1008              		.loc 9 353 0
-ARM GAS  /tmp/cc49pbTF.s 			page 19
+ARM GAS  /tmp/ccK7OY43.s 			page 19
 
 
  1009 03ca 059B     		ldr	r3, [sp, #20]
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1063              	chThdStart:
  1064              	.LFB254:
  1065              		.loc 9 377 0
-ARM GAS  /tmp/cc49pbTF.s 			page 20
+ARM GAS  /tmp/ccK7OY43.s 			page 20
 
 
  1066              		.cfi_startproc
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1120 0456 83F82220 		strb	r2, [r3, #34]
  1121              		.loc 9 404 0
  1122 045a FFF7A1FE 		bl	chSysUnlock
-ARM GAS  /tmp/cc49pbTF.s 			page 21
+ARM GAS  /tmp/ccK7OY43.s 			page 21
 
 
  1123              		.loc 9 406 0
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1176 04a4 1269     		ldr	r2, [r2, #16]
  1177 04a6 1A61     		str	r2, [r3, #16]
  1178 04a8 019B     		ldr	r3, [sp, #4]
-ARM GAS  /tmp/cc49pbTF.s 			page 22
+ARM GAS  /tmp/ccK7OY43.s 			page 22
 
 
  1179 04aa 1B69     		ldr	r3, [r3, #16]
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1233              		.global	chThdExit
  1234              		.thumb
  1235              		.thumb_func
-ARM GAS  /tmp/cc49pbTF.s 			page 23
+ARM GAS  /tmp/ccK7OY43.s 			page 23
 
 
  1236              		.type	chThdExit, %function
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1289 0532 08E0     		b	.L70
  1290              	.L71:
  1291              		.loc 9 511 0
-ARM GAS  /tmp/cc49pbTF.s 			page 24
+ARM GAS  /tmp/ccK7OY43.s 			page 24
 
 
  1292 0534 039B     		ldr	r3, [sp, #12]
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1346              		.size	chThdExitS, .-chThdExitS
  1347              		.align	2
  1348 0594 AFF30080 		.p2align 4,,15
-ARM GAS  /tmp/cc49pbTF.s 			page 25
+ARM GAS  /tmp/ccK7OY43.s 			page 25
 
 
  1348      AFF30080 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1401              	.L79:
  1402              		.align	2
  1403              	.L78:
-ARM GAS  /tmp/cc49pbTF.s 			page 26
+ARM GAS  /tmp/ccK7OY43.s 			page 26
 
 
  1404 05e4 00000000 		.word	ch
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1457 0626 064B     		ldr	r3, .L84
  1458 0628 9B69     		ldr	r3, [r3, #24]
  1459 062a 019A     		ldr	r2, [sp, #4]
-ARM GAS  /tmp/cc49pbTF.s 			page 27
+ARM GAS  /tmp/ccK7OY43.s 			page 27
 
 
  1460 062c DA63     		str	r2, [r3, #60]
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1512              		@ sp needed
  1513 0672 5DF804FB 		ldr	pc, [sp], #4
  1514              		.cfi_endproc
-ARM GAS  /tmp/cc49pbTF.s 			page 28
+ARM GAS  /tmp/ccK7OY43.s 			page 28
 
 
  1515              	.LFE261:
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1568              		.loc 9 671 0
  1569 06a6 FFF773FD 		bl	chSysLock
  1570              		.loc 9 672 0
-ARM GAS  /tmp/cc49pbTF.s 			page 29
+ARM GAS  /tmp/ccK7OY43.s 			page 29
 
 
  1571 06aa FFF781FD 		bl	chVTGetSystemTimeX
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1625 06f0 05D0     		beq	.L91
  1626              		.loc 9 699 0
  1627 06f2 009A     		ldr	r2, [sp]
-ARM GAS  /tmp/cc49pbTF.s 			page 30
+ARM GAS  /tmp/ccK7OY43.s 			page 30
 
 
  1628 06f4 039B     		ldr	r3, [sp, #12]
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1682              		.cfi_startproc
  1683              		@ args = 0, pretend = 0, frame = 16
  1684              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cc49pbTF.s 			page 31
+ARM GAS  /tmp/ccK7OY43.s 			page 31
 
 
  1685 0720 00B5     		push	{lr}
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1739 075c 0390     		str	r0, [sp, #12]
  1740              		.loc 9 766 0
  1741 075e 009B     		ldr	r3, [sp]
-ARM GAS  /tmp/cc49pbTF.s 			page 32
+ARM GAS  /tmp/ccK7OY43.s 			page 32
 
 
  1742 0760 002B     		cmp	r3, #0
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1795              	.LBB10:
  1796              		.loc 9 789 0
  1797 07a0 019B     		ldr	r3, [sp, #4]
-ARM GAS  /tmp/cc49pbTF.s 			page 33
+ARM GAS  /tmp/ccK7OY43.s 			page 33
 
 
  1798 07a2 1B68     		ldr	r3, [r3]
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1852 07d8 0022     		movs	r2, #0
  1853 07da 1A60     		str	r2, [r3]
  1854              		.loc 9 817 0
-ARM GAS  /tmp/cc49pbTF.s 			page 34
+ARM GAS  /tmp/ccK7OY43.s 			page 34
 
 
  1855 07dc 0398     		ldr	r0, [sp, #12]
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1909              	chThdEnqueueTimeoutS:
  1910              	.LFB271:
  1911              		.loc 9 861 0
-ARM GAS  /tmp/cc49pbTF.s 			page 35
+ARM GAS  /tmp/ccK7OY43.s 			page 35
 
 
  1912              		.cfi_startproc
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  1965              		@ args = 0, pretend = 0, frame = 8
  1966              		@ frame_needed = 0, uses_anonymous_args = 0
  1967 0850 00B5     		push	{lr}
-ARM GAS  /tmp/cc49pbTF.s 			page 36
+ARM GAS  /tmp/ccK7OY43.s 			page 36
 
 
  1968              		.cfi_def_cfa_offset 4
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2020              		.loc 9 898 0
  2021 0892 0198     		ldr	r0, [sp, #4]
  2022 0894 FFF7FCFB 		bl	queue_notempty
-ARM GAS  /tmp/cc49pbTF.s 			page 37
+ARM GAS  /tmp/ccK7OY43.s 			page 37
 
 
  2023 0898 0346     		mov	r3, r0
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2077 0045 03       		.uleb128 0x3
  2078 0046 5B000000 		.4byte	.LASF3
  2079 004a 0B       		.byte	0xb
-ARM GAS  /tmp/cc49pbTF.s 			page 38
+ARM GAS  /tmp/ccK7OY43.s 			page 38
 
 
  2080 004b 1D       		.byte	0x1d
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2134 00b4 65000000 		.4byte	0x65
  2135 00b8 03       		.uleb128 0x3
  2136 00b9 5D050000 		.4byte	.LASF16
-ARM GAS  /tmp/cc49pbTF.s 			page 39
+ARM GAS  /tmp/ccK7OY43.s 			page 39
 
 
  2137 00bd 0C       		.byte	0xc
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2191 0132 75060000 		.4byte	.LASF27
  2192 0136 0E       		.byte	0xe
  2193 0137 3F       		.byte	0x3f
-ARM GAS  /tmp/cc49pbTF.s 			page 40
+ARM GAS  /tmp/ccK7OY43.s 			page 40
 
 
  2194 0138 3C010000 		.4byte	0x13c
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2248 01a7 20       		.byte	0x20
  2249 01a8 06       		.uleb128 0x6
  2250 01a9 6A070000 		.4byte	.LASF35
-ARM GAS  /tmp/cc49pbTF.s 			page 41
+ARM GAS  /tmp/ccK7OY43.s 			page 41
 
 
  2251 01ad 05       		.byte	0x5
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2305 021b B8030000 		.4byte	.LASF43
  2306 021f 0E       		.byte	0xe
  2307 0220 44       		.byte	0x44
-ARM GAS  /tmp/cc49pbTF.s 			page 42
+ARM GAS  /tmp/ccK7OY43.s 			page 42
 
 
  2308 0221 25020000 		.4byte	0x225
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2362 0290 05       		.byte	0x5
  2363 0291 6A01     		.2byte	0x16a
  2364 0293 E6020000 		.4byte	0x2e6
-ARM GAS  /tmp/cc49pbTF.s 			page 43
+ARM GAS  /tmp/ccK7OY43.s 			page 43
 
 
  2365 0297 09       		.uleb128 0x9
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2419 0309 0E       		.byte	0xe
  2420 030a 61       		.byte	0x61
  2421 030b 0F030000 		.4byte	0x30f
-ARM GAS  /tmp/cc49pbTF.s 			page 44
+ARM GAS  /tmp/ccK7OY43.s 			page 44
 
 
  2422 030f 0B       		.uleb128 0xb
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2476 0383 09       		.uleb128 0x9
  2477 0384 65000000 		.4byte	.LASF50
  2478 0388 05       		.byte	0x5
-ARM GAS  /tmp/cc49pbTF.s 			page 45
+ARM GAS  /tmp/ccK7OY43.s 			page 45
 
 
  2479 0389 5801     		.2byte	0x158
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2533 03fc A401     		.2byte	0x1a4
  2534 03fe 5E030000 		.4byte	0x35e
  2535 0402 1C       		.byte	0x1c
-ARM GAS  /tmp/cc49pbTF.s 			page 46
+ARM GAS  /tmp/ccK7OY43.s 			page 46
 
 
  2536 0403 08       		.uleb128 0x8
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2590 0474 84040000 		.4byte	0x484
  2591 0478 07       		.uleb128 0x7
  2592 0479 737000   		.ascii	"sp\000"
-ARM GAS  /tmp/cc49pbTF.s 			page 47
+ARM GAS  /tmp/ccK7OY43.s 			page 47
 
 
  2593 047c 0F       		.byte	0xf
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2647 04e7 72313100 		.ascii	"r11\000"
  2648 04eb 01       		.byte	0x1
  2649 04ec 7301     		.2byte	0x173
-ARM GAS  /tmp/cc49pbTF.s 			page 48
+ARM GAS  /tmp/ccK7OY43.s 			page 48
 
 
  2650 04ee 56040000 		.4byte	0x456
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2704 055d 4E010000 		.4byte	.LASF77
  2705 0561 10       		.byte	0x10
  2706 0562 A801     		.2byte	0x1a8
-ARM GAS  /tmp/cc49pbTF.s 			page 49
+ARM GAS  /tmp/ccK7OY43.s 			page 49
 
 
  2707 0564 31040000 		.4byte	0x431
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2761 05d9 31040000 		.4byte	0x431
  2762 05dd 48       		.byte	0x48
  2763 05de 09       		.uleb128 0x9
-ARM GAS  /tmp/cc49pbTF.s 			page 50
+ARM GAS  /tmp/ccK7OY43.s 			page 50
 
 
  2764 05df 2F060000 		.4byte	.LASF81
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2818 064c AB060000 		.4byte	0x6ab
  2819 0650 16       		.uleb128 0x16
  2820 0651 34000000 		.4byte	.LASF87
-ARM GAS  /tmp/cc49pbTF.s 			page 51
+ARM GAS  /tmp/ccK7OY43.s 			page 51
 
 
  2821 0655 05       		.byte	0x5
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2875 06c9 07       		.uleb128 0x7
  2876 06ca 636E7400 		.ascii	"cnt\000"
  2877 06ce 12       		.byte	0x12
-ARM GAS  /tmp/cc49pbTF.s 			page 52
+ARM GAS  /tmp/ccK7OY43.s 			page 52
 
 
  2878 06cf 37       		.byte	0x37
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2932 073b 08       		.byte	0x8
  2933 073c 40       		.byte	0x40
  2934 073d F1020000 		.4byte	0x2f1
-ARM GAS  /tmp/cc49pbTF.s 			page 53
+ARM GAS  /tmp/ccK7OY43.s 			page 53
 
 
  2935 0741 14       		.uleb128 0x14
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  2989 07aa 9D070000 		.4byte	0x79d
  2990 07ae 04       		.uleb128 0x4
  2991 07af 01       		.byte	0x1
-ARM GAS  /tmp/cc49pbTF.s 			page 54
+ARM GAS  /tmp/ccK7OY43.s 			page 54
 
 
  2992 07b0 02       		.byte	0x2
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3046 082b 91       		.byte	0x91
  3047 082c 7C       		.sleb128 -4
  3048 082d 00       		.byte	0
-ARM GAS  /tmp/cc49pbTF.s 			page 55
+ARM GAS  /tmp/ccK7OY43.s 			page 55
 
 
  3049 082e 00       		.byte	0
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3103 08a7 7F080000 		.4byte	0x87f
  3104 08ab 02       		.uleb128 0x2
  3105 08ac 91       		.byte	0x91
-ARM GAS  /tmp/cc49pbTF.s 			page 56
+ARM GAS  /tmp/ccK7OY43.s 			page 56
 
 
  3106 08ad 7C       		.sleb128 -4
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3160 0921 9C       		.byte	0x9c
  3161 0922 44090000 		.4byte	0x944
  3162 0926 20       		.uleb128 0x20
-ARM GAS  /tmp/cc49pbTF.s 			page 57
+ARM GAS  /tmp/ccK7OY43.s 			page 57
 
 
  3163 0927 747000   		.ascii	"tp\000"
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3217 0996 05       		.byte	0x5
  3218 0997 6102     		.2byte	0x261
  3219 0999 25020000 		.4byte	0x225
-ARM GAS  /tmp/cc49pbTF.s 			page 58
+ARM GAS  /tmp/ccK7OY43.s 			page 58
 
 
  3220 099d 02       		.uleb128 0x2
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3274 0a0e 01       		.uleb128 0x1
  3275 0a0f 9C       		.byte	0x9c
  3276 0a10 24       		.uleb128 0x24
-ARM GAS  /tmp/cc49pbTF.s 			page 59
+ARM GAS  /tmp/ccK7OY43.s 			page 59
 
 
  3277 0a11 05050000 		.4byte	.LASF120
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3331 0a94 91       		.byte	0x91
  3332 0a95 7C       		.sleb128 -4
  3333 0a96 28       		.uleb128 0x28
-ARM GAS  /tmp/cc49pbTF.s 			page 60
+ARM GAS  /tmp/ccK7OY43.s 			page 60
 
 
  3334 0a97 C9070000 		.4byte	.LASF125
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3388 0b0b F9030000 		.4byte	.LASF124
  3389 0b0f 08       		.byte	0x8
  3390 0b10 8601     		.2byte	0x186
-ARM GAS  /tmp/cc49pbTF.s 			page 61
+ARM GAS  /tmp/ccK7OY43.s 			page 61
 
 
  3391 0b12 26010000 		.4byte	0x126
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3445 0b84 18       		.uleb128 0x18
  3446 0b85 740B0000 		.4byte	0xb74
  3447 0b89 29       		.uleb128 0x29
-ARM GAS  /tmp/cc49pbTF.s 			page 62
+ARM GAS  /tmp/ccK7OY43.s 			page 62
 
 
  3448 0b8a 99020000 		.4byte	.LASF131
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3502 0bf7 09       		.byte	0x9
  3503 0bf8 A8       		.byte	0xa8
  3504 0bf9 25020000 		.4byte	0x225
-ARM GAS  /tmp/cc49pbTF.s 			page 63
+ARM GAS  /tmp/ccK7OY43.s 			page 63
 
 
  3505 0bfd 02       		.uleb128 0x2
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3559 0c71 11       		.uleb128 0x11
  3560 0c72 2A040000 		.4byte	0x42a
  3561 0c76 14       		.byte	0x14
-ARM GAS  /tmp/cc49pbTF.s 			page 64
+ARM GAS  /tmp/ccK7OY43.s 			page 64
 
 
  3562 0c77 00       		.byte	0
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3616 0ced 2D       		.uleb128 0x2d
  3617 0cee 70030000 		.4byte	.LASF136
  3618 0cf2 09       		.byte	0x9
-ARM GAS  /tmp/cc49pbTF.s 			page 65
+ARM GAS  /tmp/ccK7OY43.s 			page 65
 
 
  3619 0cf3 4201     		.2byte	0x142
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3673 0d5e 74       		.sleb128 -12
  3674 0d5f 26       		.uleb128 0x26
  3675 0d60 FC040000 		.4byte	.LASF129
-ARM GAS  /tmp/cc49pbTF.s 			page 66
+ARM GAS  /tmp/ccK7OY43.s 			page 66
 
 
  3676 0d64 790D0000 		.4byte	0xd79
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3730 0de3 09       		.byte	0x9
  3731 0de4 8F01     		.2byte	0x18f
  3732 0de6 25020000 		.4byte	0x225
-ARM GAS  /tmp/cc49pbTF.s 			page 67
+ARM GAS  /tmp/ccK7OY43.s 			page 67
 
 
  3733 0dea 02       		.uleb128 0x2
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3787 0e62 91       		.byte	0x91
  3788 0e63 74       		.sleb128 -12
  3789 0e64 00       		.byte	0
-ARM GAS  /tmp/cc49pbTF.s 			page 68
+ARM GAS  /tmp/ccK7OY43.s 			page 68
 
 
  3790 0e65 2E       		.uleb128 0x2e
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3844 0edb 02       		.uleb128 0x2
  3845 0edc 91       		.byte	0x91
  3846 0edd 74       		.sleb128 -12
-ARM GAS  /tmp/cc49pbTF.s 			page 69
+ARM GAS  /tmp/ccK7OY43.s 			page 69
 
 
  3847 0ede 26       		.uleb128 0x26
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3901 0f59 09       		.byte	0x9
  3902 0f5a 7602     		.2byte	0x276
  3903 0f5c 50060000 		.4byte	.LFB261
-ARM GAS  /tmp/cc49pbTF.s 			page 70
+ARM GAS  /tmp/ccK7OY43.s 			page 70
 
 
  3904 0f60 26000000 		.4byte	.LFE261-.LFB261
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  3958 0fd1 D0060000 		.4byte	.LFB264
  3959 0fd5 3C000000 		.4byte	.LFE264-.LFB264
  3960 0fd9 01       		.uleb128 0x1
-ARM GAS  /tmp/cc49pbTF.s 			page 71
+ARM GAS  /tmp/ccK7OY43.s 			page 71
 
 
  3961 0fda 9C       		.byte	0x9c
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4015 1049 747000   		.ascii	"tp\000"
  4016 104c 09       		.byte	0x9
  4017 104d DB02     		.2byte	0x2db
-ARM GAS  /tmp/cc49pbTF.s 			page 72
+ARM GAS  /tmp/ccK7OY43.s 			page 72
 
 
  4018 104f 25020000 		.4byte	0x225
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4072 10c4 00       		.byte	0
  4073 10c5 18       		.uleb128 0x18
  4074 10c6 680C0000 		.4byte	0xc68
-ARM GAS  /tmp/cc49pbTF.s 			page 73
+ARM GAS  /tmp/ccK7OY43.s 			page 73
 
 
  4075 10ca 2E       		.uleb128 0x2e
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4129 1140 09       		.byte	0x9
  4130 1141 2903     		.2byte	0x329
  4131 1143 AB060000 		.4byte	0x6ab
-ARM GAS  /tmp/cc49pbTF.s 			page 74
+ARM GAS  /tmp/ccK7OY43.s 			page 74
 
 
  4132 1147 02       		.uleb128 0x2
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4186 11b4 00       		.byte	0
  4187 11b5 2D       		.uleb128 0x2d
  4188 11b6 D7070000 		.4byte	.LASF157
-ARM GAS  /tmp/cc49pbTF.s 			page 75
+ARM GAS  /tmp/ccK7OY43.s 			page 75
 
 
  4189 11ba 09       		.byte	0x9
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4243 1229 8003     		.2byte	0x380
  4244 122b 80080000 		.4byte	.LFB273
  4245 122f 24000000 		.4byte	.LFE273-.LFB273
-ARM GAS  /tmp/cc49pbTF.s 			page 76
+ARM GAS  /tmp/ccK7OY43.s 			page 76
 
 
  4246 1233 01       		.uleb128 0x1
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4300 0013 02       		.uleb128 0x2
  4301 0014 24       		.uleb128 0x24
  4302 0015 00       		.byte	0
-ARM GAS  /tmp/cc49pbTF.s 			page 77
+ARM GAS  /tmp/ccK7OY43.s 			page 77
 
 
  4303 0016 0B       		.uleb128 0xb
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4357 004c 3B       		.uleb128 0x3b
  4358 004d 0B       		.uleb128 0xb
  4359 004e 49       		.uleb128 0x49
-ARM GAS  /tmp/cc49pbTF.s 			page 78
+ARM GAS  /tmp/ccK7OY43.s 			page 78
 
 
  4360 004f 13       		.uleb128 0x13
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4414 0085 0B       		.uleb128 0xb
  4415 0086 49       		.uleb128 0x49
  4416 0087 13       		.uleb128 0x13
-ARM GAS  /tmp/cc49pbTF.s 			page 79
+ARM GAS  /tmp/ccK7OY43.s 			page 79
 
 
  4417 0088 00       		.byte	0
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4471 00be 00       		.byte	0
  4472 00bf 00       		.byte	0
  4473 00c0 11       		.uleb128 0x11
-ARM GAS  /tmp/cc49pbTF.s 			page 80
+ARM GAS  /tmp/ccK7OY43.s 			page 80
 
 
  4474 00c1 21       		.uleb128 0x21
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4528 00f7 3B       		.uleb128 0x3b
  4529 00f8 0B       		.uleb128 0xb
  4530 00f9 01       		.uleb128 0x1
-ARM GAS  /tmp/cc49pbTF.s 			page 81
+ARM GAS  /tmp/ccK7OY43.s 			page 81
 
 
  4531 00fa 13       		.uleb128 0x13
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4585 0130 05       		.uleb128 0x5
  4586 0131 00       		.byte	0
  4587 0132 03       		.uleb128 0x3
-ARM GAS  /tmp/cc49pbTF.s 			page 82
+ARM GAS  /tmp/ccK7OY43.s 			page 82
 
 
  4588 0133 0E       		.uleb128 0xe
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4642 016a 00       		.byte	0
  4643 016b 00       		.byte	0
  4644 016c 1E       		.uleb128 0x1e
-ARM GAS  /tmp/cc49pbTF.s 			page 83
+ARM GAS  /tmp/ccK7OY43.s 			page 83
 
 
  4645 016d 2E       		.uleb128 0x2e
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4699 01a5 49       		.uleb128 0x49
  4700 01a6 13       		.uleb128 0x13
  4701 01a7 02       		.uleb128 0x2
-ARM GAS  /tmp/cc49pbTF.s 			page 84
+ARM GAS  /tmp/ccK7OY43.s 			page 84
 
 
  4702 01a8 18       		.uleb128 0x18
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4756 01df 49       		.uleb128 0x49
  4757 01e0 13       		.uleb128 0x13
  4758 01e1 11       		.uleb128 0x11
-ARM GAS  /tmp/cc49pbTF.s 			page 85
+ARM GAS  /tmp/ccK7OY43.s 			page 85
 
 
  4759 01e2 01       		.uleb128 0x1
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4813 021b 34       		.uleb128 0x34
  4814 021c 00       		.byte	0
  4815 021d 03       		.uleb128 0x3
-ARM GAS  /tmp/cc49pbTF.s 			page 86
+ARM GAS  /tmp/ccK7OY43.s 			page 86
 
 
  4816 021e 0E       		.uleb128 0xe
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4870 0255 3B       		.uleb128 0x3b
  4871 0256 0B       		.uleb128 0xb
  4872 0257 27       		.uleb128 0x27
-ARM GAS  /tmp/cc49pbTF.s 			page 87
+ARM GAS  /tmp/ccK7OY43.s 			page 87
 
 
  4873 0258 19       		.uleb128 0x19
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4927 028f 49       		.uleb128 0x49
  4928 0290 13       		.uleb128 0x13
  4929 0291 02       		.uleb128 0x2
-ARM GAS  /tmp/cc49pbTF.s 			page 88
+ARM GAS  /tmp/ccK7OY43.s 			page 88
 
 
  4930 0292 18       		.uleb128 0x18
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  4984 02ca 00       		.byte	0
  4985 02cb 2F       		.uleb128 0x2f
  4986 02cc 34       		.uleb128 0x34
-ARM GAS  /tmp/cc49pbTF.s 			page 89
+ARM GAS  /tmp/ccK7OY43.s 			page 89
 
 
  4987 02cd 00       		.byte	0
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5041 0304 49       		.uleb128 0x49
  5042 0305 13       		.uleb128 0x13
  5043 0306 3F       		.uleb128 0x3f
-ARM GAS  /tmp/cc49pbTF.s 			page 90
+ARM GAS  /tmp/ccK7OY43.s 			page 90
 
 
  5044 0307 19       		.uleb128 0x19
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5089 001d 44494552 		.ascii	"DIER\000"
  5089      00
  5090              	.LASF2:
-ARM GAS  /tmp/cc49pbTF.s 			page 91
+ARM GAS  /tmp/ccK7OY43.s 			page 91
 
 
  5091 0022 73697A65 		.ascii	"size_t\000"
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5117      6970746F 
  5117      725F7400 
  5118              	.LASF106:
-ARM GAS  /tmp/cc49pbTF.s 			page 92
+ARM GAS  /tmp/ccK7OY43.s 			page 92
 
 
  5119 00bc 706F7274 		.ascii	"port_lock\000"
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5143      3100
  5144              	.LASF78:
  5145 0154 43434D52 		.ascii	"CCMR2\000"
-ARM GAS  /tmp/cc49pbTF.s 			page 93
+ARM GAS  /tmp/ccK7OY43.s 			page 93
 
 
  5145      3200
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5172              	.LASF79:
  5173 01e7 43434552 		.ascii	"CCER\000"
  5173      00
-ARM GAS  /tmp/cc49pbTF.s 			page 94
+ARM GAS  /tmp/ccK7OY43.s 			page 94
 
 
  5174              	.LASF11:
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5200              	.LASF122:
  5201 0279 63685654 		.ascii	"chVTGetSystemTimeX\000"
  5201      47657453 
-ARM GAS  /tmp/cc49pbTF.s 			page 95
+ARM GAS  /tmp/ccK7OY43.s 			page 95
 
 
  5201      79737465 
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5229      00
  5230              	.LASF145:
  5231 0309 6E657770 		.ascii	"newprio\000"
-ARM GAS  /tmp/cc49pbTF.s 			page 96
+ARM GAS  /tmp/ccK7OY43.s 			page 96
 
 
  5231      72696F00 
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5255      54696D65 
  5255      6F757453 
  5256              	.LASF70:
-ARM GAS  /tmp/cc49pbTF.s 			page 97
+ARM GAS  /tmp/ccK7OY43.s 			page 97
 
 
  5257 03af 73697A65 		.ascii	"sizetype\000"
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5281      5F7400
  5282              	.LASF21:
  5283 044b 74726566 		.ascii	"trefs_t\000"
-ARM GAS  /tmp/cc49pbTF.s 			page 98
+ARM GAS  /tmp/ccK7OY43.s 			page 98
 
 
  5283      735F7400 
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5310              	.LASF66:
  5311 04f2 63685F73 		.ascii	"ch_system\000"
  5311      79737465 
-ARM GAS  /tmp/cc49pbTF.s 			page 99
+ARM GAS  /tmp/ccK7OY43.s 			page 99
 
 
  5311      6D00
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5336              	.LASF97:
  5337 0589 6F776E65 		.ascii	"owner\000"
  5337      7200
-ARM GAS  /tmp/cc49pbTF.s 			page 100
+ARM GAS  /tmp/ccK7OY43.s 			page 100
 
 
  5338              	.LASF10:
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5358      666F5F72 
  5358      656D6F76 
  5358      6500
-ARM GAS  /tmp/cc49pbTF.s 			page 101
+ARM GAS  /tmp/ccK7OY43.s 			page 101
 
 
  5359              	.LASF26:
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5384      6164735F 
  5384      71756575 
  5384      655F7400 
-ARM GAS  /tmp/cc49pbTF.s 			page 102
+ARM GAS  /tmp/ccK7OY43.s 			page 102
 
 
  5385              	.LASF96:
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5413              	.LASF40:
  5414 07cf 6D74786C 		.ascii	"mtxlist\000"
  5414      69737400 
-ARM GAS  /tmp/cc49pbTF.s 			page 103
+ARM GAS  /tmp/ccK7OY43.s 			page 103
 
 
  5415              	.LASF157:
@@ -6132,82 +6132,82 @@ ARM GAS  /tmp/cc49pbTF.s 			page 1
  5418      64457869 
  5418      745300
  5419              		.ident	"GCC: (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)"
-ARM GAS  /tmp/cc49pbTF.s 			page 104
+ARM GAS  /tmp/ccK7OY43.s 			page 104
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 chthreads.c
-     /tmp/cc49pbTF.s:18     .text:0000000000000000 $t
-     /tmp/cc49pbTF.s:23     .text:0000000000000000 port_lock
-     /tmp/cc49pbTF.s:59     .text:0000000000000010 port_unlock
-     /tmp/cc49pbTF.s:93     .text:0000000000000020 st_lld_get_counter
-     /tmp/cc49pbTF.s:115    .text:0000000000000030 port_timer_get_time
-     /tmp/cc49pbTF.s:140    .text:0000000000000040 list_init
-     /tmp/cc49pbTF.s:168    .text:0000000000000050 list_notempty
-     /tmp/cc49pbTF.s:201    .text:0000000000000070 queue_init
-     /tmp/cc49pbTF.s:232    .text:0000000000000090 queue_notempty
-     /tmp/cc49pbTF.s:265    .text:00000000000000b0 list_insert
-     /tmp/cc49pbTF.s:298    .text:00000000000000d0 list_remove
-     /tmp/cc49pbTF.s:333    .text:00000000000000f0 queue_insert
-     /tmp/cc49pbTF.s:375    .text:0000000000000120 queue_fifo_remove
-     /tmp/cc49pbTF.s:415    .text:0000000000000150 chSchCanYieldS
-     /tmp/cc49pbTF.s:440    .text:000000000000016c $d
-     /tmp/cc49pbTF.s:444    .text:0000000000000170 $t
-     /tmp/cc49pbTF.s:449    .text:0000000000000170 chSchDoYieldS
-     /tmp/cc49pbTF.s:477    .text:0000000000000190 chSysLock
-     /tmp/cc49pbTF.s:500    .text:00000000000001a0 chSysUnlock
-     /tmp/cc49pbTF.s:522    .text:00000000000001b0 chVTGetSystemTimeX
-     /tmp/cc49pbTF.s:547    .text:00000000000001c0 chVTIsTimeWithinX
-     /tmp/cc49pbTF.s:585    .text:00000000000001f0 chThdGetSelfX
-     /tmp/cc49pbTF.s:602    .text:00000000000001f8 $d
-     /tmp/cc49pbTF.s:606    .text:00000000000001fc $t
-     /tmp/cc49pbTF.s:611    .text:0000000000000200 chThdGetWorkingAreaX
-     /tmp/cc49pbTF.s:638    .text:0000000000000210 chThdSleepS
-     /tmp/cc49pbTF.s:667    .text:0000000000000230 chThdDoDequeueNextI
-     /tmp/cc49pbTF.s:705    .text:0000000000000260 _thread_init
-     /tmp/cc49pbTF.s:788    .text:00000000000002dc $d
-     /tmp/cc49pbTF.s:792    .text:00000000000002e0 $t
-     /tmp/cc49pbTF.s:798    .text:00000000000002e0 chThdCreateSuspendedI
-     /tmp/cc49pbTF.s:858    .text:0000000000000338 $d
-     /tmp/cc49pbTF.s:862    .text:000000000000033c $t
-     /tmp/cc49pbTF.s:868    .text:0000000000000340 chThdCreateSuspended
-     /tmp/cc49pbTF.s:905    .text:0000000000000360 chThdCreateI
-     /tmp/cc49pbTF.s:939    .text:0000000000000380 chThdCreate
-     /tmp/cc49pbTF.s:975    .rodata:0000000000000000 $d
-     /tmp/cc49pbTF.s:985    .text:00000000000003b0 chThdCreateStatic
-     /tmp/cc49pbTF.s:1052   .text:0000000000000414 $d
-     /tmp/cc49pbTF.s:1057   .text:000000000000041c $t
-     /tmp/cc49pbTF.s:1063   .text:0000000000000420 chThdStart
-     /tmp/cc49pbTF.s:1100   .text:0000000000000440 chThdAddRef
-     /tmp/cc49pbTF.s:1140   .text:0000000000000470 chThdRelease
-     /tmp/cc49pbTF.s:1237   .text:0000000000000500 chThdExit
-     /tmp/cc49pbTF.s:1268   .text:0000000000000520 chThdExitS
-     /tmp/cc49pbTF.s:1343   .text:0000000000000590 $d
-     /tmp/cc49pbTF.s:1347   .text:0000000000000594 $t
-     /tmp/cc49pbTF.s:1353   .text:00000000000005a0 chThdWait
-     /tmp/cc49pbTF.s:1404   .text:00000000000005e4 $d
-     /tmp/cc49pbTF.s:1408   .text:00000000000005e8 $t
-     /tmp/cc49pbTF.s:1414   .text:00000000000005f0 chThdSetPriority
-     /tmp/cc49pbTF.s:1476   .text:0000000000000640 $d
-     /tmp/cc49pbTF.s:1480   .text:0000000000000644 $t
-     /tmp/cc49pbTF.s:1486   .text:0000000000000650 chThdTerminate
-     /tmp/cc49pbTF.s:1523   .text:0000000000000680 chThdSleep
-ARM GAS  /tmp/cc49pbTF.s 			page 105
+     /tmp/ccK7OY43.s:18     .text:0000000000000000 $t
+     /tmp/ccK7OY43.s:23     .text:0000000000000000 port_lock
+     /tmp/ccK7OY43.s:59     .text:0000000000000010 port_unlock
+     /tmp/ccK7OY43.s:93     .text:0000000000000020 st_lld_get_counter
+     /tmp/ccK7OY43.s:115    .text:0000000000000030 port_timer_get_time
+     /tmp/ccK7OY43.s:140    .text:0000000000000040 list_init
+     /tmp/ccK7OY43.s:168    .text:0000000000000050 list_notempty
+     /tmp/ccK7OY43.s:201    .text:0000000000000070 queue_init
+     /tmp/ccK7OY43.s:232    .text:0000000000000090 queue_notempty
+     /tmp/ccK7OY43.s:265    .text:00000000000000b0 list_insert
+     /tmp/ccK7OY43.s:298    .text:00000000000000d0 list_remove
+     /tmp/ccK7OY43.s:333    .text:00000000000000f0 queue_insert
+     /tmp/ccK7OY43.s:375    .text:0000000000000120 queue_fifo_remove
+     /tmp/ccK7OY43.s:415    .text:0000000000000150 chSchCanYieldS
+     /tmp/ccK7OY43.s:440    .text:000000000000016c $d
+     /tmp/ccK7OY43.s:444    .text:0000000000000170 $t
+     /tmp/ccK7OY43.s:449    .text:0000000000000170 chSchDoYieldS
+     /tmp/ccK7OY43.s:477    .text:0000000000000190 chSysLock
+     /tmp/ccK7OY43.s:500    .text:00000000000001a0 chSysUnlock
+     /tmp/ccK7OY43.s:522    .text:00000000000001b0 chVTGetSystemTimeX
+     /tmp/ccK7OY43.s:547    .text:00000000000001c0 chVTIsTimeWithinX
+     /tmp/ccK7OY43.s:585    .text:00000000000001f0 chThdGetSelfX
+     /tmp/ccK7OY43.s:602    .text:00000000000001f8 $d
+     /tmp/ccK7OY43.s:606    .text:00000000000001fc $t
+     /tmp/ccK7OY43.s:611    .text:0000000000000200 chThdGetWorkingAreaX
+     /tmp/ccK7OY43.s:638    .text:0000000000000210 chThdSleepS
+     /tmp/ccK7OY43.s:667    .text:0000000000000230 chThdDoDequeueNextI
+     /tmp/ccK7OY43.s:705    .text:0000000000000260 _thread_init
+     /tmp/ccK7OY43.s:788    .text:00000000000002dc $d
+     /tmp/ccK7OY43.s:792    .text:00000000000002e0 $t
+     /tmp/ccK7OY43.s:798    .text:00000000000002e0 chThdCreateSuspendedI
+     /tmp/ccK7OY43.s:858    .text:0000000000000338 $d
+     /tmp/ccK7OY43.s:862    .text:000000000000033c $t
+     /tmp/ccK7OY43.s:868    .text:0000000000000340 chThdCreateSuspended
+     /tmp/ccK7OY43.s:905    .text:0000000000000360 chThdCreateI
+     /tmp/ccK7OY43.s:939    .text:0000000000000380 chThdCreate
+     /tmp/ccK7OY43.s:975    .rodata:0000000000000000 $d
+     /tmp/ccK7OY43.s:985    .text:00000000000003b0 chThdCreateStatic
+     /tmp/ccK7OY43.s:1052   .text:0000000000000414 $d
+     /tmp/ccK7OY43.s:1057   .text:000000000000041c $t
+     /tmp/ccK7OY43.s:1063   .text:0000000000000420 chThdStart
+     /tmp/ccK7OY43.s:1100   .text:0000000000000440 chThdAddRef
+     /tmp/ccK7OY43.s:1140   .text:0000000000000470 chThdRelease
+     /tmp/ccK7OY43.s:1237   .text:0000000000000500 chThdExit
+     /tmp/ccK7OY43.s:1268   .text:0000000000000520 chThdExitS
+     /tmp/ccK7OY43.s:1343   .text:0000000000000590 $d
+     /tmp/ccK7OY43.s:1347   .text:0000000000000594 $t
+     /tmp/ccK7OY43.s:1353   .text:00000000000005a0 chThdWait
+     /tmp/ccK7OY43.s:1404   .text:00000000000005e4 $d
+     /tmp/ccK7OY43.s:1408   .text:00000000000005e8 $t
+     /tmp/ccK7OY43.s:1414   .text:00000000000005f0 chThdSetPriority
+     /tmp/ccK7OY43.s:1476   .text:0000000000000640 $d
+     /tmp/ccK7OY43.s:1480   .text:0000000000000644 $t
+     /tmp/ccK7OY43.s:1486   .text:0000000000000650 chThdTerminate
+     /tmp/ccK7OY43.s:1523   .text:0000000000000680 chThdSleep
+ARM GAS  /tmp/ccK7OY43.s 			page 105
 
 
-     /tmp/cc49pbTF.s:1556   .text:00000000000006a0 chThdSleepUntil
-     /tmp/cc49pbTF.s:1600   .text:00000000000006d0 chThdSleepUntilWindowed
-     /tmp/cc49pbTF.s:1652   .text:0000000000000710 chThdYield
-     /tmp/cc49pbTF.s:1679   .text:0000000000000720 chThdSuspendS
-     /tmp/cc49pbTF.s:1724   .text:0000000000000750 chThdSuspendTimeoutS
-     /tmp/cc49pbTF.s:1777   .text:0000000000000790 chThdResumeI
-     /tmp/cc49pbTF.s:1827   .text:00000000000007c0 chThdResumeS
-     /tmp/cc49pbTF.s:1874   .text:00000000000007f0 chThdResume
-     /tmp/cc49pbTF.s:1909   .text:0000000000000810 chThdEnqueueTimeoutS
-     /tmp/cc49pbTF.s:1951   .text:0000000000000844 $d
-     /tmp/cc49pbTF.s:1955   .text:0000000000000848 $t
-     /tmp/cc49pbTF.s:1961   .text:0000000000000850 chThdDequeueNextI
-     /tmp/cc49pbTF.s:1999   .text:0000000000000880 chThdDequeueAllI
+     /tmp/ccK7OY43.s:1556   .text:00000000000006a0 chThdSleepUntil
+     /tmp/ccK7OY43.s:1600   .text:00000000000006d0 chThdSleepUntilWindowed
+     /tmp/ccK7OY43.s:1652   .text:0000000000000710 chThdYield
+     /tmp/ccK7OY43.s:1679   .text:0000000000000720 chThdSuspendS
+     /tmp/ccK7OY43.s:1724   .text:0000000000000750 chThdSuspendTimeoutS
+     /tmp/ccK7OY43.s:1777   .text:0000000000000790 chThdResumeI
+     /tmp/ccK7OY43.s:1827   .text:00000000000007c0 chThdResumeS
+     /tmp/ccK7OY43.s:1874   .text:00000000000007f0 chThdResume
+     /tmp/ccK7OY43.s:1909   .text:0000000000000810 chThdEnqueueTimeoutS
+     /tmp/ccK7OY43.s:1951   .text:0000000000000844 $d
+     /tmp/ccK7OY43.s:1955   .text:0000000000000848 $t
+     /tmp/ccK7OY43.s:1961   .text:0000000000000850 chThdDequeueNextI
+     /tmp/ccK7OY43.s:1999   .text:0000000000000880 chThdDequeueAllI
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

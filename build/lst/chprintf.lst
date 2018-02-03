@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccBm60YB.s 			page 1
+ARM GAS  /tmp/cca7Ctkl.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
   55 0020 0B33     		adds	r3, r3, #11
   56 0022 0693     		str	r3, [sp, #24]
   57              	.L5:
-ARM GAS  /tmp/ccBm60YB.s 			page 2
+ARM GAS  /tmp/cca7Ctkl.s 			page 2
 
 
   58              		.loc 1 54 0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  112 0082 069A     		ldr	r2, [sp, #24]
  113 0084 511C     		adds	r1, r2, #1
  114 0086 0691     		str	r1, [sp, #24]
-ARM GAS  /tmp/ccBm60YB.s 			page 3
+ARM GAS  /tmp/cca7Ctkl.s 			page 3
 
 
  115 0088 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  169              		.size	ch_ltoa, .-ch_ltoa
  170              		.section	.rodata
  171              		.align	2
-ARM GAS  /tmp/ccBm60YB.s 			page 4
+ARM GAS  /tmp/cca7Ctkl.s 			page 4
 
 
  172              	.LC0:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  225              		.loc 1 140 0
  226 00fe 099B     		ldr	r3, [sp, #36]
  227 0100 0133     		adds	r3, r3, #1
-ARM GAS  /tmp/ccBm60YB.s 			page 5
+ARM GAS  /tmp/cca7Ctkl.s 			page 5
 
 
  228 0102 0993     		str	r3, [sp, #36]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  282 0156 2F2B     		cmp	r3, #47
  283 0158 09D9     		bls	.L17
  284              		.loc 1 158 0 is_stmt 0 discriminator 1
-ARM GAS  /tmp/ccBm60YB.s 			page 6
+ARM GAS  /tmp/cca7Ctkl.s 			page 6
 
 
  285 015a 9DF83730 		ldrb	r3, [sp, #55]	@ zero_extendqisi2
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  339 01bc 09D9     		bls	.L23
  340              		.loc 1 170 0 is_stmt 0 discriminator 1
  341 01be 9DF83730 		ldrb	r3, [sp, #55]	@ zero_extendqisi2
-ARM GAS  /tmp/ccBm60YB.s 			page 7
+ARM GAS  /tmp/cca7Ctkl.s 			page 7
 
 
  342 01c2 392B     		cmp	r3, #57
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  396 021e 06D0     		beq	.L29
  397              		.loc 1 184 0
  398 0220 029B     		ldr	r3, [sp, #8]
-ARM GAS  /tmp/ccBm60YB.s 			page 8
+ARM GAS  /tmp/cca7Ctkl.s 			page 8
 
 
  399 0222 5A1C     		adds	r2, r3, #1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  453 02a4 27040000 		.word	.L33+1
  454 02a8 27040000 		.word	.L33+1
  455 02ac E9030000 		.word	.L37+1
-ARM GAS  /tmp/ccBm60YB.s 			page 9
+ARM GAS  /tmp/cca7Ctkl.s 			page 9
 
 
  456 02b0 27040000 		.word	.L33+1
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  510 0356 2023     		movs	r3, #32
  511 0358 8DF83630 		strb	r3, [sp, #54]
  512              		.loc 1 197 0
-ARM GAS  /tmp/ccBm60YB.s 			page 10
+ARM GAS  /tmp/cca7Ctkl.s 			page 10
 
 
  513 035c 019B     		ldr	r3, [sp, #4]
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  567 03ac 1B68     		ldr	r3, [r3]
  568 03ae 0793     		str	r3, [sp, #28]
  569 03b0 04E0     		b	.L48
-ARM GAS  /tmp/ccBm60YB.s 			page 11
+ARM GAS  /tmp/cca7Ctkl.s 			page 11
 
 
  570              	.L47:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  624 0400 1A1D     		adds	r2, r3, #4
  625 0402 0192     		str	r2, [sp, #4]
  626 0404 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccBm60YB.s 			page 12
+ARM GAS  /tmp/cca7Ctkl.s 			page 12
 
 
  627 0406 0793     		str	r3, [sp, #28]
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  681 045e 5B42     		negs	r3, r3
  682 0460 0A93     		str	r3, [sp, #40]
  683              	.L54:
-ARM GAS  /tmp/ccBm60YB.s 			page 13
+ARM GAS  /tmp/cca7Ctkl.s 			page 13
 
 
  684              		.loc 1 255 0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  738 04ba 0CE0     		b	.L57
  739              	.L58:
  740              		.loc 1 267 0
-ARM GAS  /tmp/ccBm60YB.s 			page 14
+ARM GAS  /tmp/cca7Ctkl.s 			page 14
 
 
  741 04bc 039B     		ldr	r3, [sp, #12]
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  795              		@ sp needed
  796 050c 5DF804FB 		ldr	pc, [sp], #4
  797              	.L64:
-ARM GAS  /tmp/ccBm60YB.s 			page 15
+ARM GAS  /tmp/cca7Ctkl.s 			page 15
 
 
  798              		.align	2
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  850              		.cfi_def_cfa_offset 0
  851 0544 7047     		bx	lr
  852              		.cfi_endproc
-ARM GAS  /tmp/ccBm60YB.s 			page 16
+ARM GAS  /tmp/cca7Ctkl.s 			page 16
 
 
  853              	.LFE282:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  906 0582 0A98     		ldr	r0, [sp, #40]
  907 0584 0E99     		ldr	r1, [sp, #56]
  908 0586 089A     		ldr	r2, [sp, #32]
-ARM GAS  /tmp/ccBm60YB.s 			page 17
+ARM GAS  /tmp/cca7Ctkl.s 			page 17
 
 
  909 0588 FFF7FEFF 		bl	chvprintf
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  963 000a 04       		.byte	0x4
  964 000b 01       		.uleb128 0x1
  965 000c 63040000 		.4byte	.LASF120
-ARM GAS  /tmp/ccBm60YB.s 			page 18
+ARM GAS  /tmp/cca7Ctkl.s 			page 18
 
 
  966 0010 01       		.byte	0x1
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1020 0082 04       		.uleb128 0x4
  1021 0083 04       		.byte	0x4
  1022 0084 07       		.byte	0x7
-ARM GAS  /tmp/ccBm60YB.s 			page 19
+ARM GAS  /tmp/cca7Ctkl.s 			page 19
 
 
  1023 0085 FC000000 		.4byte	.LASF10
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1077 00fa 03       		.uleb128 0x3
  1078 00fb 5B030000 		.4byte	.LASF22
  1079 00ff 05       		.byte	0x5
-ARM GAS  /tmp/ccBm60YB.s 			page 20
+ARM GAS  /tmp/cca7Ctkl.s 			page 20
 
 
  1080 0100 40       		.byte	0x40
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1134 0172 9F       		.byte	0x9f
  1135 0173 25020000 		.4byte	0x225
  1136 0177 10       		.byte	0x10
-ARM GAS  /tmp/ccBm60YB.s 			page 21
+ARM GAS  /tmp/cca7Ctkl.s 			page 21
 
 
  1137 0178 06       		.uleb128 0x6
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1191 01e5 09       		.uleb128 0x9
  1192 01e6 4F020000 		.4byte	.LASF39
  1193 01ea 07       		.byte	0x7
-ARM GAS  /tmp/ccBm60YB.s 			page 22
+ARM GAS  /tmp/cca7Ctkl.s 			page 22
 
 
  1194 01eb 2001     		.2byte	0x120
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1248 025b D1000000 		.4byte	.LASF49
  1249 025f 08       		.byte	0x8
  1250 0260 07       		.byte	0x7
-ARM GAS  /tmp/ccBm60YB.s 			page 23
+ARM GAS  /tmp/cca7Ctkl.s 			page 23
 
 
  1251 0261 8F       		.byte	0x8f
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1305 02d3 25020000 		.4byte	0x225
  1306 02d7 14       		.byte	0x14
  1307 02d8 09       		.uleb128 0x9
-ARM GAS  /tmp/ccBm60YB.s 			page 24
+ARM GAS  /tmp/cca7Ctkl.s 			page 24
 
 
  1308 02d9 26030000 		.4byte	.LASF53
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1362 034b E6020000 		.4byte	0x2e6
  1363 034f 0C       		.byte	0xc
  1364 0350 08       		.uleb128 0x8
-ARM GAS  /tmp/ccBm60YB.s 			page 25
+ARM GAS  /tmp/cca7Ctkl.s 			page 25
 
 
  1365 0351 70617200 		.ascii	"par\000"
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1419 03c4 17050000 		.4byte	.LASF64
  1420 03c8 07       		.byte	0x7
  1421 03c9 8401     		.2byte	0x184
-ARM GAS  /tmp/ccBm60YB.s 			page 26
+ARM GAS  /tmp/cca7Ctkl.s 			page 26
 
 
  1422 03cb EA050000 		.4byte	0x5ea
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1476 043c 03       		.uleb128 0x3
  1477 043d 89020000 		.4byte	.LASF72
  1478 0441 08       		.byte	0x8
-ARM GAS  /tmp/ccBm60YB.s 			page 27
+ARM GAS  /tmp/cca7Ctkl.s 			page 27
 
 
  1479 0442 6D       		.byte	0x6d
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1533 04ad 7101     		.2byte	0x171
  1534 04af 31040000 		.4byte	0x431
  1535 04b3 14       		.byte	0x14
-ARM GAS  /tmp/ccBm60YB.s 			page 28
+ARM GAS  /tmp/cca7Ctkl.s 			page 28
 
 
  1536 04b4 08       		.uleb128 0x8
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1590 051f 11       		.uleb128 0x11
  1591 0520 80050000 		.4byte	.LASF79
  1592 0524 07       		.byte	0x7
-ARM GAS  /tmp/ccBm60YB.s 			page 29
+ARM GAS  /tmp/cca7Ctkl.s 			page 29
 
 
  1593 0525 E7       		.byte	0xe7
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1647 0596 51050000 		.4byte	.LASF86
  1648 059a 10       		.byte	0x10
  1649 059b 0C       		.byte	0xc
-ARM GAS  /tmp/ccBm60YB.s 			page 30
+ARM GAS  /tmp/cca7Ctkl.s 			page 30
 
 
  1650 059c 39       		.byte	0x39
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1704 0608 04       		.byte	0x4
  1705 0609 A2000000 		.4byte	0xa2
  1706 060d 05       		.uleb128 0x5
-ARM GAS  /tmp/ccBm60YB.s 			page 31
+ARM GAS  /tmp/cca7Ctkl.s 			page 31
 
 
  1707 060e E7030000 		.4byte	.LASF91
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1761 0683 07060000 		.4byte	0x607
  1762 0687 0D       		.uleb128 0xd
  1763 0688 2C000000 		.4byte	0x2c
-ARM GAS  /tmp/ccBm60YB.s 			page 32
+ARM GAS  /tmp/cca7Ctkl.s 			page 32
 
 
  1764 068c 00       		.byte	0
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1818 06fe 0F       		.byte	0xf
  1819 06ff 00       		.byte	0
  1820 0700 0F070000 		.4byte	0x70f
-ARM GAS  /tmp/ccBm60YB.s 			page 33
+ARM GAS  /tmp/cca7Ctkl.s 			page 33
 
 
  1821 0704 16       		.uleb128 0x16
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1875 0770 10       		.byte	0x10
  1876 0771 49       		.byte	0x49
  1877 0772 07060000 		.4byte	0x607
-ARM GAS  /tmp/ccBm60YB.s 			page 34
+ARM GAS  /tmp/cca7Ctkl.s 			page 34
 
 
  1878 0776 04       		.byte	0x4
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1932 07e3 91       		.byte	0x91
  1933 07e4 68       		.sleb128 -24
  1934 07e5 19       		.uleb128 0x19
-ARM GAS  /tmp/ccBm60YB.s 			page 35
+ARM GAS  /tmp/cca7Ctkl.s 			page 35
 
 
  1935 07e6 FF030000 		.4byte	.LASF103
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  1989 083f 46       		.byte	0x46
  1990 0840 33080000 		.4byte	0x833
  1991 0844 A0000000 		.4byte	.LFB280
-ARM GAS  /tmp/ccBm60YB.s 			page 36
+ARM GAS  /tmp/cca7Ctkl.s 			page 36
 
 
  1992 0848 20000000 		.4byte	.LFE280-.LFB280
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2046 08af 40       		.sleb128 -64
  2047 08b0 18       		.uleb128 0x18
  2048 08b1 617000   		.ascii	"ap\000"
-ARM GAS  /tmp/ccBm60YB.s 			page 37
+ARM GAS  /tmp/cca7Ctkl.s 			page 37
 
 
  2049 08b4 01       		.byte	0x1
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2103 090a 1D       		.uleb128 0x1d
  2104 090b 20020000 		.4byte	.LASF109
  2105 090f 01       		.byte	0x1
-ARM GAS  /tmp/ccBm60YB.s 			page 38
+ARM GAS  /tmp/cca7Ctkl.s 			page 38
 
 
  2106 0910 7B       		.byte	0x7b
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2160 096c 1F       		.uleb128 0x1f
  2161 096d D7050000 		.4byte	0x5d7
  2162 0971 7C090000 		.4byte	0x97c
-ARM GAS  /tmp/ccBm60YB.s 			page 39
+ARM GAS  /tmp/cca7Ctkl.s 			page 39
 
 
  2163 0975 20       		.uleb128 0x20
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2217 09e3 5E000000 		.4byte	.LFE283-.LFB283
  2218 09e7 01       		.uleb128 0x1
  2219 09e8 9C       		.byte	0x9c
-ARM GAS  /tmp/ccBm60YB.s 			page 40
+ARM GAS  /tmp/cca7Ctkl.s 			page 40
 
 
  2220 09e9 650A0000 		.4byte	0xa65
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2274 0a4e 2C000000 		.4byte	0x2c
  2275 0a52 02       		.uleb128 0x2
  2276 0a53 91       		.byte	0x91
-ARM GAS  /tmp/ccBm60YB.s 			page 41
+ARM GAS  /tmp/cca7Ctkl.s 			page 41
 
 
  2277 0a54 6C       		.sleb128 -20
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2331 001d 00       		.byte	0
  2332 001e 03       		.uleb128 0x3
  2333 001f 16       		.uleb128 0x16
-ARM GAS  /tmp/ccBm60YB.s 			page 42
+ARM GAS  /tmp/cca7Ctkl.s 			page 42
 
 
  2334 0020 00       		.byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2388 0056 00       		.byte	0
  2389 0057 03       		.uleb128 0x3
  2390 0058 08       		.uleb128 0x8
-ARM GAS  /tmp/ccBm60YB.s 			page 43
+ARM GAS  /tmp/cca7Ctkl.s 			page 43
 
 
  2391 0059 3A       		.uleb128 0x3a
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2445 008f 0B       		.uleb128 0xb
  2446 0090 0B       		.uleb128 0xb
  2447 0091 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccBm60YB.s 			page 44
+ARM GAS  /tmp/cca7Ctkl.s 			page 44
 
 
  2448 0092 0B       		.uleb128 0xb
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2502 00c8 00       		.byte	0
  2503 00c9 00       		.byte	0
  2504 00ca 11       		.uleb128 0x11
-ARM GAS  /tmp/ccBm60YB.s 			page 45
+ARM GAS  /tmp/cca7Ctkl.s 			page 45
 
 
  2505 00cb 0D       		.uleb128 0xd
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2559 0101 0E       		.uleb128 0xe
  2560 0102 49       		.uleb128 0x49
  2561 0103 13       		.uleb128 0x13
-ARM GAS  /tmp/ccBm60YB.s 			page 46
+ARM GAS  /tmp/cca7Ctkl.s 			page 46
 
 
  2562 0104 38       		.uleb128 0x38
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2616 013b 0B       		.uleb128 0xb
  2617 013c 49       		.uleb128 0x49
  2618 013d 13       		.uleb128 0x13
-ARM GAS  /tmp/ccBm60YB.s 			page 47
+ARM GAS  /tmp/cca7Ctkl.s 			page 47
 
 
  2619 013e 02       		.uleb128 0x2
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2673 0175 0B       		.uleb128 0xb
  2674 0176 27       		.uleb128 0x27
  2675 0177 19       		.uleb128 0x19
-ARM GAS  /tmp/ccBm60YB.s 			page 48
+ARM GAS  /tmp/cca7Ctkl.s 			page 48
 
 
  2676 0178 49       		.uleb128 0x49
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2730 01af 49       		.uleb128 0x49
  2731 01b0 13       		.uleb128 0x13
  2732 01b1 2F       		.uleb128 0x2f
-ARM GAS  /tmp/ccBm60YB.s 			page 49
+ARM GAS  /tmp/cca7Ctkl.s 			page 49
 
 
  2733 01b2 0B       		.uleb128 0xb
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2787 01e9 08       		.uleb128 0x8
  2788 01ea 3A       		.uleb128 0x3a
  2789 01eb 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccBm60YB.s 			page 50
+ARM GAS  /tmp/cca7Ctkl.s 			page 50
 
 
  2790 01ec 3B       		.uleb128 0x3b
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2844 0222 00       		.byte	0
  2845 0223 28       		.uleb128 0x28
  2846 0224 34       		.uleb128 0x34
-ARM GAS  /tmp/ccBm60YB.s 			page 51
+ARM GAS  /tmp/cca7Ctkl.s 			page 51
 
 
  2847 0225 00       		.byte	0
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2888              	.LASF50:
  2889 002d 70726576 		.ascii	"prev\000"
  2889      00
-ARM GAS  /tmp/ccBm60YB.s 			page 52
+ARM GAS  /tmp/cca7Ctkl.s 			page 52
 
 
  2890              	.LASF74:
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2915      00
  2916              	.LASF49:
  2917 00d1 63685F74 		.ascii	"ch_threads_queue\000"
-ARM GAS  /tmp/ccBm60YB.s 			page 53
+ARM GAS  /tmp/cca7Ctkl.s 			page 53
 
 
  2917      68726561 
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2945 0159 62756666 		.ascii	"buffer\000"
  2945      657200
  2946              	.LASF9:
-ARM GAS  /tmp/ccBm60YB.s 			page 54
+ARM GAS  /tmp/cca7Ctkl.s 			page 54
 
 
  2947 0160 5F5F7569 		.ascii	"__uint32_t\000"
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  2974      5F616C69 
  2974      676E00
  2975              	.LASF32:
-ARM GAS  /tmp/ccBm60YB.s 			page 55
+ARM GAS  /tmp/cca7Ctkl.s 			page 55
 
 
  2976 021b 6E616D65 		.ascii	"name\000"
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  3005              	.LASF41:
  3006 02a0 7265616C 		.ascii	"realprio\000"
  3006      7072696F 
-ARM GAS  /tmp/ccBm60YB.s 			page 56
+ARM GAS  /tmp/cca7Ctkl.s 			page 56
 
 
  3006      00
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  3030      6E743634 
  3030      5F7400
  3031              	.LASF36:
-ARM GAS  /tmp/ccBm60YB.s 			page 57
+ARM GAS  /tmp/cca7Ctkl.s 			page 57
 
 
  3032 0346 72656673 		.ascii	"refs\000"
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  3058      53657175 
  3058      656E7469 
  3058      616C5374 
-ARM GAS  /tmp/ccBm60YB.s 			page 58
+ARM GAS  /tmp/cca7Ctkl.s 			page 58
 
 
  3058      7265616D 
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  3082      69676E2D 
  3082      66756E63 
  3083              	.LASF88:
-ARM GAS  /tmp/ccBm60YB.s 			page 59
+ARM GAS  /tmp/cca7Ctkl.s 			page 59
 
 
  3084 04e6 63686172 		.ascii	"char\000"
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  3114 0568 75696E74 		.ascii	"uint8_t\000"
  3114      385F7400 
  3115              	.LASF113:
-ARM GAS  /tmp/ccBm60YB.s 			page 60
+ARM GAS  /tmp/cca7Ctkl.s 			page 60
 
 
  3116 0570 63687670 		.ascii	"chvprintf\000"
@@ -3569,22 +3569,22 @@ ARM GAS  /tmp/ccBm60YB.s 			page 1
  3128      696E7466 
  3128      00
  3129              		.ident	"GCC: (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)"
-ARM GAS  /tmp/ccBm60YB.s 			page 61
+ARM GAS  /tmp/cca7Ctkl.s 			page 61
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 chprintf.c
-     /tmp/ccBm60YB.s:18     .text:0000000000000000 $t
-     /tmp/ccBm60YB.s:23     .text:0000000000000000 long_to_string_with_divisor
-     /tmp/ccBm60YB.s:140    .text:00000000000000a0 ch_ltoa
-     /tmp/ccBm60YB.s:171    .rodata:0000000000000000 $d
-     /tmp/ccBm60YB.s:181    .text:00000000000000c0 chvprintf
-     /tmp/ccBm60YB.s:438    .text:0000000000000268 $d
-     /tmp/ccBm60YB.s:491    .text:000000000000033c $t
-     /tmp/ccBm60YB.s:800    .text:0000000000000510 $d
-     /tmp/ccBm60YB.s:804    .text:0000000000000514 $t
-     /tmp/ccBm60YB.s:810    .text:0000000000000520 chprintf
-     /tmp/ccBm60YB.s:861    .text:0000000000000550 chsnprintf
+     /tmp/cca7Ctkl.s:18     .text:0000000000000000 $t
+     /tmp/cca7Ctkl.s:23     .text:0000000000000000 long_to_string_with_divisor
+     /tmp/cca7Ctkl.s:140    .text:00000000000000a0 ch_ltoa
+     /tmp/cca7Ctkl.s:171    .rodata:0000000000000000 $d
+     /tmp/cca7Ctkl.s:181    .text:00000000000000c0 chvprintf
+     /tmp/cca7Ctkl.s:438    .text:0000000000000268 $d
+     /tmp/cca7Ctkl.s:491    .text:000000000000033c $t
+     /tmp/cca7Ctkl.s:800    .text:0000000000000510 $d
+     /tmp/cca7Ctkl.s:804    .text:0000000000000514 $t
+     /tmp/cca7Ctkl.s:810    .text:0000000000000520 chprintf
+     /tmp/cca7Ctkl.s:861    .text:0000000000000550 chsnprintf
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

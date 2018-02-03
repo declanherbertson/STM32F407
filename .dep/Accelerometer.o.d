@@ -1,4 +1,4 @@
-build/obj/main.o: main.c ../../../os/rt/include/ch.h \
+build/obj/Accelerometer.o: Accelerometer.c ../../../os/rt/include/ch.h \
  ../../../os/common/ports/ARMCMx/compilers/GCC/chtypes.h \
  /usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h \
  /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \

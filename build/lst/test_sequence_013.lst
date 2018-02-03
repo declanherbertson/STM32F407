@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccbFaIaq.s 			page 1
+ARM GAS  /tmp/cceksBJb.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
   55              		.p2align 4,,15
   56              		.thumb
   57              		.thumb_func
-ARM GAS  /tmp/ccbFaIaq.s 			page 2
+ARM GAS  /tmp/cceksBJb.s 			page 2
 
 
   58              		.type	port_unlock, %function
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  112              		.thumb
  113              		.thumb_func
  114              		.type	port_timer_get_time, %function
-ARM GAS  /tmp/ccbFaIaq.s 			page 3
+ARM GAS  /tmp/cceksBJb.s 			page 3
 
 
  115              	port_timer_get_time:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  168              		@ frame_needed = 0, uses_anonymous_args = 0
  169 0050 08B5     		push	{r3, lr}
  170              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccbFaIaq.s 			page 4
+ARM GAS  /tmp/cceksBJb.s 			page 4
 
 
  171              		.cfi_offset 3, -8
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  224 007a 029B     		ldr	r3, [sp, #8]
  225 007c D21A     		subs	r2, r2, r3
  226 007e 0199     		ldr	r1, [sp, #4]
-ARM GAS  /tmp/ccbFaIaq.s 			page 5
+ARM GAS  /tmp/cceksBJb.s 			page 5
 
 
  227 0080 029B     		ldr	r3, [sp, #8]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  279 00c4 AFF30080 		.p2align 4,,15
  279      AFF30080 
  279      AFF30080 
-ARM GAS  /tmp/ccbFaIaq.s 			page 6
+ARM GAS  /tmp/cceksBJb.s 			page 6
 
 
  280              		.thumb
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  334              	chThdShouldTerminateX:
  335              	.LFB199:
  336              		.loc 7 357 0
-ARM GAS  /tmp/ccbFaIaq.s 			page 7
+ARM GAS  /tmp/cceksBJb.s 			page 7
 
 
  337              		.cfi_startproc
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  391 0000 00000000 		.space	12
  391      00000000 
  391      00000000 
-ARM GAS  /tmp/ccbFaIaq.s 			page 8
+ARM GAS  /tmp/cceksBJb.s 			page 8
 
 
  392              		.align	2
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  442 013c 0398     		ldr	r0, [sp, #12]
  443 013e FFF7E7FF 		bl	chMsgGet
  444 0142 0290     		str	r0, [sp, #8]
-ARM GAS  /tmp/ccbFaIaq.s 			page 9
+ARM GAS  /tmp/cceksBJb.s 			page 9
 
 
  445              		.loc 9 75 0 discriminator 1
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  498              		.loc 9 91 0 discriminator 1
  499 0188 0498     		ldr	r0, [sp, #16]
  500 018a 0399     		ldr	r1, [sp, #12]
-ARM GAS  /tmp/ccbFaIaq.s 			page 10
+ARM GAS  /tmp/cceksBJb.s 			page 10
 
 
  501 018c FFF788FF 		bl	chVTIsSystemTimeWithinX
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  552              		.thumb_func
  553              		.type	bmk_thread4, %function
  554              	bmk_thread4:
-ARM GAS  /tmp/ccbFaIaq.s 			page 11
+ARM GAS  /tmp/cceksBJb.s 			page 11
 
 
  555              	.LFB283:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  609 0204 0190     		str	r0, [sp, #4]
  610              		.loc 9 119 0
  611 0206 02E0     		b	.L35
-ARM GAS  /tmp/ccbFaIaq.s 			page 12
+ARM GAS  /tmp/cceksBJb.s 			page 12
 
 
  612              	.L36:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  665 024a 1A1D     		adds	r2, r3, #4
  666 024c 019B     		ldr	r3, [sp, #4]
  667 024e 1A60     		str	r2, [r3]
-ARM GAS  /tmp/ccbFaIaq.s 			page 13
+ARM GAS  /tmp/cceksBJb.s 			page 13
 
 
  668              		.loc 9 135 0 discriminator 1
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  714 0278 1A60     		str	r2, [r3]
  715              		.loc 9 173 0
  716 027a 1A4B     		ldr	r3, .L42+4
-ARM GAS  /tmp/ccbFaIaq.s 			page 14
+ARM GAS  /tmp/cceksBJb.s 			page 14
 
 
  717 027c 1C68     		ldr	r4, [r3]
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  771 02e0 00000000 		.word	test_step
  772 02e4 00000000 		.word	wa
  773 02e8 00000000 		.word	bmk_thread1
-ARM GAS  /tmp/ccbFaIaq.s 			page 15
+ARM GAS  /tmp/cceksBJb.s 			page 15
 
 
  774 02ec 00000000 		.word	threads
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  824 031c 4FF4A471 		mov	r1, #328
  825 0320 154B     		ldr	r3, .L45+8
  826 0322 FFF7FEFF 		bl	chThdCreateStatic
-ARM GAS  /tmp/ccbFaIaq.s 			page 16
+ARM GAS  /tmp/cceksBJb.s 			page 16
 
 
  827 0326 0246     		mov	r2, r0
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  881              		.section	.rodata
  882              		.align	2
  883              	.LC4:
-ARM GAS  /tmp/ccbFaIaq.s 			page 17
+ARM GAS  /tmp/cceksBJb.s 			page 17
 
 
  884 0050 4D657373 		.ascii	"Messages performance #2\000"
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  934              		.loc 9 305 0
  935 03c2 334B     		ldr	r3, .L48+4
  936 03c4 5C68     		ldr	r4, [r3, #4]
-ARM GAS  /tmp/ccbFaIaq.s 			page 18
+ARM GAS  /tmp/cceksBJb.s 			page 18
 
 
  937 03c6 FFF78BFE 		bl	chThdGetPriorityX
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  991 0444 0246     		mov	r2, r0
  992 0446 144B     		ldr	r3, .L48+12
  993 0448 1A61     		str	r2, [r3, #16]
-ARM GAS  /tmp/ccbFaIaq.s 			page 19
+ARM GAS  /tmp/cceksBJb.s 			page 19
 
 
  994              		.loc 9 313 0
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1048              	.LC5:
  1049 0078 4D657373 		.ascii	"Messages performance #3\000"
  1049      61676573 
-ARM GAS  /tmp/ccbFaIaq.s 			page 20
+ARM GAS  /tmp/cceksBJb.s 			page 20
 
 
  1049      20706572 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1101 04e6 1A60     		str	r2, [r3]
  1102              	.LBB10:
  1103              		.loc 9 374 0
-ARM GAS  /tmp/ccbFaIaq.s 			page 21
+ARM GAS  /tmp/cceksBJb.s 			page 21
 
 
  1104 04e8 0023     		movs	r3, #0
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1158 054c FFF780FD 		bl	chSysUnlock
  1159              		.loc 9 397 0
  1160 0550 FFF7FEFF 		bl	test_wait_threads
-ARM GAS  /tmp/ccbFaIaq.s 			page 22
+ARM GAS  /tmp/cceksBJb.s 			page 22
 
 
  1161              		.loc 9 401 0
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1209              		.align	2
  1210 058c AFF30080 		.p2align 4,,15
  1211              		.thumb
-ARM GAS  /tmp/ccbFaIaq.s 			page 23
+ARM GAS  /tmp/cceksBJb.s 			page 23
 
 
  1212              		.thumb_func
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1266 05e0 FFF75EFD 		bl	chVTIsSystemTimeWithinX
  1267 05e4 0346     		mov	r3, r0
  1268 05e6 002B     		cmp	r3, #0
-ARM GAS  /tmp/ccbFaIaq.s 			page 24
+ARM GAS  /tmp/cceksBJb.s 			page 24
 
 
  1269 05e8 E6D1     		bne	.L55
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1319              		.loc 9 491 0
  1320              		.cfi_startproc
  1321              		@ args = 0, pretend = 0, frame = 16
-ARM GAS  /tmp/ccbFaIaq.s 			page 25
+ARM GAS  /tmp/cceksBJb.s 			page 25
 
 
  1322              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1376 067e 1A60     		str	r2, [r3]
  1377              		.loc 9 520 0
  1378 0680 0848     		ldr	r0, .L60+12
-ARM GAS  /tmp/ccbFaIaq.s 			page 26
+ARM GAS  /tmp/cceksBJb.s 			page 26
 
 
  1379 0682 FFF7FEFF 		bl	test_print
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1429              		.cfi_offset 14, -4
  1430              		.loc 9 560 0
  1431 06b2 0248     		ldr	r0, .L63
-ARM GAS  /tmp/ccbFaIaq.s 			page 27
+ARM GAS  /tmp/cceksBJb.s 			page 27
 
 
  1432 06b4 0021     		movs	r1, #0
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1482 06e8 454B     		ldr	r3, .L67+12
  1483 06ea 1A60     		str	r2, [r3]
  1484              		.loc 9 571 0
-ARM GAS  /tmp/ccbFaIaq.s 			page 28
+ARM GAS  /tmp/cceksBJb.s 			page 28
 
 
  1485 06ec 424B     		ldr	r3, .L67+4
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1539 0768 244B     		ldr	r3, .L67+8
  1540 076a FFF7FEFF 		bl	chThdCreateStatic
  1541 076e 0246     		mov	r2, r0
-ARM GAS  /tmp/ccbFaIaq.s 			page 29
+ARM GAS  /tmp/cceksBJb.s 			page 29
 
 
  1542 0770 234B     		ldr	r3, .L67+12
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1596              		.loc 9 607 0
  1597 07cc 0598     		ldr	r0, [sp, #20]
  1598 07ce FFF7FEFF 		bl	test_printn
-ARM GAS  /tmp/ccbFaIaq.s 			page 30
+ARM GAS  /tmp/cceksBJb.s 			page 30
 
 
  1599              		.loc 9 608 0
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1647              		.thumb
  1648              		.thumb_func
  1649              		.type	test_013_008_execute, %function
-ARM GAS  /tmp/ccbFaIaq.s 			page 31
+ARM GAS  /tmp/cceksBJb.s 			page 31
 
 
  1650              	test_013_008_execute:
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1704 087e 0346     		mov	r3, r0
  1705 0880 5A1E     		subs	r2, r3, #1
  1706 0882 03AB     		add	r3, sp, #12
-ARM GAS  /tmp/ccbFaIaq.s 			page 32
+ARM GAS  /tmp/cceksBJb.s 			page 32
 
 
  1707 0884 0093     		str	r3, [sp]
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1761 08f8 0948     		ldr	r0, .L70+16
  1762 08fa FFF7FEFF 		bl	test_print
  1763              		.loc 9 669 0
-ARM GAS  /tmp/ccbFaIaq.s 			page 33
+ARM GAS  /tmp/cceksBJb.s 			page 33
 
 
  1764 08fe 039B     		ldr	r3, [sp, #12]
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1811              		.cfi_startproc
  1812              		@ args = 0, pretend = 0, frame = 16
  1813              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccbFaIaq.s 			page 34
+ARM GAS  /tmp/cceksBJb.s 			page 34
 
 
  1814 0930 00B5     		push	{lr}
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1868 098e DED1     		bne	.L73
  1869              	.LBE12:
  1870              		.loc 9 726 0
-ARM GAS  /tmp/ccbFaIaq.s 			page 35
+ARM GAS  /tmp/cceksBJb.s 			page 35
 
 
  1871 0990 084B     		ldr	r3, .L74
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1921              	.LFB296:
  1922              		.loc 9 764 0
  1923              		.cfi_startproc
-ARM GAS  /tmp/ccbFaIaq.s 			page 36
+ARM GAS  /tmp/cceksBJb.s 			page 36
 
 
  1924              		@ args = 0, pretend = 0, frame = 0
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  1975              		.loc 9 779 0
  1976 09f4 029B     		ldr	r3, [sp, #8]
  1977 09f6 03F51C53 		add	r3, r3, #9984
-ARM GAS  /tmp/ccbFaIaq.s 			page 37
+ARM GAS  /tmp/cceksBJb.s 			page 37
 
 
  1978 09fa 1033     		adds	r3, r3, #16
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2032              		.loc 9 803 0
  2033 0a5e 05B0     		add	sp, sp, #20
  2034              		.cfi_def_cfa_offset 4
-ARM GAS  /tmp/ccbFaIaq.s 			page 38
+ARM GAS  /tmp/cceksBJb.s 			page 38
 
 
  2035              		@ sp needed
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2083 0a8c 0C000000 		.word	mtx1
  2084              		.cfi_endproc
  2085              	.LFE298:
-ARM GAS  /tmp/ccbFaIaq.s 			page 39
+ARM GAS  /tmp/cceksBJb.s 			page 39
 
 
  2086              		.size	test_013_011_setup, .-test_013_011_setup
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2137              		.loc 9 857 0 discriminator 1
  2138 0ac6 1448     		ldr	r0, .L88+4
  2139 0ac8 FFF7FEFF 		bl	chMtxLock
-ARM GAS  /tmp/ccbFaIaq.s 			page 40
+ARM GAS  /tmp/cceksBJb.s 			page 40
 
 
  2140              		.loc 9 858 0 discriminator 1
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2194 024c 4D757465 		.ascii	"Mutexes lock/unlock performance\000"
  2194      78657320 
  2194      6C6F636B 
-ARM GAS  /tmp/ccbFaIaq.s 			page 41
+ARM GAS  /tmp/cceksBJb.s 			page 41
 
 
  2194      2F756E6C 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2226      74533A20 
  2226      00
  2227 02f1 000000   		.align	2
-ARM GAS  /tmp/ccbFaIaq.s 			page 42
+ARM GAS  /tmp/cceksBJb.s 			page 42
 
 
  2228              	.LC27:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2274 0b5e FFF7FEFF 		bl	test_println
  2275              		.loc 9 923 0
  2276 0b62 2A4B     		ldr	r3, .L91
-ARM GAS  /tmp/ccbFaIaq.s 			page 43
+ARM GAS  /tmp/cceksBJb.s 			page 43
 
 
  2277 0b64 0322     		movs	r2, #3
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2331              		.loc 9 964 0
  2332 0bc8 1848     		ldr	r0, .L91+32
  2333 0bca FFF7FEFF 		bl	test_print
-ARM GAS  /tmp/ccbFaIaq.s 			page 44
+ARM GAS  /tmp/cceksBJb.s 			page 44
 
 
  2334              		.loc 9 965 0
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2388 0314 52414D20 		.ascii	"RAM Footprint\000"
  2388      466F6F74 
  2388      7072696E 
-ARM GAS  /tmp/ccbFaIaq.s 			page 45
+ARM GAS  /tmp/cceksBJb.s 			page 45
 
 
  2388      7400
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2434              		.file 20 "../../../os/rt/include/chmtx.h"
  2435              		.file 21 "../../../test/lib/ch_test.h"
  2436              		.file 22 "../../../os/common/ext/CMSIS/include/core_cm4.h"
-ARM GAS  /tmp/ccbFaIaq.s 			page 46
+ARM GAS  /tmp/cceksBJb.s 			page 46
 
 
  2437              		.file 23 "../../../test/rt/source/test/test_root.h"
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2491 0070 04       		.uleb128 0x4
  2492 0071 04       		.byte	0x4
  2493 0072 05       		.byte	0x5
-ARM GAS  /tmp/ccbFaIaq.s 			page 47
+ARM GAS  /tmp/cceksBJb.s 			page 47
 
 
  2494 0073 C1010000 		.4byte	.LASF8
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2548 00e5 CA010000 		.4byte	.LASF20
  2549 00e9 0D       		.byte	0xd
  2550 00ea 3D       		.byte	0x3d
-ARM GAS  /tmp/ccbFaIaq.s 			page 48
+ARM GAS  /tmp/cceksBJb.s 			page 48
 
 
  2551 00eb A2000000 		.4byte	0xa2
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2605 0160 07       		.uleb128 0x7
  2606 0161 63747800 		.ascii	"ctx\000"
  2607 0165 0F       		.byte	0xf
-ARM GAS  /tmp/ccbFaIaq.s 			page 49
+ARM GAS  /tmp/cceksBJb.s 			page 49
 
 
  2608 0166 9D       		.byte	0x9d
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2662 01d1 1401     		.2byte	0x114
  2663 01d3 2B020000 		.4byte	0x22b
  2664 01d7 28       		.byte	0x28
-ARM GAS  /tmp/ccbFaIaq.s 			page 50
+ARM GAS  /tmp/cceksBJb.s 			page 50
 
 
  2665 01d8 09       		.uleb128 0x9
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2719 0249 25020000 		.4byte	0x225
  2720 024d 00       		.byte	0
  2721 024e 00       		.byte	0
-ARM GAS  /tmp/ccbFaIaq.s 			page 51
+ARM GAS  /tmp/cceksBJb.s 			page 51
 
 
  2722 024f 03       		.uleb128 0x3
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2776 02bf E5030000 		.4byte	.LASF30
  2777 02c3 0F       		.byte	0xf
  2778 02c4 7101     		.2byte	0x171
-ARM GAS  /tmp/ccbFaIaq.s 			page 52
+ARM GAS  /tmp/cceksBJb.s 			page 52
 
 
  2779 02c6 25020000 		.4byte	0x225
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2833 0337 1E000000 		.4byte	.LASF57
  2834 033b 0F       		.byte	0xf
  2835 033c 4801     		.2byte	0x148
-ARM GAS  /tmp/ccbFaIaq.s 			page 53
+ARM GAS  /tmp/cceksBJb.s 			page 53
 
 
  2836 033e 26010000 		.4byte	0x126
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2890 03b1 6B       		.byte	0x6b
  2891 03b2 B6030000 		.4byte	0x3b6
  2892 03b6 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccbFaIaq.s 			page 54
+ARM GAS  /tmp/cceksBJb.s 			page 54
 
 
  2893 03b7 FE040000 		.4byte	.LASF63
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  2947 042a 04       		.uleb128 0x4
  2948 042b 04       		.byte	0x4
  2949 042c 07       		.byte	0x7
-ARM GAS  /tmp/ccbFaIaq.s 			page 55
+ARM GAS  /tmp/cceksBJb.s 			page 55
 
 
  2950 042d F4030000 		.4byte	.LASF70
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3004 04a1 01       		.byte	0x1
  3005 04a2 6D01     		.2byte	0x16d
  3006 04a4 56040000 		.4byte	0x456
-ARM GAS  /tmp/ccbFaIaq.s 			page 56
+ARM GAS  /tmp/cceksBJb.s 			page 56
 
 
  3007 04a8 04       		.byte	0x4
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3061 0514 11       		.byte	0x11
  3062 0515 A201     		.2byte	0x1a2
  3063 0517 31040000 		.4byte	0x431
-ARM GAS  /tmp/ccbFaIaq.s 			page 57
+ARM GAS  /tmp/cceksBJb.s 			page 57
 
 
  3064 051b 00       		.byte	0
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3118 058f 24       		.byte	0x24
  3119 0590 08       		.uleb128 0x8
  3120 0591 50534300 		.ascii	"PSC\000"
-ARM GAS  /tmp/ccbFaIaq.s 			page 58
+ARM GAS  /tmp/cceksBJb.s 			page 58
 
 
  3121 0595 11       		.byte	0x11
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3175 0609 11       		.byte	0x11
  3176 060a B501     		.2byte	0x1b5
  3177 060c 17060000 		.4byte	0x617
-ARM GAS  /tmp/ccbFaIaq.s 			page 59
+ARM GAS  /tmp/cceksBJb.s 			page 59
 
 
  3178 0610 58       		.byte	0x58
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3232 067d 1F010000 		.4byte	.LASF91
  3233 0681 0F       		.byte	0xf
  3234 0682 F3       		.byte	0xf3
-ARM GAS  /tmp/ccbFaIaq.s 			page 60
+ARM GAS  /tmp/cceksBJb.s 			page 60
 
 
  3235 0683 05010000 		.4byte	0x105
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3289 06f4 06       		.uleb128 0x6
  3290 06f5 2A060000 		.4byte	.LASF97
  3291 06f9 14       		.byte	0x14
-ARM GAS  /tmp/ccbFaIaq.s 			page 61
+ARM GAS  /tmp/cceksBJb.s 			page 61
 
 
  3292 06fa 3C       		.byte	0x3c
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3346 0763 3D       		.byte	0x3d
  3347 0764 99070000 		.4byte	0x799
  3348 0768 06       		.uleb128 0x6
-ARM GAS  /tmp/ccbFaIaq.s 			page 62
+ARM GAS  /tmp/cceksBJb.s 			page 62
 
 
  3349 0769 3A030000 		.4byte	.LASF32
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3403 07e1 01       		.byte	0x1
  3404 07e2 5A02     		.2byte	0x25a
  3405 07e4 1E       		.uleb128 0x1e
-ARM GAS  /tmp/ccbFaIaq.s 			page 63
+ARM GAS  /tmp/cceksBJb.s 			page 63
 
 
  3406 07e5 B1070000 		.4byte	0x7b1
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3460 085a 22       		.uleb128 0x22
  3461 085b 1D080000 		.4byte	.LASF110
  3462 085f 05       		.byte	0x5
-ARM GAS  /tmp/ccbFaIaq.s 			page 64
+ARM GAS  /tmp/cceksBJb.s 			page 64
 
 
  3463 0860 8201     		.2byte	0x182
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3517 08dd 27       		.uleb128 0x27
  3518 08de 656E6400 		.ascii	"end\000"
  3519 08e2 06       		.byte	0x6
-ARM GAS  /tmp/ccbFaIaq.s 			page 65
+ARM GAS  /tmp/cceksBJb.s 			page 65
 
 
  3520 08e3 C201     		.2byte	0x1c2
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3574 0958 6501     		.2byte	0x165
  3575 095a 52070000 		.4byte	0x752
  3576 095e F0000000 		.4byte	.LFB199
-ARM GAS  /tmp/ccbFaIaq.s 			page 66
+ARM GAS  /tmp/cceksBJb.s 			page 66
 
 
  3577 0962 1E000000 		.4byte	.LFE199-.LFB199
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3631 09d6 09       		.byte	0x9
  3632 09d7 43       		.byte	0x43
  3633 09d8 30010000 		.4byte	.LFB280
-ARM GAS  /tmp/ccbFaIaq.s 			page 67
+ARM GAS  /tmp/cceksBJb.s 			page 67
 
 
  3634 09dc 28000000 		.4byte	.LFE280-.LFB280
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3688 0a41 70       		.sleb128 -16
  3689 0a42 2F       		.uleb128 0x2f
  3690 0a43 656E6400 		.ascii	"end\000"
-ARM GAS  /tmp/ccbFaIaq.s 			page 68
+ARM GAS  /tmp/cceksBJb.s 			page 68
 
 
  3691 0a47 09       		.byte	0x9
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3745 0aa7 05010000 		.4byte	0x105
  3746 0aab 02       		.uleb128 0x2
  3747 0aac 91       		.byte	0x91
-ARM GAS  /tmp/ccbFaIaq.s 			page 69
+ARM GAS  /tmp/cceksBJb.s 			page 69
 
 
  3748 0aad 70       		.sleb128 -16
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3802 0b12 230B0000 		.4byte	0xb23
  3803 0b16 2F       		.uleb128 0x2f
  3804 0b17 6E00     		.ascii	"n\000"
-ARM GAS  /tmp/ccbFaIaq.s 			page 70
+ARM GAS  /tmp/cceksBJb.s 			page 70
 
 
  3805 0b19 09       		.byte	0x9
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3859 0b83 09       		.byte	0x9
  3860 0b84 6601     		.2byte	0x166
  3861 0b86 25020000 		.4byte	0x225
-ARM GAS  /tmp/ccbFaIaq.s 			page 71
+ARM GAS  /tmp/cceksBJb.s 			page 71
 
 
  3862 0b8a 02       		.uleb128 0x2
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3916 0bf2 02       		.uleb128 0x2
  3917 0bf3 91       		.byte	0x91
  3918 0bf4 70       		.sleb128 -16
-ARM GAS  /tmp/ccbFaIaq.s 			page 72
+ARM GAS  /tmp/cceksBJb.s 			page 72
 
 
  3919 0bf5 34       		.uleb128 0x34
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  3973 0c5d 26010000 		.4byte	0x126
  3974 0c61 02       		.uleb128 0x2
  3975 0c62 91       		.byte	0x91
-ARM GAS  /tmp/ccbFaIaq.s 			page 73
+ARM GAS  /tmp/cceksBJb.s 			page 73
 
 
  3976 0c63 68       		.sleb128 -24
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4030 0cd3 01       		.uleb128 0x1
  4031 0cd4 9C       		.byte	0x9c
  4032 0cd5 E70C0000 		.4byte	0xce7
-ARM GAS  /tmp/ccbFaIaq.s 			page 74
+ARM GAS  /tmp/cceksBJb.s 			page 74
 
 
  4033 0cd9 32       		.uleb128 0x32
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4087 0d47 656E6400 		.ascii	"end\000"
  4088 0d4b 09       		.byte	0x9
  4089 0d4c C202     		.2byte	0x2c2
-ARM GAS  /tmp/ccbFaIaq.s 			page 75
+ARM GAS  /tmp/cceksBJb.s 			page 75
 
 
  4090 0d4e 26010000 		.4byte	0x126
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4144 0dba 09       		.byte	0x9
  4145 0dbb 4403     		.2byte	0x344
  4146 0dbd 800A0000 		.4byte	.LFB298
-ARM GAS  /tmp/ccbFaIaq.s 			page 76
+ARM GAS  /tmp/cceksBJb.s 			page 76
 
 
  4147 0dc1 10000000 		.4byte	.LFE298-.LFB298
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4201 0e30 05       		.uleb128 0x5
  4202 0e31 03       		.byte	0x3
  4203 0e32 00000000 		.4byte	sem1
-ARM GAS  /tmp/ccbFaIaq.s 			page 77
+ARM GAS  /tmp/cceksBJb.s 			page 77
 
 
  4204 0e36 31       		.uleb128 0x31
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4258 0ead 580E0000 		.4byte	0xe58
  4259 0eb1 05       		.uleb128 0x5
  4260 0eb2 03       		.byte	0x3
-ARM GAS  /tmp/ccbFaIaq.s 			page 78
+ARM GAS  /tmp/cceksBJb.s 			page 78
 
 
  4261 0eb3 30010000 		.4byte	test_013_006
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4315 0f2f 0F       		.uleb128 0xf
  4316 0f30 AD000000 		.4byte	0xad
  4317 0f34 36       		.uleb128 0x36
-ARM GAS  /tmp/ccbFaIaq.s 			page 79
+ARM GAS  /tmp/cceksBJb.s 			page 79
 
 
  4318 0f35 636800   		.ascii	"ch\000"
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4372 0fad 920F0000 		.4byte	0xf92
  4373 0fb1 00       		.byte	0
  4374              		.section	.debug_abbrev,"",%progbits
-ARM GAS  /tmp/ccbFaIaq.s 			page 80
+ARM GAS  /tmp/cceksBJb.s 			page 80
 
 
  4375              	.Ldebug_abbrev0:
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4429 0035 00       		.byte	0
  4430 0036 05       		.uleb128 0x5
  4431 0037 13       		.uleb128 0x13
-ARM GAS  /tmp/ccbFaIaq.s 			page 81
+ARM GAS  /tmp/cceksBJb.s 			page 81
 
 
  4432 0038 01       		.byte	0x1
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4486 006e 38       		.uleb128 0x38
  4487 006f 0B       		.uleb128 0xb
  4488 0070 00       		.byte	0
-ARM GAS  /tmp/ccbFaIaq.s 			page 82
+ARM GAS  /tmp/cceksBJb.s 			page 82
 
 
  4489 0071 00       		.byte	0
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4543 00a7 00       		.byte	0
  4544 00a8 00       		.byte	0
  4545 00a9 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccbFaIaq.s 			page 83
+ARM GAS  /tmp/cceksBJb.s 			page 83
 
 
  4546 00aa 0F       		.uleb128 0xf
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4600 00e0 13       		.uleb128 0x13
  4601 00e1 00       		.byte	0
  4602 00e2 00       		.byte	0
-ARM GAS  /tmp/ccbFaIaq.s 			page 84
+ARM GAS  /tmp/cceksBJb.s 			page 84
 
 
  4603 00e3 14       		.uleb128 0x14
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4657 0119 00       		.byte	0
  4658 011a 49       		.uleb128 0x49
  4659 011b 13       		.uleb128 0x13
-ARM GAS  /tmp/ccbFaIaq.s 			page 85
+ARM GAS  /tmp/cceksBJb.s 			page 85
 
 
  4660 011c 00       		.byte	0
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4714 0152 40       		.uleb128 0x40
  4715 0153 18       		.uleb128 0x18
  4716 0154 9742     		.uleb128 0x2117
-ARM GAS  /tmp/ccbFaIaq.s 			page 86
+ARM GAS  /tmp/cceksBJb.s 			page 86
 
 
  4717 0156 19       		.uleb128 0x19
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4771 018d 00       		.byte	0
  4772 018e 03       		.uleb128 0x3
  4773 018f 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccbFaIaq.s 			page 87
+ARM GAS  /tmp/cceksBJb.s 			page 87
 
 
  4774 0190 3A       		.uleb128 0x3a
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4828 01c8 40       		.uleb128 0x40
  4829 01c9 18       		.uleb128 0x18
  4830 01ca 9642     		.uleb128 0x2116
-ARM GAS  /tmp/ccbFaIaq.s 			page 88
+ARM GAS  /tmp/cceksBJb.s 			page 88
 
 
  4831 01cc 19       		.uleb128 0x19
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4885 0203 12       		.uleb128 0x12
  4886 0204 06       		.uleb128 0x6
  4887 0205 40       		.uleb128 0x40
-ARM GAS  /tmp/ccbFaIaq.s 			page 89
+ARM GAS  /tmp/cceksBJb.s 			page 89
 
 
  4888 0206 18       		.uleb128 0x18
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4942 023d 40       		.uleb128 0x40
  4943 023e 18       		.uleb128 0x18
  4944 023f 9642     		.uleb128 0x2116
-ARM GAS  /tmp/ccbFaIaq.s 			page 90
+ARM GAS  /tmp/cceksBJb.s 			page 90
 
 
  4945 0241 19       		.uleb128 0x19
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  4999 0279 05       		.uleb128 0x5
  5000 027a 00       		.byte	0
  5001 027b 03       		.uleb128 0x3
-ARM GAS  /tmp/ccbFaIaq.s 			page 91
+ARM GAS  /tmp/cceksBJb.s 			page 91
 
 
  5002 027c 08       		.uleb128 0x8
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5056 02b3 3A       		.uleb128 0x3a
  5057 02b4 0B       		.uleb128 0xb
  5058 02b5 3B       		.uleb128 0x3b
-ARM GAS  /tmp/ccbFaIaq.s 			page 92
+ARM GAS  /tmp/cceksBJb.s 			page 92
 
 
  5059 02b6 0B       		.uleb128 0xb
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5113 02ee 00       		.byte	0
  5114 02ef 31       		.uleb128 0x31
  5115 02f0 34       		.uleb128 0x34
-ARM GAS  /tmp/ccbFaIaq.s 			page 93
+ARM GAS  /tmp/cceksBJb.s 			page 93
 
 
  5116 02f1 00       		.byte	0
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5170 0327 00       		.byte	0
  5171 0328 03       		.uleb128 0x3
  5172 0329 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccbFaIaq.s 			page 94
+ARM GAS  /tmp/cceksBJb.s 			page 94
 
 
  5173 032a 3A       		.uleb128 0x3a
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5227 0360 05       		.uleb128 0x5
  5228 0361 49       		.uleb128 0x49
  5229 0362 13       		.uleb128 0x13
-ARM GAS  /tmp/ccbFaIaq.s 			page 95
+ARM GAS  /tmp/cceksBJb.s 			page 95
 
 
  5230 0363 3F       		.uleb128 0x3f
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5275              	.LASF47:
  5276 0019 6E657874 		.ascii	"next\000"
  5276      00
-ARM GAS  /tmp/ccbFaIaq.s 			page 96
+ARM GAS  /tmp/cceksBJb.s 			page 96
 
 
  5277              	.LASF57:
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5299              	.LASF88:
  5300 010b 65786974 		.ascii	"exitcode\000"
  5300      636F6465 
-ARM GAS  /tmp/ccbFaIaq.s 			page 97
+ARM GAS  /tmp/cceksBJb.s 			page 97
 
 
  5300      00
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5328 019f 6D736771 		.ascii	"msgqueue\000"
  5328      75657565 
  5328      00
-ARM GAS  /tmp/ccbFaIaq.s 			page 98
+ARM GAS  /tmp/cceksBJb.s 			page 98
 
 
  5329              	.LASF34:
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5356      5F303133 
  5356      5F303036 
  5356      5F657865 
-ARM GAS  /tmp/ccbFaIaq.s 			page 99
+ARM GAS  /tmp/cceksBJb.s 			page 99
 
 
  5356      63757465 
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5384      7000
  5385              	.LASF103:
  5386 02d2 74656172 		.ascii	"teardown\000"
-ARM GAS  /tmp/ccbFaIaq.s 			page 100
+ARM GAS  /tmp/cceksBJb.s 			page 100
 
 
  5386      646F776E 
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5411      6D5F7400 
  5412              	.LASF84:
  5413 0389 73746D33 		.ascii	"stm32_tim_t\000"
-ARM GAS  /tmp/ccbFaIaq.s 			page 101
+ARM GAS  /tmp/cceksBJb.s 			page 101
 
 
  5413      325F7469 
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5437      5F737465 
  5437      7000
  5438              	.LASF86:
-ARM GAS  /tmp/ccbFaIaq.s 			page 102
+ARM GAS  /tmp/cceksBJb.s 			page 102
 
 
  5439 0431 746D5F63 		.ascii	"tm_calibration_t\000"
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5465      74696D65 
  5465      725F7400 
  5466              	.LASF22:
-ARM GAS  /tmp/ccbFaIaq.s 			page 103
+ARM GAS  /tmp/cceksBJb.s 			page 103
 
 
  5467 04c5 74707269 		.ascii	"tprio_t\000"
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5493      5F303034 
  5493      5F657865 
  5493      63757465 
-ARM GAS  /tmp/ccbFaIaq.s 			page 104
+ARM GAS  /tmp/cceksBJb.s 			page 104
 
 
  5494              	.LASF120:
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5517      64735F6C 
  5517      69737400 
  5518              	.LASF97:
-ARM GAS  /tmp/ccbFaIaq.s 			page 105
+ARM GAS  /tmp/cceksBJb.s 			page 105
 
 
  5519 062a 6F776E65 		.ascii	"owner\000"
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5544              	.LASF26:
  5545 06ae 73797374 		.ascii	"systime_t\000"
  5545      696D655F 
-ARM GAS  /tmp/ccbFaIaq.s 			page 106
+ARM GAS  /tmp/cceksBJb.s 			page 106
 
 
  5545      7400
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5567 0759 7274636E 		.ascii	"rtcnt_t\000"
  5567      745F7400 
  5568              	.LASF48:
-ARM GAS  /tmp/ccbFaIaq.s 			page 107
+ARM GAS  /tmp/cceksBJb.s 			page 107
 
 
  5569 0761 74687265 		.ascii	"threads_queue_t\000"
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5593      6C697374 
  5593      5F7400
  5594              	.LASF149:
-ARM GAS  /tmp/ccbFaIaq.s 			page 108
+ARM GAS  /tmp/cceksBJb.s 			page 108
 
 
  5595 07fb 74657374 		.ascii	"test_013_003\000"
@@ -6450,102 +6450,102 @@ ARM GAS  /tmp/ccbFaIaq.s 			page 1
  5607      5F736574 
  5607      757000
  5608              		.ident	"GCC: (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)"
-ARM GAS  /tmp/ccbFaIaq.s 			page 109
+ARM GAS  /tmp/cceksBJb.s 			page 109
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 test_sequence_013.c
-     /tmp/ccbFaIaq.s:18     .text:0000000000000000 $t
-     /tmp/ccbFaIaq.s:23     .text:0000000000000000 port_lock
-     /tmp/ccbFaIaq.s:59     .text:0000000000000010 port_unlock
-     /tmp/ccbFaIaq.s:93     .text:0000000000000020 st_lld_get_counter
-     /tmp/ccbFaIaq.s:115    .text:0000000000000030 port_timer_get_time
-     /tmp/ccbFaIaq.s:140    .text:0000000000000040 chSysLock
-     /tmp/ccbFaIaq.s:163    .text:0000000000000050 chSysUnlock
-     /tmp/ccbFaIaq.s:185    .text:0000000000000060 chVTGetSystemTimeX
-     /tmp/ccbFaIaq.s:210    .text:0000000000000070 chVTIsTimeWithinX
-     /tmp/ccbFaIaq.s:248    .text:00000000000000a0 chVTIsSystemTimeWithinX
-     /tmp/ccbFaIaq.s:283    .text:00000000000000d0 chThdGetSelfX
-     /tmp/ccbFaIaq.s:300    .text:00000000000000d8 $d
-     /tmp/ccbFaIaq.s:304    .text:00000000000000dc $t
-     /tmp/ccbFaIaq.s:309    .text:00000000000000e0 chThdGetPriorityX
-     /tmp/ccbFaIaq.s:334    .text:00000000000000f0 chThdShouldTerminateX
-     /tmp/ccbFaIaq.s:365    .text:0000000000000110 chMsgGet
-     /tmp/ccbFaIaq.s:389    .bss:0000000000000000 $d
-     /tmp/ccbFaIaq.s:390    .bss:0000000000000000 sem1
-     /tmp/ccbFaIaq.s:393    .bss:000000000000000c mtx1
-     /tmp/ccbFaIaq.s:401    .text:0000000000000120 tmo
-     /tmp/ccbFaIaq.s:425    .text:0000000000000130 bmk_thread1
-     /tmp/ccbFaIaq.s:466    .text:0000000000000160 msg_loop_test
-     /tmp/ccbFaIaq.s:525    .text:00000000000001b0 bmk_thread3
-     /tmp/ccbFaIaq.s:554    .text:00000000000001d0 bmk_thread4
-     /tmp/ccbFaIaq.s:598    .text:0000000000000200 bmk_thread7
-     /tmp/ccbFaIaq.s:632    .text:0000000000000224 $d
-     /tmp/ccbFaIaq.s:636    .text:0000000000000228 $t
-     /tmp/ccbFaIaq.s:641    .text:0000000000000230 bmk_thread8
-     /tmp/ccbFaIaq.s:684    .rodata:0000000000000000 $d
-     /tmp/ccbFaIaq.s:699    .text:0000000000000270 test_013_001_execute
-     /tmp/ccbFaIaq.s:771    .text:00000000000002e0 $d
-     /tmp/ccbFaIaq.s:788    .rodata:0000000000000040 test_013_001
-     /tmp/ccbFaIaq.s:794    .text:00000000000002fc $t
-     /tmp/ccbFaIaq.s:799    .text:0000000000000300 test_013_002_execute
-     /tmp/ccbFaIaq.s:871    .text:0000000000000370 $d
-     /tmp/ccbFaIaq.s:888    .rodata:0000000000000068 test_013_002
-     /tmp/ccbFaIaq.s:894    .text:000000000000038c $t
-     /tmp/ccbFaIaq.s:899    .text:0000000000000390 test_013_003_execute
-     /tmp/ccbFaIaq.s:1035   .text:000000000000048c $d
-     /tmp/ccbFaIaq.s:1053   .rodata:0000000000000090 test_013_003
-     /tmp/ccbFaIaq.s:1059   .text:00000000000004ac $t
-     /tmp/ccbFaIaq.s:1064   .text:00000000000004b0 test_013_004_execute
-     /tmp/ccbFaIaq.s:1184   .text:0000000000000574 $d
-     /tmp/ccbFaIaq.s:1200   .rodata:00000000000000bc test_013_004
-     /tmp/ccbFaIaq.s:1209   .text:000000000000058c $t
-     /tmp/ccbFaIaq.s:1214   .text:0000000000000590 test_013_005_execute
-     /tmp/ccbFaIaq.s:1291   .text:0000000000000608 $d
-     /tmp/ccbFaIaq.s:1306   .rodata:00000000000000f8 test_013_005
-     /tmp/ccbFaIaq.s:1312   .text:000000000000061c $t
-     /tmp/ccbFaIaq.s:1317   .text:0000000000000620 test_013_006_execute
-     /tmp/ccbFaIaq.s:1394   .text:0000000000000698 $d
-     /tmp/ccbFaIaq.s:1409   .rodata:0000000000000130 test_013_006
-     /tmp/ccbFaIaq.s:1415   .text:00000000000006ac $t
-     /tmp/ccbFaIaq.s:1420   .text:00000000000006b0 test_013_007_setup
-     /tmp/ccbFaIaq.s:1439   .text:00000000000006bc $d
-ARM GAS  /tmp/ccbFaIaq.s 			page 110
+     /tmp/cceksBJb.s:18     .text:0000000000000000 $t
+     /tmp/cceksBJb.s:23     .text:0000000000000000 port_lock
+     /tmp/cceksBJb.s:59     .text:0000000000000010 port_unlock
+     /tmp/cceksBJb.s:93     .text:0000000000000020 st_lld_get_counter
+     /tmp/cceksBJb.s:115    .text:0000000000000030 port_timer_get_time
+     /tmp/cceksBJb.s:140    .text:0000000000000040 chSysLock
+     /tmp/cceksBJb.s:163    .text:0000000000000050 chSysUnlock
+     /tmp/cceksBJb.s:185    .text:0000000000000060 chVTGetSystemTimeX
+     /tmp/cceksBJb.s:210    .text:0000000000000070 chVTIsTimeWithinX
+     /tmp/cceksBJb.s:248    .text:00000000000000a0 chVTIsSystemTimeWithinX
+     /tmp/cceksBJb.s:283    .text:00000000000000d0 chThdGetSelfX
+     /tmp/cceksBJb.s:300    .text:00000000000000d8 $d
+     /tmp/cceksBJb.s:304    .text:00000000000000dc $t
+     /tmp/cceksBJb.s:309    .text:00000000000000e0 chThdGetPriorityX
+     /tmp/cceksBJb.s:334    .text:00000000000000f0 chThdShouldTerminateX
+     /tmp/cceksBJb.s:365    .text:0000000000000110 chMsgGet
+     /tmp/cceksBJb.s:389    .bss:0000000000000000 $d
+     /tmp/cceksBJb.s:390    .bss:0000000000000000 sem1
+     /tmp/cceksBJb.s:393    .bss:000000000000000c mtx1
+     /tmp/cceksBJb.s:401    .text:0000000000000120 tmo
+     /tmp/cceksBJb.s:425    .text:0000000000000130 bmk_thread1
+     /tmp/cceksBJb.s:466    .text:0000000000000160 msg_loop_test
+     /tmp/cceksBJb.s:525    .text:00000000000001b0 bmk_thread3
+     /tmp/cceksBJb.s:554    .text:00000000000001d0 bmk_thread4
+     /tmp/cceksBJb.s:598    .text:0000000000000200 bmk_thread7
+     /tmp/cceksBJb.s:632    .text:0000000000000224 $d
+     /tmp/cceksBJb.s:636    .text:0000000000000228 $t
+     /tmp/cceksBJb.s:641    .text:0000000000000230 bmk_thread8
+     /tmp/cceksBJb.s:684    .rodata:0000000000000000 $d
+     /tmp/cceksBJb.s:699    .text:0000000000000270 test_013_001_execute
+     /tmp/cceksBJb.s:771    .text:00000000000002e0 $d
+     /tmp/cceksBJb.s:788    .rodata:0000000000000040 test_013_001
+     /tmp/cceksBJb.s:794    .text:00000000000002fc $t
+     /tmp/cceksBJb.s:799    .text:0000000000000300 test_013_002_execute
+     /tmp/cceksBJb.s:871    .text:0000000000000370 $d
+     /tmp/cceksBJb.s:888    .rodata:0000000000000068 test_013_002
+     /tmp/cceksBJb.s:894    .text:000000000000038c $t
+     /tmp/cceksBJb.s:899    .text:0000000000000390 test_013_003_execute
+     /tmp/cceksBJb.s:1035   .text:000000000000048c $d
+     /tmp/cceksBJb.s:1053   .rodata:0000000000000090 test_013_003
+     /tmp/cceksBJb.s:1059   .text:00000000000004ac $t
+     /tmp/cceksBJb.s:1064   .text:00000000000004b0 test_013_004_execute
+     /tmp/cceksBJb.s:1184   .text:0000000000000574 $d
+     /tmp/cceksBJb.s:1200   .rodata:00000000000000bc test_013_004
+     /tmp/cceksBJb.s:1209   .text:000000000000058c $t
+     /tmp/cceksBJb.s:1214   .text:0000000000000590 test_013_005_execute
+     /tmp/cceksBJb.s:1291   .text:0000000000000608 $d
+     /tmp/cceksBJb.s:1306   .rodata:00000000000000f8 test_013_005
+     /tmp/cceksBJb.s:1312   .text:000000000000061c $t
+     /tmp/cceksBJb.s:1317   .text:0000000000000620 test_013_006_execute
+     /tmp/cceksBJb.s:1394   .text:0000000000000698 $d
+     /tmp/cceksBJb.s:1409   .rodata:0000000000000130 test_013_006
+     /tmp/cceksBJb.s:1415   .text:00000000000006ac $t
+     /tmp/cceksBJb.s:1420   .text:00000000000006b0 test_013_007_setup
+     /tmp/cceksBJb.s:1439   .text:00000000000006bc $d
+ARM GAS  /tmp/cceksBJb.s 			page 110
 
 
-     /tmp/ccbFaIaq.s:1448   .text:00000000000006c0 $t
-     /tmp/ccbFaIaq.s:1453   .text:00000000000006c0 test_013_007_execute
-     /tmp/ccbFaIaq.s:1621   .text:00000000000007f4 $d
-     /tmp/ccbFaIaq.s:1639   .rodata:0000000000000170 test_013_007
-     /tmp/ccbFaIaq.s:1645   .text:0000000000000814 $t
-     /tmp/ccbFaIaq.s:1650   .text:0000000000000820 test_013_008_execute
-     /tmp/ccbFaIaq.s:1778   .text:0000000000000910 $d
-     /tmp/ccbFaIaq.s:1794   .rodata:00000000000001a4 test_013_008
-     /tmp/ccbFaIaq.s:1803   .text:0000000000000928 $t
-     /tmp/ccbFaIaq.s:1808   .text:0000000000000930 test_013_009_execute
-     /tmp/ccbFaIaq.s:1893   .text:00000000000009b4 $d
-     /tmp/ccbFaIaq.s:2417   .bss:000000000000001c vt1.7438
-     /tmp/ccbFaIaq.s:2420   .bss:0000000000000030 vt2.7439
-     /tmp/ccbFaIaq.s:1909   .rodata:00000000000001e8 test_013_009
-     /tmp/ccbFaIaq.s:1915   .text:00000000000009cc $t
-     /tmp/ccbFaIaq.s:1920   .text:00000000000009d0 test_013_010_setup
-     /tmp/ccbFaIaq.s:1939   .text:00000000000009dc $d
-     /tmp/ccbFaIaq.s:1948   .text:00000000000009e0 $t
-     /tmp/ccbFaIaq.s:1953   .text:00000000000009e0 test_013_010_execute
-     /tmp/ccbFaIaq.s:2040   .text:0000000000000a64 $d
-     /tmp/ccbFaIaq.s:2054   .rodata:000000000000022c test_013_010
-     /tmp/ccbFaIaq.s:2060   .text:0000000000000a74 $t
-     /tmp/ccbFaIaq.s:2065   .text:0000000000000a80 test_013_011_setup
-     /tmp/ccbFaIaq.s:2083   .text:0000000000000a8c $d
-     /tmp/ccbFaIaq.s:2092   .text:0000000000000a90 $t
-     /tmp/ccbFaIaq.s:2097   .text:0000000000000a90 test_013_011_execute
-     /tmp/ccbFaIaq.s:2184   .text:0000000000000b14 $d
-     /tmp/ccbFaIaq.s:2198   .rodata:000000000000026c test_013_011
-     /tmp/ccbFaIaq.s:2234   .text:0000000000000b24 $t
-     /tmp/ccbFaIaq.s:2239   .text:0000000000000b30 test_013_012_execute
-     /tmp/ccbFaIaq.s:2371   .text:0000000000000c0c $d
-     /tmp/ccbFaIaq.s:2392   .rodata:0000000000000324 test_013_012
-     /tmp/ccbFaIaq.s:2401   .rodata:0000000000000334 test_sequence_013
+     /tmp/cceksBJb.s:1448   .text:00000000000006c0 $t
+     /tmp/cceksBJb.s:1453   .text:00000000000006c0 test_013_007_execute
+     /tmp/cceksBJb.s:1621   .text:00000000000007f4 $d
+     /tmp/cceksBJb.s:1639   .rodata:0000000000000170 test_013_007
+     /tmp/cceksBJb.s:1645   .text:0000000000000814 $t
+     /tmp/cceksBJb.s:1650   .text:0000000000000820 test_013_008_execute
+     /tmp/cceksBJb.s:1778   .text:0000000000000910 $d
+     /tmp/cceksBJb.s:1794   .rodata:00000000000001a4 test_013_008
+     /tmp/cceksBJb.s:1803   .text:0000000000000928 $t
+     /tmp/cceksBJb.s:1808   .text:0000000000000930 test_013_009_execute
+     /tmp/cceksBJb.s:1893   .text:00000000000009b4 $d
+     /tmp/cceksBJb.s:2417   .bss:000000000000001c vt1.7438
+     /tmp/cceksBJb.s:2420   .bss:0000000000000030 vt2.7439
+     /tmp/cceksBJb.s:1909   .rodata:00000000000001e8 test_013_009
+     /tmp/cceksBJb.s:1915   .text:00000000000009cc $t
+     /tmp/cceksBJb.s:1920   .text:00000000000009d0 test_013_010_setup
+     /tmp/cceksBJb.s:1939   .text:00000000000009dc $d
+     /tmp/cceksBJb.s:1948   .text:00000000000009e0 $t
+     /tmp/cceksBJb.s:1953   .text:00000000000009e0 test_013_010_execute
+     /tmp/cceksBJb.s:2040   .text:0000000000000a64 $d
+     /tmp/cceksBJb.s:2054   .rodata:000000000000022c test_013_010
+     /tmp/cceksBJb.s:2060   .text:0000000000000a74 $t
+     /tmp/cceksBJb.s:2065   .text:0000000000000a80 test_013_011_setup
+     /tmp/cceksBJb.s:2083   .text:0000000000000a8c $d
+     /tmp/cceksBJb.s:2092   .text:0000000000000a90 $t
+     /tmp/cceksBJb.s:2097   .text:0000000000000a90 test_013_011_execute
+     /tmp/cceksBJb.s:2184   .text:0000000000000b14 $d
+     /tmp/cceksBJb.s:2198   .rodata:000000000000026c test_013_011
+     /tmp/cceksBJb.s:2234   .text:0000000000000b24 $t
+     /tmp/cceksBJb.s:2239   .text:0000000000000b30 test_013_012_execute
+     /tmp/cceksBJb.s:2371   .text:0000000000000c0c $d
+     /tmp/cceksBJb.s:2392   .rodata:0000000000000324 test_013_012
+     /tmp/cceksBJb.s:2401   .rodata:0000000000000334 test_sequence_013
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS
@@ -6570,7 +6570,7 @@ chSchWakeupS
 chThdWait
 chThdRelease
 chSemObjectInit
-ARM GAS  /tmp/ccbFaIaq.s 			page 111
+ARM GAS  /tmp/cceksBJb.s 			page 111
 
 
 chSemReset

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccaTeYG5.s 			page 1
+ARM GAS  /tmp/ccGDwZOh.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
   55              		.p2align 4,,15
   56              		.thumb
   57              		.thumb_func
-ARM GAS  /tmp/ccaTeYG5.s 			page 2
+ARM GAS  /tmp/ccGDwZOh.s 			page 2
 
 
   58              		.type	port_unlock, %function
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  112 0028 AFF30080 		.p2align 4,,15
  112      AFF30080 
  113              		.thumb
-ARM GAS  /tmp/ccaTeYG5.s 			page 3
+ARM GAS  /tmp/ccGDwZOh.s 			page 3
 
 
  114              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  166              		.thumb
  167              		.thumb_func
  168              		.type	chGuardedPoolAdd, %function
-ARM GAS  /tmp/ccaTeYG5.s 			page 4
+ARM GAS  /tmp/ccGDwZOh.s 			page 4
 
 
  169              	chGuardedPoolAdd:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  222 0094 039B     		ldr	r3, [sp, #12]
  223 0096 019A     		ldr	r2, [sp, #4]
  224 0098 9A60     		str	r2, [r3, #8]
-ARM GAS  /tmp/ccaTeYG5.s 			page 5
+ARM GAS  /tmp/ccGDwZOh.s 			page 5
 
 
  225              		.loc 5 83 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  279 00cc 5DF804FB 		ldr	pc, [sp], #4
  280              		.cfi_endproc
  281              	.LFE249:
-ARM GAS  /tmp/ccaTeYG5.s 			page 6
+ARM GAS  /tmp/ccGDwZOh.s 			page 6
 
 
  282              		.size	chPoolLoadArray, .-chPoolLoadArray
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  336 010a 05B0     		add	sp, sp, #20
  337              		.cfi_def_cfa_offset 4
  338              		@ sp needed
-ARM GAS  /tmp/ccaTeYG5.s 			page 7
+ARM GAS  /tmp/ccGDwZOh.s 			page 7
 
 
  339 010c 5DF804FB 		ldr	pc, [sp], #4
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  393 0130 84B0     		sub	sp, sp, #16
  394              		.cfi_def_cfa_offset 16
  395 0132 0190     		str	r0, [sp, #4]
-ARM GAS  /tmp/ccaTeYG5.s 			page 8
+ARM GAS  /tmp/ccGDwZOh.s 			page 8
 
 
  396 0134 0091     		str	r1, [sp]
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  450              	.LFE253:
  451              		.size	chPoolFree, .-chPoolFree
  452 016e 00BF     		.align	2
-ARM GAS  /tmp/ccaTeYG5.s 			page 9
+ARM GAS  /tmp/ccGDwZOh.s 			page 9
 
 
  453              		.p2align 4,,15
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  506 01a2 85B0     		sub	sp, sp, #20
  507              		.cfi_def_cfa_offset 24
  508 01a4 0390     		str	r0, [sp, #12]
-ARM GAS  /tmp/ccaTeYG5.s 			page 10
+ARM GAS  /tmp/ccGDwZOh.s 			page 10
 
 
  509 01a6 0291     		str	r1, [sp, #8]
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  563 01dc 0099     		ldr	r1, [sp]
  564 01de FFF7FEFF 		bl	chSemWaitTimeoutS
  565 01e2 0390     		str	r0, [sp, #12]
-ARM GAS  /tmp/ccaTeYG5.s 			page 11
+ARM GAS  /tmp/ccGDwZOh.s 			page 11
 
 
  566              		.loc 5 264 0
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  618              		.loc 5 294 0
  619 022a 039B     		ldr	r3, [sp, #12]
  620              		.loc 5 295 0
-ARM GAS  /tmp/ccaTeYG5.s 			page 12
+ARM GAS  /tmp/ccGDwZOh.s 			page 12
 
 
  621 022c 1846     		mov	r0, r3
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  671              		.type	chGuardedPoolFree, %function
  672              	chGuardedPoolFree:
  673              	.LFB259:
-ARM GAS  /tmp/ccaTeYG5.s 			page 13
+ARM GAS  /tmp/ccGDwZOh.s 			page 13
 
 
  674              		.loc 5 327 0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  728 001d 92020000 		.4byte	.Letext0-.Ltext0
  729 0021 00000000 		.4byte	.Ldebug_line0
  730 0025 02       		.uleb128 0x2
-ARM GAS  /tmp/ccaTeYG5.s 			page 14
+ARM GAS  /tmp/ccGDwZOh.s 			page 14
 
 
  731 0026 04       		.byte	0x4
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  785 008c 44010000 		.4byte	.LASF11
  786 0090 03       		.uleb128 0x3
  787 0091 83030000 		.4byte	.LASF12
-ARM GAS  /tmp/ccaTeYG5.s 			page 15
+ARM GAS  /tmp/ccGDwZOh.s 			page 15
 
 
  788 0095 07       		.byte	0x7
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  842 010a 09       		.byte	0x9
  843 010b 41       		.byte	0x41
  844 010c AD000000 		.4byte	0xad
-ARM GAS  /tmp/ccaTeYG5.s 			page 16
+ARM GAS  /tmp/ccGDwZOh.s 			page 16
 
 
  845 0110 03       		.uleb128 0x3
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  899 017f 25020000 		.4byte	0x225
  900 0183 14       		.byte	0x14
  901 0184 06       		.uleb128 0x6
-ARM GAS  /tmp/ccaTeYG5.s 			page 17
+ARM GAS  /tmp/ccGDwZOh.s 			page 17
 
 
  902 0185 47020000 		.4byte	.LASF32
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  956 01f3 39060000 		.4byte	.LASF40
  957 01f7 0B       		.byte	0xb
  958 01f8 2701     		.2byte	0x127
-ARM GAS  /tmp/ccaTeYG5.s 			page 18
+ARM GAS  /tmp/ccGDwZOh.s 			page 18
 
 
  959 01fa C6050000 		.4byte	0x5c6
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1013 026b 0B       		.byte	0xb
  1014 026c 90       		.byte	0x90
  1015 026d 25020000 		.4byte	0x225
-ARM GAS  /tmp/ccaTeYG5.s 			page 19
+ARM GAS  /tmp/ccGDwZOh.s 			page 19
 
 
  1016 0271 00       		.byte	0
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1070 02e4 18       		.byte	0x18
  1071 02e5 00       		.byte	0
  1072 02e6 03       		.uleb128 0x3
-ARM GAS  /tmp/ccaTeYG5.s 			page 20
+ARM GAS  /tmp/ccGDwZOh.s 			page 20
 
 
  1073 02e7 5F050000 		.4byte	.LASF54
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1127 035c 10       		.byte	0x10
  1128 035d 00       		.byte	0
  1129 035e 03       		.uleb128 0x3
-ARM GAS  /tmp/ccaTeYG5.s 			page 21
+ARM GAS  /tmp/ccGDwZOh.s 			page 21
 
 
  1130 035f 0B010000 		.4byte	.LASF59
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1184 03d2 90020000 		.4byte	.LASF65
  1185 03d6 0A       		.byte	0xa
  1186 03d7 70       		.byte	0x70
-ARM GAS  /tmp/ccaTeYG5.s 			page 22
+ARM GAS  /tmp/ccGDwZOh.s 			page 22
 
 
  1187 03d8 DC030000 		.4byte	0x3dc
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1241 044c 04       		.byte	0x4
  1242 044d 0C       		.byte	0xc
  1243 044e 89       		.byte	0x89
-ARM GAS  /tmp/ccaTeYG5.s 			page 23
+ARM GAS  /tmp/ccGDwZOh.s 			page 23
 
 
  1244 044f 5F040000 		.4byte	0x45f
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1298 04bc 31040000 		.4byte	0x431
  1299 04c0 18       		.byte	0x18
  1300 04c1 08       		.uleb128 0x8
-ARM GAS  /tmp/ccaTeYG5.s 			page 24
+ARM GAS  /tmp/ccGDwZOh.s 			page 24
 
 
  1301 04c2 72313100 		.ascii	"r11\000"
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1355 052f 0B       		.byte	0xb
  1356 0530 EE       		.byte	0xee
  1357 0531 64050000 		.4byte	0x564
-ARM GAS  /tmp/ccaTeYG5.s 			page 25
+ARM GAS  /tmp/ccGDwZOh.s 			page 25
 
 
  1358 0535 11       		.uleb128 0x11
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1412 05a6 0F       		.byte	0xf
  1413 05a7 3A       		.byte	0x3a
  1414 05a8 4F020000 		.4byte	0x24f
-ARM GAS  /tmp/ccaTeYG5.s 			page 26
+ARM GAS  /tmp/ccGDwZOh.s 			page 26
 
 
  1415 05ac 00       		.byte	0
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1469 0618 47       		.byte	0x47
  1470 0619 1D060000 		.4byte	0x61d
  1471 061d 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccaTeYG5.s 			page 27
+ARM GAS  /tmp/ccGDwZOh.s 			page 27
 
 
  1472 061e 04       		.byte	0x4
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1526 068a 56060000 		.4byte	0x656
  1527 068e 0F       		.uleb128 0xf
  1528 068f 18       		.byte	0x18
-ARM GAS  /tmp/ccaTeYG5.s 			page 28
+ARM GAS  /tmp/ccGDwZOh.s 			page 28
 
 
  1529 0690 04       		.byte	0x4
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1583 0703 00       		.byte	0
  1584 0704 18       		.uleb128 0x18
  1585 0705 6A010000 		.4byte	.LASF100
-ARM GAS  /tmp/ccaTeYG5.s 			page 29
+ARM GAS  /tmp/ccGDwZOh.s 			page 29
 
 
  1586 0709 01       		.byte	0x1
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1640 0782 40000000 		.4byte	.LFB244
  1641 0786 16000000 		.4byte	.LFE244-.LFB244
  1642 078a 01       		.uleb128 0x1
-ARM GAS  /tmp/ccaTeYG5.s 			page 30
+ARM GAS  /tmp/ccGDwZOh.s 			page 30
 
 
  1643 078b 9C       		.byte	0x9c
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1697 07f0 4C       		.byte	0x4c
  1698 07f1 80000000 		.4byte	.LFB248
  1699 07f5 1E000000 		.4byte	.LFE248-.LFB248
-ARM GAS  /tmp/ccaTeYG5.s 			page 31
+ARM GAS  /tmp/ccGDwZOh.s 			page 31
 
 
  1700 07f9 01       		.uleb128 0x1
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1754 0866 02       		.uleb128 0x2
  1755 0867 91       		.byte	0x91
  1756 0868 74       		.sleb128 -12
-ARM GAS  /tmp/ccaTeYG5.s 			page 32
+ARM GAS  /tmp/ccGDwZOh.s 			page 32
 
 
  1757 0869 21       		.uleb128 0x21
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1811 08d3 74       		.sleb128 -12
  1812 08d4 1D       		.uleb128 0x1d
  1813 08d5 03040000 		.4byte	.LASF106
-ARM GAS  /tmp/ccaTeYG5.s 			page 33
+ARM GAS  /tmp/ccGDwZOh.s 			page 33
 
 
  1814 08d9 EE080000 		.4byte	0x8ee
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1868 0949 74       		.sleb128 -12
  1869 094a 22       		.uleb128 0x22
  1870 094b 16040000 		.4byte	.LASF103
-ARM GAS  /tmp/ccaTeYG5.s 			page 34
+ARM GAS  /tmp/ccGDwZOh.s 			page 34
 
 
  1871 094f 05       		.byte	0x5
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1925 09b7 D8090000 		.4byte	0x9d8
  1926 09bb 21       		.uleb128 0x21
  1927 09bc 676D7000 		.ascii	"gmp\000"
-ARM GAS  /tmp/ccaTeYG5.s 			page 35
+ARM GAS  /tmp/ccGDwZOh.s 			page 35
 
 
  1928 09c0 05       		.byte	0x5
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  1982 0a22 2D0A0000 		.4byte	0xa2d
  1983 0a26 1F       		.uleb128 0x1f
  1984 0a27 2A040000 		.4byte	0x42a
-ARM GAS  /tmp/ccaTeYG5.s 			page 36
+ARM GAS  /tmp/ccGDwZOh.s 			page 36
 
 
  1985 0a2b 16       		.byte	0x16
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2039 0aa0 02       		.uleb128 0x2
  2040 0aa1 91       		.byte	0x91
  2041 0aa2 6C       		.sleb128 -20
-ARM GAS  /tmp/ccaTeYG5.s 			page 37
+ARM GAS  /tmp/ccGDwZOh.s 			page 37
 
 
  2042 0aa3 2A       		.uleb128 0x2a
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2096 0b10 05       		.byte	0x5
  2097 0b11 4701     		.2byte	0x147
  2098 0b13 E4070000 		.4byte	0x7e4
-ARM GAS  /tmp/ccaTeYG5.s 			page 38
+ARM GAS  /tmp/ccGDwZOh.s 			page 38
 
 
  2099 0b17 02       		.uleb128 0x2
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2153 001b 08       		.uleb128 0x8
  2154 001c 00       		.byte	0
  2155 001d 00       		.byte	0
-ARM GAS  /tmp/ccaTeYG5.s 			page 39
+ARM GAS  /tmp/ccGDwZOh.s 			page 39
 
 
  2156 001e 03       		.uleb128 0x3
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2210 0054 07       		.uleb128 0x7
  2211 0055 0D       		.uleb128 0xd
  2212 0056 00       		.byte	0
-ARM GAS  /tmp/ccaTeYG5.s 			page 40
+ARM GAS  /tmp/ccGDwZOh.s 			page 40
 
 
  2213 0057 03       		.uleb128 0x3
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2267 008d 03       		.uleb128 0x3
  2268 008e 0E       		.uleb128 0xe
  2269 008f 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccaTeYG5.s 			page 41
+ARM GAS  /tmp/ccGDwZOh.s 			page 41
 
 
  2270 0090 0B       		.uleb128 0xb
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2324 00c6 01       		.uleb128 0x1
  2325 00c7 13       		.uleb128 0x13
  2326 00c8 00       		.byte	0
-ARM GAS  /tmp/ccaTeYG5.s 			page 42
+ARM GAS  /tmp/ccGDwZOh.s 			page 42
 
 
  2327 00c9 00       		.byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2381 00ff 01       		.byte	0x1
  2382 0100 03       		.uleb128 0x3
  2383 0101 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccaTeYG5.s 			page 43
+ARM GAS  /tmp/ccGDwZOh.s 			page 43
 
 
  2384 0102 3A       		.uleb128 0x3a
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2438 0139 01       		.uleb128 0x1
  2439 013a 12       		.uleb128 0x12
  2440 013b 06       		.uleb128 0x6
-ARM GAS  /tmp/ccaTeYG5.s 			page 44
+ARM GAS  /tmp/ccGDwZOh.s 			page 44
 
 
  2441 013c 58       		.uleb128 0x58
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2495 0174 19       		.uleb128 0x19
  2496 0175 01       		.uleb128 0x1
  2497 0176 13       		.uleb128 0x13
-ARM GAS  /tmp/ccaTeYG5.s 			page 45
+ARM GAS  /tmp/ccGDwZOh.s 			page 45
 
 
  2498 0177 00       		.byte	0
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2552 01ae 21       		.uleb128 0x21
  2553 01af 05       		.uleb128 0x5
  2554 01b0 00       		.byte	0
-ARM GAS  /tmp/ccaTeYG5.s 			page 46
+ARM GAS  /tmp/ccGDwZOh.s 			page 46
 
 
  2555 01b1 03       		.uleb128 0x3
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2609 01e8 01       		.byte	0x1
  2610 01e9 3F       		.uleb128 0x3f
  2611 01ea 19       		.uleb128 0x19
-ARM GAS  /tmp/ccaTeYG5.s 			page 47
+ARM GAS  /tmp/ccGDwZOh.s 			page 47
 
 
  2612 01eb 03       		.uleb128 0x3
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2666 0223 3B       		.uleb128 0x3b
  2667 0224 0B       		.uleb128 0xb
  2668 0225 49       		.uleb128 0x49
-ARM GAS  /tmp/ccaTeYG5.s 			page 48
+ARM GAS  /tmp/ccGDwZOh.s 			page 48
 
 
  2669 0226 13       		.uleb128 0x13
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2723 025d 3B       		.uleb128 0x3b
  2724 025e 05       		.uleb128 0x5
  2725 025f 49       		.uleb128 0x49
-ARM GAS  /tmp/ccaTeYG5.s 			page 49
+ARM GAS  /tmp/ccGDwZOh.s 			page 49
 
 
  2726 0260 13       		.uleb128 0x13
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2780 0296 9642     		.uleb128 0x2116
  2781 0298 19       		.uleb128 0x19
  2782 0299 01       		.uleb128 0x1
-ARM GAS  /tmp/ccaTeYG5.s 			page 50
+ARM GAS  /tmp/ccGDwZOh.s 			page 50
 
 
  2783 029a 13       		.uleb128 0x13
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2835      00000201 
  2835      FB0E0D00 
  2835      01010101 
-ARM GAS  /tmp/ccaTeYG5.s 			page 51
+ARM GAS  /tmp/ccGDwZOh.s 			page 51
 
 
  2836              	.LASF98:
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2862              	.LASF92:
  2863 008e 6D656D67 		.ascii	"memgetfunc_t\000"
  2863      65746675 
-ARM GAS  /tmp/ccaTeYG5.s 			page 52
+ARM GAS  /tmp/ccGDwZOh.s 			page 52
 
 
  2863      6E635F74 
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2885      6720696E 
  2885      7400
  2886              	.LASF1:
-ARM GAS  /tmp/ccaTeYG5.s 			page 53
+ARM GAS  /tmp/ccGDwZOh.s 			page 53
 
 
  2887 0152 7369676E 		.ascii	"signed char\000"
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2917      61726465 
  2917      64506F6F 
  2917      6C416C6C 
-ARM GAS  /tmp/ccaTeYG5.s 			page 54
+ARM GAS  /tmp/ccGDwZOh.s 			page 54
 
 
  2917      6F635469 
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2946              	.LASF119:
  2947 0275 63684775 		.ascii	"chGuardedPoolFree\000"
  2947      61726465 
-ARM GAS  /tmp/ccaTeYG5.s 			page 55
+ARM GAS  /tmp/ccGDwZOh.s 			page 55
 
 
  2947      64506F6F 
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2973      61645F72 
  2973      65666572 
  2973      656E6365 
-ARM GAS  /tmp/ccaTeYG5.s 			page 56
+ARM GAS  /tmp/ccGDwZOh.s 			page 56
 
 
  2973      5F7400
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  2999 03b3 63685F73 		.ascii	"ch_system_debug\000"
  2999      79737465 
  2999      6D5F6465 
-ARM GAS  /tmp/ccaTeYG5.s 			page 57
+ARM GAS  /tmp/ccGDwZOh.s 			page 57
 
 
  2999      62756700 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  3027 0445 75696E74 		.ascii	"uint32_t\000"
  3027      33325F74 
  3027      00
-ARM GAS  /tmp/ccaTeYG5.s 			page 58
+ARM GAS  /tmp/ccGDwZOh.s 			page 58
 
 
  3028              	.LASF83:
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  3050 0555 73797374 		.ascii	"systime_t\000"
  3050      696D655F 
  3050      7400
-ARM GAS  /tmp/ccaTeYG5.s 			page 59
+ARM GAS  /tmp/ccGDwZOh.s 			page 59
 
 
  3051              	.LASF54:
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  3078      6C6F6300 
  3079              	.LASF112:
  3080 05f6 6368506F 		.ascii	"chPoolFree\000"
-ARM GAS  /tmp/ccaTeYG5.s 			page 60
+ARM GAS  /tmp/ccGDwZOh.s 			page 60
 
 
  3080      6F6C4672 
@@ -3567,30 +3567,30 @@ ARM GAS  /tmp/ccaTeYG5.s 			page 1
  3092 0639 6D74786C 		.ascii	"mtxlist\000"
  3092      69737400 
  3093              		.ident	"GCC: (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)"
-ARM GAS  /tmp/ccaTeYG5.s 			page 61
+ARM GAS  /tmp/ccGDwZOh.s 			page 61
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 chmempools.c
-     /tmp/ccaTeYG5.s:18     .text:0000000000000000 $t
-     /tmp/ccaTeYG5.s:23     .text:0000000000000000 port_lock
-     /tmp/ccaTeYG5.s:59     .text:0000000000000010 port_unlock
-     /tmp/ccaTeYG5.s:93     .text:0000000000000020 chSysLock
-     /tmp/ccaTeYG5.s:116    .text:0000000000000030 chSysUnlock
-     /tmp/ccaTeYG5.s:138    .text:0000000000000040 chPoolAdd
-     /tmp/ccaTeYG5.s:423    .text:0000000000000150 chPoolFree
-     /tmp/ccaTeYG5.s:169    .text:0000000000000060 chGuardedPoolAdd
-     /tmp/ccaTeYG5.s:672    .text:0000000000000270 chGuardedPoolFree
-     /tmp/ccaTeYG5.s:200    .text:0000000000000080 chPoolObjectInit
-     /tmp/ccaTeYG5.s:239    .text:00000000000000a0 chPoolLoadArray
-     /tmp/ccaTeYG5.s:289    .text:00000000000000d0 chPoolAllocI
-     /tmp/ccaTeYG5.s:349    .text:0000000000000110 chPoolAlloc
-     /tmp/ccaTeYG5.s:386    .text:0000000000000130 chPoolFreeI
-     /tmp/ccaTeYG5.s:458    .text:0000000000000170 chGuardedPoolObjectInit
-     /tmp/ccaTeYG5.s:497    .text:00000000000001a0 chGuardedPoolLoadArray
-     /tmp/ccaTeYG5.s:547    .text:00000000000001d0 chGuardedPoolAllocTimeoutS
-     /tmp/ccaTeYG5.s:596    .text:0000000000000210 chGuardedPoolAllocTimeout
-     /tmp/ccaTeYG5.s:635    .text:0000000000000240 chGuardedPoolFreeI
+     /tmp/ccGDwZOh.s:18     .text:0000000000000000 $t
+     /tmp/ccGDwZOh.s:23     .text:0000000000000000 port_lock
+     /tmp/ccGDwZOh.s:59     .text:0000000000000010 port_unlock
+     /tmp/ccGDwZOh.s:93     .text:0000000000000020 chSysLock
+     /tmp/ccGDwZOh.s:116    .text:0000000000000030 chSysUnlock
+     /tmp/ccGDwZOh.s:138    .text:0000000000000040 chPoolAdd
+     /tmp/ccGDwZOh.s:423    .text:0000000000000150 chPoolFree
+     /tmp/ccGDwZOh.s:169    .text:0000000000000060 chGuardedPoolAdd
+     /tmp/ccGDwZOh.s:672    .text:0000000000000270 chGuardedPoolFree
+     /tmp/ccGDwZOh.s:200    .text:0000000000000080 chPoolObjectInit
+     /tmp/ccGDwZOh.s:239    .text:00000000000000a0 chPoolLoadArray
+     /tmp/ccGDwZOh.s:289    .text:00000000000000d0 chPoolAllocI
+     /tmp/ccGDwZOh.s:349    .text:0000000000000110 chPoolAlloc
+     /tmp/ccGDwZOh.s:386    .text:0000000000000130 chPoolFreeI
+     /tmp/ccGDwZOh.s:458    .text:0000000000000170 chGuardedPoolObjectInit
+     /tmp/ccGDwZOh.s:497    .text:00000000000001a0 chGuardedPoolLoadArray
+     /tmp/ccGDwZOh.s:547    .text:00000000000001d0 chGuardedPoolAllocTimeoutS
+     /tmp/ccGDwZOh.s:596    .text:0000000000000210 chGuardedPoolAllocTimeout
+     /tmp/ccGDwZOh.s:635    .text:0000000000000240 chGuardedPoolFreeI
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

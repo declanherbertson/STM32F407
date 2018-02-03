@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccFoFZ4n.s 			page 1
+ARM GAS  /tmp/ccIhDPDp.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
   55 007c 00000000 		.word	0
   56 0080 FFFF0000 		.word	65535
   57 0084 00000000 		.word	0
-ARM GAS  /tmp/ccFoFZ4n.s 			page 2
+ARM GAS  /tmp/ccIhDPDp.s 			page 2
 
 
   58 0088 00000000 		.word	0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  112              		.align	2
  113 0008 AFF30080 		.p2align 4,,15
  113      AFF30080 
-ARM GAS  /tmp/ccFoFZ4n.s 			page 3
+ARM GAS  /tmp/ccIhDPDp.s 			page 3
 
 
  114              		.global	boardInit
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  168 0036 1A010000 		.4byte	.LASF1
  169 003a 04       		.uleb128 0x4
  170 003b 69000000 		.4byte	.LASF5
-ARM GAS  /tmp/ccFoFZ4n.s 			page 4
+ARM GAS  /tmp/ccIhDPDp.s 			page 4
 
 
  171 003f 02       		.byte	0x2
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  225 00a8 1F       		.byte	0x1f
  226 00a9 5A000000 		.4byte	0x5a
  227 00ad 04       		.uleb128 0x4
-ARM GAS  /tmp/ccFoFZ4n.s 			page 5
+ARM GAS  /tmp/ccIhDPDp.s 			page 5
 
 
  228 00ae DD030000 		.4byte	.LASF15
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  282 0126 04       		.uleb128 0x4
  283 0127 91040000 		.4byte	.LASF26
  284 012b 05       		.byte	0x5
-ARM GAS  /tmp/ccFoFZ4n.s 			page 6
+ARM GAS  /tmp/ccIhDPDp.s 			page 6
 
 
  285 012c 3F       		.byte	0x3f
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  339 0198 D9000000 		.4byte	0xd9
  340 019c 20       		.byte	0x20
  341 019d 06       		.uleb128 0x6
-ARM GAS  /tmp/ccFoFZ4n.s 			page 7
+ARM GAS  /tmp/ccIhDPDp.s 			page 7
 
 
  342 019e F4040000 		.4byte	.LASF34
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  396 020f 04       		.uleb128 0x4
  397 0210 BA020000 		.4byte	.LASF42
  398 0214 05       		.byte	0x5
-ARM GAS  /tmp/ccFoFZ4n.s 			page 8
+ARM GAS  /tmp/ccIhDPDp.s 			page 8
 
 
  399 0215 44       		.byte	0x44
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  453 0284 1C       		.byte	0x1c
  454 0285 06       		.byte	0x6
  455 0286 6A01     		.2byte	0x16a
-ARM GAS  /tmp/ccFoFZ4n.s 			page 9
+ARM GAS  /tmp/ccIhDPDp.s 			page 9
 
 
  456 0288 DB020000 		.4byte	0x2db
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  510 02fa 33030000 		.4byte	.LASF54
  511 02fe 05       		.byte	0x5
  512 02ff 61       		.byte	0x61
-ARM GAS  /tmp/ccFoFZ4n.s 			page 10
+ARM GAS  /tmp/ccIhDPDp.s 			page 10
 
 
  513 0300 04030000 		.4byte	0x304
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  567 0377 00       		.byte	0
  568 0378 09       		.uleb128 0x9
  569 0379 73000000 		.4byte	.LASF49
-ARM GAS  /tmp/ccFoFZ4n.s 			page 11
+ARM GAS  /tmp/ccIhDPDp.s 			page 11
 
 
  570 037d 06       		.byte	0x6
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  624 03f0 06       		.byte	0x6
  625 03f1 A401     		.2byte	0x1a4
  626 03f3 53030000 		.4byte	0x353
-ARM GAS  /tmp/ccFoFZ4n.s 			page 12
+ARM GAS  /tmp/ccIhDPDp.s 			page 12
 
 
  627 03f7 1C       		.byte	0x1c
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  681 0462 723400   		.ascii	"r4\000"
  682 0465 08       		.byte	0x8
  683 0466 6C01     		.2byte	0x16c
-ARM GAS  /tmp/ccFoFZ4n.s 			page 13
+ARM GAS  /tmp/ccIhDPDp.s 			page 13
 
 
  684 0468 26040000 		.4byte	0x426
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  738 04d6 0F       		.uleb128 0xf
  739 04d7 04       		.byte	0x4
  740 04d8 09       		.byte	0x9
-ARM GAS  /tmp/ccFoFZ4n.s 			page 14
+ARM GAS  /tmp/ccIhDPDp.s 			page 14
 
 
  741 04d9 38       		.byte	0x38
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  795 054c 12       		.uleb128 0x12
  796 054d A0030000 		.4byte	.LASF83
  797 0551 06       		.byte	0x6
-ARM GAS  /tmp/ccFoFZ4n.s 			page 15
+ARM GAS  /tmp/ccIhDPDp.s 			page 15
 
 
  798 0552 0D01     		.2byte	0x10d
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  852 05bc 04       		.byte	0x4
  853 05bd 8A050000 		.4byte	0x58a
  854 05c1 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccFoFZ4n.s 			page 16
+ARM GAS  /tmp/ccIhDPDp.s 			page 16
 
 
  855 05c2 04       		.byte	0x4
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  909 062e FD       		.byte	0xfd
  910 062f AD000000 		.4byte	0xad
  911 0633 0C       		.byte	0xc
-ARM GAS  /tmp/ccFoFZ4n.s 			page 17
+ARM GAS  /tmp/ccIhDPDp.s 			page 17
 
 
  912 0634 07       		.uleb128 0x7
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  966 06a5 44010000 		.4byte	.LASF101
  967 06a9 0C       		.byte	0xc
  968 06aa 2001     		.2byte	0x120
-ARM GAS  /tmp/ccFoFZ4n.s 			page 18
+ARM GAS  /tmp/ccIhDPDp.s 			page 18
 
 
  969 06ac 5B060000 		.4byte	0x65b
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1023 0721 A2000000 		.4byte	0xa2
  1024 0725 1A       		.uleb128 0x1a
  1025 0726 636800   		.ascii	"ch\000"
-ARM GAS  /tmp/ccFoFZ4n.s 			page 19
+ARM GAS  /tmp/ccIhDPDp.s 			page 19
 
 
  1026 0729 06       		.byte	0x6
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1080 0026 0E       		.uleb128 0xe
  1081 0027 00       		.byte	0
  1082 0028 00       		.byte	0
-ARM GAS  /tmp/ccFoFZ4n.s 			page 20
+ARM GAS  /tmp/ccIhDPDp.s 			page 20
 
 
  1083 0029 04       		.uleb128 0x4
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1137 005f 38       		.uleb128 0x38
  1138 0060 0B       		.uleb128 0xb
  1139 0061 00       		.byte	0
-ARM GAS  /tmp/ccFoFZ4n.s 			page 21
+ARM GAS  /tmp/ccIhDPDp.s 			page 21
 
 
  1140 0062 00       		.byte	0
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1194 0098 00       		.byte	0
  1195 0099 0C       		.uleb128 0xc
  1196 009a 15       		.uleb128 0x15
-ARM GAS  /tmp/ccFoFZ4n.s 			page 22
+ARM GAS  /tmp/ccIhDPDp.s 			page 22
 
 
  1197 009b 01       		.byte	0x1
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1251 00d1 3B       		.uleb128 0x3b
  1252 00d2 0B       		.uleb128 0xb
  1253 00d3 49       		.uleb128 0x49
-ARM GAS  /tmp/ccFoFZ4n.s 			page 23
+ARM GAS  /tmp/ccIhDPDp.s 			page 23
 
 
  1254 00d4 13       		.uleb128 0x13
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1308 010a 00       		.byte	0
  1309 010b 00       		.byte	0
  1310 010c 17       		.uleb128 0x17
-ARM GAS  /tmp/ccFoFZ4n.s 			page 24
+ARM GAS  /tmp/ccIhDPDp.s 			page 24
 
 
  1311 010d 2E       		.uleb128 0x2e
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1365 0145 49       		.uleb128 0x49
  1366 0146 13       		.uleb128 0x13
  1367 0147 3F       		.uleb128 0x3f
-ARM GAS  /tmp/ccFoFZ4n.s 			page 25
+ARM GAS  /tmp/ccIhDPDp.s 			page 25
 
 
  1368 0148 19       		.uleb128 0x19
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1422 0000 F0010000 		.section	.debug_str,"MS",%progbits,1
  1422      0200D401 
  1422      00000201 
-ARM GAS  /tmp/ccFoFZ4n.s 			page 26
+ARM GAS  /tmp/ccIhDPDp.s 			page 26
 
 
  1422      FB0E0D00 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1447      65642069 
  1448              	.LASF93:
  1449 00b1 70757064 		.ascii	"pupdr\000"
-ARM GAS  /tmp/ccFoFZ4n.s 			page 27
+ARM GAS  /tmp/ccIhDPDp.s 			page 27
 
 
  1449      7200
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1475      00
  1476              	.LASF101:
  1477 0144 50454461 		.ascii	"PEData\000"
-ARM GAS  /tmp/ccFoFZ4n.s 			page 28
+ARM GAS  /tmp/ccIhDPDp.s 			page 28
 
 
  1477      746100
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1507      636C616E 
  1507      2F436869 
  1507      62694F53 
-ARM GAS  /tmp/ccFoFZ4n.s 			page 29
+ARM GAS  /tmp/ccIhDPDp.s 			page 29
 
 
  1508 01f7 3430372D 		.ascii	"407-DISCOVERY\000"
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1535              	.LASF6:
  1536 0286 5F5F696E 		.ascii	"__int32_t\000"
  1536      7433325F 
-ARM GAS  /tmp/ccFoFZ4n.s 			page 30
+ARM GAS  /tmp/ccIhDPDp.s 			page 30
 
 
  1536      7400
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1563              	.LASF11:
  1564 031b 5F5F7569 		.ascii	"__uint64_t\000"
  1564      6E743634 
-ARM GAS  /tmp/ccFoFZ4n.s 			page 31
+ARM GAS  /tmp/ccIhDPDp.s 			page 31
 
 
  1564      5F7400
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1594      79737465 
  1594      6D00
  1595              	.LASF76:
-ARM GAS  /tmp/ccFoFZ4n.s 			page 32
+ARM GAS  /tmp/ccIhDPDp.s 			page 32
 
 
  1596 03b1 7264796D 		.ascii	"rdymsg\000"
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1620 0491 74687265 		.ascii	"thread_t\000"
  1620      61645F74 
  1620      00
-ARM GAS  /tmp/ccFoFZ4n.s 			page 33
+ARM GAS  /tmp/ccIhDPDp.s 			page 33
 
 
  1621              	.LASF25:
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1652 051f 50414C43 		.ascii	"PALConfig\000"
  1652      6F6E6669 
  1652      6700
-ARM GAS  /tmp/ccFoFZ4n.s 			page 34
+ARM GAS  /tmp/ccIhDPDp.s 			page 34
 
 
  1653              	.LASF110:
@@ -1988,16 +1988,16 @@ ARM GAS  /tmp/ccFoFZ4n.s 			page 1
  1654      636F6E66 
  1654      696700
  1655              		.ident	"GCC: (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)"
-ARM GAS  /tmp/ccFoFZ4n.s 			page 35
+ARM GAS  /tmp/ccIhDPDp.s 			page 35
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 board.c
-     /tmp/ccFoFZ4n.s:23     .rodata:0000000000000000 pal_default_config
-     /tmp/ccFoFZ4n.s:20     .rodata:0000000000000000 $d
-     /tmp/ccFoFZ4n.s:88     .text:0000000000000000 $t
-     /tmp/ccFoFZ4n.s:94     .text:0000000000000000 __early_init
-     /tmp/ccFoFZ4n.s:118    .text:0000000000000010 boardInit
+     /tmp/ccIhDPDp.s:23     .rodata:0000000000000000 pal_default_config
+     /tmp/ccIhDPDp.s:20     .rodata:0000000000000000 $d
+     /tmp/ccIhDPDp.s:88     .text:0000000000000000 $t
+     /tmp/ccIhDPDp.s:94     .text:0000000000000000 __early_init
+     /tmp/ccIhDPDp.s:118    .text:0000000000000010 boardInit
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

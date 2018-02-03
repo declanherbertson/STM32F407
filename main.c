@@ -18,15 +18,18 @@
 #include "hal.h"
 #include "ch_test.h"
 #include "string.h" //added ask alan
+#include "Accelerometer.h"
 
-
-
+/*
 //added code
 static const I2CConfig i2ccfg = {
     OPMODE_I2C,
     100000,
     STD_DUTY_CYCLE,
 };
+
+*/
+
 
 
 /*
@@ -43,6 +46,7 @@ int main(void) {
    */
   halInit();
   chSysInit();
+/*
 
   //I2C (accelerometer)
    palSetPadMode(GPIOB, 8, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
@@ -71,7 +75,7 @@ int main(void) {
    //set breakpoint; halt cpu; continue to breakpoint; print variable
 
    //to transmit multiple bytes, make regaddr a byte array
-    
+
     //to push to git - git add .;git commit -a -m "";git push -u origin master -f
 
    //to pull from git - git pull origin master
@@ -215,6 +219,20 @@ int main(void) {
        (void) err6;
        (void) err7;
 
+
+
+
+*/
+  int16_t buff[3];
+  while(1){
+
+       AccelerometerInit();
+       AccelerometerConfig(1,1);
+       AccelerometerGetValues(buff);
+
+
+
+       chprintf((BaseSequentialStream *)&SD3, "%d, %d, %d \r\n",buff[0],buff[1], buff[2]);
        chThdSleepMilliseconds(100);
 
      }

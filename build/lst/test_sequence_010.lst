@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccqRpbSc.s 			page 1
+ARM GAS  /tmp/ccKxe0pN.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
   52              		@ frame_needed = 0, uses_anonymous_args = 0
   53              		@ link register save eliminated.
   54 0000 82B0     		sub	sp, sp, #8
-ARM GAS  /tmp/ccqRpbSc.s 			page 2
+ARM GAS  /tmp/ccKxe0pN.s 			page 2
 
 
   55              		.cfi_def_cfa_offset 8
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  104      747900
  105 001b 00       		.align	2
  106              	.LC2:
-ARM GAS  /tmp/ccqRpbSc.s 			page 3
+ARM GAS  /tmp/ccKxe0pN.s 			page 3
 
 
  107 001c 70726F76 		.ascii	"provider returned memory\000"
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  155 006a 0346     		mov	r3, r0
  156 006c 002B     		cmp	r3, #0
  157 006e 00D0     		beq	.L8
-ARM GAS  /tmp/ccqRpbSc.s 			page 4
+ARM GAS  /tmp/ccKxe0pN.s 			page 4
 
 
  158 0070 77E0     		b	.L6
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  212              	.L12:
  213              		.loc 1 121 0 is_stmt 0 discriminator 1
  214 00c8 019B     		ldr	r3, [sp, #4]
-ARM GAS  /tmp/ccqRpbSc.s 			page 5
+ARM GAS  /tmp/ccKxe0pN.s 			page 5
 
 
  215 00ca 032B     		cmp	r3, #3
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  269 0128 0346     		mov	r3, r0
  270 012a 002B     		cmp	r3, #0
  271 012c 00D0     		beq	.L17
-ARM GAS  /tmp/ccqRpbSc.s 			page 6
+ARM GAS  /tmp/ccKxe0pN.s 			page 6
 
 
  272              		.loc 1 135 0 is_stmt 0 discriminator 4
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  323      656D7074 
  323      79696E67 
  324 005b 00       		.align	2
-ARM GAS  /tmp/ccqRpbSc.s 			page 7
+ARM GAS  /tmp/ccKxe0pN.s 			page 7
 
 
  325              		.type	test_010_001, %object
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  377              		.loc 1 189 0
  378 01a4 424B     		ldr	r3, .L34
  379 01a6 0122     		movs	r2, #1
-ARM GAS  /tmp/ccqRpbSc.s 			page 8
+ARM GAS  /tmp/ccKxe0pN.s 			page 8
 
 
  380 01a8 1A60     		str	r2, [r3]
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  434 0206 0023     		movne	r3, #0
  435 0208 DBB2     		uxtb	r3, r3
  436 020a 1846     		mov	r0, r3
-ARM GAS  /tmp/ccqRpbSc.s 			page 9
+ARM GAS  /tmp/ccKxe0pN.s 			page 9
 
 
  437 020c 2C49     		ldr	r1, .L34+16
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  491 0264 1549     		ldr	r1, .L34+12
  492 0266 FFF7FEFF 		bl	_test_assert
  493 026a 0346     		mov	r3, r0
-ARM GAS  /tmp/ccqRpbSc.s 			page 10
+ARM GAS  /tmp/ccKxe0pN.s 			page 10
 
 
  494 026c 002B     		cmp	r3, #0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  548              		.align	2
  549              	.LC4:
  550 006c 4C6F6164 		.ascii	"Loading and emptying a guarded memory pool without "
-ARM GAS  /tmp/ccqRpbSc.s 			page 11
+ARM GAS  /tmp/ccKxe0pN.s 			page 11
 
 
  550      696E6720 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  598              		@ args = 0, pretend = 0, frame = 0
  599              		@ frame_needed = 0, uses_anonymous_args = 0
  600 02e0 08B5     		push	{r3, lr}
-ARM GAS  /tmp/ccqRpbSc.s 			page 12
+ARM GAS  /tmp/ccKxe0pN.s 			page 12
 
 
  601              		.cfi_def_cfa_offset 8
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  651              		.type	test_sequence_010, %object
  652              		.size	test_sequence_010, 16
  653              	test_sequence_010:
-ARM GAS  /tmp/ccqRpbSc.s 			page 13
+ARM GAS  /tmp/ccKxe0pN.s 			page 13
 
 
  654 00e8 5C000000 		.word	test_010_001
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  708 004a 03       		.byte	0x3
  709 004b 1D       		.byte	0x1d
  710 004c 50000000 		.4byte	0x50
-ARM GAS  /tmp/ccqRpbSc.s 			page 14
+ARM GAS  /tmp/ccKxe0pN.s 			page 14
 
 
  711 0050 04       		.uleb128 0x4
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  765 00b9 61040000 		.4byte	.LASF16
  766 00bd 04       		.byte	0x4
  767 00be 20       		.byte	0x20
-ARM GAS  /tmp/ccqRpbSc.s 			page 15
+ARM GAS  /tmp/ccKxe0pN.s 			page 15
 
 
  768 00bf 77000000 		.4byte	0x77
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  822 0137 3F       		.byte	0x3f
  823 0138 3C010000 		.4byte	0x13c
  824 013c 05       		.uleb128 0x5
-ARM GAS  /tmp/ccqRpbSc.s 			page 16
+ARM GAS  /tmp/ccKxe0pN.s 			page 16
 
 
  825 013d 6E020000 		.4byte	.LASF45
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  879 01a9 C0050000 		.4byte	.LASF35
  880 01ad 07       		.byte	0x7
  881 01ae B9       		.byte	0xb9
-ARM GAS  /tmp/ccqRpbSc.s 			page 17
+ARM GAS  /tmp/ccKxe0pN.s 			page 17
 
 
  882 01af D9000000 		.4byte	0xd9
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  936 0220 44       		.byte	0x44
  937 0221 25020000 		.4byte	0x225
  938 0225 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccqRpbSc.s 			page 18
+ARM GAS  /tmp/ccKxe0pN.s 			page 18
 
 
  939 0226 04       		.byte	0x4
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  993 0293 E6020000 		.4byte	0x2e6
  994 0297 09       		.uleb128 0x9
  995 0298 95010000 		.4byte	.LASF28
-ARM GAS  /tmp/ccqRpbSc.s 			page 19
+ARM GAS  /tmp/ccKxe0pN.s 			page 19
 
 
  996 029c 07       		.byte	0x7
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1050 030b 0F030000 		.4byte	0x30f
  1051 030f 0B       		.uleb128 0xb
  1052 0310 43040000 		.4byte	.LASF56
-ARM GAS  /tmp/ccqRpbSc.s 			page 20
+ARM GAS  /tmp/ccKxe0pN.s 			page 20
 
 
  1053 0314 14       		.byte	0x14
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1107 0388 07       		.byte	0x7
  1108 0389 5801     		.2byte	0x158
  1109 038b F4050000 		.4byte	0x5f4
-ARM GAS  /tmp/ccqRpbSc.s 			page 21
+ARM GAS  /tmp/ccKxe0pN.s 			page 21
 
 
  1110 038f 04       		.byte	0x4
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1164 0402 1C       		.byte	0x1c
  1165 0403 08       		.uleb128 0x8
  1166 0404 64626700 		.ascii	"dbg\000"
-ARM GAS  /tmp/ccqRpbSc.s 			page 22
+ARM GAS  /tmp/ccKxe0pN.s 			page 22
 
 
  1167 0408 07       		.byte	0x7
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1221 0475 09       		.byte	0x9
  1222 0476 5901     		.2byte	0x159
  1223 0478 EB040000 		.4byte	0x4eb
-ARM GAS  /tmp/ccqRpbSc.s 			page 23
+ARM GAS  /tmp/ccKxe0pN.s 			page 23
 
 
  1224 047c 08       		.uleb128 0x8
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1278 04ea 00       		.byte	0
  1279 04eb 0A       		.uleb128 0xa
  1280 04ec 04       		.byte	0x4
-ARM GAS  /tmp/ccqRpbSc.s 			page 24
+ARM GAS  /tmp/ccKxe0pN.s 			page 24
 
 
  1281 04ed 6F040000 		.4byte	0x46f
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1335 055c 6A040000 		.4byte	.LASF83
  1336 0560 07       		.byte	0x7
  1337 0561 0501     		.2byte	0x105
-ARM GAS  /tmp/ccqRpbSc.s 			page 25
+ARM GAS  /tmp/ccKxe0pN.s 			page 25
 
 
  1338 0563 D6050000 		.4byte	0x5d6
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1392 05d0 15060000 		.4byte	0x615
  1393 05d4 0C       		.byte	0xc
  1394 05d5 00       		.byte	0
-ARM GAS  /tmp/ccqRpbSc.s 			page 26
+ARM GAS  /tmp/ccKxe0pN.s 			page 26
 
 
  1395 05d6 0A       		.uleb128 0xa
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1449 0648 CD050000 		.4byte	.LASF93
  1450 064c 04       		.byte	0x4
  1451 064d 0E       		.byte	0xe
-ARM GAS  /tmp/ccqRpbSc.s 			page 27
+ARM GAS  /tmp/ccKxe0pN.s 			page 27
 
 
  1452 064e 38       		.byte	0x38
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1506 06b7 0E       		.byte	0xe
  1507 06b8 4F       		.byte	0x4f
  1508 06b9 93060000 		.4byte	0x693
-ARM GAS  /tmp/ccqRpbSc.s 			page 28
+ARM GAS  /tmp/ccKxe0pN.s 			page 28
 
 
  1509 06bd 0C       		.byte	0xc
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1563 0729 9C       		.byte	0x9c
  1564 072a 4B070000 		.4byte	0x74b
  1565 072e 1A       		.uleb128 0x1a
-ARM GAS  /tmp/ccqRpbSc.s 			page 29
+ARM GAS  /tmp/ccKxe0pN.s 			page 29
 
 
  1566 072f 2B010000 		.4byte	.LASF103
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1620 0796 A0010000 		.4byte	.LFB283
  1621 079a 24010000 		.4byte	.LFE283-.LFB283
  1622 079e 01       		.uleb128 0x1
-ARM GAS  /tmp/ccqRpbSc.s 			page 30
+ARM GAS  /tmp/ccKxe0pN.s 			page 30
 
 
  1623 079f 9C       		.byte	0x9c
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1677 080e 93       		.byte	0x93
  1678 080f 19080000 		.4byte	0x819
  1679 0813 05       		.uleb128 0x5
-ARM GAS  /tmp/ccqRpbSc.s 			page 31
+ARM GAS  /tmp/ccKxe0pN.s 			page 31
 
 
  1680 0814 03       		.byte	0x3
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1734 088c 00000000 		.4byte	test_sequence_010
  1735 0890 15       		.uleb128 0x15
  1736 0891 68080000 		.4byte	0x868
-ARM GAS  /tmp/ccqRpbSc.s 			page 32
+ARM GAS  /tmp/ccKxe0pN.s 			page 32
 
 
  1737 0895 00       		.byte	0
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1791 0033 0E       		.uleb128 0xe
  1792 0034 00       		.byte	0
  1793 0035 00       		.byte	0
-ARM GAS  /tmp/ccqRpbSc.s 			page 33
+ARM GAS  /tmp/ccKxe0pN.s 			page 33
 
 
  1794 0036 05       		.uleb128 0x5
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1848 006c 49       		.uleb128 0x49
  1849 006d 13       		.uleb128 0x13
  1850 006e 38       		.uleb128 0x38
-ARM GAS  /tmp/ccqRpbSc.s 			page 34
+ARM GAS  /tmp/ccKxe0pN.s 			page 34
 
 
  1851 006f 0B       		.uleb128 0xb
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1905 00a5 49       		.uleb128 0x49
  1906 00a6 13       		.uleb128 0x13
  1907 00a7 00       		.byte	0
-ARM GAS  /tmp/ccqRpbSc.s 			page 35
+ARM GAS  /tmp/ccKxe0pN.s 			page 35
 
 
  1908 00a8 00       		.byte	0
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  1962 00de 00       		.byte	0
  1963 00df 03       		.uleb128 0x3
  1964 00e0 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccqRpbSc.s 			page 36
+ARM GAS  /tmp/ccKxe0pN.s 			page 36
 
 
  1965 00e1 3A       		.uleb128 0x3a
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2019 0117 2E       		.uleb128 0x2e
  2020 0118 01       		.byte	0x1
  2021 0119 03       		.uleb128 0x3
-ARM GAS  /tmp/ccqRpbSc.s 			page 37
+ARM GAS  /tmp/ccKxe0pN.s 			page 37
 
 
  2022 011a 0E       		.uleb128 0xe
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2076 0152 19       		.uleb128 0x19
  2077 0153 00       		.byte	0
  2078 0154 00       		.byte	0
-ARM GAS  /tmp/ccqRpbSc.s 			page 38
+ARM GAS  /tmp/ccKxe0pN.s 			page 38
 
 
  2079 0155 1C       		.uleb128 0x1c
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2133 018c 18       		.uleb128 0x18
  2134 018d 9642     		.uleb128 0x2116
  2135 018f 19       		.uleb128 0x19
-ARM GAS  /tmp/ccqRpbSc.s 			page 39
+ARM GAS  /tmp/ccKxe0pN.s 			page 39
 
 
  2136 0190 00       		.byte	0
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2190 01c6 3A       		.uleb128 0x3a
  2191 01c7 0B       		.uleb128 0xb
  2192 01c8 3B       		.uleb128 0x3b
-ARM GAS  /tmp/ccqRpbSc.s 			page 40
+ARM GAS  /tmp/ccKxe0pN.s 			page 40
 
 
  2193 01c9 05       		.uleb128 0x5
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2247 0018 00000000 		.4byte	0
  2248 001c 00000000 		.4byte	0
  2249              		.section	.debug_line,"",%progbits
-ARM GAS  /tmp/ccqRpbSc.s 			page 41
+ARM GAS  /tmp/ccKxe0pN.s 			page 41
 
 
  2250              	.Ldebug_line0:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2275      69646572 
  2275      00
  2276              	.LASF92:
-ARM GAS  /tmp/ccqRpbSc.s 			page 42
+ARM GAS  /tmp/ccKxe0pN.s 			page 42
 
 
  2277 0085 6D656D67 		.ascii	"memgetfunc_t\000"
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2299      5F736574 
  2299      757000
  2300              	.LASF103:
-ARM GAS  /tmp/ccqRpbSc.s 			page 43
+ARM GAS  /tmp/ccKxe0pN.s 			page 43
 
 
  2301 012b 73697A65 		.ascii	"size\000"
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2330              	.LASF90:
  2331 01ca 6D757465 		.ascii	"mutex_t\000"
  2331      785F7400 
-ARM GAS  /tmp/ccqRpbSc.s 			page 44
+ARM GAS  /tmp/ccKxe0pN.s 			page 44
 
 
  2332              	.LASF104:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2358      7400
  2359              	.LASF39:
  2360 027e 6570656E 		.ascii	"epending\000"
-ARM GAS  /tmp/ccqRpbSc.s 			page 45
+ARM GAS  /tmp/ccKxe0pN.s 			page 45
 
 
  2360      64696E67 
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2386      74797065 
  2386      00
  2387              	.LASF43:
-ARM GAS  /tmp/ccqRpbSc.s 			page 46
+ARM GAS  /tmp/ccKxe0pN.s 			page 46
 
 
  2388 031d 74687265 		.ascii	"thread_reference_t\000"
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2412      74696D65 
  2412      725F7400 
  2413              	.LASF101:
-ARM GAS  /tmp/ccqRpbSc.s 			page 47
+ARM GAS  /tmp/ccKxe0pN.s 			page 47
 
 
  2414 03bf 65786563 		.ascii	"execute\000"
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2441              	.LASF85:
  2442 0454 63685F73 		.ascii	"ch_semaphore\000"
  2442      656D6170 
-ARM GAS  /tmp/ccqRpbSc.s 			page 48
+ARM GAS  /tmp/ccKxe0pN.s 			page 48
 
 
  2442      686F7265 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2464      00
  2465              	.LASF26:
  2466 0545 73797374 		.ascii	"systime_t\000"
-ARM GAS  /tmp/ccqRpbSc.s 			page 49
+ARM GAS  /tmp/ccKxe0pN.s 			page 49
 
 
  2466      696D655F 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2495              	.LASF93:
  2496 05cd 706F6F6C 		.ascii	"pool_header\000"
  2496      5F686561 
-ARM GAS  /tmp/ccqRpbSc.s 			page 50
+ARM GAS  /tmp/ccKxe0pN.s 			page 50
 
 
  2496      64657200 
@@ -2954,40 +2954,40 @@ ARM GAS  /tmp/ccqRpbSc.s 			page 1
  2500      5F736574 
  2500      757000
  2501              		.ident	"GCC: (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)"
-ARM GAS  /tmp/ccqRpbSc.s 			page 51
+ARM GAS  /tmp/ccKxe0pN.s 			page 51
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 test_sequence_010.c
-     /tmp/ccqRpbSc.s:19     .bss:0000000000000000 $d
-     /tmp/ccqRpbSc.s:20     .bss:0000000000000000 objects
-     /tmp/ccqRpbSc.s:23     .data:0000000000000000 $d
-     /tmp/ccqRpbSc.s:26     .data:0000000000000000 mp1
-     /tmp/ccqRpbSc.s:33     .data:000000000000000c gmp1
-     /tmp/ccqRpbSc.s:41     .text:0000000000000000 $t
-     /tmp/ccqRpbSc.s:46     .text:0000000000000000 null_provider
-     /tmp/ccqRpbSc.s:74     .text:0000000000000010 test_010_001_setup
-     /tmp/ccqRpbSc.s:94     .text:0000000000000020 $d
-     /tmp/ccqRpbSc.s:99     .rodata:0000000000000000 $d
-     /tmp/ccqRpbSc.s:109    .text:0000000000000024 $t
-     /tmp/ccqRpbSc.s:114    .text:0000000000000030 test_010_001_execute
-     /tmp/ccqRpbSc.s:310    .text:0000000000000168 $d
-     /tmp/ccqRpbSc.s:327    .rodata:000000000000005c test_010_001
-     /tmp/ccqRpbSc.s:333    .text:0000000000000184 $t
-     /tmp/ccqRpbSc.s:338    .text:0000000000000190 test_010_002_setup
-     /tmp/ccqRpbSc.s:357    .text:000000000000019c $d
-     /tmp/ccqRpbSc.s:361    .text:00000000000001a0 $t
-     /tmp/ccqRpbSc.s:366    .text:00000000000001a0 test_010_002_execute
-     /tmp/ccqRpbSc.s:539    .text:00000000000002b0 $d
-     /tmp/ccqRpbSc.s:555    .rodata:00000000000000a8 test_010_002
-     /tmp/ccqRpbSc.s:561    .text:00000000000002c4 $t
-     /tmp/ccqRpbSc.s:566    .text:00000000000002d0 test_010_003_setup
-     /tmp/ccqRpbSc.s:585    .text:00000000000002dc $d
-     /tmp/ccqRpbSc.s:589    .text:00000000000002e0 $t
-     /tmp/ccqRpbSc.s:594    .text:00000000000002e0 test_010_003_execute
-     /tmp/ccqRpbSc.s:631    .text:0000000000000310 $d
-     /tmp/ccqRpbSc.s:644    .rodata:00000000000000d8 test_010_003
-     /tmp/ccqRpbSc.s:653    .rodata:00000000000000e8 test_sequence_010
+     /tmp/ccKxe0pN.s:19     .bss:0000000000000000 $d
+     /tmp/ccKxe0pN.s:20     .bss:0000000000000000 objects
+     /tmp/ccKxe0pN.s:23     .data:0000000000000000 $d
+     /tmp/ccKxe0pN.s:26     .data:0000000000000000 mp1
+     /tmp/ccKxe0pN.s:33     .data:000000000000000c gmp1
+     /tmp/ccKxe0pN.s:41     .text:0000000000000000 $t
+     /tmp/ccKxe0pN.s:46     .text:0000000000000000 null_provider
+     /tmp/ccKxe0pN.s:74     .text:0000000000000010 test_010_001_setup
+     /tmp/ccKxe0pN.s:94     .text:0000000000000020 $d
+     /tmp/ccKxe0pN.s:99     .rodata:0000000000000000 $d
+     /tmp/ccKxe0pN.s:109    .text:0000000000000024 $t
+     /tmp/ccKxe0pN.s:114    .text:0000000000000030 test_010_001_execute
+     /tmp/ccKxe0pN.s:310    .text:0000000000000168 $d
+     /tmp/ccKxe0pN.s:327    .rodata:000000000000005c test_010_001
+     /tmp/ccKxe0pN.s:333    .text:0000000000000184 $t
+     /tmp/ccKxe0pN.s:338    .text:0000000000000190 test_010_002_setup
+     /tmp/ccKxe0pN.s:357    .text:000000000000019c $d
+     /tmp/ccKxe0pN.s:361    .text:00000000000001a0 $t
+     /tmp/ccKxe0pN.s:366    .text:00000000000001a0 test_010_002_execute
+     /tmp/ccKxe0pN.s:539    .text:00000000000002b0 $d
+     /tmp/ccKxe0pN.s:555    .rodata:00000000000000a8 test_010_002
+     /tmp/ccKxe0pN.s:561    .text:00000000000002c4 $t
+     /tmp/ccKxe0pN.s:566    .text:00000000000002d0 test_010_003_setup
+     /tmp/ccKxe0pN.s:585    .text:00000000000002dc $d
+     /tmp/ccKxe0pN.s:589    .text:00000000000002e0 $t
+     /tmp/ccKxe0pN.s:594    .text:00000000000002e0 test_010_003_execute
+     /tmp/ccKxe0pN.s:631    .text:0000000000000310 $d
+     /tmp/ccKxe0pN.s:644    .rodata:00000000000000d8 test_010_003
+     /tmp/ccKxe0pN.s:653    .rodata:00000000000000e8 test_sequence_010
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

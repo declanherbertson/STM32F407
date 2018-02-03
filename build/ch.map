@@ -103,6 +103,7 @@ LOAD build/obj/chprintf.o
 LOAD build/obj/memstreams.o
 LOAD build/obj/nullstreams.o
 LOAD build/obj/main.o
+LOAD build/obj/Accelerometer.o
 
 .mstack         0x0000000020000000      0x400
                 0x0000000020000000                . = ALIGN (0x8)
@@ -609,11 +610,15 @@ LOAD build/obj/main.o
  .text          0x000000000800d680       0x64 build/obj/nullstreams.o
                 0x000000000800d6d0                nullObjectInit
  *fill*         0x000000000800d6e4        0xc 
- .text          0x000000000800d6f0      0x2e8 build/obj/main.o
+ .text          0x000000000800d6f0       0x50 build/obj/main.o
                 0x000000000800d6f0                main
- .text          0x000000000800d9d8      0x134 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
-                0x000000000800d9d8                memcpy
- *fill*         0x000000000800db0c       0x14 
+ .text          0x000000000800d740      0x290 build/obj/Accelerometer.o
+                0x000000000800d740                AccelerometerInit
+                0x000000000800d7a0                AccelerometerConfig
+                0x000000000800d800                AccelerometerGetValues
+ .text          0x000000000800d9d0      0x134 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+                0x000000000800d9d0                memcpy
+ *fill*         0x000000000800db04       0x1c 
  .text          0x000000000800db20      0x2e0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
                 0x000000000800db28                strcmp
  *(.text.*)
@@ -683,10 +688,11 @@ LOAD build/obj/main.o
  *fill*         0x000000000800fab3        0x1 
  .rodata        0x000000000800fab4       0x10 build/obj/memstreams.o
  .rodata        0x000000000800fac4       0x10 build/obj/nullstreams.o
- .rodata        0x000000000800fad4       0x1a build/obj/main.o
+ .rodata        0x000000000800fad4        0xe build/obj/main.o
+ *fill*         0x000000000800fae2        0x2 
+ .rodata        0x000000000800fae4        0xc build/obj/Accelerometer.o
  *(.rodata.*)
                 0x000000000800faf0                . = ALIGN (0x4)
- *fill*         0x000000000800faee        0x2 
                 0x000000000800faf0                __rodata_end__ = .
 
 .ARM.extab
@@ -800,6 +806,7 @@ LOAD build/obj/main.o
  .data          0x00000000200008b8        0x0 build/obj/memstreams.o
  .data          0x00000000200008b8        0x0 build/obj/nullstreams.o
  .data          0x00000000200008b8        0x0 build/obj/main.o
+ .data          0x00000000200008b8        0x0 build/obj/Accelerometer.o
  .data          0x00000000200008b8        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
  .data          0x00000000200008b8        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
  *(.data.*)
@@ -876,6 +883,7 @@ LOAD build/obj/main.o
  .bss           0x0000000020000a20        0x0 build/obj/memstreams.o
  .bss           0x0000000020000a20        0x0 build/obj/nullstreams.o
  .bss           0x0000000020000a20        0x0 build/obj/main.o
+ .bss           0x0000000020000a20        0x0 build/obj/Accelerometer.o
  .bss           0x0000000020000a20        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
  .bss           0x0000000020000a20        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
  *(.bss.*)
@@ -1201,9 +1209,11 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .ARM.attributes
                 0x0000000000000b9d       0x33 build/obj/main.o
  .ARM.attributes
-                0x0000000000000bd0       0x1c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+                0x0000000000000bd0       0x33 build/obj/Accelerometer.o
  .ARM.attributes
-                0x0000000000000bec       0x1c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
+                0x0000000000000c03       0x1c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x0000000000000c1f       0x1c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
 
 .comment        0x0000000000000000       0x38
  .comment       0x0000000000000000       0x38 build/obj/crt1.o
@@ -1265,8 +1275,9 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .comment       0x0000000000000038       0x39 build/obj/memstreams.o
  .comment       0x0000000000000038       0x39 build/obj/nullstreams.o
  .comment       0x0000000000000038       0x39 build/obj/main.o
+ .comment       0x0000000000000038       0x39 build/obj/Accelerometer.o
 
-.debug_line     0x0000000000000000     0xaa68
+.debug_line     0x0000000000000000     0xac7b
  .debug_line    0x0000000000000000       0xc5 build/obj/crt0_v7m.o
  .debug_line    0x00000000000000c5       0x81 build/obj/chcoreasm_v7m.o
  .debug_line    0x0000000000000146      0x110 build/obj/crt1.o
@@ -1326,11 +1337,12 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .debug_line    0x0000000000009d05      0x31c build/obj/chprintf.o
  .debug_line    0x000000000000a021      0x217 build/obj/memstreams.o
  .debug_line    0x000000000000a238      0x201 build/obj/nullstreams.o
- .debug_line    0x000000000000a439      0x446 build/obj/main.o
- .debug_line    0x000000000000a87f       0xb8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
- .debug_line    0x000000000000a937      0x131 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
+ .debug_line    0x000000000000a439      0x2e8 build/obj/main.o
+ .debug_line    0x000000000000a721      0x371 build/obj/Accelerometer.o
+ .debug_line    0x000000000000aa92       0xb8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+ .debug_line    0x000000000000ab4a      0x131 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
 
-.debug_info     0x0000000000000000    0x26cf2
+.debug_info     0x0000000000000000    0x27888
  .debug_info    0x0000000000000000       0xa2 build/obj/crt0_v7m.o
  .debug_info    0x00000000000000a2       0xa5 build/obj/chcoreasm_v7m.o
  .debug_info    0x0000000000000147      0x316 build/obj/crt1.o
@@ -1390,11 +1402,12 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .debug_info    0x0000000000023f0c      0xa82 build/obj/chprintf.o
  .debug_info    0x000000000002498e      0x8bd build/obj/memstreams.o
  .debug_info    0x000000000002524b      0x81f build/obj/nullstreams.o
- .debug_info    0x0000000000025a6a     0x10ed build/obj/main.o
- .debug_info    0x0000000000026b57       0xce /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
- .debug_info    0x0000000000026c25       0xcd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
+ .debug_info    0x0000000000025a6a      0xbf0 build/obj/main.o
+ .debug_info    0x000000000002665a     0x1093 build/obj/Accelerometer.o
+ .debug_info    0x00000000000276ed       0xce /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+ .debug_info    0x00000000000277bb       0xcd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
 
-.debug_abbrev   0x0000000000000000     0x83b3
+.debug_abbrev   0x0000000000000000     0x857e
  .debug_abbrev  0x0000000000000000       0x14 build/obj/crt0_v7m.o
  .debug_abbrev  0x0000000000000014       0x14 build/obj/chcoreasm_v7m.o
  .debug_abbrev  0x0000000000000028       0xf7 build/obj/crt1.o
@@ -1454,11 +1467,12 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .debug_abbrev  0x0000000000007c5a      0x235 build/obj/chprintf.o
  .debug_abbrev  0x0000000000007e8f      0x19b build/obj/memstreams.o
  .debug_abbrev  0x000000000000802a      0x18c build/obj/nullstreams.o
- .debug_abbrev  0x00000000000081b6      0x1d5 build/obj/main.o
- .debug_abbrev  0x000000000000838b       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
- .debug_abbrev  0x000000000000839f       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
+ .debug_abbrev  0x00000000000081b6      0x1cc build/obj/main.o
+ .debug_abbrev  0x0000000000008382      0x1d4 build/obj/Accelerometer.o
+ .debug_abbrev  0x0000000000008556       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+ .debug_abbrev  0x000000000000856a       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
 
-.debug_aranges  0x0000000000000000      0x798
+.debug_aranges  0x0000000000000000      0x7b8
  .debug_aranges
                 0x0000000000000000       0x20 build/obj/crt0_v7m.o
  .debug_aranges
@@ -1580,11 +1594,13 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000738       0x20 build/obj/main.o
  .debug_aranges
-                0x0000000000000758       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+                0x0000000000000758       0x20 build/obj/Accelerometer.o
  .debug_aranges
-                0x0000000000000778       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
+                0x0000000000000778       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x0000000000000798       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
 
-.debug_str      0x0000000000000000     0x4932
+.debug_str      0x0000000000000000     0x492e
  .debug_str     0x0000000000000000      0x3f2 build/obj/crt1.o
                                         0x44b (size before relaxing)
  .debug_str     0x00000000000003f2      0x15c build/obj/vectors.o
@@ -1699,10 +1715,12 @@ OUTPUT(build/ch.elf elf32-littlearm)
                                         0x4e4 (size before relaxing)
  .debug_str     0x00000000000047bc       0x52 build/obj/nullstreams.o
                                         0x4ce (size before relaxing)
- .debug_str     0x000000000000480e      0x124 build/obj/main.o
-                                        0x993 (size before relaxing)
+ .debug_str     0x000000000000480e       0x32 build/obj/main.o
+                                        0x6a0 (size before relaxing)
+ .debug_str     0x0000000000004840       0xee build/obj/Accelerometer.o
+                                        0x94d (size before relaxing)
 
-.debug_frame    0x0000000000000000     0x5694
+.debug_frame    0x0000000000000000     0x56fc
  .debug_frame   0x0000000000000000       0x68 build/obj/crt1.o
  .debug_frame   0x0000000000000068       0x20 build/obj/vectors.o
  .debug_frame   0x0000000000000088      0x374 build/obj/chsys.o
@@ -1756,15 +1774,22 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .debug_frame   0x0000000000005550       0x90 build/obj/memstreams.o
  .debug_frame   0x00000000000055e0       0x88 build/obj/nullstreams.o
  .debug_frame   0x0000000000005668       0x2c build/obj/main.o
+ .debug_frame   0x0000000000005694       0x68 build/obj/Accelerometer.o
 
 Cross Reference Table
 
 Symbol                                            File
+AccelerometerConfig                               build/obj/Accelerometer.o
+                                                  build/obj/main.o
+AccelerometerGetValues                            build/obj/Accelerometer.o
+                                                  build/obj/main.o
+AccelerometerInit                                 build/obj/Accelerometer.o
+                                                  build/obj/main.o
 BusFault_Handler                                  build/obj/vectors.o
 DebugMon_Handler                                  build/obj/vectors.o
 HardFault_Handler                                 build/obj/vectors.o
 I2CD1                                             build/obj/hal_i2c_lld.o
-                                                  build/obj/main.o
+                                                  build/obj/Accelerometer.o
 MemManage_Handler                                 build/obj/vectors.o
 NMI_Handler                                       build/obj/vectors.o
 PendSV_Handler                                    build/obj/vectors.o
@@ -1772,6 +1797,7 @@ Reset_Handler                                     build/obj/crt0_v7m.o
                                                   build/obj/vectors.o
 SD2                                               build/obj/hal_serial_lld.o
 SD3                                               build/obj/hal_serial_lld.o
+                                                  build/obj/Accelerometer.o
                                                   build/obj/main.o
 SVC_Handler                                       build/obj/chcore_v7m.o
                                                   build/obj/vectors.o
@@ -1973,7 +1999,7 @@ _heap_init                                        build/obj/chheap.o
 _pal_lld_init                                     build/obj/hal_pal_lld.o
                                                   build/obj/hal.o
 _pal_lld_setgroupmode                             build/obj/hal_pal_lld.o
-                                                  build/obj/main.o
+                                                  build/obj/Accelerometer.o
                                                   build/obj/hal_pal.o
 _port_exit_from_isr                               build/obj/chcoreasm_v7m.o
                                                   build/obj/chcore_v7m.o
@@ -2392,12 +2418,12 @@ i2cInit                                           build/obj/hal_i2c.o
                                                   build/obj/hal.o
 i2cMasterReceiveTimeout                           build/obj/hal_i2c.o
 i2cMasterTransmitTimeout                          build/obj/hal_i2c.o
-                                                  build/obj/main.o
+                                                  build/obj/Accelerometer.o
 i2cObjectInit                                     build/obj/hal_i2c.o
                                                   build/obj/hal_i2c_lld.o
 i2cReleaseBus                                     build/obj/hal_i2c.o
 i2cStart                                          build/obj/hal_i2c.o
-                                                  build/obj/main.o
+                                                  build/obj/Accelerometer.o
 i2cStop                                           build/obj/hal_i2c.o
 i2c_lld_init                                      build/obj/hal_i2c_lld.o
                                                   build/obj/hal_i2c.o
@@ -2486,7 +2512,7 @@ sdObjectInit                                      build/obj/hal_serial.o
 sdPutWouldBlock                                   build/obj/hal_serial.o
 sdRequestDataI                                    build/obj/hal_serial.o
 sdStart                                           build/obj/hal_serial.o
-                                                  build/obj/main.o
+                                                  build/obj/Accelerometer.o
 sdStop                                            build/obj/hal_serial.o
 sd_lld_init                                       build/obj/hal_serial_lld.o
                                                   build/obj/hal_serial.o

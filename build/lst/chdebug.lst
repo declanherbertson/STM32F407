@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccehMmHc.s 			page 1
+ARM GAS  /tmp/ccgVp84C.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
   55 0033 73010000 		.4byte	.LASF5
   56 0037 01       		.byte	0x1
   57 0038 1D       		.byte	0x1d
-ARM GAS  /tmp/ccehMmHc.s 			page 2
+ARM GAS  /tmp/ccgVp84C.s 			page 2
 
 
   58 0039 3D000000 		.4byte	0x3d
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  112 00a5 04       		.uleb128 0x4
  113 00a6 02010000 		.4byte	.LASF15
  114 00aa 02       		.byte	0x2
-ARM GAS  /tmp/ccehMmHc.s 			page 3
+ARM GAS  /tmp/ccgVp84C.s 			page 3
 
 
  115 00ab 20       		.byte	0x20
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  169 0123 04       		.byte	0x4
  170 0124 3F       		.byte	0x3f
  171 0125 29010000 		.4byte	0x129
-ARM GAS  /tmp/ccehMmHc.s 			page 4
+ARM GAS  /tmp/ccgVp84C.s 			page 4
 
 
  172 0129 05       		.uleb128 0x5
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  226 0195 06       		.uleb128 0x6
  227 0196 03020000 		.4byte	.LASF34
  228 019a 05       		.byte	0x5
-ARM GAS  /tmp/ccehMmHc.s 			page 5
+ARM GAS  /tmp/ccgVp84C.s 			page 5
 
 
  229 019b B9       		.byte	0xb9
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  283 020c 04       		.byte	0x4
  284 020d 44       		.byte	0x44
  285 020e 12020000 		.4byte	0x212
-ARM GAS  /tmp/ccehMmHc.s 			page 6
+ARM GAS  /tmp/ccgVp84C.s 			page 6
 
 
  286 0212 0A       		.uleb128 0xa
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  340 027e 6A01     		.2byte	0x16a
  341 0280 D3020000 		.4byte	0x2d3
  342 0284 09       		.uleb128 0x9
-ARM GAS  /tmp/ccehMmHc.s 			page 7
+ARM GAS  /tmp/ccgVp84C.s 			page 7
 
 
  343 0285 CC010000 		.4byte	.LASF27
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  397 02f7 61       		.byte	0x61
  398 02f8 FC020000 		.4byte	0x2fc
  399 02fc 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccehMmHc.s 			page 8
+ARM GAS  /tmp/ccgVp84C.s 			page 8
 
 
  400 02fd 0F030000 		.4byte	.LASF55
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  454 0371 F2010000 		.4byte	.LASF49
  455 0375 05       		.byte	0x5
  456 0376 5801     		.2byte	0x158
-ARM GAS  /tmp/ccehMmHc.s 			page 9
+ARM GAS  /tmp/ccgVp84C.s 			page 9
 
 
  457 0378 D1050000 		.4byte	0x5d1
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  511 03eb 4B030000 		.4byte	0x34b
  512 03ef 1C       		.byte	0x1c
  513 03f0 08       		.uleb128 0x8
-ARM GAS  /tmp/ccehMmHc.s 			page 10
+ARM GAS  /tmp/ccgVp84C.s 			page 10
 
 
  514 03f1 64626700 		.ascii	"dbg\000"
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  568 045e 6C01     		.2byte	0x16c
  569 0460 1E040000 		.4byte	0x41e
  570 0464 00       		.byte	0
-ARM GAS  /tmp/ccehMmHc.s 			page 11
+ARM GAS  /tmp/ccgVp84C.s 			page 11
 
 
  571 0465 08       		.uleb128 0x8
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  625 04d0 08       		.byte	0x8
  626 04d1 38       		.byte	0x38
  627 04d2 E3040000 		.4byte	0x4e3
-ARM GAS  /tmp/ccehMmHc.s 			page 12
+ARM GAS  /tmp/ccgVp84C.s 			page 12
 
 
  628 04d6 06       		.uleb128 0x6
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  682 0549 05       		.byte	0x5
  683 054a 0D01     		.2byte	0x10d
  684 054c FD000000 		.4byte	0xfd
-ARM GAS  /tmp/ccehMmHc.s 			page 13
+ARM GAS  /tmp/ccgVp84C.s 			page 13
 
 
  685 0550 00       		.byte	0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  739 05b9 0A       		.uleb128 0xa
  740 05ba 04       		.byte	0x4
  741 05bb BF050000 		.4byte	0x5bf
-ARM GAS  /tmp/ccehMmHc.s 			page 14
+ARM GAS  /tmp/ccgVp84C.s 			page 14
 
 
  742 05bf 13       		.uleb128 0x13
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  796 000d 00       		.byte	0
  797 000e 00       		.byte	0
  798 000f 02       		.uleb128 0x2
-ARM GAS  /tmp/ccehMmHc.s 			page 15
+ARM GAS  /tmp/ccgVp84C.s 			page 15
 
 
  799 0010 24       		.uleb128 0x24
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  853 0046 3A       		.uleb128 0x3a
  854 0047 0B       		.uleb128 0xb
  855 0048 3B       		.uleb128 0x3b
-ARM GAS  /tmp/ccehMmHc.s 			page 16
+ARM GAS  /tmp/ccgVp84C.s 			page 16
 
 
  856 0049 0B       		.uleb128 0xb
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  910 007f 00       		.byte	0
  911 0080 0B       		.uleb128 0xb
  912 0081 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccehMmHc.s 			page 17
+ARM GAS  /tmp/ccgVp84C.s 			page 17
 
 
  913 0082 49       		.uleb128 0x49
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  967 00b8 00       		.byte	0
  968 00b9 10       		.uleb128 0x10
  969 00ba 17       		.uleb128 0x17
-ARM GAS  /tmp/ccehMmHc.s 			page 18
+ARM GAS  /tmp/ccgVp84C.s 			page 18
 
 
  970 00bb 01       		.byte	0x1
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  1024 00f1 03       		.uleb128 0x3
  1025 00f2 0E       		.uleb128 0xe
  1026 00f3 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccehMmHc.s 			page 19
+ARM GAS  /tmp/ccgVp84C.s 			page 19
 
 
  1027 00f4 0B       		.uleb128 0xb
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  1074 0011 63685F73 		.ascii	"ch_system_debug\000"
  1074      79737465 
  1074      6D5F6465 
-ARM GAS  /tmp/ccehMmHc.s 			page 20
+ARM GAS  /tmp/ccgVp84C.s 			page 20
 
 
  1074      62756700 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  1101              	.LASF75:
  1102 00b4 746D5F63 		.ascii	"tm_calibration_t\000"
  1102      616C6962 
-ARM GAS  /tmp/ccehMmHc.s 			page 21
+ARM GAS  /tmp/ccgVp84C.s 			page 21
 
 
  1102      72617469 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  1130      6D7000
  1131              	.LASF21:
  1132 0141 74707269 		.ascii	"tprio_t\000"
-ARM GAS  /tmp/ccehMmHc.s 			page 22
+ARM GAS  /tmp/ccgVp84C.s 			page 22
 
 
  1132      6F5F7400 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  1160              	.LASF49:
  1161 01f2 70726576 		.ascii	"prev\000"
  1161      00
-ARM GAS  /tmp/ccehMmHc.s 			page 23
+ARM GAS  /tmp/ccgVp84C.s 			page 23
 
 
  1162              	.LASF1:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  1181      66756E63 
  1182              	.LASF25:
  1183 02f2 73797374 		.ascii	"systime_t\000"
-ARM GAS  /tmp/ccehMmHc.s 			page 24
+ARM GAS  /tmp/ccgVp84C.s 			page 24
 
 
  1183      696D655F 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  1211 037a 77747472 		.ascii	"wttrp\000"
  1211      7000
  1212              	.LASF84:
-ARM GAS  /tmp/ccehMmHc.s 			page 25
+ARM GAS  /tmp/ccgVp84C.s 			page 25
 
 
  1213 0380 63685F73 		.ascii	"ch_semaphore\000"
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  1238              	.LASF36:
  1239 041b 77616974 		.ascii	"waiting\000"
  1239      696E6700 
-ARM GAS  /tmp/ccehMmHc.s 			page 26
+ARM GAS  /tmp/ccgVp84C.s 			page 26
 
 
  1240              	.LASF51:
@@ -1538,7 +1538,7 @@ ARM GAS  /tmp/ccehMmHc.s 			page 1
  1259      6C697374 
  1259      5F7400
  1260              		.ident	"GCC: (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)"
-ARM GAS  /tmp/ccehMmHc.s 			page 27
+ARM GAS  /tmp/ccgVp84C.s 			page 27
 
 
 DEFINED SYMBOLS
