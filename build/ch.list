@@ -244,7 +244,7 @@ endfiniloop:
                 /* Data initialization. Note, it assumes that the DATA size
                   is a multiple of 4 so the linker file must ensure this.*/
                 ldr     r1, =_textdata_start
- 8000290:	0800fb60 	.word	0x0800fb60
+ 8000290:	0800fb88 	.word	0x0800fb88
                 ldr     r2, =_data_start
  8000294:	20000800 	.word	0x20000800
                 ldr     r3, =_data_end
@@ -13808,7 +13808,7 @@ size_t ibqReadTimeout(input_buffers_queue_t *ibqp, uint8_t *bp,
  80043b2:	9802      	ldr	r0, [sp, #8]
  80043b4:	4619      	mov	r1, r3
  80043b6:	2240      	movs	r2, #64	; 0x40
- 80043b8:	f009 fb0a 	bl	800d9d0 <memcpy>
+ 80043b8:	f009 fb12 	bl	800d9e0 <memcpy>
       bp        += 64U;
  80043bc:	9b02      	ldr	r3, [sp, #8]
  80043be:	3340      	adds	r3, #64	; 0x40
@@ -13832,7 +13832,7 @@ size_t ibqReadTimeout(input_buffers_queue_t *ibqp, uint8_t *bp,
  80043da:	9802      	ldr	r0, [sp, #8]
  80043dc:	4619      	mov	r1, r3
  80043de:	9a08      	ldr	r2, [sp, #32]
- 80043e0:	f009 faf6 	bl	800d9d0 <memcpy>
+ 80043e0:	f009 fafe 	bl	800d9e0 <memcpy>
       bp        += size;
  80043e4:	9a02      	ldr	r2, [sp, #8]
  80043e6:	9b08      	ldr	r3, [sp, #32]
@@ -14555,7 +14555,7 @@ size_t obqWriteTimeout(output_buffers_queue_t *obqp, const uint8_t *bp,
  80047b2:	4618      	mov	r0, r3
  80047b4:	9902      	ldr	r1, [sp, #8]
  80047b6:	2240      	movs	r2, #64	; 0x40
- 80047b8:	f009 f90a 	bl	800d9d0 <memcpy>
+ 80047b8:	f009 f912 	bl	800d9e0 <memcpy>
       bp        += 64U;
  80047bc:	9b02      	ldr	r3, [sp, #8]
  80047be:	3340      	adds	r3, #64	; 0x40
@@ -14579,7 +14579,7 @@ size_t obqWriteTimeout(output_buffers_queue_t *obqp, const uint8_t *bp,
  80047da:	4618      	mov	r0, r3
  80047dc:	9902      	ldr	r1, [sp, #8]
  80047de:	9a08      	ldr	r2, [sp, #32]
- 80047e0:	f009 f8f6 	bl	800d9d0 <memcpy>
+ 80047e0:	f009 f8fe 	bl	800d9e0 <memcpy>
       bp        += size;
  80047e4:	9a02      	ldr	r2, [sp, #8]
  80047e6:	9b08      	ldr	r3, [sp, #32]
@@ -38008,7 +38008,7 @@ static size_t _writes(void *ip, const uint8_t *bp, size_t n) {
  800d534:	4618      	mov	r0, r3
  800d536:	9902      	ldr	r1, [sp, #8]
  800d538:	9a01      	ldr	r2, [sp, #4]
- 800d53a:	f000 fa49 	bl	800d9d0 <memcpy>
+ 800d53a:	f000 fa51 	bl	800d9e0 <memcpy>
   msp->eos += n;
  800d53e:	9b05      	ldr	r3, [sp, #20]
  800d540:	68da      	ldr	r2, [r3, #12]
@@ -38063,7 +38063,7 @@ static size_t _reads(void *ip, uint8_t *bp, size_t n) {
  800d594:	9802      	ldr	r0, [sp, #8]
  800d596:	4619      	mov	r1, r3
  800d598:	9a01      	ldr	r2, [sp, #4]
- 800d59a:	f000 fa19 	bl	800d9d0 <memcpy>
+ 800d59a:	f000 fa21 	bl	800d9e0 <memcpy>
   msp->offset += n;
  800d59e:	9b05      	ldr	r3, [sp, #20]
  800d5a0:	691a      	ldr	r2, [r3, #16]
@@ -38326,419 +38326,426 @@ int main(void) {
   chSysInit();
  800d6f8:	f7f2 fff2 	bl	80006e0 <chSysInit>
 
-*/
   int16_t buff[3];
+
   while(1){
 
        AccelerometerInit();
- 800d6fc:	f000 f820 	bl	800d740 <AccelerometerInit>
-       AccelerometerConfig(1,1);
- 800d700:	2001      	movs	r0, #1
- 800d702:	2101      	movs	r1, #1
- 800d704:	f000 f84c 	bl	800d7a0 <AccelerometerConfig>
+ 800d6fc:	f000 f828 	bl	800d750 <AccelerometerInit>
+       AccelerometerConfig(BW_XL_50 | FS_XL_2 | ODR_XL_104);
+ 800d700:	2203      	movs	r2, #3
+ 800d702:	2300      	movs	r3, #0
+ 800d704:	4313      	orrs	r3, r2
+ 800d706:	b2db      	uxtb	r3, r3
+ 800d708:	2240      	movs	r2, #64	; 0x40
+ 800d70a:	4313      	orrs	r3, r2
+ 800d70c:	b2db      	uxtb	r3, r3
+ 800d70e:	4618      	mov	r0, r3
+ 800d710:	f000 f84e 	bl	800d7b0 <AccelerometerConfig>
        AccelerometerGetValues(buff);
- 800d708:	ab02      	add	r3, sp, #8
- 800d70a:	4618      	mov	r0, r3
- 800d70c:	f000 f878 	bl	800d800 <AccelerometerGetValues>
+ 800d714:	ab02      	add	r3, sp, #8
+ 800d716:	4618      	mov	r0, r3
+ 800d718:	f000 f87a 	bl	800d810 <AccelerometerGetValues>
 
 
 
        chprintf((BaseSequentialStream *)&SD3, "%d, %d, %d \r\n",buff[0],buff[1], buff[2]);
- 800d710:	f8bd 3008 	ldrh.w	r3, [sp, #8]
- 800d714:	b21a      	sxth	r2, r3
- 800d716:	f8bd 300a 	ldrh.w	r3, [sp, #10]
- 800d71a:	b21c      	sxth	r4, r3
- 800d71c:	f8bd 300c 	ldrh.w	r3, [sp, #12]
- 800d720:	b21b      	sxth	r3, r3
- 800d722:	9300      	str	r3, [sp, #0]
- 800d724:	4804      	ldr	r0, [pc, #16]	; (800d738 <main+0x48>)
- 800d726:	4905      	ldr	r1, [pc, #20]	; (800d73c <main+0x4c>)
- 800d728:	4623      	mov	r3, r4
- 800d72a:	f7ff fea1 	bl	800d470 <chprintf>
+ 800d71c:	f8bd 3008 	ldrh.w	r3, [sp, #8]
+ 800d720:	b21a      	sxth	r2, r3
+ 800d722:	f8bd 300a 	ldrh.w	r3, [sp, #10]
+ 800d726:	b21c      	sxth	r4, r3
+ 800d728:	f8bd 300c 	ldrh.w	r3, [sp, #12]
+ 800d72c:	b21b      	sxth	r3, r3
+ 800d72e:	9300      	str	r3, [sp, #0]
+ 800d730:	4804      	ldr	r0, [pc, #16]	; (800d744 <main+0x54>)
+ 800d732:	4905      	ldr	r1, [pc, #20]	; (800d748 <main+0x58>)
+ 800d734:	4623      	mov	r3, r4
+ 800d736:	f7ff fe9b 	bl	800d470 <chprintf>
        chThdSleepMilliseconds(100);
- 800d72e:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
- 800d732:	f7f3 fff5 	bl	8001720 <chThdSleep>
+ 800d73a:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+ 800d73e:	f7f3 ffef 	bl	8001720 <chThdSleep>
 
-     }
- 800d736:	e7e1      	b.n	800d6fc <main+0xc>
- 800d738:	20000c2c 	.word	0x20000c2c
- 800d73c:	0800fad4 	.word	0x0800fad4
+    }
+ 800d742:	e7db      	b.n	800d6fc <main+0xc>
+ 800d744:	20000c2c 	.word	0x20000c2c
+ 800d748:	0800fae8 	.word	0x0800fae8
+ 800d74c:	00000000 	.word	0x00000000
 
-0800d740 <AccelerometerInit>:
-#include "hal.h"
-#include "ch_test.h"
-#include "string.h"
-#include "Accelerometer.h"
+0800d750 <AccelerometerInit>:
+
+#define device_address 0x6a
+#define acceleration_control_1_address 0x10
+
 
 int AccelerometerInit(){
- 800d740:	b508      	push	{r3, lr}
+ 800d750:	b508      	push	{r3, lr}
         STD_DUTY_CYCLE,
     };
 
 
 
     palSetPadMode(GPIOB, 8, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
- 800d742:	4813      	ldr	r0, [pc, #76]	; (800d790 <AccelerometerInit+0x50>)
- 800d744:	f44f 7180 	mov.w	r1, #256	; 0x100
- 800d748:	f240 2206 	movw	r2, #518	; 0x206
- 800d74c:	f7f8 fc80 	bl	8006050 <_pal_lld_setgroupmode>
+ 800d752:	4813      	ldr	r0, [pc, #76]	; (800d7a0 <AccelerometerInit+0x50>)
+ 800d754:	f44f 7180 	mov.w	r1, #256	; 0x100
+ 800d758:	f240 2206 	movw	r2, #518	; 0x206
+ 800d75c:	f7f8 fc78 	bl	8006050 <_pal_lld_setgroupmode>
     palSetPadMode(GPIOB, 9, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
- 800d750:	480f      	ldr	r0, [pc, #60]	; (800d790 <AccelerometerInit+0x50>)
- 800d752:	f44f 7100 	mov.w	r1, #512	; 0x200
- 800d756:	f240 2206 	movw	r2, #518	; 0x206
- 800d75a:	f7f8 fc79 	bl	8006050 <_pal_lld_setgroupmode>
+ 800d760:	480f      	ldr	r0, [pc, #60]	; (800d7a0 <AccelerometerInit+0x50>)
+ 800d762:	f44f 7100 	mov.w	r1, #512	; 0x200
+ 800d766:	f240 2206 	movw	r2, #518	; 0x206
+ 800d76a:	f7f8 fc71 	bl	8006050 <_pal_lld_setgroupmode>
 
     palSetPadMode(GPIOB, 10, PAL_MODE_ALTERNATE(7) );
- 800d75e:	480c      	ldr	r0, [pc, #48]	; (800d790 <AccelerometerInit+0x50>)
- 800d760:	f44f 6180 	mov.w	r1, #1024	; 0x400
- 800d764:	f240 3282 	movw	r2, #898	; 0x382
- 800d768:	f7f8 fc72 	bl	8006050 <_pal_lld_setgroupmode>
+ 800d76e:	480c      	ldr	r0, [pc, #48]	; (800d7a0 <AccelerometerInit+0x50>)
+ 800d770:	f44f 6180 	mov.w	r1, #1024	; 0x400
+ 800d774:	f240 3282 	movw	r2, #898	; 0x382
+ 800d778:	f7f8 fc6a 	bl	8006050 <_pal_lld_setgroupmode>
      palSetPadMode(GPIOB, 11, PAL_MODE_ALTERNATE(7) );
- 800d76c:	4808      	ldr	r0, [pc, #32]	; (800d790 <AccelerometerInit+0x50>)
- 800d76e:	f44f 6100 	mov.w	r1, #2048	; 0x800
- 800d772:	f240 3282 	movw	r2, #898	; 0x382
- 800d776:	f7f8 fc6b 	bl	8006050 <_pal_lld_setgroupmode>
+ 800d77c:	4808      	ldr	r0, [pc, #32]	; (800d7a0 <AccelerometerInit+0x50>)
+ 800d77e:	f44f 6100 	mov.w	r1, #2048	; 0x800
+ 800d782:	f240 3282 	movw	r2, #898	; 0x382
+ 800d786:	f7f8 fc63 	bl	8006050 <_pal_lld_setgroupmode>
 
     i2cStart(&I2CD1, &i2ccfg);
- 800d77a:	4806      	ldr	r0, [pc, #24]	; (800d794 <AccelerometerInit+0x54>)
- 800d77c:	4906      	ldr	r1, [pc, #24]	; (800d798 <AccelerometerInit+0x58>)
- 800d77e:	f7f7 fc77 	bl	8005070 <i2cStart>
+ 800d78a:	4806      	ldr	r0, [pc, #24]	; (800d7a4 <AccelerometerInit+0x54>)
+ 800d78c:	4906      	ldr	r1, [pc, #24]	; (800d7a8 <AccelerometerInit+0x58>)
+ 800d78e:	f7f7 fc6f 	bl	8005070 <i2cStart>
     sdStart(&SD3, NULL);
- 800d782:	4806      	ldr	r0, [pc, #24]	; (800d79c <AccelerometerInit+0x5c>)
- 800d784:	2100      	movs	r1, #0
- 800d786:	f7f7 fecb 	bl	8005520 <sdStart>
+ 800d792:	4806      	ldr	r0, [pc, #24]	; (800d7ac <AccelerometerInit+0x5c>)
+ 800d794:	2100      	movs	r1, #0
+ 800d796:	f7f7 fec3 	bl	8005520 <sdStart>
 
     return 1;
- 800d78a:	2301      	movs	r3, #1
+ 800d79a:	2301      	movs	r3, #1
 
 }
- 800d78c:	4618      	mov	r0, r3
- 800d78e:	bd08      	pop	{r3, pc}
- 800d790:	40020400 	.word	0x40020400
- 800d794:	20000b78 	.word	0x20000b78
- 800d798:	0800fae4 	.word	0x0800fae4
- 800d79c:	20000c2c 	.word	0x20000c2c
+ 800d79c:	4618      	mov	r0, r3
+ 800d79e:	bd08      	pop	{r3, pc}
+ 800d7a0:	40020400 	.word	0x40020400
+ 800d7a4:	20000b78 	.word	0x20000b78
+ 800d7a8:	0800fb0c 	.word	0x0800fb0c
+ 800d7ac:	20000c2c 	.word	0x20000c2c
 
-0800d7a0 <AccelerometerConfig>:
+0800d7b0 <AccelerometerConfig>:
+    XL_HM_MODE default = 0
+    write byte: 0b01000011 normal 104Hz +-2g 50Hz filter (0x43)
+    default powered down
+ */
 
-int AccelerometerConfig(int a, int b){
- 800d7a0:	b500      	push	{lr}
- 800d7a2:	b08b      	sub	sp, #44	; 0x2c
- 800d7a4:	9005      	str	r0, [sp, #20]
- 800d7a6:	9104      	str	r1, [sp, #16]
-    //Linear acceleration sensor control register 1(sensor setup)
-    //write to it ODR_XL[0:3] - data rate/power mode, FS_XL[1:0] Measurent scale, BW_XL[1:0] anti-aliasing bandwidth[1:0]
-    //XL_HM_MODE default = 0
-    //write byte: 0b01000011 normal 104Hz +-2g 50Hz filter
-    //default powered down
-    uint8_t acceleration_control_1_address = 0x10;
- 800d7a8:	2310      	movs	r3, #16
- 800d7aa:	f88d 3027 	strb.w	r3, [sp, #39]	; 0x27
-    uint8_t control_1_write_byte = 0x43;
- 800d7ae:	2343      	movs	r3, #67	; 0x43
- 800d7b0:	f88d 3026 	strb.w	r3, [sp, #38]	; 0x26
+int AccelerometerConfig(uint8_t writeByte){
+ 800d7b0:	b500      	push	{lr}
+ 800d7b2:	b08b      	sub	sp, #44	; 0x2c
+ 800d7b4:	4603      	mov	r3, r0
+ 800d7b6:	f88d 3017 	strb.w	r3, [sp, #23]
+
+
+
+    uint8_t control_1_write_byte = writeByte;
+ 800d7ba:	f89d 3017 	ldrb.w	r3, [sp, #23]
+ 800d7be:	f88d 3027 	strb.w	r3, [sp, #39]	; 0x27
 
     volatile uint8_t regcontent;
 
     uint8_t data[2] = {acceleration_control_1_address, control_1_write_byte};
- 800d7b4:	f89d 3027 	ldrb.w	r3, [sp, #39]	; 0x27
- 800d7b8:	f88d 301c 	strb.w	r3, [sp, #28]
- 800d7bc:	f89d 3026 	ldrb.w	r3, [sp, #38]	; 0x26
- 800d7c0:	f88d 301d 	strb.w	r3, [sp, #29]
+ 800d7c2:	2310      	movs	r3, #16
+ 800d7c4:	f88d 301c 	strb.w	r3, [sp, #28]
+ 800d7c8:	f89d 3027 	ldrb.w	r3, [sp, #39]	; 0x27
+ 800d7cc:	f88d 301d 	strb.w	r3, [sp, #29]
     uint8_t *transmit;
     transmit = data;
- 800d7c4:	ab07      	add	r3, sp, #28
- 800d7c6:	9308      	str	r3, [sp, #32]
-    volatile msg_t err = i2cMasterTransmitTimeout(&I2CD1, 0x6a, transmit, 2, (uint8_t *) &regcontent, 0, MS2ST(1000));
- 800d7c8:	f10d 031f 	add.w	r3, sp, #31
- 800d7cc:	9300      	str	r3, [sp, #0]
- 800d7ce:	2300      	movs	r3, #0
- 800d7d0:	9301      	str	r3, [sp, #4]
- 800d7d2:	f242 7310 	movw	r3, #10000	; 0x2710
- 800d7d6:	9302      	str	r3, [sp, #8]
- 800d7d8:	4806      	ldr	r0, [pc, #24]	; (800d7f4 <AccelerometerConfig+0x54>)
- 800d7da:	216a      	movs	r1, #106	; 0x6a
- 800d7dc:	9a08      	ldr	r2, [sp, #32]
- 800d7de:	2302      	movs	r3, #2
- 800d7e0:	f7f7 fc7e 	bl	80050e0 <i2cMasterTransmitTimeout>
- 800d7e4:	4603      	mov	r3, r0
- 800d7e6:	9306      	str	r3, [sp, #24]
+ 800d7d0:	ab07      	add	r3, sp, #28
+ 800d7d2:	9308      	str	r3, [sp, #32]
+    volatile msg_t err = i2cMasterTransmitTimeout(&I2CD1, device_address, transmit, 2, (uint8_t *) &regcontent, 0, MS2ST(1000));
+ 800d7d4:	f10d 031f 	add.w	r3, sp, #31
+ 800d7d8:	9300      	str	r3, [sp, #0]
+ 800d7da:	2300      	movs	r3, #0
+ 800d7dc:	9301      	str	r3, [sp, #4]
+ 800d7de:	f242 7310 	movw	r3, #10000	; 0x2710
+ 800d7e2:	9302      	str	r3, [sp, #8]
+ 800d7e4:	4806      	ldr	r0, [pc, #24]	; (800d800 <AccelerometerConfig+0x50>)
+ 800d7e6:	216a      	movs	r1, #106	; 0x6a
+ 800d7e8:	9a08      	ldr	r2, [sp, #32]
+ 800d7ea:	2302      	movs	r3, #2
+ 800d7ec:	f7f7 fc78 	bl	80050e0 <i2cMasterTransmitTimeout>
+ 800d7f0:	4603      	mov	r3, r0
+ 800d7f2:	9306      	str	r3, [sp, #24]
 
     (void) err;
- 800d7e8:	9b06      	ldr	r3, [sp, #24]
+ 800d7f4:	9b06      	ldr	r3, [sp, #24]
 
     return 1;
- 800d7ea:	2301      	movs	r3, #1
+ 800d7f6:	2301      	movs	r3, #1
 
 }
- 800d7ec:	4618      	mov	r0, r3
- 800d7ee:	b00b      	add	sp, #44	; 0x2c
- 800d7f0:	f85d fb04 	ldr.w	pc, [sp], #4
- 800d7f4:	20000b78 	.word	0x20000b78
- 800d7f8:	f3af 8000 	nop.w
- 800d7fc:	f3af 8000 	nop.w
+ 800d7f8:	4618      	mov	r0, r3
+ 800d7fa:	b00b      	add	sp, #44	; 0x2c
+ 800d7fc:	f85d fb04 	ldr.w	pc, [sp], #4
+ 800d800:	20000b78 	.word	0x20000b78
+ 800d804:	f3af 8000 	nop.w
+ 800d808:	f3af 8000 	nop.w
+ 800d80c:	f3af 8000 	nop.w
 
-0800d800 <AccelerometerGetValues>:
-
+0800d810 <AccelerometerGetValues>:
+ * merges two unsigned bytes into signed 16 bit value
+ * (value/32766)*scale if value is positive, or (value/32767)*scale if value is negative
+ * that number is in g's where scale is set in accelerometer config
+ *
+ */
 int AccelerometerGetValues(int16_t* buff){
- 800d800:	b500      	push	{lr}
- 800d802:	b095      	sub	sp, #84	; 0x54
- 800d804:	9005      	str	r0, [sp, #20]
+ 800d810:	b500      	push	{lr}
+ 800d812:	b095      	sub	sp, #84	; 0x54
+ 800d814:	9005      	str	r0, [sp, #20]
 
     uint8_t z0_data;
     uint8_t z1_data;
 
     //x axis output LSbyte
     uint8_t x0 = 0x28;
- 800d806:	2328      	movs	r3, #40	; 0x28
- 800d808:	f88d 3045 	strb.w	r3, [sp, #69]	; 0x45
+ 800d816:	2328      	movs	r3, #40	; 0x28
+ 800d818:	f88d 3045 	strb.w	r3, [sp, #69]	; 0x45
     //x axis output MSbyte
     uint8_t x1 = 0x29;
- 800d80c:	2329      	movs	r3, #41	; 0x29
- 800d80e:	f88d 3044 	strb.w	r3, [sp, #68]	; 0x44
+ 800d81c:	2329      	movs	r3, #41	; 0x29
+ 800d81e:	f88d 3044 	strb.w	r3, [sp, #68]	; 0x44
 
     //y axis output LSbyte
     uint8_t y0 = 0x2A;
- 800d812:	232a      	movs	r3, #42	; 0x2a
- 800d814:	f88d 3043 	strb.w	r3, [sp, #67]	; 0x43
+ 800d822:	232a      	movs	r3, #42	; 0x2a
+ 800d824:	f88d 3043 	strb.w	r3, [sp, #67]	; 0x43
     //y axis output MSbyte
     uint8_t y1 = 0x2B;
- 800d818:	232b      	movs	r3, #43	; 0x2b
- 800d81a:	f88d 3042 	strb.w	r3, [sp, #66]	; 0x42
+ 800d828:	232b      	movs	r3, #43	; 0x2b
+ 800d82a:	f88d 3042 	strb.w	r3, [sp, #66]	; 0x42
 
     //z axis output LSbyte
     uint8_t z0 = 0x2C;
- 800d81e:	232c      	movs	r3, #44	; 0x2c
- 800d820:	f88d 3041 	strb.w	r3, [sp, #65]	; 0x41
+ 800d82e:	232c      	movs	r3, #44	; 0x2c
+ 800d830:	f88d 3041 	strb.w	r3, [sp, #65]	; 0x41
     //z axis output MSbyte
     uint8_t z1 = 0x2D;
- 800d824:	232d      	movs	r3, #45	; 0x2d
- 800d826:	f88d 3040 	strb.w	r3, [sp, #64]	; 0x40
+ 800d834:	232d      	movs	r3, #45	; 0x2d
+ 800d836:	f88d 3040 	strb.w	r3, [sp, #64]	; 0x40
 
     volatile uint8_t regcontent;
 
     uint8_t *transmit;
     transmit = &x0;
- 800d82a:	f10d 0345 	add.w	r3, sp, #69	; 0x45
- 800d82e:	9313      	str	r3, [sp, #76]	; 0x4c
+ 800d83a:	f10d 0345 	add.w	r3, sp, #69	; 0x45
+ 800d83e:	9313      	str	r3, [sp, #76]	; 0x4c
 
-    volatile msg_t err2 = i2cMasterTransmitTimeout(&I2CD1, 0x6a, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
- 800d830:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
- 800d834:	9300      	str	r3, [sp, #0]
- 800d836:	2301      	movs	r3, #1
- 800d838:	9301      	str	r3, [sp, #4]
- 800d83a:	f242 7310 	movw	r3, #10000	; 0x2710
- 800d83e:	9302      	str	r3, [sp, #8]
- 800d840:	4862      	ldr	r0, [pc, #392]	; (800d9cc <AccelerometerGetValues+0x1cc>)
- 800d842:	216a      	movs	r1, #106	; 0x6a
- 800d844:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+    volatile msg_t err2 = i2cMasterTransmitTimeout(&I2CD1, device_address, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
+ 800d840:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
+ 800d844:	9300      	str	r3, [sp, #0]
  800d846:	2301      	movs	r3, #1
- 800d848:	f7f7 fc4a 	bl	80050e0 <i2cMasterTransmitTimeout>
- 800d84c:	4603      	mov	r3, r0
- 800d84e:	930e      	str	r3, [sp, #56]	; 0x38
+ 800d848:	9301      	str	r3, [sp, #4]
+ 800d84a:	f242 7310 	movw	r3, #10000	; 0x2710
+ 800d84e:	9302      	str	r3, [sp, #8]
+ 800d850:	4862      	ldr	r0, [pc, #392]	; (800d9dc <AccelerometerGetValues+0x1cc>)
+ 800d852:	216a      	movs	r1, #106	; 0x6a
+ 800d854:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d856:	2301      	movs	r3, #1
+ 800d858:	f7f7 fc42 	bl	80050e0 <i2cMasterTransmitTimeout>
+ 800d85c:	4603      	mov	r3, r0
+ 800d85e:	930e      	str	r3, [sp, #56]	; 0x38
     x0_data = regcontent;
- 800d850:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
- 800d854:	f88d 304b 	strb.w	r3, [sp, #75]	; 0x4b
+ 800d860:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
+ 800d864:	f88d 304b 	strb.w	r3, [sp, #75]	; 0x4b
 
     transmit = &x1;
- 800d858:	ab11      	add	r3, sp, #68	; 0x44
- 800d85a:	9313      	str	r3, [sp, #76]	; 0x4c
-    volatile msg_t err3 = i2cMasterTransmitTimeout(&I2CD1, 0x6a, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
- 800d85c:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
- 800d860:	9300      	str	r3, [sp, #0]
- 800d862:	2301      	movs	r3, #1
- 800d864:	9301      	str	r3, [sp, #4]
- 800d866:	f242 7310 	movw	r3, #10000	; 0x2710
- 800d86a:	9302      	str	r3, [sp, #8]
- 800d86c:	4857      	ldr	r0, [pc, #348]	; (800d9cc <AccelerometerGetValues+0x1cc>)
- 800d86e:	216a      	movs	r1, #106	; 0x6a
- 800d870:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d868:	ab11      	add	r3, sp, #68	; 0x44
+ 800d86a:	9313      	str	r3, [sp, #76]	; 0x4c
+    volatile msg_t err3 = i2cMasterTransmitTimeout(&I2CD1, device_address, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
+ 800d86c:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
+ 800d870:	9300      	str	r3, [sp, #0]
  800d872:	2301      	movs	r3, #1
- 800d874:	f7f7 fc34 	bl	80050e0 <i2cMasterTransmitTimeout>
- 800d878:	4603      	mov	r3, r0
- 800d87a:	930d      	str	r3, [sp, #52]	; 0x34
+ 800d874:	9301      	str	r3, [sp, #4]
+ 800d876:	f242 7310 	movw	r3, #10000	; 0x2710
+ 800d87a:	9302      	str	r3, [sp, #8]
+ 800d87c:	4857      	ldr	r0, [pc, #348]	; (800d9dc <AccelerometerGetValues+0x1cc>)
+ 800d87e:	216a      	movs	r1, #106	; 0x6a
+ 800d880:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d882:	2301      	movs	r3, #1
+ 800d884:	f7f7 fc2c 	bl	80050e0 <i2cMasterTransmitTimeout>
+ 800d888:	4603      	mov	r3, r0
+ 800d88a:	930d      	str	r3, [sp, #52]	; 0x34
     x1_data = regcontent;
- 800d87c:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
- 800d880:	f88d 304a 	strb.w	r3, [sp, #74]	; 0x4a
+ 800d88c:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
+ 800d890:	f88d 304a 	strb.w	r3, [sp, #74]	; 0x4a
 
     transmit = &y0;
- 800d884:	f10d 0343 	add.w	r3, sp, #67	; 0x43
- 800d888:	9313      	str	r3, [sp, #76]	; 0x4c
-    volatile msg_t err4 = i2cMasterTransmitTimeout(&I2CD1, 0x6a, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
- 800d88a:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
- 800d88e:	9300      	str	r3, [sp, #0]
- 800d890:	2301      	movs	r3, #1
- 800d892:	9301      	str	r3, [sp, #4]
- 800d894:	f242 7310 	movw	r3, #10000	; 0x2710
- 800d898:	9302      	str	r3, [sp, #8]
- 800d89a:	484c      	ldr	r0, [pc, #304]	; (800d9cc <AccelerometerGetValues+0x1cc>)
- 800d89c:	216a      	movs	r1, #106	; 0x6a
- 800d89e:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d894:	f10d 0343 	add.w	r3, sp, #67	; 0x43
+ 800d898:	9313      	str	r3, [sp, #76]	; 0x4c
+    volatile msg_t err4 = i2cMasterTransmitTimeout(&I2CD1, device_address, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
+ 800d89a:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
+ 800d89e:	9300      	str	r3, [sp, #0]
  800d8a0:	2301      	movs	r3, #1
- 800d8a2:	f7f7 fc1d 	bl	80050e0 <i2cMasterTransmitTimeout>
- 800d8a6:	4603      	mov	r3, r0
- 800d8a8:	930c      	str	r3, [sp, #48]	; 0x30
+ 800d8a2:	9301      	str	r3, [sp, #4]
+ 800d8a4:	f242 7310 	movw	r3, #10000	; 0x2710
+ 800d8a8:	9302      	str	r3, [sp, #8]
+ 800d8aa:	484c      	ldr	r0, [pc, #304]	; (800d9dc <AccelerometerGetValues+0x1cc>)
+ 800d8ac:	216a      	movs	r1, #106	; 0x6a
+ 800d8ae:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d8b0:	2301      	movs	r3, #1
+ 800d8b2:	f7f7 fc15 	bl	80050e0 <i2cMasterTransmitTimeout>
+ 800d8b6:	4603      	mov	r3, r0
+ 800d8b8:	930c      	str	r3, [sp, #48]	; 0x30
     y0_data = regcontent;
- 800d8aa:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
- 800d8ae:	f88d 3049 	strb.w	r3, [sp, #73]	; 0x49
+ 800d8ba:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
+ 800d8be:	f88d 3049 	strb.w	r3, [sp, #73]	; 0x49
 
     transmit = &y1;
- 800d8b2:	f10d 0342 	add.w	r3, sp, #66	; 0x42
- 800d8b6:	9313      	str	r3, [sp, #76]	; 0x4c
-    volatile msg_t err5 = i2cMasterTransmitTimeout(&I2CD1, 0x6a, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
- 800d8b8:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
- 800d8bc:	9300      	str	r3, [sp, #0]
- 800d8be:	2301      	movs	r3, #1
- 800d8c0:	9301      	str	r3, [sp, #4]
- 800d8c2:	f242 7310 	movw	r3, #10000	; 0x2710
- 800d8c6:	9302      	str	r3, [sp, #8]
- 800d8c8:	4840      	ldr	r0, [pc, #256]	; (800d9cc <AccelerometerGetValues+0x1cc>)
- 800d8ca:	216a      	movs	r1, #106	; 0x6a
- 800d8cc:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d8c2:	f10d 0342 	add.w	r3, sp, #66	; 0x42
+ 800d8c6:	9313      	str	r3, [sp, #76]	; 0x4c
+    volatile msg_t err5 = i2cMasterTransmitTimeout(&I2CD1, device_address, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
+ 800d8c8:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
+ 800d8cc:	9300      	str	r3, [sp, #0]
  800d8ce:	2301      	movs	r3, #1
- 800d8d0:	f7f7 fc06 	bl	80050e0 <i2cMasterTransmitTimeout>
- 800d8d4:	4603      	mov	r3, r0
- 800d8d6:	930b      	str	r3, [sp, #44]	; 0x2c
+ 800d8d0:	9301      	str	r3, [sp, #4]
+ 800d8d2:	f242 7310 	movw	r3, #10000	; 0x2710
+ 800d8d6:	9302      	str	r3, [sp, #8]
+ 800d8d8:	4840      	ldr	r0, [pc, #256]	; (800d9dc <AccelerometerGetValues+0x1cc>)
+ 800d8da:	216a      	movs	r1, #106	; 0x6a
+ 800d8dc:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d8de:	2301      	movs	r3, #1
+ 800d8e0:	f7f7 fbfe 	bl	80050e0 <i2cMasterTransmitTimeout>
+ 800d8e4:	4603      	mov	r3, r0
+ 800d8e6:	930b      	str	r3, [sp, #44]	; 0x2c
     y1_data = regcontent;
- 800d8d8:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
- 800d8dc:	f88d 3048 	strb.w	r3, [sp, #72]	; 0x48
+ 800d8e8:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
+ 800d8ec:	f88d 3048 	strb.w	r3, [sp, #72]	; 0x48
 
     transmit = &z0;
- 800d8e0:	f10d 0341 	add.w	r3, sp, #65	; 0x41
- 800d8e4:	9313      	str	r3, [sp, #76]	; 0x4c
-    volatile msg_t err6 = i2cMasterTransmitTimeout(&I2CD1, 0x6a, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
- 800d8e6:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
- 800d8ea:	9300      	str	r3, [sp, #0]
- 800d8ec:	2301      	movs	r3, #1
- 800d8ee:	9301      	str	r3, [sp, #4]
- 800d8f0:	f242 7310 	movw	r3, #10000	; 0x2710
- 800d8f4:	9302      	str	r3, [sp, #8]
- 800d8f6:	4835      	ldr	r0, [pc, #212]	; (800d9cc <AccelerometerGetValues+0x1cc>)
- 800d8f8:	216a      	movs	r1, #106	; 0x6a
- 800d8fa:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d8f0:	f10d 0341 	add.w	r3, sp, #65	; 0x41
+ 800d8f4:	9313      	str	r3, [sp, #76]	; 0x4c
+    volatile msg_t err6 = i2cMasterTransmitTimeout(&I2CD1, device_address, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
+ 800d8f6:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
+ 800d8fa:	9300      	str	r3, [sp, #0]
  800d8fc:	2301      	movs	r3, #1
- 800d8fe:	f7f7 fbef 	bl	80050e0 <i2cMasterTransmitTimeout>
- 800d902:	4603      	mov	r3, r0
- 800d904:	930a      	str	r3, [sp, #40]	; 0x28
+ 800d8fe:	9301      	str	r3, [sp, #4]
+ 800d900:	f242 7310 	movw	r3, #10000	; 0x2710
+ 800d904:	9302      	str	r3, [sp, #8]
+ 800d906:	4835      	ldr	r0, [pc, #212]	; (800d9dc <AccelerometerGetValues+0x1cc>)
+ 800d908:	216a      	movs	r1, #106	; 0x6a
+ 800d90a:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d90c:	2301      	movs	r3, #1
+ 800d90e:	f7f7 fbe7 	bl	80050e0 <i2cMasterTransmitTimeout>
+ 800d912:	4603      	mov	r3, r0
+ 800d914:	930a      	str	r3, [sp, #40]	; 0x28
     z0_data = regcontent;
- 800d906:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
- 800d90a:	f88d 3047 	strb.w	r3, [sp, #71]	; 0x47
+ 800d916:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
+ 800d91a:	f88d 3047 	strb.w	r3, [sp, #71]	; 0x47
 
     transmit = &z1;
- 800d90e:	ab10      	add	r3, sp, #64	; 0x40
- 800d910:	9313      	str	r3, [sp, #76]	; 0x4c
-    volatile msg_t err7 = i2cMasterTransmitTimeout(&I2CD1, 0x6a, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
- 800d912:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
- 800d916:	9300      	str	r3, [sp, #0]
- 800d918:	2301      	movs	r3, #1
- 800d91a:	9301      	str	r3, [sp, #4]
- 800d91c:	f242 7310 	movw	r3, #10000	; 0x2710
- 800d920:	9302      	str	r3, [sp, #8]
- 800d922:	482a      	ldr	r0, [pc, #168]	; (800d9cc <AccelerometerGetValues+0x1cc>)
- 800d924:	216a      	movs	r1, #106	; 0x6a
- 800d926:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d91e:	ab10      	add	r3, sp, #64	; 0x40
+ 800d920:	9313      	str	r3, [sp, #76]	; 0x4c
+    volatile msg_t err7 = i2cMasterTransmitTimeout(&I2CD1, device_address, transmit, 1, (uint8_t *) &regcontent, 1, MS2ST(1000));
+ 800d922:	f10d 033f 	add.w	r3, sp, #63	; 0x3f
+ 800d926:	9300      	str	r3, [sp, #0]
  800d928:	2301      	movs	r3, #1
- 800d92a:	f7f7 fbd9 	bl	80050e0 <i2cMasterTransmitTimeout>
- 800d92e:	4603      	mov	r3, r0
- 800d930:	9309      	str	r3, [sp, #36]	; 0x24
+ 800d92a:	9301      	str	r3, [sp, #4]
+ 800d92c:	f242 7310 	movw	r3, #10000	; 0x2710
+ 800d930:	9302      	str	r3, [sp, #8]
+ 800d932:	482a      	ldr	r0, [pc, #168]	; (800d9dc <AccelerometerGetValues+0x1cc>)
+ 800d934:	216a      	movs	r1, #106	; 0x6a
+ 800d936:	9a13      	ldr	r2, [sp, #76]	; 0x4c
+ 800d938:	2301      	movs	r3, #1
+ 800d93a:	f7f7 fbd1 	bl	80050e0 <i2cMasterTransmitTimeout>
+ 800d93e:	4603      	mov	r3, r0
+ 800d940:	9309      	str	r3, [sp, #36]	; 0x24
     z1_data = regcontent;
- 800d932:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
- 800d936:	f88d 3046 	strb.w	r3, [sp, #70]	; 0x46
+ 800d942:	f89d 303f 	ldrb.w	r3, [sp, #63]	; 0x3f
+ 800d946:	f88d 3046 	strb.w	r3, [sp, #70]	; 0x46
 
     uint16_t u_x_data = (x1_data << 8)|x0_data;
- 800d93a:	f89d 304a 	ldrb.w	r3, [sp, #74]	; 0x4a
- 800d93e:	021b      	lsls	r3, r3, #8
- 800d940:	b29a      	uxth	r2, r3
- 800d942:	f89d 304b 	ldrb.w	r3, [sp, #75]	; 0x4b
- 800d946:	b29b      	uxth	r3, r3
- 800d948:	4313      	orrs	r3, r2
- 800d94a:	b29b      	uxth	r3, r3
- 800d94c:	b29b      	uxth	r3, r3
- 800d94e:	f8ad 3022 	strh.w	r3, [sp, #34]	; 0x22
+ 800d94a:	f89d 304a 	ldrb.w	r3, [sp, #74]	; 0x4a
+ 800d94e:	021b      	lsls	r3, r3, #8
+ 800d950:	b29a      	uxth	r2, r3
+ 800d952:	f89d 304b 	ldrb.w	r3, [sp, #75]	; 0x4b
+ 800d956:	b29b      	uxth	r3, r3
+ 800d958:	4313      	orrs	r3, r2
+ 800d95a:	b29b      	uxth	r3, r3
+ 800d95c:	b29b      	uxth	r3, r3
+ 800d95e:	f8ad 3022 	strh.w	r3, [sp, #34]	; 0x22
     int16_t x_data;
     memcpy(&x_data, &u_x_data, sizeof(u_x_data));
- 800d952:	f8bd 3022 	ldrh.w	r3, [sp, #34]	; 0x22
- 800d956:	f8ad 3020 	strh.w	r3, [sp, #32]
+ 800d962:	f8bd 3022 	ldrh.w	r3, [sp, #34]	; 0x22
+ 800d966:	f8ad 3020 	strh.w	r3, [sp, #32]
 
     uint16_t u_y_data = (y1_data << 8)|y0_data;
- 800d95a:	f89d 3048 	ldrb.w	r3, [sp, #72]	; 0x48
- 800d95e:	021b      	lsls	r3, r3, #8
- 800d960:	b29a      	uxth	r2, r3
- 800d962:	f89d 3049 	ldrb.w	r3, [sp, #73]	; 0x49
- 800d966:	b29b      	uxth	r3, r3
- 800d968:	4313      	orrs	r3, r2
- 800d96a:	b29b      	uxth	r3, r3
- 800d96c:	b29b      	uxth	r3, r3
- 800d96e:	f8ad 301e 	strh.w	r3, [sp, #30]
+ 800d96a:	f89d 3048 	ldrb.w	r3, [sp, #72]	; 0x48
+ 800d96e:	021b      	lsls	r3, r3, #8
+ 800d970:	b29a      	uxth	r2, r3
+ 800d972:	f89d 3049 	ldrb.w	r3, [sp, #73]	; 0x49
+ 800d976:	b29b      	uxth	r3, r3
+ 800d978:	4313      	orrs	r3, r2
+ 800d97a:	b29b      	uxth	r3, r3
+ 800d97c:	b29b      	uxth	r3, r3
+ 800d97e:	f8ad 301e 	strh.w	r3, [sp, #30]
     int16_t y_data;
     memcpy(&y_data, &u_y_data, sizeof(u_y_data));
- 800d972:	f8bd 301e 	ldrh.w	r3, [sp, #30]
- 800d976:	f8ad 301c 	strh.w	r3, [sp, #28]
+ 800d982:	f8bd 301e 	ldrh.w	r3, [sp, #30]
+ 800d986:	f8ad 301c 	strh.w	r3, [sp, #28]
 
     uint16_t u_z_data = (z1_data << 8)|z0_data;
- 800d97a:	f89d 3046 	ldrb.w	r3, [sp, #70]	; 0x46
- 800d97e:	021b      	lsls	r3, r3, #8
- 800d980:	b29a      	uxth	r2, r3
- 800d982:	f89d 3047 	ldrb.w	r3, [sp, #71]	; 0x47
- 800d986:	b29b      	uxth	r3, r3
- 800d988:	4313      	orrs	r3, r2
- 800d98a:	b29b      	uxth	r3, r3
- 800d98c:	b29b      	uxth	r3, r3
- 800d98e:	f8ad 301a 	strh.w	r3, [sp, #26]
+ 800d98a:	f89d 3046 	ldrb.w	r3, [sp, #70]	; 0x46
+ 800d98e:	021b      	lsls	r3, r3, #8
+ 800d990:	b29a      	uxth	r2, r3
+ 800d992:	f89d 3047 	ldrb.w	r3, [sp, #71]	; 0x47
+ 800d996:	b29b      	uxth	r3, r3
+ 800d998:	4313      	orrs	r3, r2
+ 800d99a:	b29b      	uxth	r3, r3
+ 800d99c:	b29b      	uxth	r3, r3
+ 800d99e:	f8ad 301a 	strh.w	r3, [sp, #26]
     int16_t z_data;
     memcpy(&z_data, &u_z_data, sizeof(u_z_data));
- 800d992:	f8bd 301a 	ldrh.w	r3, [sp, #26]
- 800d996:	f8ad 3018 	strh.w	r3, [sp, #24]
+ 800d9a2:	f8bd 301a 	ldrh.w	r3, [sp, #26]
+ 800d9a6:	f8ad 3018 	strh.w	r3, [sp, #24]
 
     buff[0] = x_data;
- 800d99a:	f8bd 2020 	ldrh.w	r2, [sp, #32]
- 800d99e:	9b05      	ldr	r3, [sp, #20]
- 800d9a0:	801a      	strh	r2, [r3, #0]
+ 800d9aa:	f8bd 2020 	ldrh.w	r2, [sp, #32]
+ 800d9ae:	9b05      	ldr	r3, [sp, #20]
+ 800d9b0:	801a      	strh	r2, [r3, #0]
     buff[1] = y_data;
- 800d9a2:	9b05      	ldr	r3, [sp, #20]
- 800d9a4:	3302      	adds	r3, #2
- 800d9a6:	f8bd 201c 	ldrh.w	r2, [sp, #28]
- 800d9aa:	801a      	strh	r2, [r3, #0]
+ 800d9b2:	9b05      	ldr	r3, [sp, #20]
+ 800d9b4:	3302      	adds	r3, #2
+ 800d9b6:	f8bd 201c 	ldrh.w	r2, [sp, #28]
+ 800d9ba:	801a      	strh	r2, [r3, #0]
     buff[2] = z_data;
- 800d9ac:	9b05      	ldr	r3, [sp, #20]
- 800d9ae:	3304      	adds	r3, #4
- 800d9b0:	f8bd 2018 	ldrh.w	r2, [sp, #24]
- 800d9b4:	801a      	strh	r2, [r3, #0]
+ 800d9bc:	9b05      	ldr	r3, [sp, #20]
+ 800d9be:	3304      	adds	r3, #4
+ 800d9c0:	f8bd 2018 	ldrh.w	r2, [sp, #24]
+ 800d9c4:	801a      	strh	r2, [r3, #0]
 
     (void) err2;
- 800d9b6:	9b0e      	ldr	r3, [sp, #56]	; 0x38
+ 800d9c6:	9b0e      	ldr	r3, [sp, #56]	; 0x38
     (void) err3;
- 800d9b8:	9b0d      	ldr	r3, [sp, #52]	; 0x34
+ 800d9c8:	9b0d      	ldr	r3, [sp, #52]	; 0x34
     (void) err4;
- 800d9ba:	9b0c      	ldr	r3, [sp, #48]	; 0x30
+ 800d9ca:	9b0c      	ldr	r3, [sp, #48]	; 0x30
     (void) err5;
- 800d9bc:	9b0b      	ldr	r3, [sp, #44]	; 0x2c
+ 800d9cc:	9b0b      	ldr	r3, [sp, #44]	; 0x2c
     (void) err6;
- 800d9be:	9b0a      	ldr	r3, [sp, #40]	; 0x28
+ 800d9ce:	9b0a      	ldr	r3, [sp, #40]	; 0x28
     (void) err7;
- 800d9c0:	9b09      	ldr	r3, [sp, #36]	; 0x24
+ 800d9d0:	9b09      	ldr	r3, [sp, #36]	; 0x24
 
     return 1;
- 800d9c2:	2301      	movs	r3, #1
+ 800d9d2:	2301      	movs	r3, #1
 
 
 }
- 800d9c4:	4618      	mov	r0, r3
- 800d9c6:	b015      	add	sp, #84	; 0x54
- 800d9c8:	f85d fb04 	ldr.w	pc, [sp], #4
- 800d9cc:	20000b78 	.word	0x20000b78
+ 800d9d4:	4618      	mov	r0, r3
+ 800d9d6:	b015      	add	sp, #84	; 0x54
+ 800d9d8:	f85d fb04 	ldr.w	pc, [sp], #4
+ 800d9dc:	20000b78 	.word	0x20000b78
 
-0800d9d0 <memcpy>:
- 800d9d0:	4684      	mov	ip, r0
- 800d9d2:	ea41 0300 	orr.w	r3, r1, r0
- 800d9d6:	f013 0303 	ands.w	r3, r3, #3
- 800d9da:	d16d      	bne.n	800dab8 <memcpy+0xe8>
- 800d9dc:	3a40      	subs	r2, #64	; 0x40
- 800d9de:	d341      	bcc.n	800da64 <memcpy+0x94>
- 800d9e0:	f851 3b04 	ldr.w	r3, [r1], #4
- 800d9e4:	f840 3b04 	str.w	r3, [r0], #4
- 800d9e8:	f851 3b04 	ldr.w	r3, [r1], #4
- 800d9ec:	f840 3b04 	str.w	r3, [r0], #4
+0800d9e0 <memcpy>:
+ 800d9e0:	4684      	mov	ip, r0
+ 800d9e2:	ea41 0300 	orr.w	r3, r1, r0
+ 800d9e6:	f013 0303 	ands.w	r3, r3, #3
+ 800d9ea:	d16d      	bne.n	800dac8 <memcpy+0xe8>
+ 800d9ec:	3a40      	subs	r2, #64	; 0x40
+ 800d9ee:	d341      	bcc.n	800da74 <memcpy+0x94>
  800d9f0:	f851 3b04 	ldr.w	r3, [r1], #4
  800d9f4:	f840 3b04 	str.w	r3, [r0], #4
  800d9f8:	f851 3b04 	ldr.w	r3, [r1], #4
@@ -38767,68 +38774,72 @@ int AccelerometerGetValues(int16_t* buff){
  800da54:	f840 3b04 	str.w	r3, [r0], #4
  800da58:	f851 3b04 	ldr.w	r3, [r1], #4
  800da5c:	f840 3b04 	str.w	r3, [r0], #4
- 800da60:	3a40      	subs	r2, #64	; 0x40
- 800da62:	d2bd      	bcs.n	800d9e0 <memcpy+0x10>
- 800da64:	3230      	adds	r2, #48	; 0x30
- 800da66:	d311      	bcc.n	800da8c <memcpy+0xbc>
+ 800da60:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da64:	f840 3b04 	str.w	r3, [r0], #4
  800da68:	f851 3b04 	ldr.w	r3, [r1], #4
  800da6c:	f840 3b04 	str.w	r3, [r0], #4
- 800da70:	f851 3b04 	ldr.w	r3, [r1], #4
- 800da74:	f840 3b04 	str.w	r3, [r0], #4
+ 800da70:	3a40      	subs	r2, #64	; 0x40
+ 800da72:	d2bd      	bcs.n	800d9f0 <memcpy+0x10>
+ 800da74:	3230      	adds	r2, #48	; 0x30
+ 800da76:	d311      	bcc.n	800da9c <memcpy+0xbc>
  800da78:	f851 3b04 	ldr.w	r3, [r1], #4
  800da7c:	f840 3b04 	str.w	r3, [r0], #4
  800da80:	f851 3b04 	ldr.w	r3, [r1], #4
  800da84:	f840 3b04 	str.w	r3, [r0], #4
- 800da88:	3a10      	subs	r2, #16
- 800da8a:	d2ed      	bcs.n	800da68 <memcpy+0x98>
- 800da8c:	320c      	adds	r2, #12
- 800da8e:	d305      	bcc.n	800da9c <memcpy+0xcc>
+ 800da88:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800da8c:	f840 3b04 	str.w	r3, [r0], #4
  800da90:	f851 3b04 	ldr.w	r3, [r1], #4
  800da94:	f840 3b04 	str.w	r3, [r0], #4
- 800da98:	3a04      	subs	r2, #4
- 800da9a:	d2f9      	bcs.n	800da90 <memcpy+0xc0>
- 800da9c:	3204      	adds	r2, #4
- 800da9e:	d008      	beq.n	800dab2 <memcpy+0xe2>
- 800daa0:	07d2      	lsls	r2, r2, #31
- 800daa2:	bf1c      	itt	ne
- 800daa4:	f811 3b01 	ldrbne.w	r3, [r1], #1
- 800daa8:	f800 3b01 	strbne.w	r3, [r0], #1
- 800daac:	d301      	bcc.n	800dab2 <memcpy+0xe2>
- 800daae:	880b      	ldrh	r3, [r1, #0]
- 800dab0:	8003      	strh	r3, [r0, #0]
- 800dab2:	4660      	mov	r0, ip
- 800dab4:	4770      	bx	lr
- 800dab6:	bf00      	nop
- 800dab8:	2a08      	cmp	r2, #8
- 800daba:	d313      	bcc.n	800dae4 <memcpy+0x114>
- 800dabc:	078b      	lsls	r3, r1, #30
- 800dabe:	d08d      	beq.n	800d9dc <memcpy+0xc>
- 800dac0:	f010 0303 	ands.w	r3, r0, #3
- 800dac4:	d08a      	beq.n	800d9dc <memcpy+0xc>
- 800dac6:	f1c3 0304 	rsb	r3, r3, #4
- 800daca:	1ad2      	subs	r2, r2, r3
- 800dacc:	07db      	lsls	r3, r3, #31
- 800dace:	bf1c      	itt	ne
- 800dad0:	f811 3b01 	ldrbne.w	r3, [r1], #1
- 800dad4:	f800 3b01 	strbne.w	r3, [r0], #1
- 800dad8:	d380      	bcc.n	800d9dc <memcpy+0xc>
- 800dada:	f831 3b02 	ldrh.w	r3, [r1], #2
- 800dade:	f820 3b02 	strh.w	r3, [r0], #2
- 800dae2:	e77b      	b.n	800d9dc <memcpy+0xc>
- 800dae4:	3a04      	subs	r2, #4
- 800dae6:	d3d9      	bcc.n	800da9c <memcpy+0xcc>
- 800dae8:	3a01      	subs	r2, #1
- 800daea:	f811 3b01 	ldrb.w	r3, [r1], #1
- 800daee:	f800 3b01 	strb.w	r3, [r0], #1
- 800daf2:	d2f9      	bcs.n	800dae8 <memcpy+0x118>
- 800daf4:	780b      	ldrb	r3, [r1, #0]
- 800daf6:	7003      	strb	r3, [r0, #0]
- 800daf8:	784b      	ldrb	r3, [r1, #1]
- 800dafa:	7043      	strb	r3, [r0, #1]
- 800dafc:	788b      	ldrb	r3, [r1, #2]
- 800dafe:	7083      	strb	r3, [r0, #2]
- 800db00:	4660      	mov	r0, ip
- 800db02:	4770      	bx	lr
+ 800da98:	3a10      	subs	r2, #16
+ 800da9a:	d2ed      	bcs.n	800da78 <memcpy+0x98>
+ 800da9c:	320c      	adds	r2, #12
+ 800da9e:	d305      	bcc.n	800daac <memcpy+0xcc>
+ 800daa0:	f851 3b04 	ldr.w	r3, [r1], #4
+ 800daa4:	f840 3b04 	str.w	r3, [r0], #4
+ 800daa8:	3a04      	subs	r2, #4
+ 800daaa:	d2f9      	bcs.n	800daa0 <memcpy+0xc0>
+ 800daac:	3204      	adds	r2, #4
+ 800daae:	d008      	beq.n	800dac2 <memcpy+0xe2>
+ 800dab0:	07d2      	lsls	r2, r2, #31
+ 800dab2:	bf1c      	itt	ne
+ 800dab4:	f811 3b01 	ldrbne.w	r3, [r1], #1
+ 800dab8:	f800 3b01 	strbne.w	r3, [r0], #1
+ 800dabc:	d301      	bcc.n	800dac2 <memcpy+0xe2>
+ 800dabe:	880b      	ldrh	r3, [r1, #0]
+ 800dac0:	8003      	strh	r3, [r0, #0]
+ 800dac2:	4660      	mov	r0, ip
+ 800dac4:	4770      	bx	lr
+ 800dac6:	bf00      	nop
+ 800dac8:	2a08      	cmp	r2, #8
+ 800daca:	d313      	bcc.n	800daf4 <memcpy+0x114>
+ 800dacc:	078b      	lsls	r3, r1, #30
+ 800dace:	d08d      	beq.n	800d9ec <memcpy+0xc>
+ 800dad0:	f010 0303 	ands.w	r3, r0, #3
+ 800dad4:	d08a      	beq.n	800d9ec <memcpy+0xc>
+ 800dad6:	f1c3 0304 	rsb	r3, r3, #4
+ 800dada:	1ad2      	subs	r2, r2, r3
+ 800dadc:	07db      	lsls	r3, r3, #31
+ 800dade:	bf1c      	itt	ne
+ 800dae0:	f811 3b01 	ldrbne.w	r3, [r1], #1
+ 800dae4:	f800 3b01 	strbne.w	r3, [r0], #1
+ 800dae8:	d380      	bcc.n	800d9ec <memcpy+0xc>
+ 800daea:	f831 3b02 	ldrh.w	r3, [r1], #2
+ 800daee:	f820 3b02 	strh.w	r3, [r0], #2
+ 800daf2:	e77b      	b.n	800d9ec <memcpy+0xc>
+ 800daf4:	3a04      	subs	r2, #4
+ 800daf6:	d3d9      	bcc.n	800daac <memcpy+0xcc>
+ 800daf8:	3a01      	subs	r2, #1
+ 800dafa:	f811 3b01 	ldrb.w	r3, [r1], #1
+ 800dafe:	f800 3b01 	strb.w	r3, [r0], #1
+ 800db02:	d2f9      	bcs.n	800daf8 <memcpy+0x118>
+ 800db04:	780b      	ldrb	r3, [r1, #0]
+ 800db06:	7003      	strb	r3, [r0, #0]
+ 800db08:	784b      	ldrb	r3, [r1, #1]
+ 800db0a:	7043      	strb	r3, [r0, #1]
+ 800db0c:	788b      	ldrb	r3, [r1, #2]
+ 800db0e:	7083      	strb	r3, [r0, #2]
+ 800db10:	4660      	mov	r0, ip
+ 800db12:	4770      	bx	lr
 	...
  800db20:	eba2 0003 	sub.w	r0, r2, r3
  800db24:	4770      	bx	lr
@@ -38840,7 +38851,7 @@ int AccelerometerGetValues(int16_t* buff){
  800db2c:	2a01      	cmp	r2, #1
  800db2e:	bf28      	it	cs
  800db30:	429a      	cmpcs	r2, r3
- 800db32:	d1f5      	bne.n	800db20 <memcpy+0x150>
+ 800db32:	d1f5      	bne.n	800db20 <memcpy+0x140>
  800db34:	e96d 4504 	strd	r4, r5, [sp, #-16]!
  800db38:	ea40 0401 	orr.w	r4, r0, r1
  800db3c:	e9cd 6702 	strd	r6, r7, [sp, #8]

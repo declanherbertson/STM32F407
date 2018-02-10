@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
+   * System initializations.
+   * - HAL initialization, this also initializes the configured device drivers
+   *   and performs the board-specific initializations.
+   * - Kernel initialization, the main() function becomes a thread and the
+   *   RTOS is active.
+   */
+  halInit();
+  chSysInit();
+
+   //find effective presets for device to config
+
+   //write bytes is first num of transmit
+
+   //read bytes is second num of transmit
+
+   //to read variables from debugger
+   //break after read - i2cMasterTransmitTimeout
+   //gdb = debugger;
+   //change o3 to o0 in makefile to lower optimization for debugging
+   //b filename:linenumber - sets a breakpoint in code
+   //mon reset halt -halts cpu at top of code; p var -prints variable; c -continue to break point
+   //set breakpoint; halt cpu; continue to breakpoint; print variable
+
+   //to transmit multiple bytes, make regaddr a byte array
+
+    //to push to git - git add .;git commit -a -m "";git push -u origin master -f
+
+   //to pull from git - git pull origin master
+
+
+
+to print: plug wire into gold square hole on board to solo male pin
+ displays over minicom - first sudo dmesg | tail , (sudo minicom -s) in serial port setup - /dev/ttyACM0 , /var/lock , 38400 8N1 , No , No
+ printing integer values - (2/32766) * value or (2/32767) *value(negative) = value in g's when set to 2 g max
+ chprintf((BaseSequentialStream *)&SD3, "%d, %d, %d \r\n",x_data, y_data, z_data);

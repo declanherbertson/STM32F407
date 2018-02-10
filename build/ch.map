@@ -610,15 +610,16 @@ LOAD build/obj/Accelerometer.o
  .text          0x000000000800d680       0x64 build/obj/nullstreams.o
                 0x000000000800d6d0                nullObjectInit
  *fill*         0x000000000800d6e4        0xc 
- .text          0x000000000800d6f0       0x50 build/obj/main.o
+ .text          0x000000000800d6f0       0x5c build/obj/main.o
                 0x000000000800d6f0                main
- .text          0x000000000800d740      0x290 build/obj/Accelerometer.o
-                0x000000000800d740                AccelerometerInit
-                0x000000000800d7a0                AccelerometerConfig
-                0x000000000800d800                AccelerometerGetValues
- .text          0x000000000800d9d0      0x134 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
-                0x000000000800d9d0                memcpy
- *fill*         0x000000000800db04       0x1c 
+ *fill*         0x000000000800d74c        0x4 
+ .text          0x000000000800d750      0x290 build/obj/Accelerometer.o
+                0x000000000800d750                AccelerometerInit
+                0x000000000800d7b0                AccelerometerConfig
+                0x000000000800d810                AccelerometerGetValues
+ .text          0x000000000800d9e0      0x134 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+                0x000000000800d9e0                memcpy
+ *fill*         0x000000000800db14        0xc 
  .text          0x000000000800db20      0x2e0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
                 0x000000000800db28                strcmp
  *(.text.*)
@@ -637,7 +638,7 @@ LOAD build/obj/Accelerometer.o
 .iplt           0x000000000800de00        0x0
  .iplt          0x000000000800de00        0x0 build/obj/crt0_v7m.o
 
-.rodata         0x000000000800de00     0x1cf0
+.rodata         0x000000000800de00     0x1d18
                 0x000000000800de00                . = ALIGN (0x4)
                 0x000000000800de00                __rodata_base__ = .
  *(.rodata)
@@ -688,27 +689,27 @@ LOAD build/obj/Accelerometer.o
  *fill*         0x000000000800fab3        0x1 
  .rodata        0x000000000800fab4       0x10 build/obj/memstreams.o
  .rodata        0x000000000800fac4       0x10 build/obj/nullstreams.o
- .rodata        0x000000000800fad4        0xe build/obj/main.o
- *fill*         0x000000000800fae2        0x2 
- .rodata        0x000000000800fae4        0xc build/obj/Accelerometer.o
+ .rodata        0x000000000800fad4       0x22 build/obj/main.o
+ *fill*         0x000000000800faf6        0x2 
+ .rodata        0x000000000800faf8       0x20 build/obj/Accelerometer.o
  *(.rodata.*)
-                0x000000000800faf0                . = ALIGN (0x4)
-                0x000000000800faf0                __rodata_end__ = .
+                0x000000000800fb18                . = ALIGN (0x4)
+                0x000000000800fb18                __rodata_end__ = .
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM.exidx      0x000000000800faf0        0x0
-                0x000000000800faf0                __exidx_start = .
+.ARM.exidx      0x000000000800fb18        0x0
+                0x000000000800fb18                __exidx_start = .
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000000000800faf0                __exidx_end = .
+                0x000000000800fb18                __exidx_end = .
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
 
-.eh_frame       0x000000000800faf0       0x70
+.eh_frame       0x000000000800fb18       0x70
  *(.eh_frame)
- .eh_frame      0x000000000800faf0       0x70 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
+ .eh_frame      0x000000000800fb18       0x70 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
                 0x0000000020000000                __ram0_start__ = ORIGIN (ram0)
                 0x0000000000020000                __ram0_size__ = LENGTH (ram0)
                 0x0000000020020000                __ram0_end__ = (__ram0_start__ + __ram0_size__)
@@ -734,14 +735,14 @@ LOAD build/obj/Accelerometer.o
                 0x0000000000000000                __ram7_size__ = LENGTH (ram7)
                 0x0000000000000000                __ram7_end__ = (__ram7_start__ + __ram7_size__)
 
-.rel.dyn        0x000000000800fb60        0x0
- .rel.iplt      0x000000000800fb60        0x0 build/obj/crt0_v7m.o
+.rel.dyn        0x000000000800fb88        0x0
+ .rel.iplt      0x000000000800fb88        0x0 build/obj/crt0_v7m.o
 
-.data           0x0000000020000800       0xb8 load address 0x000000000800fb60
+.data           0x0000000020000800       0xb8 load address 0x000000000800fb88
                 0x0000000020000800                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_textdata, LOADADDR (.data))
                 [!provide]                        PROVIDE (_data, .)
-                0x000000000800fb60                _textdata_start = LOADADDR (.data)
+                0x000000000800fb88                _textdata_start = LOADADDR (.data)
                 0x0000000020000800                _data_start = .
  *(.data)
  .data          0x0000000020000800        0x0 build/obj/crt0_v7m.o
@@ -815,10 +816,10 @@ LOAD build/obj/Accelerometer.o
                 [!provide]                        PROVIDE (_edata, .)
                 0x00000000200008b8                _data_end = .
 
-.igot.plt       0x00000000200008b8        0x0 load address 0x000000000800fc18
+.igot.plt       0x00000000200008b8        0x0 load address 0x000000000800fc40
  .igot.plt      0x00000000200008b8        0x0 build/obj/crt0_v7m.o
 
-.bss            0x00000000200008b8      0xa98 load address 0x000000000800fc18
+.bss            0x00000000200008b8      0xa98 load address 0x000000000800fc40
                 0x00000000200008b8                . = ALIGN (0x4)
                 0x00000000200008b8                _bss_start = .
  *(.bss)
@@ -911,15 +912,15 @@ LOAD build/obj/Accelerometer.o
                 0x0000000020001350                _bss_end = .
                 [!provide]                        PROVIDE (end, .)
 
-.ram0_init      0x0000000020001350        0x0 load address 0x000000000800fc18
+.ram0_init      0x0000000020001350        0x0 load address 0x000000000800fc40
                 0x0000000020001350                . = ALIGN (0x4)
-                0x000000000800fc18                __ram0_init_text__ = LOADADDR (.ram0_init)
+                0x000000000800fc40                __ram0_init_text__ = LOADADDR (.ram0_init)
                 0x0000000020001350                __ram0_init__ = .
  *(.ram0_init)
  *(.ram0_init.*)
                 0x0000000020001350                . = ALIGN (0x4)
 
-.ram0           0x0000000020001350        0x0 load address 0x000000000800fc18
+.ram0           0x0000000020001350        0x0 load address 0x000000000800fc40
                 0x0000000020001350                . = ALIGN (0x4)
                 0x0000000020001350                __ram0_clear__ = .
  *(.ram0_clear)
@@ -931,15 +932,15 @@ LOAD build/obj/Accelerometer.o
                 0x0000000020001350                . = ALIGN (0x4)
                 0x0000000020001350                __ram0_free__ = .
 
-.ram1_init      0x0000000020000000        0x0 load address 0x000000000800fc18
+.ram1_init      0x0000000020000000        0x0 load address 0x000000000800fc40
                 0x0000000020000000                . = ALIGN (0x4)
-                0x000000000800fc18                __ram1_init_text__ = LOADADDR (.ram1_init)
+                0x000000000800fc40                __ram1_init_text__ = LOADADDR (.ram1_init)
                 0x0000000020000000                __ram1_init__ = .
  *(.ram1_init)
  *(.ram1_init.*)
                 0x0000000020000000                . = ALIGN (0x4)
 
-.ram1           0x0000000020000000        0x0 load address 0x000000000800fc18
+.ram1           0x0000000020000000        0x0 load address 0x000000000800fc40
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                __ram1_clear__ = .
  *(.ram1_clear)
@@ -951,15 +952,15 @@ LOAD build/obj/Accelerometer.o
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                __ram1_free__ = .
 
-.ram2_init      0x000000002001c000        0x0 load address 0x000000000800fc18
+.ram2_init      0x000000002001c000        0x0 load address 0x000000000800fc40
                 0x000000002001c000                . = ALIGN (0x4)
-                0x000000000800fc18                __ram2_init_text__ = LOADADDR (.ram2_init)
+                0x000000000800fc40                __ram2_init_text__ = LOADADDR (.ram2_init)
                 0x000000002001c000                __ram2_init__ = .
  *(.ram2_init)
  *(.ram2_init.*)
                 0x000000002001c000                . = ALIGN (0x4)
 
-.ram2           0x000000002001c000        0x0 load address 0x000000000800fc18
+.ram2           0x000000002001c000        0x0 load address 0x000000000800fc40
                 0x000000002001c000                . = ALIGN (0x4)
                 0x000000002001c000                __ram2_clear__ = .
  *(.ram2_clear)
@@ -971,15 +972,15 @@ LOAD build/obj/Accelerometer.o
                 0x000000002001c000                . = ALIGN (0x4)
                 0x000000002001c000                __ram2_free__ = .
 
-.ram3_init      0x0000000000000000        0x0 load address 0x000000000800fc18
+.ram3_init      0x0000000000000000        0x0 load address 0x000000000800fc40
                 0x0000000000000000                . = ALIGN (0x4)
-                0x000000000800fc18                __ram3_init_text__ = LOADADDR (.ram3_init)
+                0x000000000800fc40                __ram3_init_text__ = LOADADDR (.ram3_init)
                 0x0000000000000000                __ram3_init__ = .
  *(.ram3_init)
  *(.ram3_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram3           0x0000000000000000        0x0 load address 0x000000000800fc18
+.ram3           0x0000000000000000        0x0 load address 0x000000000800fc40
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram3_clear__ = .
  *(.ram3_clear)
@@ -991,15 +992,15 @@ LOAD build/obj/Accelerometer.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram3_free__ = .
 
-.ram4_init      0x0000000010000000        0x0 load address 0x000000000800fc18
+.ram4_init      0x0000000010000000        0x0 load address 0x000000000800fc40
                 0x0000000010000000                . = ALIGN (0x4)
-                0x000000000800fc18                __ram4_init_text__ = LOADADDR (.ram4_init)
+                0x000000000800fc40                __ram4_init_text__ = LOADADDR (.ram4_init)
                 0x0000000010000000                __ram4_init__ = .
  *(.ram4_init)
  *(.ram4_init.*)
                 0x0000000010000000                . = ALIGN (0x4)
 
-.ram4           0x0000000010000000        0x0 load address 0x000000000800fc18
+.ram4           0x0000000010000000        0x0 load address 0x000000000800fc40
                 0x0000000010000000                . = ALIGN (0x4)
                 0x0000000010000000                __ram4_clear__ = .
  *(.ram4_clear)
@@ -1011,15 +1012,15 @@ LOAD build/obj/Accelerometer.o
                 0x0000000010000000                . = ALIGN (0x4)
                 0x0000000010000000                __ram4_free__ = .
 
-.ram5_init      0x0000000040024000        0x0 load address 0x000000000800fc18
+.ram5_init      0x0000000040024000        0x0 load address 0x000000000800fc40
                 0x0000000040024000                . = ALIGN (0x4)
-                0x000000000800fc18                __ram5_init_text__ = LOADADDR (.ram5_init)
+                0x000000000800fc40                __ram5_init_text__ = LOADADDR (.ram5_init)
                 0x0000000040024000                __ram5_init__ = .
  *(.ram5_init)
  *(.ram5_init.*)
                 0x0000000040024000                . = ALIGN (0x4)
 
-.ram5           0x0000000040024000        0x0 load address 0x000000000800fc18
+.ram5           0x0000000040024000        0x0 load address 0x000000000800fc40
                 0x0000000040024000                . = ALIGN (0x4)
                 0x0000000040024000                __ram5_clear__ = .
  *(.ram5_clear)
@@ -1031,15 +1032,15 @@ LOAD build/obj/Accelerometer.o
                 0x0000000040024000                . = ALIGN (0x4)
                 0x0000000040024000                __ram5_free__ = .
 
-.ram6_init      0x0000000000000000        0x0 load address 0x000000000800fc18
+.ram6_init      0x0000000000000000        0x0 load address 0x000000000800fc40
                 0x0000000000000000                . = ALIGN (0x4)
-                0x000000000800fc18                __ram6_init_text__ = LOADADDR (.ram6_init)
+                0x000000000800fc40                __ram6_init_text__ = LOADADDR (.ram6_init)
                 0x0000000000000000                __ram6_init__ = .
  *(.ram6_init)
  *(.ram6_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram6           0x0000000000000000        0x0 load address 0x000000000800fc18
+.ram6           0x0000000000000000        0x0 load address 0x000000000800fc40
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram6_clear__ = .
  *(.ram6_clear)
@@ -1051,15 +1052,15 @@ LOAD build/obj/Accelerometer.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram6_free__ = .
 
-.ram7_init      0x0000000000000000        0x0 load address 0x000000000800fc18
+.ram7_init      0x0000000000000000        0x0 load address 0x000000000800fc40
                 0x0000000000000000                . = ALIGN (0x4)
-                0x000000000800fc18                __ram7_init_text__ = LOADADDR (.ram7_init)
+                0x000000000800fc40                __ram7_init_text__ = LOADADDR (.ram7_init)
                 0x0000000000000000                __ram7_init__ = .
  *(.ram7_init)
  *(.ram7_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram7           0x0000000000000000        0x0 load address 0x000000000800fc18
+.ram7           0x0000000000000000        0x0 load address 0x000000000800fc40
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram7_clear__ = .
  *(.ram7_clear)
@@ -1277,7 +1278,7 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .comment       0x0000000000000038       0x39 build/obj/main.o
  .comment       0x0000000000000038       0x39 build/obj/Accelerometer.o
 
-.debug_line     0x0000000000000000     0xac7b
+.debug_line     0x0000000000000000     0xaca3
  .debug_line    0x0000000000000000       0xc5 build/obj/crt0_v7m.o
  .debug_line    0x00000000000000c5       0x81 build/obj/chcoreasm_v7m.o
  .debug_line    0x0000000000000146      0x110 build/obj/crt1.o
@@ -1337,12 +1338,12 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .debug_line    0x0000000000009d05      0x31c build/obj/chprintf.o
  .debug_line    0x000000000000a021      0x217 build/obj/memstreams.o
  .debug_line    0x000000000000a238      0x201 build/obj/nullstreams.o
- .debug_line    0x000000000000a439      0x2e8 build/obj/main.o
- .debug_line    0x000000000000a721      0x371 build/obj/Accelerometer.o
- .debug_line    0x000000000000aa92       0xb8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
- .debug_line    0x000000000000ab4a      0x131 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
+ .debug_line    0x000000000000a439      0x2f8 build/obj/main.o
+ .debug_line    0x000000000000a731      0x389 build/obj/Accelerometer.o
+ .debug_line    0x000000000000aaba       0xb8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+ .debug_line    0x000000000000ab72      0x131 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
 
-.debug_info     0x0000000000000000    0x27888
+.debug_info     0x0000000000000000    0x27ace
  .debug_info    0x0000000000000000       0xa2 build/obj/crt0_v7m.o
  .debug_info    0x00000000000000a2       0xa5 build/obj/chcoreasm_v7m.o
  .debug_info    0x0000000000000147      0x316 build/obj/crt1.o
@@ -1402,12 +1403,12 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .debug_info    0x0000000000023f0c      0xa82 build/obj/chprintf.o
  .debug_info    0x000000000002498e      0x8bd build/obj/memstreams.o
  .debug_info    0x000000000002524b      0x81f build/obj/nullstreams.o
- .debug_info    0x0000000000025a6a      0xbf0 build/obj/main.o
- .debug_info    0x000000000002665a     0x1093 build/obj/Accelerometer.o
- .debug_info    0x00000000000276ed       0xce /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
- .debug_info    0x00000000000277bb       0xcd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
+ .debug_info    0x0000000000025a6a      0xd0b build/obj/main.o
+ .debug_info    0x0000000000026775     0x11be build/obj/Accelerometer.o
+ .debug_info    0x0000000000027933       0xce /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000027a01       0xcd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
 
-.debug_abbrev   0x0000000000000000     0x857e
+.debug_abbrev   0x0000000000000000     0x853d
  .debug_abbrev  0x0000000000000000       0x14 build/obj/crt0_v7m.o
  .debug_abbrev  0x0000000000000014       0x14 build/obj/chcoreasm_v7m.o
  .debug_abbrev  0x0000000000000028       0xf7 build/obj/crt1.o
@@ -1467,10 +1468,10 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .debug_abbrev  0x0000000000007c5a      0x235 build/obj/chprintf.o
  .debug_abbrev  0x0000000000007e8f      0x19b build/obj/memstreams.o
  .debug_abbrev  0x000000000000802a      0x18c build/obj/nullstreams.o
- .debug_abbrev  0x00000000000081b6      0x1cc build/obj/main.o
- .debug_abbrev  0x0000000000008382      0x1d4 build/obj/Accelerometer.o
- .debug_abbrev  0x0000000000008556       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
- .debug_abbrev  0x000000000000856a       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
+ .debug_abbrev  0x00000000000081b6      0x19a build/obj/main.o
+ .debug_abbrev  0x0000000000008350      0x1c5 build/obj/Accelerometer.o
+ .debug_abbrev  0x0000000000008515       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000008529       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
 
 .debug_aranges  0x0000000000000000      0x7b8
  .debug_aranges
@@ -1600,7 +1601,7 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000798       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-strcmp.o)
 
-.debug_str      0x0000000000000000     0x492e
+.debug_str      0x0000000000000000     0x49e5
  .debug_str     0x0000000000000000      0x3f2 build/obj/crt1.o
                                         0x44b (size before relaxing)
  .debug_str     0x00000000000003f2      0x15c build/obj/vectors.o
@@ -1715,10 +1716,10 @@ OUTPUT(build/ch.elf elf32-littlearm)
                                         0x4e4 (size before relaxing)
  .debug_str     0x00000000000047bc       0x52 build/obj/nullstreams.o
                                         0x4ce (size before relaxing)
- .debug_str     0x000000000000480e       0x32 build/obj/main.o
-                                        0x6a0 (size before relaxing)
- .debug_str     0x0000000000004840       0xee build/obj/Accelerometer.o
-                                        0x94d (size before relaxing)
+ .debug_str     0x000000000000480e       0xe7 build/obj/main.o
+                                        0x74c (size before relaxing)
+ .debug_str     0x00000000000048f5       0xf0 build/obj/Accelerometer.o
+                                        0xa04 (size before relaxing)
 
 .debug_frame    0x0000000000000000     0x56fc
  .debug_frame   0x0000000000000000       0x68 build/obj/crt1.o

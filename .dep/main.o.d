@@ -40,7 +40,13 @@ build/obj/main.o: main.c ../../../os/rt/include/ch.h \
  ../../../os/common/oslib/include/chmemcore.h \
  ../../../os/common/oslib/include/chheap.h \
  ../../../os/common/oslib/include/chmempools.h \
- ../../../os/rt/include/chdynamic.h ../../../os/hal/include/hal.h \
+ ../../../os/rt/include/chdynamic.h /usr/include/newlib/string.h \
+ /usr/include/newlib/_ansi.h /usr/include/newlib/newlib.h \
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/cdefs.h \
+ /usr/include/newlib/sys/string.h ../../../os/hal/include/hal.h \
  ../../../os/hal/osal/rt/osal.h halconf.h mcuconf.h \
  ../../../os/hal/ports/STM32/STM32F4xx/hal_lld.h \
  ../../../os/hal/ports/STM32/STM32F4xx/stm32_registry.h \
@@ -84,13 +90,8 @@ build/obj/main.o: main.c ../../../os/rt/include/ch.h \
  ../../../test/rt/source/test/test_sequence_011.h \
  ../../../test/rt/source/test/test_sequence_012.h \
  ../../../test/rt/source/test/test_sequence_013.h \
- /usr/include/newlib/string.h /usr/include/newlib/_ansi.h \
- /usr/include/newlib/newlib.h /usr/include/newlib/sys/config.h \
- /usr/include/newlib/machine/ieeefp.h /usr/include/newlib/sys/reent.h \
- /usr/include/newlib/_ansi.h /usr/include/newlib/sys/_types.h \
- /usr/include/newlib/machine/_types.h /usr/include/newlib/sys/lock.h \
- /usr/include/newlib/sys/cdefs.h /usr/include/newlib/sys/string.h \
- Accelerometer.h
+ ../../../os/hal/lib/streams/chprintf.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h Accelerometer.h
 
 ../../../os/rt/include/ch.h:
 
@@ -201,6 +202,30 @@ mcuconf.h:
 ../../../os/common/oslib/include/chmempools.h:
 
 ../../../os/rt/include/chdynamic.h:
+
+/usr/include/newlib/string.h:
+
+/usr/include/newlib/_ansi.h:
+
+/usr/include/newlib/newlib.h:
+
+/usr/include/newlib/sys/config.h:
+
+/usr/include/newlib/machine/ieeefp.h:
+
+/usr/include/newlib/sys/reent.h:
+
+/usr/include/newlib/_ansi.h:
+
+/usr/include/newlib/sys/_types.h:
+
+/usr/include/newlib/machine/_types.h:
+
+/usr/include/newlib/sys/lock.h:
+
+/usr/include/newlib/sys/cdefs.h:
+
+/usr/include/newlib/sys/string.h:
 
 ../../../os/hal/include/hal.h:
 
@@ -316,28 +341,8 @@ mcuconf.h:
 
 ../../../test/rt/source/test/test_sequence_013.h:
 
-/usr/include/newlib/string.h:
+../../../os/hal/lib/streams/chprintf.h:
 
-/usr/include/newlib/_ansi.h:
-
-/usr/include/newlib/newlib.h:
-
-/usr/include/newlib/sys/config.h:
-
-/usr/include/newlib/machine/ieeefp.h:
-
-/usr/include/newlib/sys/reent.h:
-
-/usr/include/newlib/_ansi.h:
-
-/usr/include/newlib/sys/_types.h:
-
-/usr/include/newlib/machine/_types.h:
-
-/usr/include/newlib/sys/lock.h:
-
-/usr/include/newlib/sys/cdefs.h:
-
-/usr/include/newlib/sys/string.h:
+/usr/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h:
 
 Accelerometer.h:
